@@ -11,7 +11,7 @@ Desenvolver e avaliar um painel web, aberto e reprodutível, que apresente os in
 ## Estrutura do repositório
 
 ```
-pense-em-painel/
+Painel-Web-PENSE/
 ├── config/
 │   └── fontes.yaml          # URLs oficiais do IBGE e temas usados
 ├── data/
@@ -56,8 +56,8 @@ Requer **Python 3.10+**.
 
 ```bash
 # 1. Clonar
-git clone https://github.com/<usuario>/pense-em-painel.git
-cd pense-em-painel
+git clone https://github.com/caiodantasx/Painel-Web-PENSE.git
+cd Painel-Web-PENSE
 
 # 2. Ambiente virtual
 python -m venv .venv
