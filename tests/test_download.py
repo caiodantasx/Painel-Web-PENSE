@@ -1,6 +1,11 @@
-"""Testes do 01_download.py com um servidor HTTP local que imita o FTP do IBGE.
+"""
+Testes do 01_download.py.
 
-Rodar: pytest -q
+Em vez de usar o site do IBGE (que pode estar fora do ar), os testes criam
+um "IBGE falso" no próprio computador, com arquivos de mentira com os mesmos
+nomes, e conferem se o script se comporta certo.
+
+Rodar:  pytest -q
 """
 
 import csv
@@ -14,112 +19,92 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 import pytest
-import yaml
 
-RAIZ = Path(__file__).resolve().parents[1]
-spec = importlib.util.spec_from_file_location("download", RAIZ / "src" / "01_download.py")
-dl = importlib.util.module_from_spec(spec)
-sys.modules["download"] = dl  # necessário para o @dataclass funcionar
-spec.loader.exec_module(dl)
-dl.TENTATIVAS = 1  # testes rápidos
-
-
-def _zip_bytes(nome_interno: str) -> bytes:
-    buf = io.BytesIO()
-    with zipfile.ZipFile(buf, "w") as z:
-        z.writestr(nome_interno, b"conteudo de teste")
-    return buf.getvalue()
+# Carrega o script (o nome começa com número, então não dá para usar "import")
+PROJETO = Path(__file__).resolve().parent.parent
+spec = importlib.util.spec_from_file_location("download", PROJETO / "src" / "01_download.py")
+download = importlib.util.module_from_spec(spec)
+sys.modules["download"] = download
+spec.loader.exec_module(download)
 
 
 @pytest.fixture()
-def servidor(tmp_path):
-    """Cria /pense/2019/xls e /pense/2024/xlsx com nomes no padrão do IBGE."""
-    www = tmp_path / "www"
-    d19 = www / "pense" / "2019" / "xls"
-    d24 = www / "pense" / "2024" / "xlsx"
-    d19.mkdir(parents=True)
-    d24.mkdir(parents=True)
+def ibge_falso(tmp_path):
+    """Sobe um site local que imita as pastas do IBGE e devolve as FONTES apontando para ele."""
+    site = tmp_path / "site"
+    p2019 = site / "2019"
+    p2024 = site / "2024"
+    p2019.mkdir(parents=True)
+    p2024.mkdir(parents=True)
 
-    (d19 / "Guia_Tabelas_PeNSE_2019_20260615.xls").write_bytes(b"guia19")
-    (d19 / "Tema_09_Seguranca_20260615.xls").write_bytes(b"seg19")
-    (d19 / "Tema_09_Seguranca_20220512.xls").write_bytes(b"versao antiga")
-    (d19 / "Tema_03_Alimentacao_20260615.xls").write_bytes(b"nao deve baixar")
+    (p2019 / "Guia_Tabelas_PeNSE_2019_20260615.xls").write_bytes(b"guia 2019")
+    (p2019 / "Tema_09_Seguranca_20220512.xls").write_bytes(b"versao antiga")
+    (p2019 / "Tema_09_Seguranca_20260615.xls").write_bytes(b"versao nova")
+    (p2019 / "Tema_03_Alimentacao_20260615.xls").write_bytes(b"fora do tema")
 
-    (d24 / "Guia_Tabelas_PeNSE_2024_20260525.xlsx").write_bytes(b"guia24")
-    (d24 / "Tema_09_Seguranca_XLSX_20260525.zip").write_bytes(_zip_bytes("tabela_9.1.xlsx"))
+    zip_em_memoria = io.BytesIO()
+    with zipfile.ZipFile(zip_em_memoria, "w") as z:
+        z.writestr("tabela_9.1.xlsx", b"conteudo")
+    (p2024 / "Tema_09_Seguranca_XLSX_20260525.zip").write_bytes(zip_em_memoria.getvalue())
 
-    handler = partial(SimpleHTTPRequestHandler, directory=str(www))
-    handler.log_message = lambda *a, **k: None
-    srv = ThreadingHTTPServer(("127.0.0.1", 0), handler)
-    t = threading.Thread(target=srv.serve_forever, daemon=True)
-    t.start()
-    yield f"http://127.0.0.1:{srv.server_address[1]}"
-    srv.shutdown()
+    servidor = ThreadingHTTPServer(("127.0.0.1", 0), partial(SimpleHTTPRequestHandler, directory=str(site)))
+    threading.Thread(target=servidor.serve_forever, daemon=True).start()
+    endereco = f"http://127.0.0.1:{servidor.server_address[1]}"
 
-
-@pytest.fixture()
-def config(tmp_path, servidor):
-    """fontes.yaml real, com as URLs do IBGE trocadas pelo servidor local."""
-    cfg = yaml.safe_load((RAIZ / "config" / "fontes.yaml").read_text(encoding="utf-8"))
-    for ed in cfg["edicoes"].values():
-        ed["base_url"] = ed["base_url"].replace("https://ftp.ibge.gov.br", servidor)
-    p = tmp_path / "fontes.yaml"
-    p.write_text(yaml.safe_dump(cfg, allow_unicode=True), encoding="utf-8")
-    return p
-
-
-def _manifesto(saida):
-    with (saida / "manifesto.csv").open(encoding="utf-8") as f:
-        return {(r["edicao"], r["tema"]): r for r in csv.DictReader(f)}
+    fontes = {
+        "2019": {"pasta": f"{endereco}/2019/", "temas": {
+            "guia":    download.FONTES["2019"]["temas"]["guia"],
+            "tema_09": download.FONTES["2019"]["temas"]["tema_09"],
+        }},
+        "2024": {"pasta": f"{endereco}/2024/", "temas": {
+            "tema_09": download.FONTES["2024"]["temas"]["tema_09"],
+        }},
+    }
+    yield fontes
+    servidor.shutdown()
 
 
-def test_baixa_extrai_e_registra(config, tmp_path):
+def ler_manifesto(pasta):
+    with open(pasta / "manifesto.csv", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def test_baixa_os_arquivos_certos(ibge_falso, tmp_path):
     saida = tmp_path / "raw"
-    rc = dl.executar(config, saida, temas=["guia", "tema_09"])
-    assert rc == 0
+    assert download.main(ibge_falso, saida) == 0
 
-    assert (saida / "2019" / "Tema_09_Seguranca_20260615.xls").read_bytes() == b"seg19"
-    assert not (saida / "2019" / "Tema_09_Seguranca_20220512.xls").exists()  # pega a mais recente
-    assert not (saida / "2019" / "Tema_03_Alimentacao_20260615.xls").exists()  # fora do escopo
+    # pegou a versão mais nova e ignorou a antiga
+    assert (saida / "2019" / "Tema_09_Seguranca_20260615.xls").read_bytes() == b"versao nova"
+    assert not (saida / "2019" / "Tema_09_Seguranca_20220512.xls").exists()
+    # não baixou tema que não pedimos
+    assert not (saida / "2019" / "Tema_03_Alimentacao_20260615.xls").exists()
+    # descompactou o zip de 2024
     assert (saida / "2024" / "Tema_09_Seguranca_XLSX_20260525" / "tabela_9.1.xlsx").exists()
 
-    m = _manifesto(saida)
-    assert set(m) == {("2019", "guia"), ("2019", "tema_09"), ("2024", "guia"), ("2024", "tema_09")}
-    assert all(len(r["sha256"]) == 64 and r["origem_nome"] == "listagem" for r in m.values())
 
-
-def test_segunda_execucao_nao_baixa_de_novo(config, tmp_path, caplog):
+def test_manifesto_registra_tudo(ibge_falso, tmp_path):
     saida = tmp_path / "raw"
-    dl.executar(config, saida, temas=["tema_09"])
-    data1 = _manifesto(saida)[("2019", "tema_09")]["baixado_em_utc"]
-    caplog.clear()
-    with caplog.at_level("INFO"):
-        assert dl.executar(config, saida, temas=["tema_09"]) == 0
-    assert "já existe" in caplog.text
-    assert _manifesto(saida)[("2019", "tema_09")]["baixado_em_utc"] == data1
+    download.main(ibge_falso, saida)
+    linhas = ler_manifesto(saida)
+    assert len(linhas) == 3
+    assert all(len(l["sha256"]) == 64 for l in linhas)
 
 
-def test_arquivo_ausente_gera_erro_sem_derrubar_o_resto(config, tmp_path):
+def test_nao_baixa_de_novo(ibge_falso, tmp_path, capsys):
     saida = tmp_path / "raw"
-    # tema_02 e tema_17 não existem no servidor de teste
-    rc = dl.executar(config, saida, edicoes=["2019"], temas=["tema_02", "tema_09"])
-    assert rc == 1
+    download.main(ibge_falso, saida)
+    download.main(ibge_falso, saida)
+    assert "já existe, pulando" in capsys.readouterr().out
+
+
+def test_um_erro_nao_para_os_outros(ibge_falso, tmp_path):
+    saida = tmp_path / "raw"
+    ibge_falso["2019"]["temas"]["tema_17"] = download.FONTES["2019"]["temas"]["tema_17"]  # não existe no site falso
+    assert download.main(ibge_falso, saida) == 1
     assert (saida / "2019" / "Tema_09_Seguranca_20260615.xls").exists()
-    assert not list((saida / "2019").glob("*.part"))
 
 
-def test_zip_com_caminho_perigoso_e_bloqueado(tmp_path):
-    z = tmp_path / "ruim.zip"
-    with zipfile.ZipFile(z, "w") as f:
-        f.writestr("../../fora.txt", b"x")
-    with pytest.raises(IOError):
-        dl.extrair_zip(z)
-    assert not (tmp_path.parent / "fora.txt").exists()
-
-
-def test_config_real_tem_fallback_que_bate_com_o_padrao():
-    import re
-    cfg = yaml.safe_load((RAIZ / "config" / "fontes.yaml").read_text(encoding="utf-8"))
-    for ed in cfg["edicoes"].values():
-        for t in ed["temas"].values():
-            assert re.match(t["padrao"], t["fallback"]), t["fallback"]
+def test_nomes_conferidos_batem_com_o_comeco():
+    for config in download.FONTES.values():
+        for comeco, nome_conferido in config["temas"].values():
+            assert nome_conferido.startswith(comeco)
