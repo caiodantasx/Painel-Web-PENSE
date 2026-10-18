@@ -1,0 +1,23 @@
+# Dados: arquivos do IBGE são baixados pelo pipeline, não versionados.
+# O manifesto (URL + SHA-256) é versionado para garantir rastreabilidade.
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/manifesto.csv
+data/interim/*
+!data/interim/.gitkeep
+*.part
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

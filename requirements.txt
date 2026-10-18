@@ -1,0 +1,11 @@
+# Etapa 01 - download
+requests>=2.31
+PyYAML>=6.0
+
+# Etapas seguintes - leitura e tratamento das tabelas do IBGE
+pandas>=2.1
+openpyxl>=3.1     # .xlsx (PeNSE 2024)
+xlrd>=2.0.1       # .xls  (PeNSE 2019)
+
+# Testes
+pytest>=8.0
