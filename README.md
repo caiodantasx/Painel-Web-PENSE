@@ -27,7 +27,7 @@ O trabalho é dividido em etapas. Cada etapa é um arquivo em `src/`, numerado n
  painel           →  mostra os gráficos               →  app/
 ```
 
-Hoje existe a **etapa 1**. As outras vêm a seguir.
+Hoje existem a **etapa 1** (download) e um **protótipo visual do painel** em `app/`. A etapa 2 vai ligar os dois.
 
 ## O que tem em cada pasta
 
@@ -90,6 +90,21 @@ O script faz 4 coisas:
 4. **Cria o manifesto** (`data/raw/manifesto.csv`): uma lista com o endereço de cada arquivo e um código chamado SHA-256, que funciona como uma impressão digital. Se alguém usar um arquivo diferente, o código muda. Assim dá para provar que os números do painel vêm dos dados oficiais.
 
 Para mudar o que é baixado, basta editar o bloco `FONTES` no começo do script.
+
+## O painel (`app/`)
+
+Protótipo do painel feito em HTML, CSS e JavaScript, com filtros (indicador, ano, território, idade, rede de ensino), cartões com a estimativa e o intervalo de confiança, mapa, gráficos, tabela e botão para baixar em CSV.
+
+**Para abrir:**
+
+```bash
+cd app
+python -m http.server 8000
+```
+
+Depois acesse <http://localhost:8000> no navegador. Para parar, aperte `Ctrl + C` no terminal.
+
+> **Atenção:** por enquanto os números do painel são **ilustrativos**, e o mapa é só um esquema. Eles serão trocados pelos valores oficiais quando a etapa 2 estiver pronta. Não usar esses números como resultado do IBGE.
 
 ## Testes
 
