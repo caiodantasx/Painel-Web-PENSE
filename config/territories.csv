@@ -1,0 +1,62 @@
+territory_code,territory_name,territory_type,ibge_code,uf_code,uf_sigla,region_code,scopes,aliases,code_source
+BR,Brasil,country,1,,,,uf|region,brasil,IBGE
+N,Norte,region,1,,,N,uf|region,norte|regiao norte,IBGE (código de Grande Região)
+NE,Nordeste,region,2,,,NE,uf|region,nordeste|regiao nordeste,IBGE (código de Grande Região)
+SE,Sudeste,region,3,,,SE,uf|region,sudeste|regiao sudeste,IBGE (código de Grande Região)
+S,Sul,region,4,,,S,uf|region,sul|regiao sul,IBGE (código de Grande Região)
+CO,Centro-Oeste,region,5,,,CO,uf|region,centro oeste|regiao centro oeste,IBGE (código de Grande Região)
+11,Rondônia,uf,11,11,RO,N,uf,rondonia,IBGE (código de UF)
+12,Acre,uf,12,12,AC,N,uf,acre,IBGE (código de UF)
+13,Amazonas,uf,13,13,AM,N,uf,amazonas,IBGE (código de UF)
+14,Roraima,uf,14,14,RR,N,uf,roraima,IBGE (código de UF)
+15,Pará,uf,15,15,PA,N,uf,para,IBGE (código de UF)
+16,Amapá,uf,16,16,AP,N,uf,amapa,IBGE (código de UF)
+17,Tocantins,uf,17,17,TO,N,uf,tocantins,IBGE (código de UF)
+21,Maranhão,uf,21,21,MA,NE,uf,maranhao,IBGE (código de UF)
+22,Piauí,uf,22,22,PI,NE,uf,piaui,IBGE (código de UF)
+23,Ceará,uf,23,23,CE,NE,uf,ceara,IBGE (código de UF)
+24,Rio Grande do Norte,uf,24,24,RN,NE,uf,rio grande do norte,IBGE (código de UF)
+25,Paraíba,uf,25,25,PB,NE,uf,paraiba,IBGE (código de UF)
+26,Pernambuco,uf,26,26,PE,NE,uf,pernambuco,IBGE (código de UF)
+27,Alagoas,uf,27,27,AL,NE,uf,alagoas,IBGE (código de UF)
+28,Sergipe,uf,28,28,SE,NE,uf,sergipe,IBGE (código de UF)
+29,Bahia,uf,29,29,BA,NE,uf,bahia,IBGE (código de UF)
+31,Minas Gerais,uf,31,31,MG,SE,uf,minas gerais,IBGE (código de UF)
+32,Espírito Santo,uf,32,32,ES,SE,uf,espirito santo,IBGE (código de UF)
+33,Rio de Janeiro,uf,33,33,RJ,SE,uf,rio de janeiro,IBGE (código de UF)
+35,São Paulo,uf,35,35,SP,SE,uf,sao paulo,IBGE (código de UF)
+41,Paraná,uf,41,41,PR,S,uf,parana,IBGE (código de UF)
+42,Santa Catarina,uf,42,42,SC,S,uf,santa catarina,IBGE (código de UF)
+43,Rio Grande do Sul,uf,43,43,RS,S,uf,rio grande do sul,IBGE (código de UF)
+50,Mato Grosso do Sul,uf,50,50,MS,CO,uf,mato grosso do sul,IBGE (código de UF)
+51,Mato Grosso,uf,51,51,MT,CO,uf,mato grosso,IBGE (código de UF)
+52,Goiás,uf,52,52,GO,CO,uf,goias,IBGE (código de UF)
+53,Distrito Federal,uf,53,53,DF,CO,uf,distrito federal,IBGE (código de UF)
+CAPITAIS,Conjunto dos municípios das capitais,aggregate,,,,,capital,total|total das capitais,Agregado publicado na própria tabela (linha "Total")
+1100205,Porto Velho,capital,1100205,11,RO,N,capital,porto velho,DTB/IBGE — conferir na revisão
+1200401,Rio Branco,capital,1200401,12,AC,N,capital,rio branco,DTB/IBGE — conferir na revisão
+1302603,Manaus,capital,1302603,13,AM,N,capital,manaus,DTB/IBGE — conferir na revisão
+1400100,Boa Vista,capital,1400100,14,RR,N,capital,boa vista,DTB/IBGE — conferir na revisão
+1501402,Belém,capital,1501402,15,PA,N,capital,belem,DTB/IBGE — conferir na revisão
+1600303,Macapá,capital,1600303,16,AP,N,capital,macapa,DTB/IBGE — conferir na revisão
+1721000,Palmas,capital,1721000,17,TO,N,capital,palmas,DTB/IBGE — conferir na revisão
+2111300,São Luís,capital,2111300,21,MA,NE,capital,sao luis,DTB/IBGE — conferir na revisão
+2211001,Teresina,capital,2211001,22,PI,NE,capital,teresina,DTB/IBGE — conferir na revisão
+2304400,Fortaleza,capital,2304400,23,CE,NE,capital,fortaleza,DTB/IBGE — conferir na revisão
+2408102,Natal,capital,2408102,24,RN,NE,capital,natal,DTB/IBGE — conferir na revisão
+2507507,João Pessoa,capital,2507507,25,PB,NE,capital,joao pessoa,DTB/IBGE — conferir na revisão
+2611606,Recife,capital,2611606,26,PE,NE,capital,recife,DTB/IBGE — conferir na revisão
+2704302,Maceió,capital,2704302,27,AL,NE,capital,maceio,DTB/IBGE — conferir na revisão
+2800308,Aracaju,capital,2800308,28,SE,NE,capital,aracaju,DTB/IBGE — conferir na revisão
+2927408,Salvador,capital,2927408,29,BA,NE,capital,salvador,DTB/IBGE — conferir na revisão
+3106200,Belo Horizonte,capital,3106200,31,MG,SE,capital,belo horizonte,DTB/IBGE — conferir na revisão
+3205309,Vitória,capital,3205309,32,ES,SE,capital,vitoria,DTB/IBGE — conferir na revisão
+3304557,Rio de Janeiro (capital),capital,3304557,33,RJ,SE,capital,rio de janeiro,DTB/IBGE — conferir na revisão
+3550308,São Paulo (capital),capital,3550308,35,SP,SE,capital,sao paulo,DTB/IBGE — conferir na revisão
+4106902,Curitiba,capital,4106902,41,PR,S,capital,curitiba,DTB/IBGE — conferir na revisão
+4205407,Florianópolis,capital,4205407,42,SC,S,capital,florianopolis,DTB/IBGE — conferir na revisão
+4314902,Porto Alegre,capital,4314902,43,RS,S,capital,porto alegre,DTB/IBGE — conferir na revisão
+5002704,Campo Grande,capital,5002704,50,MS,CO,capital,campo grande,DTB/IBGE — conferir na revisão
+5103403,Cuiabá,capital,5103403,51,MT,CO,capital,cuiaba,DTB/IBGE — conferir na revisão
+5208707,Goiânia,capital,5208707,52,GO,CO,capital,goiania,DTB/IBGE — conferir na revisão
+5300108,Brasília,capital,5300108,53,DF,CO,capital,brasilia|distrito federal,DTB/IBGE — conferir na revisão (2009 publica a capital do DF como "Distrito Federal")

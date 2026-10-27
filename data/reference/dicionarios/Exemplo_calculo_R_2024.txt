@@ -1,0 +1,26 @@
+# Necessario pacote survey
+library(survey)
+
+# Ajuste necessario para calculo correto dos erros
+options(survey.lonely.psu = "adjust")
+
+# Leitura da base
+pense <- read.csv("//nas.ibge.gov.br/dpe-copis/GEPSO/PeNSE/2024/MICRODADOS/BASES/PENSE2024_MICRODADOS.csv")
+
+# Objeto inicial
+desenho_pre <- svydesign(
+  ids = ~ESCOLA,
+  strata = ~ESTRATO_EXP,
+  weights = ~PESO_INICIAL,
+  nest = TRUE,
+  data = pense)
+
+# Aplica a pos-estratificacao -- este é o objeto final
+desenho_pense <- postStratify(desenho_pre, strata = ~POSEST, population = pense[,c("POSEST","TOTAIS_POSEST")])
+
+# O dominio de estimacao é IND_EXPANSAO = 1, entao ja pode deixar criado o objeto
+desenho_validos <- subset(desenho_pense, IND_EXPANSAO == 1)
+
+# Exemplo de calculo dos totais por sexo
+totais_UF <- svytotal(~as.factor(UF), desenho_validos, na.rm = TRUE)
+

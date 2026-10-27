@@ -1,0 +1,6 @@
+symbol,meaning,treatment,reference
+-,Dado numérico igual a zero não resultante de arredondamento,Mantido como símbolo; estimate nulo; NÃO convertido em zero automaticamente,Normas de apresentação tabular do IBGE (conferir nota da publicação específica)
+..,Não se aplica dado numérico,Mantido como símbolo; estimate nulo,Normas de apresentação tabular do IBGE (conferir nota da publicação específica)
+...,Dado numérico não disponível,Mantido como símbolo; estimate nulo,Normas de apresentação tabular do IBGE (conferir nota da publicação específica)
+x,Dado numérico omitido a fim de evitar a individualização da informação,Mantido como símbolo; estimate nulo,Normas de apresentação tabular do IBGE (conferir nota da publicação específica)
+X,Dado numérico omitido a fim de evitar a individualização da informação,Mantido como símbolo; estimate nulo,Normas de apresentação tabular do IBGE (conferir nota da publicação específica)

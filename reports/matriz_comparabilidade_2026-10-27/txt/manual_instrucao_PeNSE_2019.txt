@@ -1,0 +1,3320 @@
+ INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA – IBGE
+                Diretoria de Pesquisas – DPE
+   Coordenação de População e Indicadores Sociais – COPIS
+       Gerência de Estudos e Pesquisas Sociais – GEPS
+          Gerência de Pesquisas Especiais – GPESP
+
+
+
+
+Pesquisa Nacional de Saúde do Escolar PeNSE 2019
+              Manual de Instrução
+
+
+
+
+                       Março/2019
+Equipe Técnica
+
+Coordenação de População e Indicadores Sociais
+Barbara Cobo Soares
+
+Gerente de Estudos e Pesquisas Sociais
+Cristiane dos Santos Moutinho
+
+Gerente de Pesquisas Especiais
+Gerente Nacional da Pesquisa Nacional de Saúde do Escolar
+Marco Antonio Ratzsch de Andreazzi
+
+Planejamento e elaboração
+Alessandra Maria Silva Pinto
+André Wallace Nery da Costa
+Antonio José Ribeiro Dias – aposentado
+Cristiane Soares
+Isabel Luzia Nori dos Santos
+Marco Antonio Ratzsch de Andreazzi
+Marcos Paulo Soares de Freitas – Coordenador COMEQ
+Marcus Vinicius Morais Fernandes
+Maria Goreth Santos
+Paulo Cesar Dick
+Tayane Cristina Gil de Menezes – estagiária
+Thais de Oliveira Barbosa Mothé
+Sumário
+
+ 1. Apresentação                                                                         5
+ 2. Introdução                                                                           7
+ 3. Repente da PeNSE                                                                     9
+ 4. Plano amostral                                                                       11
+        4.1. Cadastro para a seleção da amostra                                          11
+        4.2. Estratificação do cadastro de escolas e dimensionamento da amostra          13
+        4.3. Alocação da amostra de turmas e cálculo do tamanho de amostra de escolas    14
+        4.4. Seleção das amostras de escolas, turmas e estudantes                        15
+ 5. Instrumentos de trabalho                                                             17
+        5.1. Material de sensibilização                                                  17
+                 5.1.1. Folder                                                           17
+                 5.1.2. Cartaz de divulgação                                             17
+                 5.1.3. Modelos de ofícios a serem utilizados pela supervisão estadual   17
+                 5.1.4. Ofício interministerial                                          17
+                 5.1.5. Carta ao informante                                              17
+                 5.1.6. Vídeo                                                            18
+        5.2. Material de coleta                                                          18
+                 5.2.1. Manual de instrução                                              18
+                 5.2.2. Relação de escolas selecionadas                                  18
+                 5.2.3. Sistema Integrado de Gerenciamento e Controle – SIGCPeNSE        18
+                 5.2.4. Texto de abordagem aos diretores                                 18
+                 5.2.5. Vídeo e texto de abordagem aos alunos                            20
+                 5.2.6. Cartaz CONEP (Comissão Nacional de Ética em Pesquisa)            20
+                 5.2.7. Banner com instruções para o uso do DMC                          20
+                 5.2.8. Diário de coleta (DMC)                                           21
+                 5.2.9. Agenda de Campo (impressa)                                       21
+                 5.2.10. Dispositivo Móvel de Coleta – DMC                               21
+ 6. Equipes de trabalho – responsabilidades e atribuições                                23
+        6.1. Coordenação nacional                                                        23
+        6.2. Supervisão estadual                                                         23
+        6.3. Supervisão local                                                            24
+        6.4. Equipe de campo                                                             25
+                 6.4.1. Líder de equipe                                                  25
+        6.5. Equipe de apoio local                                                       25
+        6.6. Equipe nacional de apoio                                                    26
+        6.7. Equipe estadual de apoio                                                    26
+7. Etapas de execução da pesquisa                                                                  27
+        7.1. Instrução inicial                                                                     27
+        7.2. Recepção dos instrumentos de trabalho                                                 27
+        7.3. Distribuição das escolas, designação dos supervisores locais e formação das equipes   27
+        de campo
+        7.4. Sensibilização e contatos com as secretarias de educação e de saúde                   27
+        7.5. Abordagem às escolas                                                                  27
+        7.6. Encontro com diretores das escolas e representantes da saúde e da educação            29
+        7.7. Organização do encontro                                                               30
+        7.8. Roteiro do encontro                                                                   30
+        7.9. Contato com os diretores faltosos                                                     21
+        7.10. Treinamento                                                                          21
+        7.11. Planejamento da coleta dos dados                                                     21
+        7.12. Procedimentos no dia anterior da coleta                                              32
+        7.13. Procedimentos no dia da coleta                                                       32
+                7.13.1. Na escola                                                                  32
+                7.13.2. Realização do questionário dos alunos                                      33
+                7.13.3. Preenchimento do questionário do ambiente escolar                          35
+                7.13.4. Finalização das atividades na escola                                       35
+                7.13.5. Transmissão e atualização do SIGCPeNSE                                     35
+8. Questões que suscitam dúvidas e como orientar                                                   37
+        8.1. Questionário aluno                                                                    37
+        8.2. Questionário do ambiente escolar                                                      37
+        8.3. Alguns conceitos                                                                      38
+9. Referências bibliográficas                                                                      41
+10. Anexos                                                                                         43
+        10.1. Questionário aluno                                                                   43
+        10.2. Questionário do ambiente escolar                                                     65
+        10.3. Ofício interministerial                                                              73
+        10.4. Modelo de ofício para as unidades estaduais                                          75
+                10.4.1. Para encontro com secretarias                                              75
+                10.4.2. Para encontro com diretores de escolas                                     77
+1. Apresentação
+
+        Visando organizar o monitoramento da saúde do escolar e prover informações para o planejamento
+das políticas públicas, o Instituto Brasileiro de Geografia e Estatística, em parceria com o Ministério da
+Saúde (MS) e apoio do Ministério da Educação (MEC) está realizando, em 2019, a quarta edição da Pesquisa
+Nacional de Saúde do Escolar – PeNSE.
+        A PeNSE surge em atendimento ao Decreto Presidencial nº 6.286, 05/12/2007 que institui o
+Programa Saúde nas Escolas – PSE. Esse programa visa integrar as redes de Educação Básica e de Atenção
+Básica à Saúde nos territórios de responsabilidade das equipes de Saúde da Família, com vistas à otimização
+de espaços públicos e a promoção da saúde dos escolares. Esta parceria é fundamental para prover
+informações para o aprimoramento das políticas públicas voltadas aos adolescentes.
+        A PeNSE tem como objetivos principais, monitorar a frequência de fatores de risco e proteção para
+as Doenças e Agravos não Transmissíveis – DANT; acompanhar as tendências destes fatores ao longo do
+tempo; gerar evidências para orientar e avaliar o impacto de intervenções para o controle destes fatores,
+além de, orientar ações para a promoção da saúde neste grupo etário.
+ A PeNSE, além de subsidiar o sistema de vigilância e proteção à saúde em escolares das redes de ensino
+pública e privada do país, fornece importantes informações para o ensino e a pesquisa nos diferentes temas
+que a compõem.
+        Para o adequado atendimento desses propósitos é necessário que as instruções contidas nesse
+manual, para a realização da pesquisa, sejam rigorosamente seguidas, a fim de garantir a uniformidade, o
+padrão e a qualidade das informações em todo o território nacional.
+        O IBGE apresenta neste manual as instruções para o uso dos instrumentos de coleta e estratégias
+para a adequada aplicação do questionário da PeNSE. Aqui você encontrará todas as orientações
+indispensáveis à realização da pesquisa. Ele foi elaborado com o objetivo de apoiar e garantir a qualidade
+do trabalho de campo.
+
+                                                                                    Barbara Cobo Soares
+                                                           Coordenação de População e Indicadores Sociais
+
+
+
+
+                                                    5
+6
+2. Introdução
+
+         A Pesquisa Nacional de Saúde do Escolar (PeNSE) é uma pesquisa realizada com escolares
+adolescentes que, inicialmente, foi constituída por estudantes do 9o ano do ensino fundamental (nas
+edições de 2009 e 2012). A partir de 2015, foram incluídos estudantes de outras séries do Ensino
+Fundamental ao Ensino Médio, com o intuito de tornar a pesquisa representativa de escolares na idade de
+13 a 17 anos.
+         A PeNSE 2019 selecionará uma amostra única que possa atender à necessidade de estimar
+indicadores para a faixa etária de 13 a 17 anos, contemplando escolares do 7º ano do ensino fundamental
+até a 3ª série do ensino médio, incluídos os cursos técnicos com ensino médio integrado e os cursos
+normal/magistério. Pretende-se assim, garantir uma melhor comparação com as pesquisas similares
+realizadas em outros países e com maior detalhamento geográfico.
+         A PeNSE compõe a vigilância dos fatores de risco e proteção das doenças crônicas do Brasil,
+resultado da parceria entre o Ministério da Saúde (MS) e o Instituto Brasileiro de Geografia e Estatística
+(IBGE), com o apoio do Ministério da Educação (MEC).
+         O Censo Demográfico 2010 (CENSO 2010) contabilizou uma população de adolescentes brasileiros
+de, aproximadamente, 18 milhões entre 10 e 14 anos e 17 milhões entre 15 e 19 anos de idade. A
+Organização Mundial da Saúde (OMS) recomenda a implantação e manutenção de sistemas de vigilância de
+fatores de risco à saúde dirigidos aos adolescentes. Atualmente, os principais inquéritos desse tipo são o
+Global School Based Student Health Survey (GSHS), o Health Behaviour in School-aged Children (HBSC) e o
+Youth Risk Behavior Surveillance System (YRBSS).
+         No Brasil, alguns inquéritos procuram oferecer dados sobre os adolescentes no País. O Centro
+Brasileiro de Informação sobre Drogas Psicotrópicas (CEBRID) realizou em 2004, um inquérito sobre o uso
+de drogas psicotrópicas por estudantes do Ensino Fundamental e do Ensino Médio. O Instituto Nacional de
+Câncer realizou em 2002 e 2003, o inquérito de Tabagismo em Escolares (Vigiescola), contemplando
+estudantes da 7ª e 8ª séries do Ensino Fundamental e da 1ª série do Ensino Médio de escolas públicas de
+12 capitais brasileiras. Além desses, nos anos de 2003 e 2007, foram realizados inquéritos sobre a vigilância
+de fatores de risco para doenças não transmissíveis entre adolescentes de escolas públicas do município do
+Rio de Janeiro.
+         A literatura especializada, assim como, os dados estatísticos revelam que durante a adolescência,
+dá-se a modificação e consolidação de diversos hábitos. As importantes mudanças biológicas, cognitivas,
+emocionais e sociais, ocorridas durante esse período, fazem com que os adolescentes experimentem novos
+comportamentos e vivências, sendo algumas dessas experiências fatores de risco ou proteção para a saúde,
+como uso de tabaco, consumo de álcool, alimentação saudável, prática de atividades físicas, entre outros.
+Esses fatores de risco ou proteção estão associados ao desenvolvimento da maioria das doenças crônicas
+não transmissíveis (DCNT), como as doenças cardiovasculares, câncer, doenças respiratórias crônicas e
+diabetes, principais causas de óbito em adultos no país e no mundo.
+         O conhecimento de como vivem e se comportam os escolares, sob diversos aspectos, possibilita
+mensurar a magnitude e a distribuição de importantes fatores de risco, assim como das práticas de
+promoção e proteção à saúde, aportando informações essenciais à orientação de políticas públicas.
+A PeNSE 2019, conforme as edições anteriores, fornecerá informações sobre as características básicas da
+população de estudo, incluindo aspectos socioeconômicos, como escolaridade dos pais, inserção no
+mercado de trabalho e posse de bens e serviços; contextos social e familiar; fatores de risco
+comportamentais relacionados a hábitos alimentares, sedentarismo, tabagismo, consumo de álcool e outras
+drogas; saúde sexual e reprodutiva; exposição a acidentes e violências; hábitos de higiene; saúde bucal;
+saúde mental; e percepção da imagem corporal, entre outros tópicos. Características do ambiente escolar e
+
+                                                     7
+do entorno são também contempladas, incluindo informações relacionadas à infraestrutura disponível para
+alimentação e atividade física; acessibilidade; saneamento básico; existência de regras e normas de conduta
+adotadas pelas escolas; políticas de assistência à saúde; e nível de segurança do entorno, entre outros
+aspectos.
+         A pesquisa será realizada utilizando o Dispositivo Móvel de Coleta – DMC, no qual será inserido o
+questionário estruturado para ser respondido diretamente pelo aluno. Este instrumento agiliza o processo
+de execução da PeNSE, pois permite que o próprio estudante registre suas respostas no questionário do
+aluno, sem risco para sua identificação e sigilo. Se por um lado, o questionário autoaplicável da PeNSE
+permite agilidade na coleta dos dados e maior privacidade, por outro lado exige um mínimo de capacidade
+de leitura e compreensão de textos nem sempre obtida nos escolares brasileiros. Em função disso, para o
+melhor desempenho da pesquisa é fundamental que a equipe de coleta da PeNSE crie um ambiente
+propício à participação do escolar na pesquisa, despertando seu interesse em informar adequadamente e
+buscar esclarecer dúvidas e prestar esclarecimentos de forma solicita, com o menor nível de intervenção
+possível.
+         Reiterando que todas as informações obtidas pelo IBGE são confidenciais, nem a escola e nem os
+alunos selecionados são identificados, correspondendo ao compromisso da Instituição, com amparo na
+legislação vigente: Lei nº 5.534, de 14/11/1968, que dispõe sobre o caráter sigiloso dos dados fornecidos,
+assim como, a obrigatoriedade da prestação de informações estatísticas ao IBGE.
+         A PeNSE foi submetida ao Conselho Nacional de Ética em Pesquisa – CONEP do Ministério da Saúde,
+órgão que regulamenta e avalia as pesquisas em saúde envolvendo seres humanos.
+
+
+
+
+                                                    8
+3. Repente da PeNSE
+
+A PeNSE é pra se pensar
+Meu amigo eu vou contar
+Uma estória de arrasar
+De uma pesquisa escolar
+Que o IBGE vai executar
+
+É uma pesquisa importante
+Com muitos dados interessantes
+Resultados de temas investigados
+Dimensionando os fatores estudados
+
+As respostas são confidenciais
+Direcionadas a grupos populacionais
+Os estudantes não serão identificados
+E o questionário não será divulgado
+
+Violência, álcool e comportamento
+Higiene, drogas e monitoramento
+Cigarro, segurança e higiene pessoal
+Atividade física e imagem corporal
+
+A pesquisa permite monitorar
+As tendências da saúde do escolar
+Para os fatores de risco minimizar
+E as intervenções em saúde adequar
+
+São muitos os temas investigados
+Gerando inúmeros resultados
+Pois os indicadores saberemos
+E a saúde dos jovens saberemos
+
+A pesquisa será realizada
+Na escola antes selecionada
+Usaremos um equipamento de mão
+Sendo atualizada a cada nova versão
+
+Então vão os todos alunos participar
+E as perguntas com sabedoria respostar
+Para conhecermos a nossa realidade
+Do campo, sertão, metrópole e cidade
+
+(Isailda Maria Barros Pereira – UE/PE)
+
+
+
+
+                                         9
+10
+4. Plano amostral
+
+         A Pesquisa Nacional de Saúde do Escolar – PeNSE teve sua primeira realização no ano de 2009.
+Foram considerados, nessa edição, apenas os alunos matriculados em escolas nas 26 capitais de Unidades
+da Federação e no Distrito Federal, que estivessem cursando o 9º ano, ou antiga 8ª série, do ensino
+fundamental. Com a estratificação geográfica definida, foi possível estimar os indicadores de interesse para
+cada uma das capitais e Distrito Federal, além da agregação dessas unidades.
+         Para a PeNSE seguinte, realizada em 2012, foi mantido o foco nos estudantes do 9º ano, ou antiga
+8ª série, do ensino fundamental, porém foi aumentada a abrangência geográfica. Assim, a estratificação
+geográfica foi, como na anterior, definida pelas capitais e o Distrito Federal, sendo os municípios localizados
+foras das capitais, agregados em cinco estratos geográficos referentes a cada uma das grandes regiões
+geográficas do país, totalizando 32 estratos. Assim, foi possível estimar indicadores para as capitais e
+Distrito Federal, para cada uma das Regiões e para o país como um todo, além da alguma agregação de
+interesse dos estratos geográficos definidos.
+         Na última realização da PeNSE, no ano de 2015, foram utilizadas duas amostras independentes,
+sendo uma equivalente às pesquisas anteriores (Amostra 1), focando alunos das turmas de 9º ano ou 8ª
+série do ensino fundamental, e uma segunda amostra (Amostra 2) focando os alunos do 6º ano ou 5ª série
+do ensino fundamental até o 3º ano do ensino médio. A estratificação geográfica para a Amostra 1 foi feita
+considerando dois estratos para cada Unidade da Federação, um sendo a Capital e outro composto pela
+agregação dos municípios fora das capitais, além do Distrito Federal. Com esses 53 estratos foi possível
+estimar indicadores para as capitais e Distrito Federal, para as Unidades da Federação, para as grandes
+regiões geográficas, para o país e para quaisquer agregações desejadas dos estratos geográficos. Já para a
+Amostra 2, a estratificação geográfica considerou apenas as cinco grandes regiões geográficas, permitindo
+estimativas paras essas regiões e para o país.
+         Dessa maneira, a segunda amostra foi composta por um número muito menor de alunos que a
+primeira, embora se referisse a um universo maior, já que se destinava a estimar resultados para uma
+desagregação geográfica muito menos detalhada. As duas amostras foram selecionadas de forma
+independente, de maneira que uma mesma escola ou turma poderia participar das duas amostras. A coleta
+de dados foi feita de maneira que essas coincidências, quando ocorressem, não fossem percebidas pelos
+entrevistados. Como os questionários aplicados para as duas amostras eram iguais, quando houvesse
+coincidência eles seriam coletados uma vez e gravados nas duas bases de dados referentes a cada uma das
+duas amostras.
+         A proposta para a realização da próxima PeNSE é de selecionar uma amostra única que possa
+atender à necessidade de estimar indicadores para as faixas etárias citadas anteriormente, garantindo uma
+melhor comparação com as pesquisas similares realizadas em outros países e com maior detalhamento
+geográfico.
+
+        4.1. Cadastro para a seleção da amostra
+        O cadastro para a seleção da amostra para a PeNSE 2019 será baseado nas informações disponíveis
+nos arquivos de microdados1 referentes ao Censo Escolar de 2017, realizado pelo Instituto Nacional de
+Estudos e Pesquisas Educacionais Anísio Teixeira – Inep.
+        A amostra que se deseja selecionar para a pesquisa é uma amostra de estudantes, porém no
+momento da seleção não estarão disponíveis cadastros de turmas e alunos atualizados. O que se dispõe de
+mais atualizado são as informações de escolas, turmas e alunos do Censo Escolar de 2017. Dessa maneira, a
+amostra proposta é uma amostra de conglomerados em dois estágios, sendo o primeiro estágio de seleção,
+1 Disponível em: http://portal.inep.gov.br/microdados. Acessado em 08/03/2018.
+
+                                                       11
+as escolas e o segundo, as turmas de alunos matriculados. Finalmente o conjunto dos estudantes das
+turmas selecionadas formarão a amostra de alunos para serem entrevistados.
+        Os microdados necessários para a criação do cadastro de seleção estão organizados em três
+arquivos contendo informações das escolas, suas respectivas turmas e alunos matriculados em cada uma
+das turmas.
+        Como o interesse da pesquisa está focado nos estudantes das faixas etárias entre 13 e 17 anos, é
+necessária a seleção apenas de turmas das etapas de ensino onde se concentram os alunos com essas
+idades. Na Tabela 1 são apresentados os números de estudantes matriculados nas etapas do ensino
+fundamental e do ensino médio por idade, de acordo com as informações da Censo Escolar 2017. Na Tabela
+2 são mostradas as descrições dos códigos das etapas de ensino apresentadas na Tabela 1.
+        Nota-se que há uma maior concentração de alunos de 13 a 17 anos nas etapas de ensino que vão
+do 7º ano (antiga 6ª série) do ensino fundamental até a 3ª série do ensino médio, incluídos os cursos
+técnicos com ensino médio integrado e os cursos normal/magistério. Essas serão, portanto, as etapas de
+ensino a serem consideradas para a PeNSE 2019.
+
+Tabela 1: Número de alunos matriculados em algumas etapas do ensino fundamental e do ensino médio segundo o
+Censo Escolar 2017
+                                                                Etapas de ensino
+ Idade                                           Fundamental                                                       Médio
+                 14    4 e 15    5 e 16    6 e 17     7 e 18    8 e 19    9 e 20  10 e 21   11 e 41 25, 30 e 35 26, 31 e 36   27, 32 e37
+   3              1         0         0         0          0         0         1        0         0           0           0            0
+   4            773         0         0         0          0         0         0        0         0           0           0            0
+   5          4 354       665       128         0          0         0         0        0         1           0           0            0
+   6      1 098 562     5 817       561       219          0         0         1        0         0           1           0            0
+   7      1 645 569 1 071 534     5 239       511        348         1         0        0         0           0           0            0
+   8         62 382 1 651 780 1 060 744     5 920        948       221         0        0         1           0           0            0
+   9         17 260   103 462 1 761 394   959 778      6 144       522       147        2         1           0           0            0
+  10          9 094    26 370   259 353 1 636 893   888 208      6 411       444      179     1 058           0           0            0
+  11          6 088    11 635    92 086   289 960 1 611 250   882 123      9 808      459     2 715           0           0            0
+  12          4 102     6 543    40 942   120 474   319 149 1 535 361   938 020    13 339     4 816         114          27           23
+  13           3070      4282     20578     59018    141012    416890  1348225     952368     25008         514          83           22
+  14           2602      3262     11658     32534     75216    238381    416725  1207179     947076       31052         520           44
+  15           2085      2468      6406     16831     40065    137740    227165    383268  1027501     1021812        39543          850
+  16           2754      1861      3150      7584     17715     61194    110013    182654    360086    1027703      927673         56322
+  17           1515      1443      2456      4235       9287    28474     49607     80351    163262     515346      859966        950749
+  18          1 269       931     1 530     2 326      4 741   12 771    21 283    33 080    64 760    282 301     374 417       709 717
+  19          1 012       724     1 065     1 478      2 666     5 524     8 277   11 919    21 712      85 510    141 794       246 213
+  20            936       699       816     1 066      1 841     2 886     4 215    5 885     9 895      41 227      59 232       99 870
+  21            953       610       719       819      1 382     1 931     2 419    3 183     5 195      22 237      29 300       43 489
+  22            794       594       668       728      1 123     1 356     1 670    2 072     3 102      13 792      17 176       23 669
+  23            740       513       589       639        901       948     1 075    1 368     1 984       8 938      10 716       14 291
+  24            697       486       558       583        805       725       770    1 001     1 487       6 656       7 409        9 615
+25 ou +       7 457     5 827     5 536     5 531      6 861     6 378     6 283    6 555     9 033      41 263      41 864       50 800
+ Total    2 874 069 2 901 506 3 276 176 3 147 127 3 129 662 3 339 837 3 146 148 2 884 862 2 648 693  3 098 466   2 509 720     2 205 674
+
+Fonte: Coordenação de Métodos de Qualidade – COMEQ
+
+
+        O cadastro para a seleção das escolas será formado pelas escolas que informaram ter turmas de
+alunos nas etapas de ensino a serem consideradas. Foram retiradas deste cadastro as escolas com menos
+de 20 alunos matriculados. Como cadastros auxiliares para o dimensionamento da amostra de escolas
+considera-se o conjunto das turmas2 das etapas de ensino de interesse referentes as instituições do
+cadastro de escolas e a relação dos alunos matriculados de tais turmas.
+
+
+
+
+2 Foram retiradas do cadastro de turmas, as turmas que tivessem as seguintes classificações especiais: classe
+hospitalar, unidade de atendimento socioeducativo, unidade prisional, atividade complementar e atendimento
+educacional especializado (AEE).
+
+                                                                 12
+Tabela 2: Descrição das etapas do ensino fundamental e do ensino médio, segundo o Censo Escolar 2017,
+consideradas para a PeNSE 2019.
+            Código     Descrição
+              8        Ensino Fundamental de 8 anos - 5ª Série
+              9        Ensino Fundamental de 8 anos - 6ª Série
+              10       Ensino Fundamental de 8 anos - 7ª Série
+              11       Ensino Fundamental de 8 anos - 8ª Série
+              19       Ensino Fundamental de 9 anos - 6º Ano
+              20       Ensino Fundamental de 9 anos - 7º Ano
+              21       Ensino Fundamental de 9 anos - 8º Ano
+              41       Ensino Fundamental de 9 anos - 9º Ano
+              25       Ensino Médio - 1ª Série
+              26       Ensino Médio - 2ª Série
+              27       Ensino Médio - 3ª Série
+              30       Curso Técnico Integrado (Ensino Médio Integrado) - 1ª Série
+              31       Curso Técnico Integrado (Ensino Médio Integrado) - 2ª Série
+              32       Curso Técnico Integrado (Ensino Médio Integrado) - 3ª Série
+              35       Ensino Médio Normal / Magistério - 1ª Série
+              36       Ensino Médio Normal / Magistério - 2ª Série
+              37       Ensino Médio Normal / Magistério - 3ª Série
+Fonte: Coordenação de Métodos de Qualidade – COMEQ
+
+
+       4.2. Estratificação do cadastro de escolas e dimensionamento da amostra
+        A estratificação das escolas que formam o cadastro de seleção da amostra para a PeNSE 2019 será
+feita considerando a localização geográfica e a dependência administrativa das instituições de ensino.
+        A estratificação geográfica considera se a escola está localizada na capital de cada uma das 26
+Unidades da Federação e no Distrito Federal ou se está localizada em municípios fora da capital. Assim
+obtém-se um total de 53 estratos geográficos, sendo dois estratos para cada uma das Unidades da
+Federação e um para o Distrito Federal. Para cada estrato geográfico as escolas são organizadas segundo a
+dependência administrativa (pública ou privada), totalizando 106 estratos.
+        Esses são os estratos de dimensionamento da amostra, para os quais se deseja controlar
+determinado nível de precisão esperado para as estimativas dos principais indicadores de interesse. Dessa
+maneira, a amostra será dimensionada para estimar indicadores nos níveis geográficos de Capitais e Distrito
+Federal, Unidades da Federação, Grandes Regiões Geográficas e o país como um todo. As estimativas para
+desagregações desses estratos poderão ter níveis de precisão menores, mas espera-se que, na maioria dos
+casos, satisfatórios.
+        O dimensionamento da amostra será realizado em função do número necessário de estudantes
+para obter estimativas com nível de precisão controlado, sendo o número de turmas e escolas obtidos,
+posteriormente, a partir deste número.
+        Inicialmente é calculado um tamanho de amostra de estudantes, considerando uma amostra
+aleatória simples – AAS em cada estrato, para garantir um determinado nível de precisão esperado para as
+principais estimativas. No caso, considera-se estimar uma proporção (ou prevalência) P com um coeficiente
+de variação – CV. Geralmente utiliza-se a proporção de 50% porque é a que se espera a maior variância da
+estimativa (COCHRAN, 1977, p.76).
+        O tamanho de uma AAS de alunos para um determinado estrato h pode ser calculado em dois
+passos pelas fórmulas:
+
+
+
+                                                     13
+                                                     1−P
+                                         n '0 h =     2                          (1)
+                                                    CV × P
+                                                          '
+                                            '            n0 h
+                                          n =
+                                            h                 '
+                                                                   ,
+                                                      n                          (2)
+                                                    1+ 0 h
+                                                      Nh
+
+                                                                       '
+Onde Nh é o número total de estudantes do estrato h e nh é o tamanho da amostra para o estrato h .
+
+
+       Como, neste caso, a amostra na realidade será uma amostra de conglomerados, deve-se corrigir
+esse tamanho para considerar o efeito de conglomeração (Pessoa e Silva, 1998, p.54). Assim o tamanho da
+amostra no estrato h será dado por:
+
+                                                     '
+                                   n h =epa U F × n h , ∀ h ∈ U F ,               (3)
+
+Onde epa UF é uma estimativa do efeito de conglomeração ou efeito do plano amostral estimada em cada
+Unidade da Federação.
+         As estimativas para o efeito de conglomeração para proporções, utilizadas nos estratos
+pertencentes em cada Unidade da Federação, foram obtidas a partir de variáveis socioeconômicas da
+pesquisa do Sistema de Avaliação da Educação Básica – SAEB 2003. Os valores para diversas variáveis, em
+cada estrato geográfico, foram analisados e decidiu-se utilizar o valor equivalente ao terceiro quartil da
+distribuição dos EPA estimados, assegurando que aproximadamente 75% das variáveis teriam estimativas
+de precisão igual ou maior que a especificada para o dimensionamento da amostra em cada estrato.
+Após o cálculo do tamanho das amostras de alunos para cada estrato de dimensionamento é necessário
+determinar o número de turmas (mh ) a ser selecionado para se obter o número esperado de alunos. Isso é
+feito dividindo o número esperado de alunos na amostra pelo número médio de alunos matriculados por
+turma, no estrato, Ń h = N h / M h . Assim:
+
+                                                          nh
+                                             m h=                                (4)
+                                                          Ń h
+
+O tamanho da amostra de turmas, assim calculado, deve ser arredondado para o maior inteiro mais
+próximo, preservando a precisão esperada.
+
+       4.3. Alocação da amostra de turmas e cálculo do tamanho de amostra de escolas
+         Existe uma heterogeneidade entre as escolas em relação ao tamanho das mesmas, medido pelo
+número de turmas de interesse. Essa variação vai das escolas com apenas uma única turma até escolas com
+mais de 100 turmas. Devido a esse fato, se torna necessário garantir que escolas dos diversos tamanhos
+estejam representadas na amostra. Foram criados os estratos de alocação da amostra levando em conta as
+faixas de tamanho das escolas e definindo-se o número de turmas a serem selecionadas de acordo com
+essas faixas. Para escolas com até 10 turmas será selecionada 1 turma; para escolas com 11 até 20 turmas
+serão selecionadas 2 turmas; para escolas com mais de 20 até 50 turmas serão selecionadas 3 turmas; e
+para escolas com mais de 50 turmas serão selecionadas 4 turmas para a amostra. Dessa forma, cada estrato
+de dimensionamento pode conter até quatro estratos de alocação, de acordo com os tamanhos de suas
+escolas.
+
+
+                                                              14
+       Após o cálculo do tamanho da amostra de turmas para cada um dos estratos de dimensionamento é
+necessário distribuir ou alocar esse tamanho nos estratos de alocação. Neste caso optou-se por distribuir o
+tamanho da amostra de forma proporcional aos tamanhos dos estratos de alocação ha :
+
+                                                      M ha
+                                        mha=mh ×           ,                      (5)
+                                                      Mh
+
+Onde M ha é o número total de turmas no estrato de alocação e M h é o número total de turmas no
+estrato de dimensionamento.
+        Finalmente pode ser calculado o número de escolas a serem selecionadas em cada um dos estratos
+de alocação, r ha . Isso é feito de acordo com os tamanhos, medidos em número de turmas, das escolas que
+formam os estratos:
+
+                                                    m ha
+                                           r ha =        ,                        (6)
+                                                    c ha
+
+Onde cha é o número de turmas a serem selecionadas em cada tipo de estrato de alocação, que pode ser
+1, 2, 3 ou 4 turmas.
+         Os tamanhos da amostra de escolas para cada estrato de alocação devem ser arredondados para o
+maior inteiro mais próximo, quando possível, preservando a precisão. Foi considerado um mínimo de 2
+escolas em cada estrato de alocação com o propósito de garantir o cálculo de variância dos estimadores.
+Em alguns estratos de alocação, o número de escolas não foi suficiente para atingir o número desejado de
+turmas/alunos. Desta maneira, estes estratos de alocação foram agregados e o número de turmas a ser
+selecionado neles foi definido de forma que garantissem o tamanho de amostra calculado para o estrato de
+dimensionamento.
+
+       4.4. Seleção das amostras de escolas, turmas e estudantes
+         As escolas que compõem a amostra serão selecionadas, em cada estrato de alocação, com
+probabilidades proporcionais ao seu tamanho – PPT, medido pelo número de turmas de interesse
+informadas no cadastro de escolas, de acordo com os microdados do Censo Escolar de 2017. A seleção PPT
+será utilizada, pois apesar da estratificação segundo o tamanho das escolas, ainda há uma certa
+heterogeneidade de tamanho dentro de cada estrato.
+         Após a seleção da amostra e a devida identificação de cada uma das escolas, estas deverão ser
+visitadas para que se faça a atualização do cadastro das turmas de interesse para cada escola selecionada,
+dado que o cadastro de seleção foi baseado em informações com defasagem de cerca de dois anos em
+relação à época da realização da coleta de dados da PeNSE 2019. Nessa atualização deverão ser coletadas
+algumas informações básicas que serão utilizadas na apuração da pesquisa e cálculo dos pesos finais das
+unidades amostrais. Basicamente deverão ser anotados o número de alunos matriculados e o número de
+alunos matriculados que efetivamente costumam frequentar as aulas, além das informações cadastrais das
+turmas e das escolas.
+         A seleção das turmas desse cadastro atualizado para cada escola será feita com probabilidades
+iguais (AAS) e de acordo com o número de turmas a ser selecionado conforme o estrato de alocação ao qual
+a escola pertence, como definido anteriormente.
+
+
+
+
+                                                      15
+        A amostra de estudantes será composta por todos os alunos das turmas selecionadas em cada uma
+das escolas selecionadas no primeiro estágio de seleção. Todos os alunos presentes no dia da coleta dos
+dados da sua turma estão automaticamente selecionados para responder ao questionário da pesquisa.
+        O tamanho da amostra da PeNSE 2019 foi dimensionado de acordo com a metodologia já descrita,
+considerando estimar uma proporção (ou prevalência) P = 50%, com uma precisão medida por um
+coeficiente de variação (CV) esperado de 4%. A Tabela 3 apresenta o tamanho de amostra de escolas, o
+número esperado de turmas e o número esperado de alunos.
+
+Tabela 3: Distribuição dos tamanhos de amostra de escolas, turmas esperadas e alunos esperados na PeNSE 2019.
+
+                    Brasil, Grandes Regiões ou                       Turmas    Alunos
+                                                      Escolas
+                      Unidades da Federação                         Esperadas esperados
+                             Brasil                         4.361       6.803      187.954
+                     Região Norte                             840       1.645       43.661
+                    Rondônia                                  123         263        6.886
+                    Acre                                       98         195        5.525
+                    Amazonas                                  109         211        5.505
+                    Roraima                                   126         220        4.903
+                    Pará                                      143         217        6.631
+                    Amapá                                     112         287        7.573
+                    Tocantins                                 129         252        6.639
+                     Região Nordeste                        1.703       2.335       65.596
+                    Maranhão                                  223         299        7.994
+                    Piauí                                     205         255        6.908
+                    Ceará                                     170         229        6.519
+                    Rio Grande do Norte                       192         265        7.617
+                    Paraíba                                   210         290        8.118
+                    Pernambuco                                204         285        8.403
+                    Alagoas                                   149         203        5.981
+                    Sergipe                                   193         270        7.327
+                    Bahia                                     157         239        6.729
+                     Região Sudeste                           730       1.158       33.024
+                    Minas Gerais                              207         314        9.104
+                    Espírito Santo                            177         309        8.781
+                    Rio de Janeiro                            179         263        7.383
+                    São Paulo                                 167         272        7.756
+                     Região Sul                               460         730       20.093
+                    Paraná                                    145         243        7.095
+                    Santa Catarina                            175         280        7.622
+                    Rio Grande do Sul                         140         207        5.376
+                     Região Centro-Oeste                      628         935       25.581
+                    Mato Grosso do Sul                        167         225        5.791
+                    Mato Grosso                               152         226        5.791
+                    Goiás                                     241         352        9.916
+                    Distrito Federal                           68         132        4.084
+Fonte: Coordenação de Métodos de Qualidade – COMEQ
+
+
+
+
+                                                       16
+5. Instrumentos de trabalho
+
+       5.1. Material de sensibilização
+       Material utilizado com o objetivo de informar sobre a pesquisa e sensibilizar diretores de escolas e
+estudantes a responderem à pesquisa. Devem ser usados antes e durante o trabalho de campo.
+
+                5.1.1. Folder
+         O objetivo do folder é disseminar alguns dos resultados da pesquisa nas edições anteriores e
+mostrar a relevância das políticas públicas para o público-alvo – adolescentes de 13 a 17 anos. Deve ser
+distribuído entre diretores, professores, secretários de saúde, de educação, alunos, sindicatos,
+universidades, enfim, para todos que possam influenciar de alguma forma positivamente a disseminação da
+pesquisa.
+
+              5.1.2. Cartaz de divulgação
+       Instrumento de divulgação que apresenta objetivos e público-alvo da pesquisa, ressaltando a
+importância da participação de escolas e estudantes em responder ao questionário. Para ser utilizado à
+vontade com o objetivo de disseminar a pesquisa, podendo ser afixado em locais como:
+       ◦ Escolas – dentro e fora das turmas
+       ◦ Universidades
+       ◦ Secretarias de Educação
+       ◦ Secretarias de Saúde
+       ◦ Em todos os setores formadores de opinião
+
+                5.1.3. Modelos de ofícios a serem utilizados pela supervisão estadual
+        O objetivo desses modelos (veja seção Anexos) é padronizar os documentos formais de convite para
+os encontros com secretarias de educação e saúde, diretores de escolas selecionadas e demais órgãos
+envolvidos em todo o Brasil. Entretanto, as unidades estaduais farão as adaptações que avaliarem
+necessárias. Uma cópia deste documento pode ser encaminhada às escolas por e-mail.
+
+                5.1.4. Ofício interministerial
+        Trata-se do documento interministerial (Ofício Conjunto nº 20/2018/SVS/MS – veja seção Anexos)
+encaminhado, pelo MS e MEC, às secretarias de educação e saúde. Pode ser anexado ao ofício de convite a
+diretores e secretários para o encontro de apresentação da PeNSE. Esse ofício, embora não seja do IBGE,
+merece ser divulgado em anexo a diversos contatos, convites, ou cartas ao informante, enviados pelas
+supervisões estaduais, devido à sua importância no reconhecimento da pesquisa pelos órgãos responsáveis.
+
+               5.1.5. Carta ao informante
+       Correspondência padrão oficial do IBGE, assinada pela presidência, que destaca atribuições do IBGE
+na produção de informações estatísticas e a legislação que regula atuação do órgão e o sigilo das
+informações. Direcionada aos diretores das escolas, tem como objetivo oficializar e facilitar o acesso aos
+informantes, no caso da PeNSE, às escolas que respondem o questionário do ambiente escolar e de onde se
+acessam os escolares, que respondem ao questionário do aluno.
+
+
+
+
+                                                    17
+                5.1.6. Vídeo
+        Utilizado para sensibilizar os alunos responderem ao questionário. Deve ser transmitido,
+preferencialmente, momentos antes da aplicação do questionário. Pode também ser usado para sensibilizar
+diretores e secretários de educação e saúde, caso seja necessário e houver oportunidade.
+
+       5.2. Material de coleta
+       Material utilizado como instrumento de orientação, instrução e coleta para entrevistadores,
+informantes e técnicos envolvidos na pesquisa.
+
+                5.2.1. Manual de instrução
+        Este Manual, elaborado pela Gerência da Pesquisa Nacional de Saúde do Escolar é destinado aos
+servidores responsáveis pela obtenção de dados da Pesquisa. Ele contém instruções sobre procedimentos a
+serem seguidos durante as etapas de execução da pesquisa, bem como a descrição de conceitos e
+definições relacionados. As instruções visam a orientar, com detalhe e objetividade, o trabalho de obtenção
+dos dados, com o objetivo de uniformizar procedimentos e conceitos. É fundamental que as equipes de
+trabalho responsáveis pela pesquisa conheçam, com profundidade, seus objetivos, as definições a ela
+relacionadas, bem como os procedimentos de coleta dos dados. Logo, a leitura atenta deste documento é
+imprescindível, devendo as dúvidas eventuais relativas a procedimentos não previstos aqui, serem
+esclarecidos junto aos supervisores estaduais e à Gerência Nacional da Pesquisa.
+
+                5.2.2. Relação de escolas selecionadas
+       Trata-se da lista de escolas selecionadas a partir do cadastro de escolas do Censo Escolar 2017.
+Contém as informações cadastrais necessárias para a localização da escola a ser contatada, tais como,
+Unidade da Federação (UF), município, identificação (ID) da escola, nome da escola, endereço, telefone, fax
+(quando houver), e-mail (quando houver), código INEP/MEC, dependência administrativa e localização
+urbana ou rural. Essas informações devem ser atualizadas antes do trabalho de coleta da pesquisa.
+
+                 5.2.3. Sistema Integrado de Gerenciamento e Controle – SIGCPeNSE
+         Sistema Web desenvolvido para registrar todas as informações necessárias ao acompanhamento da
+coleta e gerar relatórios gerenciais da pesquisa em campo, facilitando a tomada de decisões (será objeto de
+manual específico organizado pela Diretoria de Informática).
+         No SIGCPeNSE será feito o cadastro dos usuários responsáveis pela coleta e transmissão dos dados,
+do líder da equipe e dos demais técnicos. Serão cadastrados também os DMC’s de cada equipe. Além disso,
+a atualização do cadastro das escolas e o cadastro das turmas. Posteriormente o sistema efetuará a seleção
+das turmas que responderão ao questionário do aluno.
+         Após carregar os DMC’s com as escolas e turmas a serem coletadas e realizar a coleta dos dados,
+esses deverão ser transmitidos e conferida sua transmissão.
+         Esses passos estão descritos no fluxo da Imagem 1.
+
+                 5.2.4. Texto de abordagem aos diretores
+        Texto padrão para a abordagem telefônica dos diretores/coordenadores das escolas selecionadas.
+Para facilitar o acesso à direção de cada escola, o supervisor estadual ou alguém designado por ele e
+devidamente orientado, deve fazer o contato telefônico com o diretor ou membro da direção de cada
+escola que compõe a amostra. Deve apresentar-se informando que está fazendo contato em nome da
+Pesquisa Nacional de Saúde Escolar, do IBGE, e reforçar o convite feito pelo Ofício para encontro com
+diretores de escolas (veja seção Anexos).
+
+                                                    18
+Imagem 1: Fluxo do sistema SIGCPeNSE
+
+
+
+
+Fonte: Gerência de Pesquisas Especiais (GPESP/COPIS/DPE) e Coordenação de Atendimento e Desenvolvimento de
+Sistemas (COADS/DI)
+
+
+
+
+                                                   19
+                5.2.5. Vídeo e texto de abordagem aos alunos
+        O vídeo cumpre um papel fundamental na uniformização da apresentação da PeNSE, buscando criar
+um ambiente adequado para a sua aplicação, de forma a motivar os escolares e obter a sua participação de
+forma mais compromissada para com os resultados da pesquisa. Todo o esforço possível deverá ser
+realizado no sentido de se viabilizar a apresentação do mesmo para as turmas selecionadas. Em escolas em
+que não houver estrutura para passar o vídeo, considerar a possibilidade de levar o equipamento para
+divulgá-lo (dvd, notebook, data show, etc) nas turmas. Na impossibilidade de se fazer a apresentação do
+vídeo da PeNSE para as turmas selecionadas, este texto poderá ser usado como forma de incentivo em
+participar da pesquisa. O texto deve ser apenas uma referência, para que o técnico o utilize de forma
+dinâmica, alegre, clara e objetiva, enfatizando a importância de responder a pesquisa.
+
+       “Vocês estão num momento da vida em que começam a surgir várias questões, escolhas e opções, e
+       elas fazem com que vocês possam escolher certos caminhos em vez de outros. Esses caminhos
+       levarão a hábitos que afetarão a vida adulta de vocês, então é preciso prestar atenção desde já a
+       esses hábitos. A alimentação e a prática de exercícios são fundamentais para ter uma vida saudável.
+       Essa fase de descobertas da adolescência faz com que muitos se exponham a riscos, como fazer uso
+       de bebida alcoólica e outras drogas ou se expor a acidentes e violência por meio de brigas, por
+       exemplo. Nessa fase, com as transformações do corpo e transição para a vida adulta, começa
+       também o desejo sexual e, naturalmente, a atração por parceiros ou parceiras e, muitos
+       adolescentes ficam expostos a gravidez indesejada e doenças sexualmente transmissíveis, se não
+       forem informados adequadamente. Diante dessas transformações, precisamos fazer um
+       levantamento dos comportamentos que podem trazer risco e daqueles que fazem bem para a saúde
+       de todos E vocês, escolares, são a nossa amostra, um grupo escolhido, para representar todos os
+       outros adolescentes do país. Por isso, é muito importante que vocês respondam a esse questionário
+       de acordo com a sua vida, pois assim conheceremos melhor a nossa realidade e planejar as ações e
+       os investimentos na saúde. Não é uma prova, vocês não são obrigados a responder, mas sua
+       resposta é muito importante para o país. Todas as perguntas são muito importantes para que o
+       IBGE possa fazer um retrato da saúde física e mental dos adolescentes. Vocês não são obrigados a
+       responder, mas sua resposta é muito importante para o país. Além disso, esse Dispositivo Móvel de
+       Coleta, chamado por nós de DMC, é prático e torna a pesquisa bem mais rápida, e o que é melhor,
+       vocês já sabem como usar. Mas se tiverem qualquer dúvida, estamos aqui para ajudar. Ah!
+       Lembrando que suas respostas são confidenciais e sigilosas, vocês e a escola em que estudam não
+       serão identificados. Contamos com a colaboração de vocês”
+
+               5.2.6. Cartaz CONEP (Comissão Nacional de Ética em Pesquisa)
+        Material que tem por objetivo informar e esclarecer a decisão dos alunos de participar ou não da
+pesquisa, sem constrangimentos. Atende exigência da CONEP para realização de pesquisa com seres
+humanos e deve ser afixado nos locais onde os estudantes responderão aos questionários, e lido pelo
+técnico do IBGE, antes do início da coleta.
+
+                5.2.7. Banner com instruções para o uso do DMC
+        Contém instruções para os alunos sobre uso do DMC. No dia da coleta de dados o banner deve ser
+afixado na sala onde os estudantes responderão aos questionários. Deverá ser explicado pelo técnico do
+IBGE, antes do início da coleta, e servirá de instrumento de orientação aos alunos e de apoio da equipe de
+campo.
+
+
+
+                                                   20
+                5.2.8. Diário de coleta (DMC)
+        O objetivo do diário de coleta é registrar as informações e situações sobre a escola e as turmas
+selecionadas, remarcações de coleta, intercorrências, etc, principalmente no dia da pesquisa. Os dados
+contidos neste documento serão transmitidos para o SIGCPeNSE.
+
+               5.2.9. Agenda de Campo (impressa)
+O objetivo da agenda de campo é registrar ocorrências, informações ou complementar o diário de coleta
+quando necessário. Nela ficam mais fáceis de se fazer, no campo, as anotações sobre as dúvidas
+encontradas pelos alunos e diretores nos questionários e observações sobre a condução da pesquisa que
+devem posteriormente serem repassadas para a supervisão e coordenação nacional, visando o
+aprimoramento da pesquisa.
+
+               5.2.10. Dispositivo Móvel de Coleta – DMC
+        A pesquisa será realizada utilizando o Dispositivo Móvel de Coleta – DMC, no qual será inserido o
+questionário estruturado para ser respondido diretamente pelo aluno. Este instrumento agiliza o processo
+de execução da PeNSE, pois permite que o próprio estudante registre suas respostas no questionário do
+aluno. Por ser o DMC uma tecnologia conhecida, espera-se poucas dificuldades no seu manuseio, e
+desperte interesse dos adolescentes em participar da pesquisa. Embora todos os DMC sejam preparados
+para a pesquisa com as mesmas funcionalidades, um DMC de cada equipe deverá ser identificado e
+designado especificamente para o questionário do ambiente escolar e para o diário de coleta. Essa
+diferenciação visa organizar melhor a coleta e permitir localizar mais rapidamente o questionário do
+ambiente escolar ou o diário de coleta.
+
+
+
+
+                                                   21
+22
+6. Equipes de trabalho – responsabilidades e atribuições
+
+       6.1. Coordenação nacional
+        Coordenação da pesquisa em âmbito nacional. É responsável pelo planejamento da pesquisa,
+treinamento nacional, coordenação da coleta de dados, organização do banco de dados, análise dos
+resultados.
+        Cabe ao coordenador:
+        ◦ Garantir padronização de procedimentos e prazos previstos no convênio IBGE/MS;
+        ◦ Representar o IBGE junto ao Ministério da Saúde nas discussões da PeNSE;
+        ◦ Responsabilizar-se pelo envio de todos os relatórios e produtos previstos no convênio;
+        ◦ Coordenar o treinamento dos supervisores e auxiliar no treinamento das equipes de campo;
+        ◦ Preparar as minutas e documentos orientadores da pesquisa.
+        ◦ Esclarecer dúvidas dos supervisores nacionais e orientar no esclarecimento das dúvidas das
+            equipes de campo.
+
+       6.2. Supervisão estadual
+        Supervisão da pesquisa em âmbito estadual. É responsável por planejar e executar as atividades de
+pré-coleta; montar e treinar as equipes de campo e monitorar as atividades de campo, reportando-as à
+coordenação nacional.
+        Cabe ao supervisor estadual:
+        ◦ Organizar as atividades de pré-coleta, como levantamento de materiais, acesso aos materiais de
+            sensibilização, primeiros contatos e atualização cadastral; produzir relatórios detalhados das
+            atividades de pré-coleta;
+        ◦ Entrar em contato com as secretarias estadual e municipais de educação com objetivo de
+            apresentar a PeNSE;
+        ◦ Enviar os ofícios de apresentação e convite de encontro da PeNSE com os diretores das escolas
+            selecionadas;
+        ◦ Designar supervisores locais para áreas mais distantes da sede da Unidade Estadual e formar
+            equipes de campo, atentando para a quantidade mínima necessária.
+        ◦ Preparar, junto às equipes de coleta e o supervisor local (quando houver), o encontro com os
+            diretores das escolas;
+        ◦ Repassar aos supervisores locais e equipe de campo os conteúdos do treinamento realizado
+            pela coordenação nacional da pesquisa;
+        ◦ Buscar, nas secretarias de saúde e educação, facilitadores das relações com escolas que,
+            porventura estejam reticentes quanto à pesquisa ou tenham recusado o primeiro contato;
+        ◦ Promover a seleção das turmas conforme a orientação e a chegada das informações necessárias
+            de cada escola;
+        ◦ Cuidar para que os instrumentos de trabalho sejam adequadamente distribuídos aos
+            supervisores locais e equipe de campo;
+        ◦ Garantir o cumprimento dos prazos estabelecidos para realização da pesquisa;
+        ◦ Consolidar a agenda de supervisão da UE para relatórios parciais do andamento;
+        ◦ Capturar e transmitir os dados do DMC;
+        ◦ Resolver problemas e pendências não solucionados pelo supervisor local ou líder de equipe;
+        ◦ Orientar e esclarecer os supervisores locais e/ou líderes de equipes sobre quaisquer aspectos
+            relacionados ao trabalho de campo;
+        ◦ Avaliar o desempenho e substituir auxiliares de pesquisa de campo sempre que necessário;
+
+                                                   23
+       ◦ Garantir que os DMC’s estejam em bom estado de funcionamento nos dias dos repasses e da
+         realização das atividades de campo;
+       ◦ Zelar pela legitimidade, confidencialidade, guarda e transporte das informações contidas nos
+         DMC’s;
+       ◦ Monitorar, diariamente, o processo de transmissão dos dados do DMC para o banco de dados.
+
+       6.3. Supervisão local
+        Supervisão da pesquisa em âmbito regional, designado pelo supervisor estadual para
+estabelecer/efetuar contatos e reuniões com as escolas, conforme a sua região. Nas Unidades Estaduais
+onde for constituída a Supervisão Local terá o papel de montar e supervisionar as equipes de trabalho de
+campo da sua área de abrangência. O supervisor local é responsável pelo acompanhamento de todas as
+atividades de campo em sua área de abrangência, devendo reportar-se sempre ao supervisor estadual.
+Quando não houver supervisor local essas atividades ficam a cargo do supervisor estadual.
+        Cabe ao supervisor local:
+        ◦ Preparar as visitas aos diretores das escolas de sua área de abrangência que porventura não
+            tenham participado do encontro realizado pelo supervisor estadual;
+        ◦ Designar o(s) líder(es) de equipe(s) de sua área de abrangência e formar equipes de campo,
+            atentando para a quantidade mínima necessária.
+        ◦ Promover a seleção das turmas conforme a orientação e a chegada das informações necessárias
+            de cada escola localizada em sua área de abrangência;
+        ◦ Manter contato com os responsáveis pelas escolas e secretarias estadual e municipais de
+            educação para facilitar o acesso às escolas;
+        ◦ Repassar aos auxiliares de campo os conteúdos do treinamento realizado pela supervisão
+            estadual da pesquisa;
+        ◦ Cuidar para que os instrumentos de trabalho sejam adequadamente distribuídos às equipes de
+            campo;
+        ◦ Garantir o cumprimento dos prazos estabelecidos para realização da pesquisa;
+        ◦ Capturar e transmitir os dados dos DMC´s;
+        ◦ Resolver problemas e pendências não solucionados pela equipe de campo.
+        ◦ Avaliar o desempenho da equipe durante a realização da pesquisa e caso necessário, substituir
+            membros de equipe de campo;
+        ◦ Produzir relatórios detalhados das atividades em sua área de abrangência;
+        ◦ Garantir que os DMC´s estejam em bom estado de funcionamento nos dias dos repasses e da
+            realização das atividades de campo;
+        ◦ Zelar pela legitimidade, confidencialidade, guarda e transporte das informações contidas nos
+            DMC´s;
+        ◦ Monitorar, diariamente, o processo de transmissão dos dados dos DMC´s para o banco de
+            dados;
+        ◦ Inspecionar as equipes de campo de forma a garantir o cumprimento do protocolo da pesquisa;
+        ◦ Ter material extra para divulgação da pesquisa na escola, caso seja necessário reforçá-la
+            (cartazes e folders);
+        ◦ Conferir o preenchimento adequado do diário de coleta e da agenda de campo
+        ◦ Responsabilizar-se por descarregar ou baixar diariamente os dados dos DMC´s para o banco de
+            dados;
+        ◦ Viabilizar o carregamento diário das baterias dos DMC´s;
+        ◦ Cumprir o cronograma para coleta de dados;
+
+                                                  24
+       ◦ Manter o supervisor estadual informado de todas as ocorrências;
+
+       6.4. Equipe de campo
+        Equipe composta por 2 ou mais profissionais para realizar o trabalho de campo, podendo ser
+acrescida de um técnico da agência da escola selecionada ou incorporar outra equipe.
+        A equipe de campo é responsável pela execução da pesquisa de campo e tem como atribuições:
+        ◦ Seguir com rigor as orientações contidas neste manual;
+        ◦ Organizar os DMC´s e o material de cada escola, conforme instruções deste manual;
+        ◦ Apresentar-se pontual e vestido adequadamente às atividades da pesquisa com crachá de
+            identificação;
+        ◦ Identificar-se e tratar respeitosamente os dirigentes, professores e alunos das escolas
+            selecionadas;
+        ◦ Expressar-se com clareza e tom de voz equilibrado garantindo um clima amigável, de respeito e
+            livre de preconceito durante os procedimentos de campo;
+        ◦ Explicar os procedimentos da pesquisa e esclarecer possíveis dúvidas, de forma a estimular a
+            participação dos escolares e a minimizar o número de recusas;
+        ◦ Garantir a participação voluntária e o sigilo dos dados coletados;
+        ◦ Executar a coleta de dados nas turmas selecionadas;
+        ◦ Auxiliar os alunos que porventura tenham alguma deficiência e buscar auxílio junto à escola,
+            caso seja necessário;
+
+               6.4.1. Líder de equipe
+       Técnico designado para coordenar e centralizar as atividades de coleta da equipe, organizar e
+coordenar o trabalho da equipe.
+       Cabe ainda ao líder de equipe:
+       ◦ Garantir e confirmar o agendamento da coleta de dados da escola e em cada uma das turmas
+           selecionadas.
+       ◦ Confirmar se a turma a ser aplicado o questionário é a selecionada e se tem presentes ao
+           menos 70% dos alunos matriculados frequentes no dia da pesquisa, tomando as providências
+           necessárias(remarcação) caso esse critério não seja atendido.
+
+              Alunos matriculados frequentes – são os que frequentam regularmente a
+              escola, são aqueles que vieram a maioria (mais de 50%) dos dias de aulas
+                                    nas quatro últimas semanas.
+
+       ◦
+       ◦ Registrar no diário de coleta o número de alunos presentes no dia da pesquisa e daqueles que
+         porventura se recusaram a receber o DMC´s;Garantir que os questionários sejam aplicados em
+         todas as turmas selecionadas de cada escola, assim como, o questionário do ambiente escolar.
+       ◦ Manter o supervisor local informado de todas as ocorrências
+       ◦ Providenciar, junto ao supervisor local, a transmissão diária dos dados coletados nos DMC´s
+         para o banco de dados.
+
+       6.5. Equipe de apoio local
+        Nas agências onde existirem escolas selecionadas na amostra, em número inferior necessário para
+organizar equipe de coleta, um técnico do IBGE receberá também treinamento para prestar apoio local.
+
+
+                                                  25
+       Caberá ao técnico de apoio local:
+       ◦ Entrar em contato com as secretarias;
+       ◦ Divulgar a pesquisa por meio dos materiais de sensibilização;
+       ◦ Entrar em contato com a direção das escolas;
+       ◦ Agendar visita e a coleta;
+       ◦ Participar junto com a equipe de campo da coleta.
+
+       6.6. Equipe nacional de apoio
+        Grupo coordenado pelo Ministério da Saúde, por meio da Coordenação Geral de Doenças e Agravos
+não Transmissíveis – CGDANT, composto por técnicos do Ministério da Saúde, pesquisadores e técnicos das
+áreas temáticas da pesquisa e representantes do Ministério da Educação.
+
+       6.7. Equipe estadual de apoio
+        Grupo composto por representantes das secretarias estaduais e municipais de saúde (CGDANT) e de
+educação identificados durante o processo de abordagem ou indicados pelos Ministérios da Saúde ou
+Ministério da Educação.
+
+
+
+
+                                                  26
+7. Etapas de execução da pesquisa
+
+        7.1. Instrução inicial
+        A coordenação nacional emitirá, por meio de notas técnicas, as orientações quanto às situações,
+tais como a distribuição dos trabalhos, a formação das equipes, os procedimentos para contatos com as
+secretarias, as abordagens às escolas e quaisquer outras demandas feitas pelos supervisores estaduais.
+
+        7.2. Recepção dos instrumentos de trabalho
+        Os instrumentos de trabalho (material de sensibilização e de coleta) serão disponibilizados
+conforme o calendário de ações previstas para a pesquisa. Tais instrumentos serão repassados, pelos
+supervisores estaduais, às equipes, de acordo com a etapa de trabalho em curso.
+
+        7.3. Distribuição das escolas, designação dos supervisores locais e formação das equipes
+        de campo
+       Em função da abrangência espacial da pesquisa, a coleta deve ser feita por diversas agências, além
+da equipe centralizada que é responsável pelas escolas das capitais e, possivelmente, de alguns outros
+municípios das regiões metropolitanas. Em função disso, algumas atribuições dos supervisores estaduais
+poderão ser realizadas pelos supervisores locais, conforme a localização da escola no Estado, o que poderá
+proporcionar uma melhor logística, maior agilidade e menor custo para a coleta dos dados.
+
+        7.4. Sensibilização e contatos com as secretarias de educação e de saúde
+         As secretarias estaduais e municipais de saúde e de educação receberão um Ofício Interministerial
+(Ministérios da Saúde e da Educação) informando sobre a PeNSE. Também solicitarão aos secretários que
+sejam facilitadores do IBGE junto às escolas de sua jurisdição e às escolas particulares selecionadas.
+         O supervisor estadual deverá fazer contato com os representantes das secretarias estadual e
+municipais, abordando os seguintes assuntos:
+         ◦ Linhas gerais e objetivo da pesquisa;
+         ◦ Equipe do IBGE responsável pela pesquisa no Estado;
+         ◦ Prazos de realização da pesquisa;
+         ◦ Solicitação de um ofício às secretarias de saúde e de educação a ser enviado às escolas
+              selecionadas, visando apoio a pesquisa.
+         ◦ Convite para o encontro com os diretores das escolas selecionadas e representantes da saúde e
+              educação.
+         Caberá, ainda, ao supervisor estadual enviar o ofício convite às secretarias municipais e estadual de
+saúde e de educação, convocando uma reunião com os diretores das escolas participantes. No caso dos
+municípios mais distantes da capital, onde não for possível realizar a reunião com os diretores, o supervisor
+local fará o contato com as secretarias e cada escola presencialmente.
+
+        7.5. Abordagem às escolas
+        O supervisor estadual ou local fará, por meio de ofício, o contato com as escolas selecionadas para
+divulgação da pesquisa, assim como, o convite para o encontro estadual e obtenção de informações sobre
+as turmas.
+        As escolas serão informadas sobre os objetivos da pesquisa e a seleção da escola para a amostra. Os
+diretores serão convidados para o encontro estadual, bem como informados de que será necessário obter,
+por telefone ou e-mail, as seguintes informações sobre as turmas-alvo da pesquisa: número de turmas nos
+
+
+                                                     27
+turnos da manhã, tarde e noite, forma de identificação das turmas feita pela escola (números ou letras) e
+número de alunos matriculados e frequentes em cada turma.
+        Este contato deve ser feito em um prazo de, pelo menos, uma semana antes do encontro estadual.
+Para facilitar o acesso à direção de cada escola, o supervisor estadual ou local deve se apresentar em nome
+do IBGE e da PeNSE. Uma vez que o interlocutor adequado da escola esteja na linha, a abordagem deve
+seguir o seguinte padrão:
+
+          “Bom dia (boa tarde), meu nome é (NOME). Sou supervisor estadual da Pesquisa Nacional de Saúde
+          do Escolar – PeNSE aqui em (NOME DA CIDADE). Esta pesquisa está sendo realizada em todas as
+          Unidades da Federação, pelo IBGE em parceria com o Ministério da Saúde e apoio do Ministério da
+          Educação. A PeNSE visa fornecer informações para conhecer a prevalência dos fatores de risco e
+          proteção à saúde dos escolares. É fundamental como instrumento capaz de orientar a gestão e o
+          aprimoramento das políticas públicas voltadas para a prevenção de doenças crônicas não
+          transmissíveis e promoção da saúde para orientar ações de promoção de saúde. A participação da
+          sua escola é muito importante para o sucesso dessa pesquisa no país. O(a) senhor(a) recebeu uma
+          correspondência que informava que sua escola foi selecionada pelo processo de amostragem
+          desenvolvido pelo IBGE para esta pesquisa e o(a) convidando para um encontro cuja finalidade é
+          apresentar a PeNSE e todas as escolas selecionadas para participar desta pesquisa?”
+
+          Se o interlocutor responder “sim”
+
+          “Esta ligação tem o objetivo de reforçar o convite. Além disso, preciso que o(a) senhor(a) me
+          informe quantas turmas tem sua escola nos turnos da manhã, tarde e noite. Como elas são
+          identificadas, se por números ou letras, por exemplo: 9º ano A, B, turma 901. Preciso saber,
+          também, o número de alunos matriculados e frequentes nesta(s) turma(s)”
+
+        As respostas deverão ser lançadas no SIGCPeNSE, caso o diretor ou responsável pela escola
+disponibilize a informação. Se não for possível obter os dados solicitados neste contato telefônico, os dados
+poderão ser enviados pela escola ao e-mail do supervisor estadual ou local. Ainda poderá ser agendado
+novo telefonema para registro dos dados referentes as turmas que são objeto da pesquisa. Esses
+procedimentos poderão ocorrer antes da reunião com os diretores. Registrar no SIGCPeNSE se a escola
+enviará informações via e-mail ou se deverá ser feito novo contato por telefone para obter as informações.
+
+          Se o interlocutor responder “não”, esclarecer sobre a pesquisa e a reunião, com a abordagem
+abaixo:
+
+          “O convite informava sobre a realização da 4ª edição da Pesquisa Nacional de Saúde do Escolar
+          (PeNSE). O IBGE realizará em 2019, em diversas cidades do país, a 4ª edição da Pesquisa Nacional
+          de Saúde do Escolar (PeNSE), em parceria com o Ministério da Saúde e com o apoio do Ministério da
+          Educação. O questionário da pesquisa foi elaborado por uma equipe de profissionais ligados às
+          instituições promotoras e será aplicado aos alunos das turmas de 7º ao 9º ano do ensino
+          fundamental e do 1º ao 3º ano do ensino médio das escolas públicas e privadas, selecionadas
+          através da metodologia de amostragem elaborada pelo IBGE. A participação do aluno será
+          voluntária e ele não será identificado. Todas as informações obtidas pelo IBGE serão confidenciais. A
+          escola selecionada também não será identificada. Os resultados das 3 edições anteriores da
+          pesquisa (2009/2012/2015) estão disponíveis nas bibliotecas e lojas do IBGE, além da página do
+
+
+                                                       28
+       IBGE na internet. Gostaria de convidá-lo para participar do encontro com os diretores das escolas
+       selecionadas a ser realizada no dia_____no local __________ Nesta ocasião estarão presentes além
+       dos representantes do IBGE no estado, as representações das secretarias de educação e saúde, bem
+       como os diretores das escolas selecionadas. No encontro aprofundaremos todas as informações
+       sobre os objetivos e a forma de realização desta pesquisa. O contato sobre a pesquisa pode ser feito
+       em nosso escritório regional em __________, pelo telefone (tel do supervisor estadual) ou e-mail
+       (tel do supervisor estadual), sendo o supervisor estadual da pesquisa o senhor (a) (nome do
+       supervisor)”.
+
+       Agradecer e encerrar o telefonema.
+
+        Se não for possível obter os dados solicitados neste contato telefônico, estes poderão ser enviados
+pela escola por e-mail, para o supervisor estadual ou local. Ainda poderá ser agendado novo contato para
+registro dos dados referentes as turmas que são objeto da pesquisa. Esses procedimentos poderão ocorrer
+antes ou depois da reunião com os diretores.
+
+       7.6. Encontro com diretores das escolas e representantes da saúde e da educação
+        Os encontros estaduais e encontros regionais ou locais, visando divulgar a realização da pesquisa,
+esclarecer seus objetivos e metodologia, bem como buscar a adesão de gestores, diretores, professores,
+órgãos de classe (sindicatos e associações) e formadores de opinião locais. Esses eventos são estratégicos
+para promover um clima favorável à realização da PeNSE, identificando, também, possíveis apoiadores que
+poderão cumprir um papel auxiliar no convencimento de escolas resistentes à pesquisa.
+        Nesses encontros devem ser abordadas questões operacionais como:
+        ◦ Levantamento do calendário escolar, procurando datas adequadas para a realização da
+            pesquisa;
+        ◦ Prestação de informações sobre número de turmas, alunos matriculados e alunos frequentes
+            em cada turma;
+        ◦ Número de alunos nas turmas selecionadas, considerados pela escola como portadores de
+            transtorno ou deficiência, que possa impactar a aplicação do questionário;
+        ◦ Fornecimento prévio, aos professores e alunos das turmas selecionadas, de informação sobre a
+            realização da pesquisa
+        ◦ Solicitação de liberação de um ou dois turnos de aula para realização da pesquisa;
+
+         Entre os convidados, devem constar diretores de escolas selecionadas, representantes das
+secretarias estaduais e municipais de saúde e de educação, além de entidades como sindicatos e
+associações de escolas privadas, de professores e pesquisadores.
+         Os encontros podem ser realizados nas dependências do IBGE, nas secretarias de saúde ou de
+educação, em auditórios ou salas de reuniões. O supervisor pode ir acompanhado do chefe da Unidade
+Estadual, do Gerente de Planejamento e Supervisão, do Técnico de informática e, também, de técnicos das
+secretarias de saúde e de educação
+         O supervisor deve apresentar a pesquisa utilizando o material de divulgação da PeNSE 2015, as
+apresentações do IBGE e do Ministério da Saúde para o encontro de supervisores, adaptado pelas unidades
+locais do IBGE, passar o vídeo da PeNSE, descrever a parte operacional e fazer o agendamento das visitas às
+escolas.
+
+
+
+
+                                                    29
+       7.7. Organização do encontro
+       Para a organização do encontro, fica a cargo da supervisão estadual:
+       ◦ Avaliar a possibilidade de reunir as escolas públicas e privadas em um ou vários encontros.
+           Neste(s) encontro(s) devem comparecer os diretores das escolas ou seus representantes e o
+           supervisor estadual. Devem ser convidados os representantes das Secretarias Estaduais e
+           Municipais de Saúde e de Educação;
+       ◦ Avaliar possibilidade de organizar encontros locais em municípios distantes da capital, devendo
+           contatar diretores e secretários de outros municípios;
+       ◦ Identificar e reservar espaço adequado, bem como equipamento necessário para a reunião
+           (data show para apresentação da pesquisa);
+       ◦ Organizar o material de divulgação da pesquisa a ser distribuído aos diretores;
+       ◦ Divulgar na intranet da Unidade Estadual fotografias ou vídeo.
+
+       7.8. Roteiro do encontro
+       ◦ Montar a mesa com representantes das secretarias, supervisor da pesquisa, chefe da UE e
+         autoridades que estiverem presentes;
+       ◦ Apresentar os participantes;
+       ◦ Apresentar os objetivos gerais da pesquisa e sua abrangência na edição 2019;
+       ◦ Apresentar alguns resultados das pesquisas anteriores (procurando valorizar aspectos locais);
+       ◦ Divulgar as turmas elegíveis em cada escola;
+       ◦ Solicitar aos diretores que façam a divulgação da pesquisa para professores das turmas
+         elegíveis;
+       ◦ Solicitar aos diretores que informem aos alunos sobre a realização da pesquisa;
+       ◦ Informar como será a organização da escola para a coleta de dados;
+       ◦ Esclarecer que a coleta de dados na escola pode durar mais de um tempo de aula, sendo
+         adequado reservar dois períodos de aula;
+       ◦ Informar ao diretor/coordenador da necessidade de reservar 30 minutos para responder um
+         questionário do ambiente escolar;
+       ◦ Informar ao diretor/coordenador que, para realização da pesquisa no dia agendado, é
+         necessário que a turma selecionada tenha no mínimo 70% dos alunos presentes. Caso
+         contrário, será necessário agendar nova data;
+       ◦ Informar e mostrar aos diretores os DMC’s onde os alunos responderão ao questionário da
+         PeNSE;
+       ◦ Reservar tempo para perguntas, esclarecimentos e a participação dos diretores, técnicos e
+         autoridades presentes;
+       ◦ Apresentar o cronograma da coleta de dados e suas datas limites;
+       ◦ Entregar o material de divulgação da PeNSE 2019 (cartaz, folder e vídeo) ao diretor ou seu
+         representante no encontro.
+
+        Após a reunião com os diretores, o supervisor estadual deverá informar ao coordenador nacional o
+número das escolas participantes e faltosas. No caso de escolas em municípios distantes, deverá ser
+avaliada, pelo supervisor estadual e/ou local, a necessidade/viabilidade de realização de encontros
+regionais/locais, ou se ficaríamos restritos às visitas isoladas às escolas, para viabilizar a pesquisa.
+
+
+
+
+                                                  30
+       7.9. Contato com os diretores faltosos
+        O Supervisor estadual ou local deverá fazer contato telefônico com os diretores que não
+compareceram à reunião, com a finalidade de agendar visita à escola para repasse das informações
+discutidas e realização da pesquisa. Para orientar, segue um modelo de conversa:
+
+       “Bom dia (boa tarde), meu nome é (NOME), sou supervisor(a) da Pesquisa Nacional de Saúde do
+       Escolar – PeNSE – do IBGE, e constatamos que a sua escola não participou da reunião agendada e
+       confirmada para o dia ____ de ____________ de 2019. Mais uma vez, gostaria de lembrar que a
+       participação da sua escola é muito importante para o sucesso desta pesquisa. Gostaria de marcar
+       um horário na sua escola para repassar as principais informações discutidas na reunião e agendar a
+       realização da pesquisa. A coleta de dados deverá ser feita no período ________________. Nosso
+       encontro deverá ser anterior a este período para que possamos organizar as atividades de coleta de
+       dados na sua escola. [Marcar data e horário da visita]. Muito obrigada. Até nossa visita.”
+
+       7.10. Treinamento
+        A coordenação nacional da PeNSE (DPE/COPIS), com o apoio da CGDANT, realizará a capacitação
+nacional com os supervisores estaduais da pesquisa, para difundir os conceitos e procedimentos do
+trabalho de campo, utilização do manual, dos questionários da pesquisa (em DMC’s) e demais materiais de
+treinamento, para uma apresentação uniforme da pesquisa e realização da coleta de dados eficiente. O
+treinamento deverá capacitar os supervisores a realizar seu repasse padronizado nas Unidades Estaduais.
+
+
+                                             ATENÇÃO!
+               Se número de escolas faltosas na reunião for muito grande, pode ser
+            conveniente realizar nova reunião, seguindo os mesmos procedimentos da
+           anterior. O supervisor estadual deverá comunicar ao coordenador nacional a
+                             realização das visitas às escolas faltosas.
+
+
+       7.11. Planejamento da coleta dos dados
+        A coleta de dados estará sob a responsabilidade do supervisor estadual, supervisor local e equipe
+de campo, que ficarão atentos ao cronograma, considerando a localização das escolas e o número de
+turmas selecionadas por escola. Após o cadastro e a seleção das turmas a serem pesquisadas, deverá ser
+feito um planejamento do agendamento das mesmas, junto ao diretor da escola. Na definição do horário
+deve-se procurar garantir, em caso de múltiplas turmas, tempo suficiente entre uma e outra, para que os
+membros da equipe de coleta preparem os DMC’s para os alunos responderem, ou trabalhem com mais de
+uma equipe de coleta. Também devem ser considerados os intervalos (merenda, recreio) e final do turno,
+dando preferência para os tempos iniciais de cada turno onde os alunos poderão se dedicar com mais
+tranquilidade ao preenchimento do questionário, sem serem premidos pelo final do turno ou intervalo.
+
+
+                                              ATENÇÃO!
+             A coleta de dados deverá ser feita até o final do primeiro semestre letivo da
+           escola selecionada. Períodos de provas e de festividades (festas juninas) devem
+                         ser evitados, com base no calendário de cada escola.
+
+
+
+
+                                                   31
+       No caso de turmas simultâneas, a equipe deverá considerar, no seu planejamento, o tempo de
+preparo dos DMC´s para receberem as respostas dos questionários de cada turma. Nesses casos a equipe
+poderá levar dois grupos de DMC´s já preparados com a especificação de cada uma das turmas ou duas
+equipes trabalhando cada uma responsável por uma turma.
+
+       7.12. Procedimentos no dia anterior da coleta
+       ◦ Carregar e preparar os DMC’s, tendo atenção ao caso de escolas distantes e em áreas que não
+         tenham energia ou lugares para dar carga em muitos aparelhos ao mesmo tempo. Nesta
+         situação, deve-se carregar uma quantidade maior de DMC’s, suficientes para toda coleta a ser
+         realizada e, quando não estiverem em uso pelos alunos, mantê-los desligados para não perder a
+         carga;
+       ◦ Separar os materiais a serem utilizados (caixa para transporte dos DMC’s, banner, cartaz,
+         manual, agenda de campo);
+       ◦ Telefonar para a escola avisando o horário que vai chegar. Caso tenha algum problema com a
+         escola, remarque o dia da coleta e registre a remarcação e o motivo na agenda de campo;
+       ◦ Confirmar o transporte;
+       ◦ Mapear o trajeto para chegar às escolas, os pontos de referência.
+
+       7.13. Procedimentos no dia da coleta
+       ◦ Certifique-se dos nomes e endereços das escolas; nome(s) do(s) contato(s) na escola (direção e/
+         ou coordenador);
+       ◦ Relacionar a(s) turma(s) selecionada(s);
+       ◦ Pegar os DMC’s (verificar a quantidade de acordo com o número de alunos da turma. Adicione
+         mais 20%), as caixas (para o transporte dos DMC’s), manual, banner, cartazes e Agenda de
+         Campo;
+       ◦ Certifique-se da existência e do número de alunos com deficiência ou transtorno que
+         demandem apoio da escola para sua participação.
+       ◦ Na Agenda de Campo preencha ou confira: nome da escola, endereço, telefone, nome do
+         diretor, data agendada para pesquisa, nome de outra pessoa de contato na escola
+         (coordenador), identificação da turma selecionada a ser pesquisada, número de alunos
+         matriculados, número de alunos frequentes, número de alunos com deficiência ou transtorno;
+       ◦ Atente para o horário apropriado e acordado para chegar à escola;
+       ◦ Para chegar à escola, pode ser necessário ter à disposição, além do endereço da escola, pontos
+         de referência. O responsável pela condução do veículo deve ter todas as informações de
+         endereço da escola;
+       ◦ É importante chegar à escola com antecedência mínima de 30 minutos. Se for realizar
+         preenchimento do questionário do ambiente escolar antes das atividades de sala de aula com
+         os alunos, chegar com uma hora de antecedência
+
+               7.13.1. Na escola
+       ◦    Dirija-se à direção da escola usando crachá de identificação e carteira de identidade;
+       ◦    Apresente-se como pesquisador do IBGE responsável pela PeNSE;
+       ◦    Verifique com o diretor qual encaminhamento deverá ser dado aos alunos ao término do seu
+           questionário, se os alunos deverão permanecer na sala ou poderão sair;
+       ◦   Localize e confira a(s) turma(s) previamente selecionada(s);
+
+
+
+                                                  32
+       ◦ Obtenha com o professor as informações sobre número de alunos presentes no dia da pesquisa
+         e anote na agenda de campo.
+
+        Para evitar a ampliação de erros no resultado final da pesquisa e garantir a validade das
+informações, a turma selecionada deverá ter presente, no momento da pesquisa, no mínimo, 70% dos
+alunos frequentes. Caso não tenha este número de alunos presentes, no dia da aplicação do questionário,
+agende nova data com a direção da escola. Esclareça ao professor e aos alunos que nova data deverá ser
+agendada.
+
+                                              ATENÇÃO!
+           Alunos frequentes são os que frequentam regularmente a escola, são aqueles
+             que vieram a maioria (mais de 50%) dos dias de aulas nas quatro últimas
+                                            semanas.
+
+
+                7.13.2. Realização do questionário dos alunos
+        O líder de equipe será responsável pela condução das atividades em sala de aula, fazendo a
+apresentação da equipe e da pesquisa, procurando manter um ambiente acolhedor e favorável ao
+adequado preenchimento do questionário. Os demais integrantes da equipe deverão auxiliar o líder da
+equipe na apresentação do vídeo e demais materiais da pesquisa, devendo permanecer dentro da sala
+auxiliando os alunos e prestando os esclarecimentos solicitados, seguindo a orientação deste manual:
+        ◦ Afixe o cartaz da pesquisa o cartaz do CONEP e o banner do DMC na sala de aula;
+        ◦ Apresente a equipe à turma selecionada: O líder deverá apresentar a equipe de campo aos
+            alunos. Todos deverão manter o crachá de identificação em local visível;
+        ◦ Apresente a pesquisa e explique seus objetivos com clareza. Passe o vídeo, e caso não seja
+            possível, reproduza com suas próprias palavras o conteúdo do vídeo, de forma a incentivar os
+            alunos a participarem da pesquisa. Utilize o texto sugerido.
+        ◦ Os auxiliares farão a checagem dos DMC’s preparados para a resposta dos alunos, que deverá
+            estar com o questionário do aluno, a escola em que ocorrerá a pesquisa e a turma selecionada,
+            selecionados em todos os aparelhos;
+        ◦ Os aparelhos irão para a mão dos alunos na tela de abertura;
+        ◦ O auxiliar deverá fazer a distribuição dos DMC’s para cada aluno individualmente.
+        ◦ O questionário só poderá ser preenchido pelos alunos na sala de aula da turma selecionada ou
+            outra sala (auditório, biblioteca, sala de vídeo, etc.) reservada para esse fim onde a turma
+            inteira estará;
+        ◦ Durante a aplicação do questionário, o professor não deve permanecer em sala, a fim de evitar
+            inibição e privacidade dos alunos. A presença do professor só será requisitada quando houver
+            situações de indisciplina que não puderam ser contornadas pela equipe, ou na necessidade de
+            auxílio aos alunos com algum tipo de deficiência, transtorno ou dificuldade de compreensão da
+            língua. Em caso de permanência, o mesmo não poderá interferir na aplicação da pesquisa;
+        ◦ Todos os alunos devem ter a oportunidade de participar da pesquisa. Por isso é importante
+            saber previamente se a turma tem alunos com alguma deficiência ou transtorno para a equipe
+            se preparar para apoiá-lo e possa possibilitar sua participação.
+                  Aluno cego: ler o questionário e anotar para ele as suas respostas.
+                  Aluno surdo: pedir apoio ao diretor ou professor.
+
+
+
+                                                   33
+          Aluno sem algum membro ou cadeirante ou usuário de muleta: responder
+           normalmente o questionário ou apoiá-lo no manuseio do DMC, se necessário.
+◦ A equipe de campo não pode emitir opiniões que possam induzir as respostas dos alunos. No
+  entanto, deverá atender os alunos, ouvir seus questionamentos e, caso a dúvida apresentada
+  estiver contida dentro da própria pergunta, poderá ler novamente o enunciado da questão para
+  o aluno. Demostrando acolhimento, procurar estimular o aluno a responder as perguntas da
+  maneira que julgar mais apropriada ou condizente com sua experiência de vida. Somente
+  quando necessário, utilizar as informações de apoio contidas neste manual;
+◦ O auxiliar é responsável por identificar os alunos que terminam o questionário, verificar se o
+  mesmo foi encerrado e guardar o DMC;
+◦ É importante seguir todos os passos, adequadamente, para garantir a padronização da
+  pesquisa.
+
+A seguir um exemplo de apresentação à turma
+
+“Bom dia/ Boa tarde. Meu nome é (NOME), sou pesquisador(a) do Instituto Brasileiro de Geografia
+e Estatística – IBGE, que vocês já devem ter ouvido falar, não? Estamos aqui para aplicar a Pesquisa
+Nacional de Saúde do Escolar.
+Vocês estão num momento da vida em que começam a surgir várias questões, escolhas e opções, e
+elas fazem com que vocês possam escolher certos caminhos em vez de outros. Esses caminhos
+levarão a hábitos que afetarão a vida adulta de vocês, então é preciso prestar atenção desde já a
+esses hábitos. A alimentação e a prática de exercícios são fundamentais para ter uma vida saudável.
+Essa fase de descobertas da adolescência faz com que muitos se exponham a riscos, como fazer uso
+de bebida alcoólica e outras drogas ou se expor a acidentes e violência por meio de brigas, por
+exemplo. Nessa fase, com as transformações do corpo e transição para a vida adulta, começa
+também o desejo sexual e, naturalmente, a atração por parceiros ou parceiras e, muitos
+adolescentes ficam expostos a gravidez indesejada e doenças sexualmente transmissíveis, se não
+forem informados adequadamente.
+Diante dessas transformações, precisamos fazer um levantamento dos comportamentos que podem
+trazer risco e daqueles que fazem bem para a saúde de todos E vocês, escolares, são a nossa
+amostra, um grupo escolhido, para representar todos os outros adolescentes do país. Por isso, é
+muito importante que vocês respondam a esse questionário, pois assim conheceremos melhor a
+nossa realidade e planejar as ações e os investimentos na saúde.
+Todas as perguntas são muito importantes para que o IBGE possa fazer um retrato da saúde física e
+mental dos adolescentes. Vocês não são obrigados a responder, mas sua resposta é muito
+importante para o país. Além disso, esse Dispositivo Móvel de Coleta, chamado por nós de DMC, é
+prático e torna a pesquisa bem mais rápida, e o que é melhor, vocês já sabem como usar. Mas se
+tiverem qualquer dúvida, estamos aqui para ajudar.
+Ah! Lembrando que suas respostas são confidenciais e sigilosas, vocês e a escola em que estudam
+não serão identificados. Contamos com a colaboração de vocês.
+Leiam a tela de abertura e expresse a sua concordância ou não. Logo após vocês concluírem o
+questionário, permaneçam sentados em suas carteiras, que iremos recolher os DMC’s.
+Na sala tem o cartaz CONEP, cujo objetivo é esclarecer o direito de participar ou não da pesquisa.
+Tem também o banner, que orienta como usar o DMC. Ambos ficarão durante toda a pesquisa para
+que vocês possam lê-los quando quiserem.
+
+
+
+                                            34
+         Caso haja alunos que não queiram participar da pesquisa o líder (ou o auxiliar) irá até o aluno e
+após esclarecimentos pedirá que assinale a opção NÃO (em querer participar da pesquisa) e que responda
+pelo menos três questões que são sobre idade, sexo e raça ou cor, necessárias para procedimentos técnicos
+da amostra e que as informações serão mantidas sob sigilo e não serão incorporadas ao resultado final da
+pesquisa. Caso o aluno recuse responder a essas três perguntas, o líder (ou o auxiliar) deverá assinalar a
+recusa na agenda de campo.
+         Quando o(a) aluno(a) levantar a mão sinalizando que terminou, um membro da equipe deverá
+dirigir-se a ele(a), verificar se o questionário foi encerrado, recolher o DMC, desligá-lo e guardá-lo na caixa
+reservada para esse propósito.
+
+                7.13.3. Preenchimento do questionário do ambiente escolar
+        Este questionário será preenchido pelo responsável pela escola antes ou depois de realizar a
+pesquisa com os alunos, ou ainda, em visita específica. O momento para o preenchimento vai depender do
+horário agendado para atividade com a turma e da disponibilidade do diretor.
+        O questionário poderá ser respondido diretamente pelo diretor(a) no DMC, caso ele prefira.
+Todavia, deverá estar acompanhado por um técnico ou pelo líder da equipe. Esse procedimento deve-se ao
+fato de o questionário do ambiente escolar fazer referência a alguns termos ou políticas que podem suscitar
+dúvidas no informante que, diferentemente do questionário dos alunos, deverão ser esclarecidas pelo
+entrevistador.
+Ao final da coleta de dados anote na agenda de campo as intercorrências, dúvidas e perguntas mais
+frequentes relacionadas ao preenchimento do questionário. Essas anotações serão preenchidas em cada
+escola participante. Essas informações são muito importantes para o aperfeiçoamento da pesquisa e
+melhoria do questionário para o entendimento do escolar de todas as regiões do país.
+
+              7.13.4. Finalização das atividades na escola
+       Organizar e recolher o material de campo de cada escola, ou seja, as caixas com os DMC’s, cartazes,
+manuais e conduzi-los ao veículo que está apoiando a equipe. Todo material deverá ser entregue ao líder da
+equipe de campo.
+       Agradeça a participação dos alunos e a colaboração dos professores. Dirija-se a direção da escola,
+informando que os trabalhos foram concluídos e agradeça a colaboração.
+
+                7.13.5. Transmissão e atualização do SIGCPeNSE
+        Transmita os dados coletados para o SIGCPeNSE. Na transmissão ocorrerá automaticamente a
+atualização do sistema e dos DMC’s. Com essa atualização as turmas já coletadas ficarão inabilitadas. Desse
+modo, a equipe não poderá selecioná-la para nova coleta de dados. A transmissão ocorrerá nas agências do
+IBGE ou em qualquer lugar que disponha de uma rede de internet com um mínimo de estabilidade. Logo
+após a transmissão dos questionários o líder da equipe deverá verificar se o número de questionários
+coletados é igual ao de transmitidos registrados no SIGCPeNSE.
+
+
+
+
+                                                      35
+36
+8. Questões que suscitam dúvidas e como orientar
+
+        8.1. Questionário aluno
+         Cor e raça (quesito 6): critério que leva em conta a autodeclaração do aluno, tal como ele se
+considera. Aspectos que podem ser observados:
+                 Pertencimento étnico – por exemplo, se considerar indígena mesmo que “não tenha traços
+                 indígenas” ou o inverso, “ter traços indígenas” e não se considerar indígena) e
+                 Ancestralidade – considerar-se negro mesmo que “aparentemente” seja branco.
+         Pai e mãe (quesitos 10 e 11): pai e mãe biológicos ou o quem o aluno considerar como tal
+(padrasto, madrasta, padrinho). Diferente de “pai, mãe ou responsável” (Bloco 7: Situações em casa e na
+escola), que se refere a qualquer adulto que seja considerado responsável pelo escolar; os termos “mãe” e
+“pai”, respectivamente, nos quesitos 10 (Você mora com sua mãe?) e 11 (Você mora com seu pai?) referem-
+se à figura do adulto que o estudante reconhece como mãe ou pai.
+         Empregado(a) doméstico(a) (quesito 19): qualquer pessoa que trabalhe prestando serviço
+doméstico remunerado em dinheiro ou benefícios, no domicílio do estudante, três ou mais dias por
+semana.
+         Café da manhã (quesito 21): o que o aluno considerar café da manhã (em casa, na escola, ou em
+qualquer outro lugar), assim, como o tipo de alimento, consumido na primeira refeição do dia
+(achocolatado, café, suco, pão, biscoito, etc)
+         Feijão (quesito 37): considerar todos os tipos de feijão (servidos cozidos quentes ou em salada).
+Não considerar soja, nem outras leguminosas (lentinhas, ervilhas, grão de bico, etc). Não considerar o feijão
+do acarajé ou de recheio de outros salgados.
+         Guloseimas (quesito 39): considerar apenas as guloseimas doces, como balas, confeitos,
+chocolates, chicletes, bombons, pirulitos. Não devem ser considerados “guloseimas” os alimentos salgados,
+como fazem os alunos de algumas regiões do País (Ex. região Norte).
+         Frutas frescas (quesito 40): considerar somente a fruta natural, sem nenhum preparo. Não
+considerar os sucos de frutas.
+         Alguma vez na vida você engravidou, mesmo que a gravidez não tenha chegado ao fim? (quesito
+110): deve ser incluída qualquer gravidez, mesmo que tenha sido interrompida (aborto espontâneo ou
+provocado).
+
+        8.2. Questionário do ambiente escolar
+         Ambiente escolar: o questionário deverá ser respondido pelo responsável da escola mais
+capacitado para responder às questões, desde que acompanhado pelo técnico do IBGE.
+         Internet da escola (quesito 10): considerar o acesso à internet utilizado ou disponibilizado pela
+escola aos escolares.
+         A escola fica aberta nos finais de semana para uso da comunidade? (quesito 15): considerar o uso
+de qualquer espaço da escola (quadra, pátio, auditório, salas, biblioteca, etc.) por pessoas ou famílias da
+localidade, independentemente de serem alunos da escola, para diversos tipos de atividades (reuniões,
+cursos, festividades, atividade física, etc.). Considerar mesmo que não seja em todos os finais de semana.
+         As ações desenvolvidas na escola, nos finais de semana, são pactuadas com a comunidade?
+(quesito 16): considerar “pactuado com a comunidade” se existir um planejamento ou acordo sobre o uso
+do espaço da escola nos finais de semana com representantes da comunidade.
+         Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? (quesito 18):
+considerar as atividades oferecidas, com regularidade, dentro ou fora das dependências da escola.
+
+
+                                                     37
+        A água da escola foi testada (quesito 48): considerar os testes de potabilidade mais
+frequentemente realizados que incluem: cloro residual, PH, turbidez, coliformes fecais e totais.
+        Segurança (quesitos 56 a 61): incluir também, na ocorrência de eventos no bairro ou localidade,
+aqueles ocorridos dentro da escola.
+        Programa de Saúde na Escola – PSE (quesito 65): instituído pelo decreto presidencial nº 6.286, de 5
+de dezembro de 2007, como proposição de uma política intersetorial entre o Ministério da Saúde e o
+Ministério da Educação na perspectiva da atenção integral (prevenção, promoção e atenção) à saúde de
+crianças, adolescentes e jovens do ensino básico público (educação infantil, ensino fundamental e médio,
+educação profissional e tecnológica e na educação de jovens e adultos (EJA), no âmbito das escolas e/ou
+das unidades básicas de saúde, realizadas pelas Equipes de Saúde da Família.
+
+       8.3. Alguns conceitos
+        Recordatório de 24 horas (ONTEM) para produtos industrializados (quesitos 24 a 36): foram
+inseridas perguntas sobre produtos industrializados que o aluno tomou ou comeu no dia anterior (ONTEM),
+desde quando acordou até quando foi dormir. O objetivo desse levantamento é facilitar a recordação, pelo
+aluno, de todos os alimentos e bebidas ingeridos no dia anterior à pesquisa.
+        Recordatório de 7 dias (quesitos 37 a 42): registro da frequência semanal de consumo de
+alimentos, definidos como marcadores de alimentação saudável e não saudável. Diferente do recordatório
+de 24 horas (mede apenas o consumo do dia anterior, e pode ser atípico), esse levantamento tem o objetivo
+de conhecer o consumo alimentar habitual de determinado grupo populacional. De acordo com o
+Ministério da Saúde, os quesitos de 7 dias serão substituídos, em edições posteriores, pelos recordatórios
+de 24 h (ONTEM).
+        Intermediação: os quesitos de 2015 “O aluno possui alguma deficiência ou transtorno?” e “A
+deficiência ou transtorno impede o aluno de responder ao questionário sozinho?” foram agregados e
+movidos para o final do questionário em 2019. Adicionalmente, a redação foi alterada para perguntar se o
+aluno necessitou de alguma intermediação para responder ao questionário.
+
+             Estudante necessitou de intermediação para responder ao questionário?
+                □ Não
+                □ Sim, por dificuldades com alfabetização
+                □ Sim, por dificuldades físicas ou motoras
+
+
+         A Intermediação é definida como a situação em que o aluno necessitou de uma ajuda na maior
+parte do preenchimento do questionário (mais que 50%), seja ela por dificuldades de leitura, compreensão
+do texto (alfabetização) ou por dificuldades físicas ou motoras. As dificuldades devido a deficiências
+mentais, caso não resultem principalmente em dificuldades motoras, deverão ser consideradas como
+dificuldades cognitivas e assinaladas como dificuldades de alfabetização.
+         Sexo (quesito 2): o quesito de 2015 “Qual é o seu sexo? Masculino/Feminino” – foi alterado, em
+2019, para “Qual é o seu sexo? Homem/Mulher”, para adequação de sua redação a outras pesquisas do
+IBGE (PNAD) e ao correto uso da variável sexo.
+         Ter computador em casa (quesito 14): em 2015 o quesito “Na sua casa tem computador (de mesa,
+ou netbook, laptop, etc)?” foi alterado, em 2019, para “Na sua casa tem computador ou notebook?”. Os
+exemplos utilizados nas edições de 2012 e 2015 para especificar melhor o que se entende por
+“computador”, foram excluídos por não atingirem o objetivo pretendido: nos testes cognitivos observou-se
+
+
+
+
+                                                    38
+que os alunos, quase sempre, associavam o termo “computador” apenas a desktops e notebooks, deixando
+de lado tablets e celulares.
+        Banheiros (quesito 18): o quesito de 2015 “Quantos banheiros com chuveiros têm dentro da sua
+casa?” foi alterado, em 2019, para “Quantos banheiros completos, com vaso sanitário e chuveiro, têm
+dentro da sua casa?” para adequar sua redação a outras pesquisas do IBGE (PNAD e Censo). Com os
+resultados do teste cognitivo, optou-se por inserir o termo “completos” para destacar aos alunos que
+estamos falando de uma configuração específica de banheiro.
+        Atividades físicas (quesitos 47 a 56): para crianças e jovens, a atividade física inclui brincadeiras,
+jogos, esportes, transporte, tarefas, recreação, educação física, ou exercício programado, no contexto de
+atividades da família, escola e comunidade. Quem está nessa faixa etária deve praticar pelo menos 60
+minutos de atividades físicas diárias, sejam moderadas (caminhada para a escola, jogos recreativos) ou
+intensas (corrida, jogos esportivos), somando 300 minutos de atividades físicas na semana.
+        Saúde Mental (quesitos 95 a 100): os quesitos destinados a observar a saúde mental dos
+adolescentes. Segundo a Organização Mundial da Saúde – OMS, a saúde mental é mais do que a ausência
+de transtornos mentais, sendo determinada por uma série de fatores socioeconômicos, biológicos e
+ambientais e que devem ser observados desde a infância. Para alcançar esse objetivo, são propostos
+diversos programas de atenção à saúde mental, contemplando medidas para a prevenção do suicídio,
+prevenção e tratamento de transtornos mentais em crianças e adolescentes, prevenção e tratamento de
+demência e tratamento de transtornos relacionados ao uso de substâncias.
+        Função Ajuda: em 2019, para alguns quesitos do questionário do aluno, será disponibilizada a
+função AJUDA (com textos e/ou imagens) no canto superior direito da tela do DMC. Essa função pode ser
+acionada caso o estudante necessite de esclarecimentos adicionais sobre conceitos contidos nos quesitos
+dos blocos temáticos seguintes: Alimentação (quesito 38), Atividade física (quesitos 53 e 54), Uso de cigarro
+(quesito 65), Bebidas alcoólicas (quesitos 70, 71, 74 e 75), Outras drogas (quesitos 80 e 81) e Segurança
+(quesitos 131, 132, 133 e 134). Ou ela aparece em perguntas em que é preciso repetir as definições que
+estão nas questões.
+
+
+
+
+                                                     39
+40
+9. Referências bibliográficas
+
+Brasil. Ministério da Saúde. Portaria nº 12, de 26 de abril de 2005. Constitui grupo técnico, com a finalidade
+de apoiar a realização da primeira pesquisa nacional de saúde dos escolares. Diário Oficial da República
+Federativa do Brasil, Brasília (DF), 2005 abr 27; Seção 1:118.
+
+Brener ND, Kann L, Shanklin S, Kinchen S, Eaton DK, Hawkins J, et al. Methodology of the youth risk behavior
+surveillance system – 2013. MMWR Recomm Rep. 2013 Mar ;62(RR01):1-23.
+
+Cochran W.G. (1977). Sampling Techniques, Third Edition. Nova Iorque: Wiley.
+
+Instituto Brasileiro de Geografia e Estatística. Pesquisa Nacional de Saúde Escolar. Rio de Janeiro: Instituto
+Brasileiro         de       Geografia          e        Estatística;      2009.        Disponível          em:
+<https://biblioteca.ibge.gov.br/visualizacao/livros/liv43063.pdf>. Acesso em: fev. 2019.
+
+Instituto Brasileiro de Geografia e Estatística. Pesquisa Nacional de Saúde Escolar. Rio de Janeiro: Instituto
+Brasileiro         de       Geografia          e        Estatística;      2012.        Disponível          em:
+<https://biblioteca.ibge.gov.br/visualizacao/livros/liv64436.pdf>. Acesso em: fev. 2019.
+
+Instituto Brasileiro de Geografia e Estatística. Pesquisa Nacional de Saúde Escolar. Rio de Janeiro: Instituto
+Brasileiro         de       Geografia          e        Estatística;      2015.        Disponível          em:
+<https://biblioteca.ibge.gov.br/visualizacao/livros/liv97870.pdf>. Acesso em: fev. 2019.
+
+Instituto Brasileiro de Geografia e Estatística. Sinopse do Censo Demográfico 2010 [Internet]. Rio de Janeiro:
+Instituto        Brasileiro       de         Geografia       e      Estatística;      2011.        Disponível
+em:<http://www.ibge.gov.br/home/estatistica/populacao/censo2010/sinopse/default_sinopse.shtm >.
+Acesso em: fev. 2019.
+
+Instituto Brasileiro de Geografia e Estatística. Pesquisa Nacional por Amostra de Domicílios: síntese de
+indicadores Rio de Janeiro: Instituto Brasileiro de Geografia e Estatística; 2012. Disponível em:
+<http://www.ibge.gov.br/home/estatistica/populacao/trabalhoerendimento/pnad2012/
+default_sintese.shtm> Acesso em: fev. 2019.
+
+Instituto Brasileiro de Geografia e Estatística. Pesquisa Nacional por Amostra de Domicílios: síntese de
+indicadores. Rio de Janeiro: Instituto Brasileiro de Geografia e Estatística; 2013. Disponível
+em:<http://www.ibge.gov.br/home/estatistica/populacao/trabalhoerendimento/pnad2013/
+default_sintese.shtm>. Acesso em: fev. 2019.
+
+Ministério da Saúde (BR). Secretaria de Vigilância em Saúde. Departamento de Análise de Situação de
+Saúde. Plano de ações estratégicas para o enfrentamento das doenças crônicas não transmissíveis (DCNT)
+no Brasil 2011-2022. Brasília: Ministério da Saúde Brasília; 2011.
+
+Ministério da Saúde (BR). Secretaria de Atenção à Saúde. Instituto Nacional de Câncer José Alencar Gomes
+da Silva. VigiEscola: Vigilância de tabagismo em escolares: dados e fatos de 12 capitais brasileiras. Ministério
+da Saúde; 2004. Disponível em:<http://www.inca.gov.br/vigescola/docs/vigescola_completo.pdf>. Acesso
+em: fev. 2019.
+
+                                                      41
+Pessoa D. G. C e Silva P. L. N. (1998). Análise de Dados Amostrais Complexos, 13º SINAPE – ABE – Associação
+Brasileira de Letras.
+
+World Health Organization. Global school-based student health survey (GSHS). Geneva: World Health
+Organization; 2009.
+
+World Health Organization. Inequalities young people's health: key findings from the Health Behaviour in
+School-aged Children (HBSC) 2005/2006 survey fact sheet [Internet]. Copenhagen: World Health
+Organization;                        2008.                         Disponível                       em:
+<http://www.euro.who.int/__data/assets/pdf_file/0004/83695/fs_hbsc_17june2008_e.pdf >. Acesso em:
+fev. 2019.
+
+
+
+
+                                                    42
+10. Anexos
+
+10.1 Questionário aluno
+
+                 PESQUISA NACIONAL DE SAÚDE DO ESCOLAR 2019
+                                QUESTIONÁRIO DO ALUNO
+   [O ALUNO DEVERÁ CONFERIR SE ESCOLA E TURMA FORAM SELECIONADAS CORRETAMENTE.
+                                    SE NÃO, O TÉCNICO DO IBGE DEVERÁ SER AVISADO.]
+                             INFORMAÇÕES SOBRE A PESQUISA
+Este questionário faz parte de uma pesquisa a ser realizada, em todo o país, pelo Instituto
+Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde (MS) e o
+Ministério da Educação (MEC), com o objetivo de ajudar na orientação de políticas públicas
+voltadas para a saúde dos(das) adolescentes brasileiros(as).
+Neste questionário, serão levantados dados sobre saúde bucal, consumo alimentar, prática de
+atividade física, imagem corporal, segurança, situações em casa e na escola, acesso a serviços de
+saúde, saúde sexual e reprodutiva, uso de cigarro, de bebidas alcoólica e drogas.
+Você não será identificado(a). Suas respostas serão mantidas em sigilo e apenas o resultado geral
+da pesquisa será divulgado. Existem questões que são confidenciais e podem levar a algum tipo
+de constrangimento (vergonha). Caso não se sinta confortável em responder a estas questões,
+você pode deixá-las sem resposta, bem como interromper o preenchimento do questionário a
+qualquer momento. Você não é obrigado(a) a participar desta pesquisa e, caso não queira, isto não
+afetará a sua relação com a escola.
+Não existem respostas certas ou erradas. O preenchimento do questionário terá duração
+aproximada de 40 minutos. Responda com atenção, pois suas respostas serão muito importantes
+para o conhecimento da saúde dos(das) adolescentes brasileiros(as).
+Você terá acesso ao registro do consentimento caso seja solicitado.
+Vale ressaltar que esta pesquisa foi aprovada pela Comissão Nacional de Ética em Pesquisa
+(CONEP), que é uma comissão do Conselho Nacional de Saúde (CNS), com a função de
+implementar as normas e diretrizes regulamentadoras de pesquisas envolvendo seres humanos.
+Endereço: SRTV 701, Via W 5 Norte, lote D – Edifício PO 700, 3º andar – Asa Norte, CEP: 70719-040,
+Brasília-DF. / E-mail: conep@saude.gov.br / Telefone (61) 3315-5877 / Atendimento ao público: 08h
+às 18h.
+1. Você concorda em participar dessa pesquisa?
+       □ Sim
+       □ Não
+                                  INFORMAÇÕES GERAIS
+Vamos começar com algumas perguntas sobre você, sua casa e sua família.
+2. Qual é o seu sexo?
+        □ Homem
+        □ Mulher
+3. Qual é a sua idade?
+        □ 11 anos ou menos
+        □ 12 anos
+        □ 13 anos
+        □ 14 anos
+        □ 15 anos
+        □ 16 anos
+        □ 17 anos
+        □ 18 anos
+        □ 19 anos ou mais
+
+
+
+
+                                                 43
+4. Qual é o mês do seu aniversário?
+        □ Janeiro
+        □ Fevereiro
+        □ Março
+        □ Abril
+        □ Maio
+        □ Junho
+        □ Julho
+        □ Agosto
+        □ Setembro
+        □ Outubro
+        □ Novembro
+        □ Dezembro
+5. Em que ano você nasceu?
+       □ Antes de 2001
+       □ 2001
+       □ 2002
+       □ 2003
+       □ 2004
+       □ 2005
+       □ 2006
+       □ 2007
+       □ 2008 ou mais
+6. Qual é a sua cor ou raça?
+        □ Branca
+        □ Preta
+        □ Amarela
+        □ Parda
+        □ Indígena
+7. Em que ano escolar você está?
+       □ 6º ano do Ensino Fundamental
+       □ 7º ano do Ensino Fundamental
+       □ 8º ano do Ensino Fundamental
+       □ 9º ano do Ensino Fundamental
+       □ 1º ano do Ensino Médio → [passe para 9]
+       □ 2º ano do Ensino Médio → [passe para 9]
+       □ 3º ano do Ensino Médio → [passe para 9]
+8. Quando terminar o Ensino Fundamental, você pretende?
+       □ Somente continuar estudando
+       □ Somente trabalhar
+       □ Continuar estudando e trabalhar
+       □ Seguir outro plano
+       □ Não sei
+9. Quando terminar o Ensino Médio, você pretende?
+       □ Somente continuar estudando
+       □ Somente trabalhar
+       □ Continuar estudando e trabalhar
+       □ Seguir outro plano
+       □ Não sei
+10. Você mora com sua mãe?
+       □ Sim
+       □ Não
+11. Você mora com seu pai?
+       □ Sim
+       □ Não
+
+
+
+
+                                                   44
+12. CONTANDO COM VOCÊ, quantas pessoas moram na sua casa ou apartamento?
+       □ 1 pessoa (moro sozinho)
+       □ 2 pessoas
+       □ 3 pessoas
+       □ 4 pessoas
+       □ 5 pessoas
+       □ 6 pessoas
+       □ 7 pessoas
+       □ 8 pessoas
+       □ 9 pessoas
+       □ 10 pessoas ou mais
+13. Você tem celular?
+       □ Sim
+       □ Não
+14. Na sua casa tem computador ou notebook?
+        □ Sim
+        □ Não
+15. Você tem acesso à internet em sua casa?
+       □ Sim
+       □ Não
+16. Alguém que mora na sua casa tem carro?
+       □ Sim
+       □ Não
+17. Alguém que mora na sua casa tem motocicleta/moto?
+       □ Sim
+       □ Não
+18. Quantos banheiros completos, com vaso sanitário e chuveiro, têm dentro da sua casa?
+       □ Não tem banheiro com vaso sanitário e chuveiro dentro da minha casa
+       □ 1 banheiro
+       □ 2 banheiros
+       □ 3 banheiros
+       □ 4 banheiros ou mais
+19. Tem empregado(a) doméstico(a) recebendo dinheiro para fazer o trabalho em sua casa, três ou
+mais dias por semana?
+       □ Sim
+       □ Não
+20. Qual nível de ensino (escolaridade) da sua MÃE?
+       □ Minha mãe não estudou
+       □ Não terminou o Ensino Fundamental (1º grau)
+       □ Terminou o Ensino Fundamental (1º grau)
+       □ Não terminou o Ensino Médio (2º grau)
+       □ Terminou o Ensino Médio (2º grau)
+       □ Não terminou o Ensino Superior (faculdade)
+       □ Terminou o Ensino Superior (faculdade)
+       □ Não sei
+                                        ALIMENTAÇÃO
+As próximas perguntas referem-se à sua alimentação. Leve em conta tudo o que você comeu em
+casa, na escola, na rua, em lanchonetes, em restaurantes ou em qualquer outro lugar.
+21. Você costuma tomar o café da manhã?
+       □ Sim, todos os dias
+       □ Sim, 5 a 6 dias por semana
+       □ Sim, 3 a 4 dias por semana
+       □ Sim, 1 a 2 dias por semana
+       □ Raramente
+       □ Não
+
+
+
+                                                45
+22. Você costuma almoçar ou jantar com sua mãe, pai ou responsável?
+       □ Sim, todos os dias
+       □ Sim, 5 a 6 dias por semana
+       □ Sim, 3 a 4 dias por semana
+       □ Sim, 1 a 2 dias por semana
+       □ Raramente
+       □ Não
+23. Nas suas refeições, com que frequência você costuma comer fazendo alguma outra coisa
+(assistindo à TV, mexendo no computador ou no celular)?
+        □ Todos os dias da semana
+        □ 5 a 6 dias por semana
+        □ 3 a 4 dias por semana
+        □ 1 a 2 dias por semana
+        □ Não costumo comer fazendo alguma outra coisa
+Agora tente lembrar dos produtos industrializados que você comeu ou tomou ONTEM, desde
+quando acordou até quando foi dormir.
+24. ONTEM, você tomou refrigerante?
+       □ Sim
+       □ Não
+25. ONTEM, você tomou suco de fruta em caixinha ou lata?
+       □ Sim
+       □ Não
+26. ONTEM, você tomou refresco em pó?
+       □ Sim
+       □ Não
+27. ONTEM, você tomou bebida achocolatada?
+       □ Sim
+       □ Não
+28. ONTEM, você tomou iogurte com sabor?
+       □ Sim
+       □ Não
+29. ONTEM, você comeu salgadinho de pacote (chips) ou biscoito/bolacha salgado?
+       □ Sim
+       □ Não
+30. ONTEM, você comeu biscoito ou bolacha doce, biscoito recheado ou bolinho de pacote?
+       □ Sim
+       □ Não
+31. ONTEM, você comeu chocolate, sorvete, gelatina, flan ou outra sobremesa industrializada?
+       □ Sim
+       □ Não
+32. ONTEM, você comeu salsicha, linguiça, mortadela ou presunto?
+       □ Sim
+       □ Não
+33. ONTEM, você comeu pão de forma, pão de cachorro-quente ou pão de hambúrguer?
+       □ Sim
+       □ Não
+34. ONTEM, você comeu margarina?
+       □ Sim
+       □ Não
+35. ONTEM, você comeu maionese, ketchup ou outros molhos industrializados?
+       □ Sim
+       □ Não
+
+
+
+
+                                               46
+36. ONTEM, você comeu macarrão instantâneo (miojo), sopa de pacote, lasanha congelada ou
+outro prato pronto comprado congelado?
+       □ Sim
+       □ Não
+Conte agora tudo o que você comeu em casa, na escola, na rua, em lanchonetes, em restaurantes
+ou qualquer outro lugar NOS ÚLTIMOS 7 DIAS.
+37. NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu feijão?
+       □ Não comi feijão nos últimos 7 dias
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 6 dias
+       □ Todos os dias
+38. NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu pelo menos um tipo de legume ou verdura
+que não seja batata ou aipim (mandioca/macaxeira)?
+       □ Não comi nenhum tipo de legume ou verdura nos últimos 7 dias
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 6 dias
+       □ Todos os dias
+39. NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu guloseimas doces, como balas, confeitos,
+chocolates, chicletes, bombons, pirulitos e outros?
+       □ Não comi guloseimas doces nos últimos 7 dias
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 6 dias
+       □ Todos os dias
+40. NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu frutas frescas ou salada de frutas?
+       □ Não comi frutas frescas ou salada de frutas nos últimos 7 dias
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 6 dias
+       □ Todos os dias
+41. NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou refrigerante?
+       □ Não tomei refrigerante nos últimos 7 dias
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 6 dias
+       □ Todos os dias
+
+
+
+
+                                              47
+42. NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu em lanchonetes, barracas de cachorro
+quente, pizzaria, fast food etc?
+       □ Não comi em lanchonetes, barracas de cachorro quente, pizzaria, fast food nos últimos 7 dias
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 6 dias
+       □ Todos os dias
+43. Sua escola oferece comida/merenda aos alunos da sua turma? (Não considerar comida
+comprada na cantina)
+       □ Sim
+       □ Não → [passe para 45]
+       □ Não sei → [passe para 45]
+44. Você costuma comer a comida/merenda oferecida pela escola? (Não considerar comida
+comprada na cantina)
+       □ Sim, todos os dias
+       □ Sim, 3 a 4 dias por semana
+       □ Sim, 1 a 2 dias por semana
+       □ Raramente
+       □ Não
+45. Você costuma comprar alimentos ou bebidas na cantina dentro da escola? (Não considerar a
+compra de água)
+       □ Sim, todos os dias
+       □ Sim, 3 a 4 dias por semana
+       □ Sim, 1 a 2 dias por semana
+       □ Raramente
+       □ Não costumo comprar alimentos ou bebidas na cantina
+       □ Não tem cantina na escola
+46. Você costuma comprar alimentos ou bebidas de vendedores de rua (camelô ou ambulante) na
+porta ou ao redor da escola? (Não considerar a compra de água)
+       □ Sim, todos os dias
+       □ Sim, 3 a 4 dias por semana
+       □ Sim, 1 a 2 dias por semana
+       □ Raramente
+       □ Não costumo comprar alimentos ou bebidas de vendedores de rua
+       □ Não tem vendedores de rua na porta ou ao redor da escola
+                                        ATIVIDADE FÍSICA
+Agora vamos conversar sobre a prática de atividades físicas como dança, ballet, luta, ginástica,
+futebol, voleibol, basquete, handebol, caminhar, correr, andar de bicicleta, nadar etc.
+
+Primeiro, tente lembrar de como você foi e voltou à escola nos últimos 7 dias.
+47. NOS ÚLTIMOS 7 DIAS, em quantos dias você FOI a pé ou de bicicleta para a escola?
+       □ Nenhum dia nos últimos 7 dias → [passe para 49]
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 5 dias mais sábado
+       □ 5 dias mais sábado e domingo
+
+
+
+
+                                                  48
+48. Quando você VAI para a escola a pé ou de bicicleta, quanto tempo você gasta?
+       □ Menos de 10 minutos por dia
+       □ 10 a 19 minutos por dia
+       □ 20 a 29 minutos por dia
+       □ 30 a 39 minutos por dia
+       □ 40 a 49 minutos por dia
+       □ 50 a 59 minutos por dia
+       □ 1 hora ou mais por dia
+49. NOS ÚLTIMOS 7 DIAS, em quantos dias você VOLTOU a pé ou de bicicleta da escola?
+       □ Nenhum dia nos últimos 7 dias → [passe para 51]
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 5 dias mais sábado
+       □ 5 dias mais sábado e domingo
+50. Quando você VOLTA da escola a pé ou de bicicleta, quanto tempo você gasta?
+       □ Menos de 10 minutos por dia
+       □ 10 a 19 minutos por dia
+       □ 20 a 29 minutos por dia
+       □ 30 a 39 minutos por dia
+       □ 40 a 49 minutos por dia
+       □ 50 a 59 minutos por dia
+       □ 1 hora ou mais por dia
+Agora tente lembrar das aulas de educação física NA ESCOLA nos últimos 7 dias.
+51. NOS ÚLTIMOS 7 DIAS, quantos dias você TEVE aulas de educação física na escola?
+       □ Nenhum dia nos últimos 7 dias → [passe para 53]
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 5 dias mais sábado
+       □ 5 dias mais sábado e domingo
+52. Quanto tempo por dia você FEZ atividade física ou praticou esporte durante as aulas de
+educação física na escola? Não considere o tempo gasto em atividades teóricas em sala de aula.
+       □ Não fiz atividade física na aula de educação física na escola nos últimos 7 dias.
+       □ Menos de 10 minutos por dia
+       □ 10 a 19 minutos por dia
+       □ 20 a 29 minutos por dia
+       □ 30 a 39 minutos por dia
+       □ 40 a 49 minutos por dia
+       □ 50 a 59 minutos por dia
+       □ 1 hora a 1 hora e 19 minutos por dia
+       □ 1 hora e 20 minutos ou mais por dia
+Agora tente lembrar das práticas de atividade física nos últimos 7 dias, SEM CONTAR as aulas de
+Educação Física na escola e a ida ou volta a pé ou de bicicleta da escola.
+53. NOS ÚLTIMOS 7 DIAS, sem contar as aulas de educação física da escola, em quantos dias você
+praticou alguma atividade física?
+       □ Nenhum dia nos últimos 7 dias → [passe para 55]
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias
+       □ 5 dias mais sábado
+       □ 5 dias mais sábado e domingo
+
+
+                                               49
+54. Quanto tempo por dia duraram essas atividades que você fez?
+       □ Menos de 10 minutos por dia
+       □ 10 a 19 minutos por dia
+       □ 20 a 29 minutos por dia
+       □ 30 a 39 minutos por dia
+       □ 40 a 49 minutos por dia
+       □ 50 a 59 minutos por dia
+       □ 1 hora a 1 hora e 19 minutos por dia
+       □ 1 hora e 20 minutos ou mais por dia
+55. Quantas horas por dia você assiste a televisão (TV)? (NÃO contar sábado, domingo e feriado)
+       □ Não assisto a televisão (TV)
+       □ Até 1 hora por dia
+       □ Mais de 1 hora até 2 horas por dia
+       □ Mais de 2 horas até 3 horas por dia
+       □ Mais de 3 horas até 4 horas por dia
+       □ Mais de 4 horas até 5 horas por dia
+       □ Mais de 5 horas até 6 horas por dia
+       □ Mais de 6 horas até 7 horas por dia
+       □ Mais de 7 horas até 8 horas por dia
+       □ Mais de 8 horas por dia
+56. Quantas horas por dia você costuma ficar sentado(a), assistindo televisão, jogando videogame,
+usando computador, celular, tablet ou fazendo outras atividades sentado(a)? (NÃO contar sábado,
+domingo, feriados ou o tempo sentado na escola)
+       □ Até 1 hora por dia
+       □ Mais de 1 hora até 2 horas por dia
+       □ Mais de 2 horas até 3 horas por dia
+       □ Mais de 3 horas até 4 horas por dia
+       □ Mais de 4 horas até 5 horas por dia
+       □ Mais de 5 horas até 6 horas por dia
+       □ Mais de 6 horas até 7 horas por dia
+       □ Mais de 7 horas até 8 horas por dia
+       □ Mais de 8 horas por dia
+                                      USO DE CIGARRO
+                           [ESTE BLOCO APARECE APENAS PARA QUEM TEM 13 ANOS OU MAIS]
+
+Vamos conversar um pouco sobre uso de cigarro e de outros produtos do tabaco por você e outras
+pessoas próximas a você.
+ATENÇÃO! NÃO considere cigarro de maconha.
+
+Primeiro, vamos falar sobre o uso de cigarros.
+57. Alguma vez na vida, você já fumou cigarro, mesmo uma ou duas tragadas?
+       □ Sim
+       □ Não → [passe para 61]
+58. Que idade você tinha quando fumou cigarro pela primeira vez?
+       □ 9 anos ou menos
+       □ 10 anos
+       □ 11 anos
+       □ 12 anos
+       □ 13 anos
+       □ 14 anos
+       □ 15 anos
+       □ 16 anos
+       □ 17 anos
+       □ 18 anos ou mais
+
+
+
+
+                                                 50
+59. NOS ÚLTIMOS 30 DIAS, em quantos dias você fumou cigarros?
+       □ Nenhum dia nos últimos 30 dias → [passe para 61]
+       □ 1 ou 2 dias
+       □ 3 a 5 dias
+       □ 6 a 9 dias
+       □ 10 a 19 dias
+       □ 20 a 29 dias
+       □ Todos os dias
+60. NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu seus próprios cigarros?
+       □ Comprei numa loja, bar, botequim, padaria ou banca de jornal
+       □ Comprei de um vendedor de rua (camelô ou ambulante)
+       □ Dei dinheiro para alguém comprar para mim
+       □ Pedi a alguém
+       □ Peguei escondido em casa
+       □ Uma pessoa mais velha me deu
+       □ Consegui de outro modo
+61. NOS ÚLTIMOS 30 DIAS, alguém se recusou a lhe vender cigarros por causa de sua idade?
+       □ Não tentei comprar cigarros nos últimos 30 dias → [passe para 63]
+       □ Sim, alguém se recusou a me vender cigarros por causa de minha idade
+       □ Não, minha idade não me impediu de comprar cigarros
+62. NOS ÚLTIMOS 30 DIAS, você comprou cigarro por unidade (avulso, a varejo, retalho ou cigarro
+solto)?
+        □ Sim
+        □ Não
+Conte agora sobre o uso de outros produtos do tabaco. São exemplos de outros produtos do
+tabaco: narguilé, cigarro eletrônico (e-cigarette), cigarros de palha ou enrolados a mão, charuto,
+cachimbo, cigarrilha, cigarro indiano (bidi), cigarro de cravo (bali), rapé, fumo de mascar e outros.
+
+ATENÇÃO!
+NÃO CONSIDERE cigarro comum.
+MACONHA não é produto do tabaco.
+63. Alguma vez na vida você já experimentou narguilé (cachimbo de água)?
+       □ Sim
+       □ Não
+64. Alguma vez na vida você já experimentou cigarro eletrônico (e-cigarrette)?
+       □ Sim
+       □ Não
+65. Alguma vez na vida você já experimentou outros produtos do tabaco, SEM CONTAR narguilé e
+cigarro eletrônico?
+        □ Sim
+        □ Não
+  [ESTA PERGUNTA APARECE APENAS PARA QUEM RESPONDEU “Sim” NA 63, 64 OU 65; MÚLTIPLA
+                                                                              RESPOSTA]
+66. NOS ÚLTIMOS 30 DIAS, qual(is) desses outros produtos do tabaco você usou?
+       □ Não usei nenhum desses outros produtos de tabaco nos últimos 30 dias
+       □ Narguilé (cachimbo de água)
+       □ Cigarro eletrônico (e-cigarette)
+       □ Cigarros de cravo (cigarros de Bali)
+       □ Cigarros enrolados à mão (palha ou papel)
+       □ Outros
+Conte agora sobre uso de cigarro e outros produtos do tabaco por pessoas próximas a você.
+67. Sua mãe, pai ou responsável fuma?
+       □ Nenhum deles
+       □ Só meu pai ou responsável do sexo masculino
+       □ Só minha mãe ou responsável do sexo feminino
+       □ Os dois (ambos)
+       □ Não sei
+
+                                                  51
+68. NOS ÚLTIMOS 7 DIAS, em quantos dias pessoas fumaram em sua presença na sua casa?
+       □ Nenhum dia nos últimos 7 dias
+       □ 1 ou 2 dias
+       □ 3 ou 4 dias
+       □ 5 ou 6 dias
+       □ Todos os dias
+69. NOS ÚLTIMOS 30 DIAS, algum dos seus amigos fumou na sua presença?
+       □ Sim
+       □ Não
+                                  BEBIDAS ALCOÓLICAS
+                          [ESTE BLOCO APARECE APENAS PARA QUEM TEM 13 ANOS OU MAIS]
+
+As próximas perguntas referem-se ao consumo de bebidas alcoólicas por você e pessoas
+próximas a você.
+Para respondê-las, considere que UMA DOSE DE BEBIDA corresponde a:
+– uma latinha ou garrafa long neck de cerveja ou vodca-ice ou
+– um copo de chopp ou
+– uma taça de vinho ou
+– uma dose de cachaça/pinga, vodca, uísque etc.
+
+ATENÇÃO! A ingestão de bebidas alcoólicas não inclui experimentar o gosto ou tomar alguns
+poucos goles.
+70. Alguma vez na vida você tomou um copo ou uma dose de bebida alcoólica?
+       □ Sim
+       □ Não → [passe para 77]
+71. Que idade você tinha quando tomou o primeiro copo ou dose de bebida alcoólica?
+       □ 9 anos ou menos
+       □ 10 anos
+       □ 11 anos
+       □ 12 anos
+       □ 13 anos
+       □ 14 anos
+       □ 15 anos
+       □ 16 anos
+       □ 17 anos
+       □ 18 anos ou mais
+72. Na sua vida, quantas vezes você bebeu tanto que ficou realmente bêbado(a)?
+        □ Nenhuma vez na vida
+        □ 1 ou 2 vezes
+        □ 3 a 5 vezes
+        □ 6 a 9 vezes
+        □ 10 ou mais vezes
+73. Na sua vida, quantas vezes você teve problemas com sua família ou amigos, perdeu aulas ou
+brigou por que tinha bebido?
+        □ Nenhuma vez na vida
+        □ 1 ou 2 vezes
+        □ 3 a 5 vezes
+        □ 6 a 9 vezes
+        □ 10 ou mais vezes
+Agora tente lembrar o que você bebeu NOS ÚLTIMOS 30 DIAS.
+
+
+
+
+                                              52
+74. NOS ÚLTIMOS 30 DIAS, em quantos dias você tomou pelo menos um copo ou uma dose de
+bebida alcoólica?
+       □ Nenhum dia nos últimos 30 dias → [passe para 77]
+       □ 1 ou 2 dias
+       □ 3 a 5 dias
+       □ 6 a 9 dias
+       □ 10 a 19 dias
+       □ 20 a 29 dias
+       □ Todos os dias
+75. NOS ÚLTIMOS 30 DIAS, nos dias em que você tomou alguma bebida alcoólica, quantos copos
+ou doses você tomou por dia?
+       □ 1 copo ou 1 dose
+       □ 2 copos ou 2 doses
+       □ 3 copos ou 3 doses
+       □ 4 copos ou 4 doses
+       □ 5 copos ou mais ou 5 doses ou mais
+76. NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu a bebida que tomou?
+       □ Comprei na loja, mercado, bar, botequim ou padaria
+       □ Comprei de um vendedor de rua (camelô ou ambulante)
+       □ Dei dinheiro a alguém que comprou para mim
+       □ Consegui com meus amigos
+       □ Peguei escondido em casa
+       □ Consegui com alguém em minha família
+       □ Em uma festa
+       □ Consegui de outro modo
+As próximas perguntas referem-se ao consumo de bebidas alcoólicas por pessoas próximas a
+você.
+77. Sua mãe, pai ou responsável bebe bebidas alcoólicas?
+       □ Nenhum deles
+       □ Só meu pai ou responsável do sexo masculino
+       □ Só minha mãe ou responsável do sexo feminino
+       □ Os dois (ambos)
+       □ Não sei
+78. NOS ÚLTIMOS 30 DIAS, algum dos seus amigos bebeu alguma bebida alcoólica na sua
+presença?
+       □ Sim
+       □ Não
+                                     OUTRAS DROGAS
+                          [ESTE BLOCO APARECE APENAS PARA QUEM TEM 13 ANOS OU MAIS]
+
+Vamos conversar um pouco sobre uso de algumas drogas como maconha, cocaína, crack, cola,
+loló, lança-perfume, ecstasy, oxi, MD, skank, LSD e outras.
+79. Alguma vez na vida, você já usou alguma droga como: maconha, cocaína, crack, cola, loló,
+lança-perfume, ecstasy, oxi, MD, skank, LSD e outras?
+       □ Sim
+       □ Não → [passe para 84]
+80. Que idade você tinha quando usou alguma droga pela primeira vez?
+       □ 9 anos ou menos
+       □ 10 anos
+       □ 11 anos
+       □ 12 anos
+       □ 13 anos
+       □ 14 anos
+       □ 15 anos
+       □ 16 anos
+       □ 17 anos
+       □ 18 anos ou mais
+
+
+                                               53
+81. NOS ÚLTIMOS 30 DIAS, quantos dias você usou alguma droga?
+       □ Nenhum dia nos últimos 30 dias
+       □ 1 ou 2 dias
+       □ 3 a 5 dias
+       □ 6 a 9 dias
+       □ 10 ou mais dias
+82. NOS ÚLTIMOS 30 DIAS, quantos dias você usou maconha?
+       □ Nenhum dia nos últimos 30 dias
+       □ 1 ou 2 dias
+       □ 3 a 9 dias
+       □ 10 ou mais dias
+83. NOS ÚLTIMOS 30 DIAS, quantos dias você usou crack?
+       □ Nenhum dia nos últimos 30 dias
+       □ 1 ou 2 dias
+       □ 3 a 9 dias
+       □ 10 ou mais dias
+84. NOS ÚLTIMOS 30 DIAS, algum dos seus amigos usou drogas na sua presença?
+       □ Sim
+       □ Não
+                          SITUAÇÕES EM CASA E NA ESCOLA
+As próximas perguntas referem-se a situações vividas por você em casa, na escola, na internet,
+nas redes sociais ou nos aplicativos de celular e o quanto sua mãe, pai ou responsável sabe sobre
+o que acontece com você.
+85. NOS ÚLTIMOS 30 DIAS, em quantos dias você faltou às aulas ou à escola sem permissão de
+sua mãe, pai ou responsável?
+       □ Nenhum dia nos últimos 30 dias
+       □ 1 ou 2 dias
+       □ 3 a 5 dias
+       □ 6 a 9 dias
+       □ 10 ou mais dias
+86. NOS ÚLTIMOS 30 DIAS, com que frequência sua mãe, pai ou responsável sabia realmente o que
+você estava fazendo em seu tempo livre?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+87. NOS ÚLTIMOS 30 DIAS, com que frequência sua mãe, pai ou responsável entendeu suas
+preocupações e problemas?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+88. NOS ÚLTIMOS 30 DIAS, com que frequência os colegas de sua escola trataram você bem e/ou
+foram prestativos com você?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+
+
+
+
+                                               54
+89. NOS ÚLTIMOS 30 DIAS, quantas vezes algum dos seus colegas de escola o esculachou, zoou,
+mangou, intimidou ou caçoou tanto que você ficou magoado, incomodado, aborrecido, ofendido ou
+humilhado?
+       □ Nenhuma vez nos últimos 30 dias → [passe para 91]
+       □ 1 vez
+       □ 2 ou mais vezes
+90. NOS ÚLTIMOS 30 DIAS, qual o motivo/causa de seus colegas terem esculachado, zombado,
+zoado, caçoado, mangado, intimidado ou humilhado?
+       □ A minha cor ou raça
+       □ A minha religião
+       □ A aparência do meu rosto
+       □ A aparência do meu corpo
+       □ A minha orientação sexual
+       □ A minha região de origem
+       □ Outros motivos/causas
+91. NOS ÚLTIMOS 30 DIAS, quantas vezes algum dos seus colegas de escola se recusou a falar
+com você, deixou você de lado sem razão ou fez com que outros colegas deixassem de falar com
+você?
+       □ Nenhuma vez nos últimos 30 dias
+       □ 1 vez
+       □ 2 ou mais vezes
+92. NOS ÚLTIMOS 30 DIAS, quantas vezes algum dos seus colegas de escola bateu (deu socos,
+tapas, chutes, pontapés) em você ou o machucou fisicamente de outra forma?
+        □ Nenhuma vez nos últimos 30 dias
+        □ 1 vez
+        □ 2 ou mais vezes
+93. NOS ÚLTIMOS 30 DIAS, você se sentiu ameaçado(a), ofendido(a) ou humilhado(a) nas redes
+sociais ou aplicativos de celular?
+        □ Sim
+        □ Não
+94. NOS ÚLTIMOS 30 DIAS, você esculachou, zombou, mangou, intimidou ou caçoou algum de
+seus colegas da escola tanto que ele ficou magoado, aborrecido, ofendido ou humilhado?
+       □ Sim
+       □ Não
+                                       SAÚDE MENTAL
+Vamos conversar agora sobre seus amigos, suas preocupações e seus sentimentos.
+95. Quantos(as) amigos(as) próximos você tem?
+       □ Nenhum amigo
+       □ 1 amigo
+       □ 2 amigos
+       □ 3 ou mais amigos
+96. NOS ÚLTIMOS 30 DIAS, com que frequência você se sentiu muito preocupado com as coisas
+comuns do seu dia a dia como atividades da escola, competições esportivas, tarefas de casa, etc.?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+97. NOS ÚLTIMOS 30 DIAS, com que frequência você se sentiu triste?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+
+
+
+
+                                                55
+98. NOS ÚLTIMOS 30 DIAS, com que frequência você sentiu que ninguém se preocupa com você?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+99. NOS ÚLTIMOS 30 DIAS, com que frequência você se sentiu irritado(a), nervoso(a) ou mal-
+humorado(a) por qualquer coisa?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+100. NOS ÚLTIMOS 30 DIAS, com que frequência você sentiu que a vida não vale a pena ser vivida?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+                             SAÚDE SEXUAL E REPRODUTIVA
+                           [ESTE BLOCO APARECE APENAS PARA QUEM TEM 13 ANOS OU MAIS]
+
+Agora vamos conversar sobre sexo, contracepção, saúde sexual e reprodutiva.
+101. Você já teve relação sexual (transou) alguma vez?
+       □ Sim
+       □ Não → [passe para 111]
+102. Que idade você tinha quando teve relação sexual (transou) pela primeira vez?
+       □ 9 anos ou menos
+       □ 10 anos
+       □ 11 anos
+       □ 12 anos
+       □ 13 anos
+       □ 14 anos
+       □ 15 anos
+       □ 16 anos
+       □ 17 anos
+       □ 18 anos ou mais
+103. Você ou seu(sua) parceiro(a) usou camisinha (preservativo) NA PRIMEIRA RELAÇÃO
+SEXUAL?
+       □ Sim
+       □ Não
+104. NA ÚLTIMA VEZ que você teve relação sexual (transou), você ou seu(sua) parceiro(a) usou
+camisinha (preservativo)?
+       □ Sim
+       □ Não → [passe para 106]
+105. Nesta última vez que você teve relação sexual (transou), como você conseguiu a camisinha
+(preservativo)?
+       □ No serviço de saúde
+       □ Na escola
+       □ Com um(a) amigo(a) ou colega
+       □ Com mãe, pai ou responsável
+       □ Comprei em farmácia, mercado ou loja
+       □ Com o(a) parceiro(a) sexual
+       □ Com outra pessoa ou de outro modo
+
+
+
+
+                                                56
+106. NA ÚLTIMA VEZ que você teve relação sexual (transou), você ou seu(sua) parceiro(a) usou
+algum outro método para evitar a gravidez que não seja camisinha (preservativo)?
+       □ Sim
+       □ Não → [passe para 108]
+       □ Não sei → [passe para 108]
+107. Nesta última vez que você teve relação sexual (transou), qual outro método você ou seu(sua)
+parceiro(a) usou para evitar gravidez?
+       □ Pílula anticoncepcional
+       □ Injetável
+       □ Implante
+       □ Diafragma
+       □ DIU
+       □ Pílula do dia seguinte (contracepção de emergência)
+       □ Tabelinha
+       □ Coito interrompido
+       □ Outro
+       □ Não sei
+108. Alguma vez na vida, você ou sua parceira já usou pílula do dia seguinte (contracepção de
+emergência)?
+        □ Sim
+        □ Não → [passe para 110]
+        □ Não sei → [passe para 110]
+109. NA ÚLTIMA VEZ que você ou sua parceira usou pílula do dia seguinte (contracepção de
+emergência) como conseguiu?
+       □ No serviço de saúde
+       □ Com um(a) amigo(a) ou colega
+       □ Com mãe, pai ou responsável
+       □ Comprei em farmácia
+       □ Com o(a) parceiro(a) sexual
+       □ Com outra pessoa ou de outro modo
+                                          [ESTA QUESTÃO APARECE APENAS PARA MULHERES]
+110. Alguma vez na vida você engravidou, mesmo que a gravidez não tenha chegado ao fim?
+        □ Sim
+        □ Não
+111. Na escola, você já recebeu orientação sobre prevenção de gravidez?
+        □ Sim
+        □ Não
+112. Na escola, você já recebeu orientação sobre prevenção de HIV/AIDS ou outras
+Doenças/Infecções Sexualmente Transmissíveis?
+       □ Sim
+       □ Não
+113. Na escola, você já recebeu orientação sobre como conseguir camisinha (preservativo)
+gratuitamente?
+        □ Sim
+        □ Não
+                                 HIGIENE E SAÚDE BUCAL
+Vamos conversar agora sobre como você cuida da higiene do seu corpo e dos seus dentes, em
+casa, na escola ou em qualquer outro lugar.
+114. Com que frequência você lava as mãos antes de comer?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+
+
+
+
+                                                57
+115. Com que frequência você lava as mãos após usar o banheiro ou o vaso sanitário?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+116. Com que frequência você usa sabão ou sabonete quando lava suas mãos?
+       □ Nunca
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+117. Quantas vezes por dia você escova os dentes?
+       □ Não escovo os dentes todos os dias
+       □ 1 vez por dia
+       □ 2 vezes por dia
+       □ 3 vezes por dia
+       □ 4 ou mais vezes por dia
+118. NOS ÚLTIMOS 6 MESES, você teve dor de dente que não tenha sido causada por uso de
+aparelho?
+       □ Sim
+       □ Não
+       □ Não sei / não me lembro
+119. NOS ÚLTIMOS 12 MESES, quantas vezes você foi ao dentista?
+       □ Nenhuma vez nos últimos 12 meses
+       □ 1 vez
+       □ 2 vezes
+       □ 3 ou mais vezes
+                                        SEGURANÇA
+As próximas perguntas referem-se a situações de segurança no ambiente em que você vive como
+segurança no trânsito, segurança nos deslocamentos, segurança na escola, acidentes, agressões.
+Agora conte sobre situações relacionadas à segurança no trânsito que você vivenciou (passou)
+nos últimos 30 dias.
+120. NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava
+como passageiro(a) NO BANCO DA FRENTE de carro/automóvel, van ou táxi?
+       □ Não andei no banco da frente nos últimos 30 dias
+       □ Nunca uso cinto de segurança
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+121. NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava
+como passageiro(a) NO BANCO DE TRÁS de carro/automóvel, van ou táxi?
+       □ Não andei no banco de trás nos últimos 30 dias
+       □ Nunca uso cinto de segurança
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+122. NOS ÚLTIMOS 30 DIAS, com que frequência você usou capacete ao andar de
+motocicleta/moto?
+       □ Não andei de motocicleta/moto nos últimos 30 dias
+       □ Nunca uso capacete
+       □ Raramente
+       □ Às vezes
+       □ Na maioria das vezes
+       □ Sempre
+
+
+                                              58
+123. NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte
+(carro, motocicleta/moto, voadeira, barco)?
+        □ Nenhuma vez nos últimos 30 dias
+        □ 1 vez
+        □ 2 ou 3 vezes
+        □ 4 ou 5 vezes
+        □ 6 ou mais vezes
+124. NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado
+dirigido por alguém que tinha consumido alguma bebida alcoólica?
+        □ Nenhuma vez nos últimos 30 dias
+        □ 1 vez
+        □ 2 ou 3 vezes
+        □ 4 ou 5 vezes
+        □ 6 ou mais vezes
+125. NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado
+dirigido por alguém que usou o celular enquanto dirigia?
+        □ Nenhuma vez nos últimos 30 dias
+        □ 1 vez
+        □ 2 ou 3 vezes
+        □ 4 ou 5 vezes
+        □ 6 ou mais vezes
+Conte agora sobre os dias que você não foi a aula por motivo de falta de segurança, nos últimos 30
+dias.
+126. NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia
+seguro NO CAMINHO de casa para a escola ou da escola para casa?
+       □ Nenhum dia nos últimos 30 dias
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias ou mais
+127. NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro
+NA ESCOLA?
+       □ Nenhum dia nos últimos 30 dias
+       □ 1 dia
+       □ 2 dias
+       □ 3 dias
+       □ 4 dias
+       □ 5 dias ou mais
+Conte agora sobre o seu envolvimento em brigas na escola, na rua ou em qualquer outro lugar, nos
+últimos 30 dias.
+128. NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em briga com luta física?
+       □ Sim
+       □ Não
+129. NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa
+usou arma de fogo, como revólver ou espingarda?
+       □ Sim
+       □ Não
+130. NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa
+usou alguma outra arma como faca, canivete, peixeira, pedra, pedaço de pau ou garrafa?
+       □ Sim
+       □ Não
+Agora vamos falar sobre os acidentes e agressões que você sofreu nos últimos 12 meses.
+São exemplos de acidentes e agressões: queda, corte, queimadura, acidente de trânsito, brigas,
+pontapés, murros, socos, empurrões etc.
+
+
+
+
+                                               59
+131. NOS ÚLTIMOS 12 MESES, você sofreu algum acidente ou agressão?
+       □ Sim
+       □ Não → [passe para 136]
+132. Algum desse(s) acidente(s) ou agressão(ões) que você sofreu o(a) impediu de realizar
+atividades habituais (ir para a escola, trabalhar, realizar afazeres domésticos etc.)?
+        □ Sim
+        □ Não
+133. Você teve que procurar algum serviço de saúde (Pronto-socorro, emergência ou UPA, hospital,
+farmácia) em razão deste acidente ou agressão?
+       □ Sim
+       □ Não
+134. Qual foi o ferimento ou a lesão MAIS GRAVE que você sofreu nesse acidente ou agressão?
+       □ Osso quebrado ou junta deslocada
+       □ Corte ou perfuração
+       □ Pancada ou outra lesão na cabeça ou pescoço
+       □ Ferimento à bala (arma de fogo)
+       □ Queimadura
+       □ Outra lesão ou machucado
+135. Qual foi a PRINCIPAL CAUSA do ferimento ou da lesão mais grave que aconteceu com você?
+       □ Acidente de transporte
+       □ Agressão ou briga
+       □ Exercício físico ou esporte
+       □ Eu me machuquei de propósito
+       □ Queda acidental
+       □ Outra causa
+136. NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente por sua mãe, pai ou
+responsável?
+       □ Nenhuma vez nos últimos 12 meses
+       □ 1 vez
+       □ 2 a 5 vezes
+       □ 6 ou mais vezes
+137. NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente por OUTRA PESSOA
+que não seja sua mãe, pai ou responsável?
+       □ Nenhuma vez nos últimos 12 meses → [passe para 139]
+       □ 1 vez
+       □ 2 a 5 vezes
+       □ 6 ou mais vezes
+                                                                          [MÚLTIPLA RESPOSTA]
+138. Quem o(a) agrediu fisicamente? (Sem contar sua mãe, pai ou responsável)
+       □ Namorado(a), ex-namorado(a), ficante, crush
+       □ Amigo(a) ou colega de escola
+       □ Outros familiares
+       □ Policial
+       □ Profissionais da sua escola (professor, diretor, inspetor, etc.)
+       □ Desconhecido(a)
+       □ Outro
+139. NOS ÚLTIMOS 12 MESES, alguma vez você se machucou de propósito?
+       □ Sim
+       □ Não
+                          [ESTA QUESTÃO APARECE APENAS PARA QUEM TEM 13 ANOS OU MAIS]
+140. Alguma vez na vida alguém o(a) tocou, manipulou, beijou ou expôs partes do corpo contra a
+sua vontade?
+        □ Sim
+        □ Não → [passe para 142]
+
+
+
+
+                                               60
+   [ESTA QUESTÃO APARECE APENAS PARA QUEM TEM 13 ANOS OU MAIS; MÚLTIPLA RESPOSTA]
+141. Quem fez isso?
+       □ Namorado(a), ex-namorado(a), ficante, crush
+       □ Amigo(a)
+       □ Pai/mãe/padrasto/madrasta
+       □ Outros familiares
+       □ Desconhecido(a)
+       □ Outro
+                          [ESTA QUESTÃO APARECE APENAS PARA QUEM TEM 13 ANOS OU MAIS]
+142. Alguma vez na vida alguém ameaçou, intimidou ou obrigou a ter relações sexuais ou qualquer
+outro ato sexual contra a sua vontade?
+        □ Sim
+        □ Não → [passe para 145]
+   [ESTA QUESTÃO APARECE APENAS PARA QUEM TEM 13 ANOS OU MAIS; MÚLTIPLA RESPOSTA]
+143. Quem fez isso?
+       □ Namorado(a), ex-namorado(a), ficante, crush
+       □ Amigo(a)
+       □ Pai/mãe/padrasto/madrasta
+       □ Outros familiares
+       □ Desconhecido(a)
+       □ Outro
+                          [ESTA QUESTÃO APARECE APENAS PARA QUEM TEM 13 ANOS OU MAIS]
+144. Que idade você tinha quando alguém ameaçou, intimidou ou obrigou a ter relações sexuais ou
+qualquer outro ato sexual contra a sua vontade pela primeira vez?
+       □ 9 anos ou menos
+       □ 10 anos
+       □ 11 anos
+       □ 12 anos
+       □ 13 anos
+       □ 14 anos
+       □ 15 anos
+       □ 16 anos
+       □ 17 anos
+       □ 18 anos ou mais
+                              USO DE SERVIÇO DE SAÚDE
+Vamos conversar agora sobre sua saúde.
+145. Como você classificaria seu estado de saúde?
+       □ Muito bom
+       □ Bom
+       □ Regular
+       □ Ruim
+       □ Muito ruim
+146. NOS ÚLTIMOS 12 MESES, quantos dias você faltou a escola por motivo(s) relacionado(s) à
+própria saúde?
+       □ Não faltei a escola nos últimos 12 meses por motivos de saúde
+       □ 1 a 3 dias
+       □ 4 a 7 dias
+       □ 8 a 15 dias
+       □ 16 dias ou mais
+147. NOS ÚLTIMOS 12 MESES você procurou algum serviço ou profissional de saúde para
+atendimento relacionado à própria saúde?
+       □ Sim
+       □ Não → [passe para 152]
+
+
+
+
+                                              61
+148. NOS ÚLTIMOS 12 MESES, qual foi o serviço de saúde que você procurou com MAIS
+FREQUÊNCIA?
+       □ Unidade Básica de Saúde (Centro ou Posto de saúde ou Unidade de Saúde da Família/PSF)
+       □ Consultório médico particular ou clínica particular
+       □ Consultório odontológico
+       □ Consultório de outro profissional de saúde (fonoaudiólogo, psicólogo, etc.)
+       □ Serviço de especialidades médicas ou Policlínica
+       □ Pronto-socorro, emergência ou UPA
+       □ Hospital
+       □ Laboratório ou clínica para exames complementares
+       □ Serviço de atendimento domiciliar
+       □ Farmácia
+       □ Outro
+149. NOS ÚLTIMOS 12 MESES, quantas vezes você procurou por alguma Unidade Básica de Saúde
+(Centro ou Posto de saúde ou Unidade de Saúde da Família/PSF)?
+       □ Nenhuma vez nos últimos 12 meses → [passe para 152]
+       □ 1 ou 2 vezes
+       □ 3 a 5 vezes
+       □ 6 a 9 vezes
+       □ 10 ou mais vezes
+150. Você foi atendido NA ÚLTIMA VEZ que procurou alguma Unidade Básica de Saúde (Centro ou
+Posto de saúde ou Unidade de Saúde da Família/PSF)?
+       □ Sim
+       □ Não
+151. Qual foi o PRINCIPAL MOTIVO da sua procura na Unidade Básica de Saúde (Centro ou Posto
+de saúde ou Unidade de Saúde da Família/PSF) NESTA ÚLTIMA VEZ?
+       □ Apoio para controle de peso (ganhar ou perder)
+       □ Apoio para parar de fumar
+       □ Acidente ou lesão
+       □ Reabilitação ou fisioterapia
+       □ Procurar dentista ou outro profissional de saúde bucal
+       □ Procurar psicólogo ou outro profissional de saúde mental
+       □ Vacinação
+       □ Obter métodos contraceptivos (preservativos, anticoncepcional, pílula do dia seguinte, DIU etc.)
+       □ Teste para HIV, Sífilis ou Hepatite B
+       □ Pré-natal ou teste para gravidez
+       □ Solicitação de atestado médico
+       □ Doença
+       □ Outro motivo
+152. Você foi vacinado(a) contra o vírus HPV?
+       □ Sim → [passe para Imagem Corporal]
+       □ Não
+       □ Não sei → [passe para Imagem Corporal]
+153. Por que você não foi vacinado(a) contra o vírus HPV?
+       □ Não sabia que tinha que tomar
+       □ A unidade ou serviço é longe ou tive dificuldade para chegar lá
+       □ Medo de reação à vacina
+       □ Não sei para que serve
+       □ Não acredito que a vacina tenha efeito
+       □ Minha mãe, pai ou responsável não quis
+       □ Outro motivo
+
+
+
+
+                                                   62
+                                    IMAGEM CORPORAL
+Agora responda o que você acha de sua própria imagem.
+154. Como você se sente em relação ao seu corpo?
+       □ Muito satisfeito(a)
+       □ Satisfeito(a)
+       □ Indiferente
+       □ Insatisfeito(a)
+       □ Muito insatisfeito(a)
+155. Quanto ao seu corpo, você se considera:
+       □ Muito magro(a)
+       □ Magro(a)
+       □ Normal
+       □ Gordo(a)
+       □ Muito Gordo(a)
+156. O que você está fazendo em relação a seu peso?
+       □ Não estou fazendo nada
+       □ Estou tentando perder peso
+       □ Estou tentando ganhar peso
+       □ Estou tentando manter o mesmo peso
+157. NOS ÚLTIMOS 30 DIAS, você vomitou ou tomou laxantes para perder peso ou evitar ganhar
+peso?
+       □ Sim
+       □ Não
+158. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para perder
+peso, sem acompanhamento médico?
+       □ Sim
+       □ Não
+159. NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, suplemento ou outro produto para ganhar
+peso ou massa muscular sem acompanhamento médico?
+       □ Sim
+       □ Não
+                                       A SUA OPINIÃO
+Expresse a sua opinião, avaliando este questionário.
+                                                                        [MÚLTIPLA RESPOSTA]
+160. O que você achou deste questionário?
+       □ Fácil
+       □ Difícil
+       □ Chato
+       □ Legal
+       □ Interessante
+       □ Informativo
+       □ Cansativo
+       □ Constrangedor
+Fim do questionário. Você deve permanecer em seu lugar e informar ao Técnico do IBGE que
+terminou de responder o questionário. Agradecemos a sua participação.
+                           FINALIZAÇÃO PELO TÉCNICO IBGE
+Estudante necessitou de intermediação para responder ao questionário?
+      □ Não
+      □ Sim, por dificuldades com alfabetização
+      □ Sim, por dificuldades físicas ou motoras
+
+
+
+
+                                               63
+64
+10.2. Questionário do ambiente escolar
+
+                  PESQUISA NACIONAL DE SAÚDE DO ESCOLAR 2019
+                                  QUESTIONÁRIO DA ESCOLA
+                                     INFORMAÇÕES GERAIS
+As perguntas a seguir referem-se ao ambiente escolar e deverão ser preenchidas a partir de
+entrevista realizada com o Diretor, Coordenador ou o responsável pela Escola.
+O questionário poderá ser respondido diretamente pelo responsável da escola desde que
+acompanhado pelo Técnico do IBGE, de forma a permitir esclarecimentos e responder dúvidas do
+informante.
+1. Qual é o seu cargo ou função na escola?
+        □ Diretor(a) / Vice-diretor(a)
+        □ Coordenador(a)
+        □ Administrador(a)
+        □ Secretário(a)
+        □ Professor(a)
+        □ Outro
+2. A escola possui turmas em quais turnos? (múltipla resposta)
+        □ Manhã
+        □ Tarde
+        □ Noite
+3. A escola atende a quais etapas de ensino? (múltipla resposta)
+        □ Educação Infantil (creche, pré-escola)
+        □ Ensino Fundamental
+        □ Ensino Médio (médio, integrado, normal/magistério, educação profissional)
+        □ Educação de Jovens e Adultos (fundamental, projovem urbano, médio)
+4. Qual é o TOTAL de alunos(as) matriculados(as) na escola?
+        □ Até 50 alunos(as)
+        □ De 51 a 100
+        □ De 101 a 200
+        □ De 201 a 500
+        □ De 501 a 1.000
+        □ Mais de 1.000
+5. Qual é a quantidade TOTAL de salas de aula da escola?
+        □ Até 10 salas
+        □ De 11 a 20
+        □ De 21 a 30
+        □ De 31 a 40
+        □ De 41 a 50
+        □ Mais de 50
+                                                                [APENAS PARA ESCOLA PRIVADAS]
+6. Qual a faixa de valor da mensalidade do 9º ano na escola? (se não houver 9º ano, considerar 1º
+ano do Ensino Médio)
+        □ Não tem mensalidade
+        □ Até R$ 499,00
+        □ Mais de R$ 499,00 até R$ 998,00
+        □ Mais de R$ 998,00 até R$ 1.996,00
+        □ Mais de R$ 1.996,00
+7. A escola tem biblioteca para os(as) alunos(as) EM CONDIÇÕES DE USO?
+        □ Sim
+        □ Não está em condições de uso
+        □ Não tem biblioteca
+
+
+
+
+                                                   65
+8. A escola tem sala ou laboratório de informática para os(as) alunos(as) EM CONDIÇÕES DE USO?
+        □ Sim
+        □ Não está em condições de uso
+        □ Não tem sala ou laboratório de informática
+9. Quantos computadores e/ou tablets da escola EM CONDIÇÕES DE USO estão disponíveis para
+os(as) alunos(as) em sala de aula e/ou salas específicas de informática?
+        □ Não existem computadores e/ou tablets em condições de uso para os(as) alunos(as)
+        □ Até 10
+        □ De 11 a 20
+        □ De 21 a 30
+        □ De 31 a 40
+        □ De 41 a 50
+        □ Mais de 50
+10. Os(as) alunos(as) têm acesso à internet da escola?
+       □ Sim
+       □ Não
+       □ Não tem internet
+11. A escola tem sala de recursos de mídia/comunicação para os(as) alunos(as) EM CONDIÇÕES
+DE USO? (Exemplos: televisão, dvd, projetor etc.)
+        □ Sim
+        □ Não está em condições de uso
+        □ Não tem sala de recursos de mídia/comunicação
+12. A escola tem conselho escolar?
+        □ Sim
+        □ Não → [passe para 15]
+13. NOS ÚLTIMOS 12 MESES, com que frequência o conselho escolar se reuniu?
+       □ Não se reuniu
+       □ 1 a 3 vezes
+       □ 4 a 6 vezes
+       □ 7 a 9 vezes
+       □ 10 a 12 vezes
+       □ Mais de 12 vezes
+14. NOS ÚLTIMOS 12 MESES, o conselho escolar teve alguma deliberação sobre esses temas?
+(múltipla resposta)
+        □ Prática de atividade física
+        □ Alimentação
+        □ Segurança/violência
+        □ Saúde sexual e saúde reprodutiva
+        □ Diversidade sexual e gênero
+        □ Nenhum desses temas
+15. A escola fica aberta nos finais de semana para uso da comunidade?
+        □ Sim
+        □ Não → [passe para Atividade Física]
+16. As ações desenvolvidas na escola, no final de semana, são pactuadas com a comunidade?
+        □ Sim
+        □ Não
+                                        ATIVIDADE FÍSICA
+As próximas perguntas tratam da infraestrutura para práticas de atividade física. Exemplos de
+práticas de atividade física: dança, ballet, luta, ginástica, futebol, voleibol, basquete, handebol,
+corrida, natação etc.
+17. A escola oferece práticas de atividade física para os(as) alunos(as)?
+        □ Sim
+        □ Não → [passe para 21]
+
+
+
+
+                                                   66
+18. Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? (múltipla
+resposta)
+       □ Esportes de quadra (futebol, voleibol, basquete, handebol etc.)
+       □ Esportes aquáticos (natação, polo aquático, hidroginástica etc.)
+       □ Esportes de aventura (trilha, escalada, rapel etc.)
+       □ Atletismo/corrida
+       □ Dança (ballet, hip hop, zumba, dança de salão etc.)
+       □ Lutas (judô, karatê, capoeira etc.)
+       □ Ginástica (rítmica, artística/olímpica, acrobática)
+       □ Outras
+19. As práticas de atividade física são realizadas sob orientação de instrutor ou professor de
+educação física?
+        □ Sim, todas
+        □ Sim, algumas
+        □ Não
+20. A escola oferece prática de atividade física para os(as) alunos(as) fora do horário regular de
+aula?
+        □ Sim, gratuito
+        □ Sim, pago
+        □ Sim, pago e gratuito
+        □ Não
+21. A escola tem quadra de esportes EM CONDIÇÕES DE USO?
+        □ Sim
+        □ Não está em condições de uso → [passe para 24]
+        □ Não tem quadra de esportes → [passe para 24]
+22. Quantas quadras de esporte EM CONDIÇÕES DE USO a escola tem?
+       □1
+       □2
+       □ 3 ou mais
+23. Quantas das quadras de esporte EM CONDIÇÕES DE USO da escola são cobertas?
+       □ Nenhuma
+       □1
+       □2
+       □ 3 ou mais
+24. A escola tem pista para corrida/atletismo EM CONDIÇÕES DE USO?
+        □ Sim
+        □ Não está em condições de uso
+        □ Não tem pista de corrida/atletismo
+25. A escola tem piscina EM CONDIÇÕES DE USO?
+        □ Sim
+        □ Não está em condições de uso
+        □ Não tem piscina
+26. O pátio da escola é utilizado frequentemente para prática de atividade física com instrutor?
+       □ Sim
+       □ Não é utilizado para prática de atividade física com instrutor
+       □ Não tem pátio
+27. A escola tem material, acessórios ou equipamentos para prática de atividade física EM
+CONDIÇÕES DE USO? Exemplos: bola, corda, rede, raquete etc.
+        □ Sim
+        □ Não está em condições de uso
+        □ Não tem material, acessórios ou equipamentos
+28. A escola tem vestiário para os(as) alunos(as) EM CONDIÇÕES DE USO?
+        □ Sim
+        □ Não está em condições de uso → [passe para 30]
+        □ Não tem vestiário → [passe para 30]
+
+
+
+
+                                                  67
+29. A escola tem vestiários separados por sexo EM CONDIÇÕES DE USO para os(as) alunos(as)?
+        □ Sim
+        □ Não estão em condições de uso
+        □ Não tem vestiários separados
+30. A escola participa de jogos ou competições físico-esportivas entre escolas?
+        □ Sim
+        □ Não
+31. A escola realiza jogos ou competições físico-esportivas entre as classes, turmas ou turnos?
+        □ Sim
+        □ Não
+                                        ALIMENTAÇÃO
+As próximas perguntas referem-se à infraestrutura existente na escola destinada à oferta de
+comida/ merenda, além da venda de outros produtos alimentícios.
+32. A escola segue alguma legislação ou política municipal, estadual ou federal, bem como regra
+escrita própria, sobre o tipo de alimento a ser oferecido ou comercializado em suas dependências?
+        □ Sim, municipal, estadual ou federal
+        □ Sim, própria
+        □ Sim, ambas
+        □ Não
+33. A escola oferece comida/merenda para os(as) alunos(as)?
+        □ Sim
+        □ Não → [passe para 36]
+34. A escola oferece comida/merenda para alunos de quais etapas de ensino? (múltipla resposta)
+        □ Educação Infantil
+        □ 1º a 5º ano do Ensino Fundamental
+        □ 6º a 9º ano do Ensino Fundamental
+        □ Ensino Médio
+        □ Educação de Jovens e Adultos
+35. A escola oferece comida/merenda para alunos de quais turnos? (múltipla resposta)
+        □ Manhã
+        □ Tarde
+        □ Noite
+36. A escola tem cozinha (espaço onde são preparados os alimentos) EM CONDIÇÕES DE USO?
+        □ Sim
+        □ Não está em condições de uso
+        □ Não tem cozinha
+37. A escola possui refeitório (espaço estruturado destinado à alimentação, com assentos e mesas)
+EM CONDIÇÕES DE USO?
+        □ Sim
+        □ Não está em condições de uso
+        □ Não tem refeitório
+38. A escola tem cantina (espaço onde são comercializados alimentos e/ou bebidas)?
+        □ Sim
+        □ Não → [passe para 40]
+
+
+
+
+                                                68
+39. Que tipos de bebidas e alimentos são vendidos na cantina? (múltipla resposta)
+       □ Refrigerante
+       □ Bebidas açucaradas (suco artificial, suco de caixinha, chá gelado, isotônicos, águas com sabor,
+       energéticos)
+       □ Suco natural de frutas (com água ou leite)
+       □ Bebidas lácteas/iogurtes com sabor e achocolatados
+       □ Salgados fritos (coxinha, pastel, quibe etc.) ou batata frita
+       □ Salgados assados (pastel de forno, empada, esfirra etc.)
+       □ Salgadinhos industrializados em pacotes (chips) e batata frita de pacote
+       □ Biscoitos ou bolachas industrializadas salgadas ou doces
+       □ Balas, confeitos, chocolates, sorvetes etc.
+       □ Sanduíches (cachorro quente, misto quente, hambúrguer etc.)
+       □ Frutas frescas ou salada de frutas
+40. Existe algum ponto alternativo (vendedor ambulante ou carrocinha) de venda de alimentos e/ou
+bebidas na porta ou no entorno da escola? (Considerar entorno as calçadas e a distância de 100
+metros ao redor da escola)
+        □ Sim
+        □ Não → [passe para 42]
+41. Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? (múltipla
+resposta)
+       □ Refrigerante
+       □ Bebidas açucaradas (suco artificial, suco de caixinha, chá gelado, isotônicos, águas com sabor,
+       energéticos)
+       □ Suco natural de frutas (com água ou leite)
+       □ Bebidas lácteas/iogurtes com sabor e achocolatados
+       □ Salgados fritos (coxinha, pastel, quibe etc.) ou batata frita
+       □ Salgados assados (pastel de forno, empada, esfirra etc.)
+       □ Salgadinhos industrializados em pacotes (chips) e batata frita de pacote
+       □ Biscoitos ou bolachas industrializadas salgadas ou doces
+       □ Balas, confeitos, chocolates, sorvetes etc.
+       □ Sanduíches (cachorro quente, misto quente, hambúrguer etc.)
+       □ Frutas frescas ou salada de frutas
+42. Existe propaganda como cartazes, geladeiras, freezers e mesas com marcas de alimentos e
+bebidas industrializados na escola?
+        □ Sim
+        □ Não
+43. A escola tem horta?
+        □ Sim
+        □ Não → [passe para Saneamento Básico e Higiene]
+44. Os alimentos da horta são utilizados no preparo da comida/merenda escolar?
+       □ Sim
+       □ Não
+45. São realizadas ações de educação alimentar e nutricional com os(as) alunos(as) na horta?
+       □ Sim
+       □ Não
+                              SANEAMENTO BÁSICO E HIGIENE
+As próximas perguntas tratam da infraestrutura de saneamento básico da escola, coleta de lixo,
+bem como instalações destinadas às rotinas de higiene pessoal dos alunos.
+46. A escola tem água potável (adequada para beber) para consumo dos(as) alunos(as)?
+        □ Sim
+        □ Não → [passe para 49]
+        □ Não tem água → [passe para 49]
+
+
+
+
+                                                   69
+47. Qual é a principal fonte de água potável (adequada para beber) da escola?
+       □ Rede de abastecimento de água
+       □ Poço ou nascente
+       □ Água de chuva (cisterna)
+       □ Açude, lago ou rio
+       □ Água mineral (garrafão)
+       □ Outra fonte
+48. NOS ÚLTIMOS 12 MESES, alguma vez a água da escola foi testada quanto a sua potabilidade
+(se é adequada para beber)?
+        □ Sim
+        □ Não
+        □ Não sabe
+49. A escola tem banheiros para os(as) alunos(as) EM CONDIÇÕES DE USO?
+        □ Sim
+        □ Não está em condições de uso → [passe para 52]
+        □ Não tem banheiro → [passe para 52]
+50. A escola tem banheiros separados por sexo EM CONDIÇÕES DE USO para os(as) alunos(as)?
+        □ Sim
+        □ Não estão em condições de uso
+        □ Não tem banheiros separados
+51. A escola oferece papel higiênico para uso dos(as) alunos(as) nos banheiros da escola?
+        □ Sim
+        □ Não
+52. A escola tem pia ou lavatório EM CONDIÇÕES DE USO onde os(as) alunos(as) possam lavar as
+mãos depois de ir ao banheiro e/ou antes das refeições?
+        □ Sim
+        □ Não está em condições de uso
+        □ Não tem pia ou lavatório
+53. A escola oferece sabão para que os(as) alunos(as) lavem as mãos após usar o banheiro e/ou
+antes das refeições?
+        □ Sim
+        □ Não
+54. NA ÚLTIMA SEMANA, em quantos dias o lixo foi removido dos espaços internos da escola,
+como salas de aula, pátio e cozinha?
+       □ Nenhum dia
+       □ 1 a 2 dias
+       □ 3 a 4 dias
+       □ 5 ou mais dias
+55. NA ÚLTIMA SEMANA, em quantos dias o lixo foi retirado para fora das dependências da escola?
+       □ Nenhum dia
+       □ 1 a 2 dias
+       □ 3 a 4 dias
+       □ 5 ou mais dias
+                                         SEGURANÇA
+As próximas perguntas tratam de situações de insegurança e violência que aconteceram NOS
+ÚLTIMOS 12 MESES na localidade (bairro) onde a escola está situada.
+56. NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que
+ocorreram assaltos e roubos a pessoas, residências e comércios na localidade (bairro) onde a
+escola está situada?
+       □ Nenhuma vez
+       □ Poucas vezes
+       □ Algumas vezes
+       □ Muitas vezes
+
+
+
+
+                                                70
+57. NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que
+ocorreram tiros ou tiroteios na localidade (bairro) onde a escola está situada?
+       □ Nenhuma vez
+       □ Poucas vezes
+       □ Algumas vezes
+       □ Muitas vezes
+58. NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que havia
+alguém vendendo drogas na localidade (bairro) onde a escola está situada?
+       □ Nenhuma vez
+       □ Poucas vezes
+       □ Algumas vezes
+       □ Muitas vezes
+59. NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém
+tinha sido agredido fisicamente ou espancado na localidade (bairro) onde a escola está situada?
+        □ Nenhuma vez
+        □ Poucas vezes
+        □ Algumas vezes
+        □ Muitas vezes
+60. NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém
+foi assassinado na localidade (bairro) onde a escola está situada?
+        □ Nenhuma vez
+        □ Poucas vezes
+        □ Algumas vezes
+        □ Muitas vezes
+61. NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém
+sofreu algum tipo de violência sexual na localidade (bairro) onde a escola está situada?
+       □ Nenhuma vez
+       □ Poucas vezes
+       □ Algumas vezes
+       □ Muitas vezes
+62. NOS ÚLTIMOS 12 MESES, a escola teve que suspender ou interromper suas aulas por motivo
+de segurança em termos de violência?
+       □ Sim
+       □ Não → [passe para Políticas de Saúde]
+63. NOS ÚLTIMOS 12 MESES, quantas vezes a escola teve que suspender ou interromper suas
+aulas por motivo de segurança em termos de violência?
+       □ 1 vez
+       □ 2 a 4 vezes
+       □ 5 ou mais vezes
+                                   POLÍTICAS DE SAÚDE
+As perguntas a seguir tratam de políticas e ações de saúde desenvolvidas pela escola.
+64. A escola tem algum grupo ou comitê responsável por orientar ou coordenar ações e/ou
+atividades relacionadas à saúde?
+        □ Sim
+        □ Não
+                                                            [APENAS PARA ESCOLAS PÚBLICAS]
+65. A escola participa do Programa de Saúde na Escola (PSE)?
+        □ Sim
+        □ Não
+
+
+
+
+                                               71
+66. NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? (múltipla
+resposta)
+       □ Apoio à vacinação dos(as) alunos(as)
+       □ Promoção da alimentação saudável e prevenção da obesidade
+       □ Promoção e avaliação da saúde bucal
+       □ Promoção da cultura da paz, cidadania e direitos humanos
+       □ Prevenção de violências e acidentes
+       □ Prevenção do uso de tabaco
+       □ Prevenção do uso de álcool
+       □ Prevenção do uso de crack e outras drogas
+       □ Prevenção de infecções/doenças sexualmente transmissíveis (IST/AIDS)
+       □ Prevenção de práticas de bullying nas dependências da escola
+       □ Prevenção de brigas nas dependências da escola
+       □ Nenhuma dessas ações
+67. NOS ÚLTIMOS 12 MESES, a escola realizou ações conjuntas com a Unidade Básica de Saúde
+ou a Equipe de Saúde da Família ou a Equipe de Atenção Básica?
+       □ Sim
+       □ Não
+68. NOS ÚLTIMOS 12 MESES, a escola manteve registros sobre a vacinação dos(as) alunos(as)?
+       □ Sim
+       □ Não
+69. NOS ÚLTIMOS 12 MESES, a escola registrou na ficha dos(as) alunos(as) informações sobre
+alergias e/ou tipo sanguíneo dos(as) alunos(as)?
+        □ Sim, ambos
+        □ Sim, apenas alergias
+        □ Sim, apenas tipo sanguíneo
+        □ Não
+70. NOS ÚLTIMOS 12 MESES, a escola teve conhecimento de consumo de cigarro por
+professores(as) e/ou funcionários(as) nas suas dependências?
+       □ Sim, ambos
+       □ Sim, apenas professores(as)
+       □ Sim, apenas funcionários(as)
+       □ Não
+71. NOS ÚLTIMOS 12 MESES, a escola teve conhecimento de consumo de cigarro por alunos(as)
+nas suas dependências?
+       □ Sim
+       □ Não
+Fim do questionário da Escola. Agradecemos sua participação.
+
+
+
+
+                                              72
+10.3. Ofício interministerial
+
+
+
+
+                                73
+74
+10.4. Modelo de ofício para as unidades estaduais
+10.4.1. Para encontro com secretarias
+
+Ofício nº ____________
+                                                                __________________, ____________ de 2019
+
+Assunto: Pesquisa Nacional de Saúde do Escolar.
+
+Prezado(a) Secretário(a),
+
+        O Instituto Brasileiro de Geografia e Estatística (IBGE) realizará em diversas cidades do
+país, a 4ª edição da Pesquisa Nacional de Saúde do Escolar (PeNSE), em parceria com o Ministério
+da Saúde e com o apoio do Ministério da Educação.
+        A pesquisa tem os objetivos de subsidiar o monitoramento da saúde dos estudantes no país e
+de conhecer a prevalência e distribuição dos fatores de risco e proteção à saúde em escolares, de
+acordo com as características selecionadas. Além disso, pretende-se, também, identificar as
+questões prioritárias para o desenvolvimento de políticas públicas voltadas para a promoção da
+saúde em escolares.
+        O questionário da pesquisa foi elaborado por uma equipe de profissionais ligados às
+instituições promotoras e será aplicado aos alunos das turmas de 7º ao 9º ano do ensino fundamental
+e do 1º ao 3º ano do ensino médio das escolas públicas e privadas, selecionadas através da
+metodologia de amostragem elaborada pelo IBGE. A participação do aluno será voluntária e ele não
+será identificado. Todas as informações obtidas pelo IBGE serão confidenciais. A escola
+selecionada também não será identificada.
+        Os resultados das 3 edições anteriores da pesquisa (2009, 2012 e 2015) estão disponíveis nas
+bibliotecas e lojas do IBGE, além da página do IBGE na internet. São resultados relevantes para a
+estratégia de saúde e de educação dentre os adolescentes.
+        Com o intuito de fortalecer essa grande parceria em nosso estado, convidamos o(a)
+estimado(a) secretário(a) para participar do encontro estadual da PeNSE que ocorrerá no dia ______
+de ______ às ______ horas, no [local e endereço]. Nesta ocasião estarão presentes além dos representantes
+do IBGE no estado, representantes das secretarias municipais de educação e saúde das cidades que
+tiveram escolas selecionadas para a amostra da pesquisa, bem como os diretores das escolas
+selecionadas. No encontro aprofundaremos todas as informações sobre os objetivos e a forma de
+realização desta pesquisa.
+        O contato para mais informações sobre a pesquisa pode ser feito em nosso escritório
+regional em __________________ pelo telefone [telefone do supervisor estadual] ou e-mail [e-mail do supervisor estadual],
+sendo o(a) supervisor(a) estadual da pesquisa o(a) senhor(a) [nome do supervisor].
+
+        À sua disposição para prestar outras informações que se tornem necessárias, subscrevemo-
+nos.
+
+Atenciosamente,
+
+                                                                  ____________________________________
+
+
+                                                           75
+76
+10.4.2. Para encontro com diretores de escolas
+
+                                                                __________________, ____________ de 2019
+Assunto: Pesquisa Nacional de Saúde do Escolar.
+
+Prezado(a) Diretor(a),
+
+        O Instituto Brasileiro de Geografia e Estatística (IBGE) realizará em diversas cidades do
+país, a 4ª edição da Pesquisa Nacional de Saúde do Escolar (PeNSE), em parceria com o Ministério
+da Saúde e com o apoio do Ministério da Educação.
+        O questionário da pesquisa foi elaborado por uma equipe de profissionais ligados às
+instituições promotoras e será aplicado aos alunos das turmas de 7º ao 9º ano do ensino fundamental
+e do 1º ao 3º ano do ensino médio das escolas públicas e privadas, selecionadas através da
+metodologia de amostragem elaborada pelo IBGE. A participação do aluno será voluntária e ele não
+será identificado. Todas as informações obtidas pelo IBGE serão confidenciais. A escola
+selecionada também não será identificada.
+        Os resultados das 3 edições anteriores da pesquisa (2009, 2012 e 2015) estão disponíveis nas
+bibliotecas e lojas do IBGE, além da página do IBGE na internet. São resultados relevantes para a
+estratégia de saúde e de educação dentre os adolescentes.
+        Gostaria de convidá-lo(a) para participar do encontro com os diretores das escolas
+selecionadas a ser realizado no dia ______ de ______ às ______ horas, no [ local e endereço]. Nesta
+ocasião estarão presentes além dos representantes do IBGE no estado, representantes das secretarias
+de educação e saúde, bem como os diretores das escolas selecionadas. No encontro aprofundaremos
+todas as informações sobre os objetivos e a forma de realização desta pesquisa.
+        O contato para mais informações sobre a pesquisa pode ser feito em nosso escritório
+regional em __________________, pelo telefone [telefone do supervisor estadual] ou e-mail [e-mail do supervisor estadual],
+sendo o(a) supervisor(a) estadual da pesquisa o(a) senhor(a) [nome do supervisor].
+
+        À sua disposição para prestar outras informações que se tornem necessárias, subscrevemo-
+nos.
+
+Atenciosamente,
+
+                                                                   ____________________________________
+
+
+
+
+                                                           77
+

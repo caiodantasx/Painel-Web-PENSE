@@ -1,0 +1,198 @@
+# Desenho amostral e codificação de cada edição nos microdados da PeNSE.
+#
+# Fontes (ver docs/04_decisoes_metodologicas.md e docs/13_matriz_evidencias.md):
+# * Nota metodológica n. 01 (IBGE, 2018), Quadro 3: variáveis de UPA, estrato e peso de 2009, 2012 e 2015.
+# * PeNSE — Análise de indicadores comparáveis, 9º ano, Capitais 2009/2019 (IBGE, 2022, Estudos e
+#   Pesquisas n. 46; data/reference/liv101955_PeNSE_indicadores_comparaveis_9ano_2009_2019.pdf): Quadro 2 (p. 20) e nota 7 (p. 18).
+# * Quando os documentos divergem (estrato de 2015), decide a reprodução dos IC publicados.
+# * Dicionários dos microdados (config/reference/dicionario_*.csv) e exemplos oficiais de cálculo
+#   (data/reference/dicionarios/Exemplo_calculo_*.txt) para 2019 e 2024.
+# * Cada regra foi CONFIRMADA reproduzindo tabelas publicadas (data/curated/microdata_validation*.csv).
+#
+# Não resposta — duas convenções (D21):
+# * nonresponse_in_denominator: convenção da PUBLICAÇÃO da edição (usada para validar contra ela).
+#     2024: -9 (sem resposta) entra; -2 (abandono) não entra.  2019: 9 (sem resposta) entra; -2 não entra.
+#     2015: 99 ("não informado", que mistura sem resposta e abandono) não entra (Nota metodológica n. 03).
+# * series_nonresponse: convenção da SÉRIE harmonizada do IBGE ("sem resposta" entra, "abandono" sai;
+#     IBGE 2022, p. 18, nota 7). Ausente = igual à da publicação (2019, 2024). Em 2015 o abandono é
+#     reconstruído: 99 numa pergunta sem nenhuma resposta efetiva em perguntas posteriores.
+
+[PENSE_2009]
+label = "PeNSE 2009 (9º ano, capitais)"
+year = 2009
+file = "data/microdata/PENSE_2009/Base_Pense_Completa_2009.txt"
+format = "fixed"                 # largura fixa; posições do dicionário do IBGE
+layout_dictionary = "PENSE_2009"
+layout_sheet = "DICIONARIO"
+text_columns = ["DEPEND_ADM"]
+var_prefix = ""
+weight = "PESO_AJU_SEXO"          # Nota metodológica n. 01 (2015), Quadro 3
+strata = "CAPITAL"
+psu = ["CAPITAL", "ID"]
+poststrata = ""
+nonresponse_in_denominator = []
+nonresponse_rule_status = "A CONFIRMAR (sem código de não resposta no dicionário de 2009)"
+all_ninth_grade = true
+sex_var = "B01P01"
+sex_codes = { Homem = 1, Mulher = 2 }
+# DEP2 tem rótulos invertidos no dicionário (1 = 'pública'), mas nos dados PRIVADA = 1: usa-se o texto.
+dep_var = "DEPEND_ADM"
+dep_codes = { "Pública" = ["ESTADUAL", "FEDERAL", "MUNICIPAL"], "Privada" = ["PRIVADA"] }
+capital_var = "CAPITAL"
+capital_kind = "uf_code"
+territorial_levels = ["capital"]
+only_populations = ["9ANO"]
+design_note = "2009: escolares do 9º ano nas capitais e DF; UPA = escola (ID), estrato = capital, peso PESO_AJU_SEXO (Nota n. 01, Quadro 3)."
+
+[PENSE_2012]
+label = "PeNSE 2012 (9º ano)"
+year = 2012
+file = "data/microdata/PENSE_2012/pense2012Estudantes.txt"
+format = "fixed"
+layout_dictionary = "PENSE_2012"
+layout_sheet = "Estudantes"
+var_prefix = ""
+weight = "PESO"
+strata = "ESTRATOGEO"
+psu = ["ESTRATOGEO", "UPA"]
+poststrata = ""
+nonresponse_in_denominator = []
+nonresponse_rule_status = "A CONFIRMAR (sem código de não resposta no dicionário de 2012)"
+all_ninth_grade = true
+sex_var = "B01001"
+sex_codes = { Homem = 1, Mulher = 2 }
+dep_var = "PUBPRIV"
+dep_codes = { "Pública" = 2, "Privada" = 1 }   # dicionário 2012: 1 = Privada, 2 = Pública
+region_var = "REGIAO"
+region_codes = { N = 1, NE = 2, SE = 3, S = 4, CO = 5 }
+capital_var = "CODMUN"
+capital_kind = "municipality_code"
+territorial_levels = ["country", "region", "capital"]
+only_populations = ["9ANO"]
+design_note = "2012: escolares do 9º ano; representativa para Brasil, regiões e capitais; UPA, ESTRATOGEO e PESO (Nota n. 01, Quadro 3)."
+
+[PENSE_2015_A2]
+label = "PeNSE 2015 · Amostra 2"
+year = 2015
+file = "data/microdata/PENSE_2015_A2/PENSE_AMOSTRA2_ALUNO.CSV"
+sep = ";"
+decimal = ","
+var_prefix = "V"            # VB09001 no arquivo = B09001 no questionário
+weight = "PESO"
+# Estrato: ESTRATO_EXP (56 estratos), não ESTRATOGEOREG (5 estratos = regiões) citado no Quadro 3 da Nota
+# n. 01/2018. Evidência: com ESTRATO_EXP os IC de TODOS os 900 recortes das tabelas 2.11.1–2.11.10 publicadas
+# são reproduzidos (limites ≤ 0,15 p.p.); com ESTRATOGEOREG só 64,6% (erro máx. 5,7 p.p.). Mesmo estrato do
+# Quadro 2 da publicação IBGE 2022 (p. 20).
+strata = "ESTRATO_EXP"
+psu = ["ESTRATO_EXP", "escola"]
+poststrata = ""
+nonresponse_in_denominator = []
+nonresponse_rule_status = "CONFIRMADA (Nota metodológica n. 03; reproduz as tabelas 2.11.x publicadas)"
+series_nonresponse = { split_code = 99, in_denominator = [], question_prefix = "VB", exclude = ["VB00004"], not_answer_codes = [-1], description = "99 com resposta posterior = sem resposta (entra); 99 sem resposta posterior = abandono (sai); -1 = pulo" }
+age_var = "VB01003"
+age_groups = { "13 a 17 anos" = [13, 14, 15, 16, 17], "13 a 15 anos" = [13, 14, 15], "16 e 17 anos" = [16, 17] }
+sex_var = "VB01001"
+sex_codes = { Homem = 1, Mulher = 2 }
+dep_var = "V0007"
+dep_codes = { "Pública" = 1, "Privada" = 2 }
+region_var = "REGEOGR"
+region_codes = { N = 1, NE = 2, SE = 3, S = 4, CO = 5 }
+uf_var = ""
+capital_var = ""
+territorial_levels = ["country", "region"]
+design_note = "Amostra 2 representa escolares de 13 a 17 anos para Brasil e Grandes Regiões (Nota n. 01). Sem pós-estratificação nos microdados. Estrato ESTRATO_EXP (reproduz os IC publicados)."
+
+[PENSE_2015_A1]
+label = "PeNSE 2015 · Amostra 1 (9º ano)"
+year = 2015
+file = "data/microdata/PENSE_2015_A1/PENSE_AMOSTRA1_ALUNOESCOLA.CSV"
+sep = ";"
+decimal = ","
+var_prefix = "V"
+weight = "PESO"
+# Estrato: ESTRATOGEOREG (Nota n. 01/2018, Quadro 3). Evidência: reproduz os IC da série oficial 10.x de 2015
+# em 97,1% dos 1.260 recortes (≤ 0,15 p.p.); ESTRATO_EXP — citado no Quadro 2 da publicação IBGE 2022 — só em
+# 64,8%. Na Amostra 2 vale o inverso (ESTRATO_EXP). Ver docs/04 (D22) e auditoria/scripts/estrato_2015_a1.py.
+strata = "ESTRATOGEOREG"
+psu = ["ESTRATOGEOREG", "escola"]
+poststrata = ""
+nonresponse_in_denominator = []
+nonresponse_rule_status = "OFICIAL (Notas metodológicas n. 02 e 03: denominadores só com respostas válidas)"
+series_nonresponse = { split_code = 99, in_denominator = [], question_prefix = "VB", exclude = ["VB00004"], not_answer_codes = [-1], description = "99 com resposta posterior = sem resposta (entra); 99 sem resposta posterior = abandono (sai); -1 = pulo" }
+all_ninth_grade = true          # Amostra 1 = escolares do 9º ano (todas as idades)
+age_var = "VB01003"
+age_groups = { "13 a 17 anos" = [13, 14, 15, 16, 17], "13 a 15 anos" = [13, 14, 15], "16 e 17 anos" = [16, 17] }
+sex_var = "VB01001"
+sex_codes = { Homem = 1, Mulher = 2 }
+dep_var = "V0007"
+dep_codes = { "Pública" = 1, "Privada" = 2 }
+region_var = "REGEOGR"
+region_codes = { N = 1, NE = 2, SE = 3, S = 4, CO = 5 }
+uf_var = "UFCENSO"
+capital_var = "MUNICIPIO_CAP"
+capital_kind = "municipality_code"
+territorial_levels = ["country", "region", "uf", "capital"]
+only_populations = ["9ANO"]     # Amostra 1 não representa escolares de 13 a 17 anos
+design_note = "Amostra 1: escolares do 9º ano, representativa para Brasil, regiões, UFs e capitais (Nota n. 01). Arquivo aluno+escola (traz a dependência administrativa V0007)."
+
+[PENSE_2019]
+label = "PeNSE 2019"
+year = 2019
+file = "data/microdata/PENSE_2019/PENSE2019_MICRODADOS.csv"
+sep = ","
+decimal = "."
+var_prefix = ""
+weight = "PESO_ALUNO_FREQ"
+strata = "ESTRATO"
+psu = ["ESTRATO", "ESCOLA"]
+poststrata = "POSEST"
+nonresponse_in_denominator = [9]
+nonresponse_rule_status = "CONFIRMADA (dicionário 2019: 9 = Sem resposta, -2 = Abandono; reproduz os totais das tabelas 2019 dos Temas 9, 10 e 17)"
+# Nota técnica 01/2022 (IBGE): os microdados públicos de 2019 têm idade agregada e 0,3% dos registros
+# com sexo/idade suprimidos (recodificados para 9). Os totais reproduzem as tabelas; recortes por sexo
+# em capitais pequenas podem divergir. Critério: nenhum recorte acima de 2 p.p. e totais reproduzindo.
+validation = { max_pp = 2.0, reason = "Microdados públicos de 2019 com controle de confidencialidade (Nota técnica 01/2022): supressão de sexo/idade em 0,3% dos registros. Como o registro com idade suprimida sai do domínio de 13 a 17 anos, há diferenças pequenas em todos os recortes, não só por sexo." }
+age_var = "B01003"
+age_groups = { "13 a 17 anos" = [2, 3], "13 a 15 anos" = [2], "16 e 17 anos" = [3] }
+sex_var = "B01001A"
+sex_codes = { Homem = 1, Mulher = 2 }
+dep_var = "DEP_ADMIN"
+dep_codes = { "Pública" = 1, "Privada" = 2 }
+region_var = "REGIAO"
+region_codes = { N = 1, NE = 2, SE = 3, S = 4, CO = 5 }
+uf_var = "UF"
+capital_var = "MUNICIPIO_CAP"   # código IBGE do município da capital; 0 = fora da capital
+capital_kind = "municipality_code"
+grade_var = "ANO_TURMA"           # série da turma selecionada (3 = 9º ano / 8ª série)
+grade_9_codes = [3]
+territorial_levels = ["country", "region", "uf", "capital"]
+design_note = "Faixa etária em B01003 agregada (1 = menos de 13, 2 = 13 a 15, 3 = 16 e 17, 4 = 18 ou mais), conferida pela distribuição e pela reprodução das tabelas de 2024 com a variável equivalente."
+
+[PENSE_2024]
+label = "PeNSE 2024"
+year = 2024
+file = "data/microdata/PENSE_2024/PENSE2024_MICRODADOS.csv"
+sep = ","
+decimal = "."
+var_prefix = ""
+weight = "PESO_ALUNO_FREQ"
+strata = "ESTRATO_EXP"
+psu = ["ESTRATO_EXP", "ESCOLA"]
+poststrata = "POSEST"
+nonresponse_in_denominator = [-9]
+nonresponse_rule_status = "CONFIRMADA (reproduz as tabelas publicadas de 2024)"
+age_var = "IDADE_AGREG"
+age_groups = { "13 a 17 anos" = [2, 3], "13 a 15 anos" = [2], "16 e 17 anos" = [3] }
+sex_var = "B01001A"
+sex_codes = { Homem = 1, Mulher = 2 }
+dep_var = "DEP_ADMIN"
+dep_codes = { "Pública" = 1, "Privada" = 2 }
+region_var = "REGIAO"
+region_codes = { N = 1, NE = 2, SE = 3, S = 4, CO = 5 }
+uf_var = "UF"
+capital_var = "CAPITAL"          # 1 = escola no município da capital da UF
+capital_kind = "flag"
+grade_var = "ANO_TURMA"
+grade_9_codes = [3]
+territorial_levels = ["country", "region", "uf", "capital"]
+design_note = "Variância por linearização de Taylor com estratos ESTRATO_EXP, UPA = escola dentro do estrato e ajuste de pós-estratificação (POSEST)."

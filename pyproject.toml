@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pense-pipeline"
+version = "2.0.0"
+description = "Pipeline reprodutível de tratamento, validação, harmonização e visualização das tabelas da PeNSE (IBGE)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openpyxl>=3.1,<4",
+  "xlrd>=2.0.1,<3",
+  "odfpy>=1.4,<2",
+  "numpy>=1.26,<3",
+  "pandas>=2.1,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+reference = ["pdfplumber>=0.11"]
+
+[project.scripts]
+pense-pipeline = "pense.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

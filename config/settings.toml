@@ -1,0 +1,31 @@
+# Configuração geral da pipeline. Caminhos são relativos à raiz do projeto.
+[paths]
+raw = "data/raw"
+staging = "data/staging"
+processed = "data/processed"
+curated = "data/curated"
+reports = "reports"
+logs = "logs"
+dashboard_data = "dashboard/data"
+
+[ingestion]
+supported_extensions = [".xlsx", ".xlsm", ".xls", ".ods", ".csv"]
+archive_extensions = [".zip"]
+max_archive_depth = 2
+max_member_bytes = 104857600      # 100 MB por membro (proteção contra zip bomb)
+max_members_per_archive = 2000
+skip_hidden = true
+
+[validation]
+float_tolerance = 1e-6            # tolerância para artefatos de ponto flutuante (ex.: 100.00000000000016)
+estimate_in_ci_tolerance = 1e-6
+distribution_sum_tolerance = 0.5  # pontos percentuais
+count_additivity_rel_tolerance = 0.005
+cv_high_threshold = 30.0          # limiar de projeto (configurável); conferir nota técnica da PeNSE
+cv_ci_rel_tolerance = 0.05        # coerência entre CV publicado e amplitude do IC
+z_value_95 = 1.959964
+robust_z_threshold = 3.5          # detecção de valores incomuns (mediana/MAD)
+min_group_size_for_outliers = 8
+
+[historical]
+allow_descriptive_mean = false    # média aritmética descritiva nunca é estimativa combinada

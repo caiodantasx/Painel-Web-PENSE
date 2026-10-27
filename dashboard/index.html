@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Painel PeNSE Segurança</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Dashboard de indicadores de segurança da Pesquisa Nacional de Saúde do Escolar (PeNSE/IBGE), alimentado pela pipeline reprodutível do TCC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><b>PeNSE</b><span>Segurança escolar</span></span>
+    </div>
+    <nav class="tabs" aria-label="Páginas do painel">
+      <div role="tablist">
+        <button role="tab" id="tab-overview" data-page="overview" aria-selected="true">Visão geral</button>
+        <button role="tab" id="tab-territory" data-page="territory" aria-selected="false">Territórios</button>
+        <button role="tab" id="tab-history" data-page="history" aria-selected="false">Série histórica</button>
+        <button role="tab" id="tab-quality" data-page="quality" aria-selected="false">Qualidade</button>
+        <button role="tab" id="tab-about" data-page="about" aria-selected="false">Sobre os dados</button>
+      </div>
+    </nav>
+    <div class="head-actions">
+      <button type="button" class="btn" id="btn-export">Exportar CSV</button>
+      <button type="button" class="btn ghost" id="btn-copy">Copiar</button>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <section class="slicers" aria-label="Filtros">
+    <div class="slicer"><label for="f-edition">Ano da pesquisa</label><select id="f-edition"></select></div>
+    <div class="slicer wide"><label for="f-indicator">O que é medido</label><select id="f-indicator"></select></div>
+    <div class="slicer wide"><label for="f-category">Tipo</label><select id="f-category"></select></div>
+    <div class="slicer" id="slicer-unit"><label for="f-unit">Mostrar como</label><select id="f-unit"></select></div>
+    <div class="slicer"><label for="f-age">Faixa de idade</label><select id="f-age"></select></div>
+    <div class="slicer"><label for="f-sex">Sexo</label><select id="f-sex"></select></div>
+    <div class="slicer"><label for="f-dep">Rede de ensino</label><select id="f-dep"></select></div>
+  </section>
+  <details class="glossary">
+    <summary>Como ler os números deste painel</summary>
+    <dl>
+      <div><dt>“X%” de quê?</dt><dd>Todo percentual é uma <b>parcela de alunos</b>: “28% dos escolares de 13 a 17 anos…”. A frase <b>Como ler</b> ao lado de cada número diz quem são os 100% (a base) e quem respondeu. Quando a pergunta foi feita ao <b>diretor da escola</b> (Tema 17), o número é a parcela de alunos que estudam em escolas com aquela resposta. Nunca é número de ocorrências, de escolas ou de boletins de ocorrência: são respostas a um questionário.</dd></div>
+      <div><dt>Valor estimado</dt><dd>A PeNSE entrevista uma <b>amostra</b> de alunos. Cada percentual é uma estimativa para todos os alunos do lugar.</dd></div>
+      <div><dt>Margem de erro</dt><dd>Faixa onde o valor real provavelmente está (com 95% de confiança). Aparece como um traço fino sobre as barras. Ex.: <b>12% (entre 11% e 13%)</b>. Os técnicos chamam de <i>intervalo de confiança</i>.</dd></div>
+      <div><dt>Precisão</dt><dd><b>Boa</b>, <b>razoável</b> ou <b>baixa</b>, conforme o tamanho da margem de erro em relação ao valor (coeficiente de variação, CV). Com precisão baixa (‡), use o número só como indicação.</dd></div>
+      <div><dt>Comparar lugares</dt><dd>Se as margens de erro de dois lugares se sobrepõem bastante, a diferença entre eles pode ser só efeito da amostra.</dd></div>
+      <div><dt>Pontos percentuais (p.p.)</dt><dd>Diferença entre dois percentuais: de 10% para 13% são <b>+3 p.p.</b></dd></div>
+      <div><dt>Diferença significativa a 5%</dt><dd>O intervalo de confiança de 95% da diferença entre os dois anos não inclui o zero (teste a 5%) <b>e</b> o pesquisador registrou que os anos são comparáveis. Se não houvesse diferença real, uma diferença deste tamanho ou maior apareceria em menos de 5% das amostras possíveis; isso não é a chance de a mudança ser real, e um resultado significativo não é certeza absoluta. Significativa não quer dizer grande nem importante, não explica a causa e não elimina outras limitações. Abaixo do selo aparece o IC 95% da diferença, com casas decimais suficientes para mostrar o sinal dos limites. Sem a decisão aparece “significativa · aguarda decisão”. “Pode ser acaso” não significa que nada mudou.</dd></div>
+      <div><dt>Situação do número</dt><dd><b>Confiável</b>: passou em todas as verificações. <b>Usar com cuidado</b>: passou, com uma observação. <b>Em revisão</b>: fora dos gráficos até ser conferido. <b>Sem valor publicado</b>: o IBGE publicou um símbolo.</dd></div>
+      <div><dt>Ano da pesquisa</dt><dd>O painel abre na edição mais recente (2024) e mostra <b>uma edição por vez</b>; troque na faixa “Edição exibida”. 2009 e 2015 (Amostra 1) entrevistaram o 9º ano; 2015 (Amostra 2), 2019 e 2024, alunos de 13 a 17 anos. Públicos diferentes não se comparam diretamente — a evolução no tempo fica na página “Série histórica”.</dd></div>
+    </dl>
+  </details>
+  <p class="notice" id="notice" role="status" aria-live="polite" hidden></p>
+
+  <main id="main" tabindex="-1">
+    <!-- VISÃO GERAL: o mapa abre a página -->
+    <section class="page" id="page-overview" role="tabpanel" aria-labelledby="tab-overview">
+      <div class="edition-switch" id="edition-switch" aria-label="Ano da pesquisa exibido"></div>
+      <div class="hero">
+        <article class="panel map-panel">
+          <header class="panel-head">
+            <div>
+              <p class="eyebrow" id="map-eyebrow">Mapa do Brasil</p>
+              <h1 id="map-title">Segurança na escola e no entorno</h1>
+              <p class="map-reading" id="map-reading"></p>
+            </div>
+            <div class="scope-switch" data-switch="map" role="radiogroup" aria-label="Recorte territorial do mapa"></div>
+          </header>
+          <div class="map-wrap" id="map"></div>
+          <footer class="map-foot">
+            <div class="legend" id="map-legend"></div>
+            <p class="card-sub" id="map-sub"></p>
+          </footer>
+        </article>
+
+        <aside class="hero-side">
+          <article class="panel stat" id="tile-headline"></article>
+          <article class="panel stat sel-card" id="tile-selected"></article>
+          <article class="panel" id="tile-extremes"></article>
+        </aside>
+      </div>
+
+      <article class="panel">
+        <header class="panel-head">
+          <div>
+            <h2>Todos os lugares, do maior para o menor valor</h2>
+            <p class="card-sub" id="rank-table-sub"></p>
+          </div>
+          <div class="sort-switch" role="group" aria-label="Ordenar ranking">
+            <button type="button" class="seg" data-sort="desc" aria-pressed="true">Maior valor</button>
+            <button type="button" class="seg" data-sort="asc" aria-pressed="false">Menor valor</button>
+            <button type="button" class="seg" data-sort="name" aria-pressed="false">A–Z</button>
+          </div>
+        </header>
+        <div class="table-wrap"><table class="data rank" id="rank-table"></table></div>
+        <div class="legend" id="rank-table-legend"></div>
+      </article>
+
+      <div class="grid">
+        <article class="panel span-6">
+          <header class="panel-head"><div><h2 id="cat-title">Categorias</h2><p class="card-sub" id="cat-sub"></p></div></header>
+          <div class="chart" id="chart-categories"></div>
+        </article>
+        <article class="panel span-6">
+          <header class="panel-head"><div><h2>Por idade, sexo e rede de ensino</h2><p class="card-sub" id="brk-sub"></p></div></header>
+          <div class="chart" id="chart-breakdown"></div>
+        </article>
+        <article class="panel span-8 definition" id="definition"></article>
+        <article class="panel span-4" id="tile-coverage"></article>
+      </div>
+    </section>
+
+    <!-- TERRITÓRIOS -->
+    <section class="page" id="page-territory" role="tabpanel" aria-labelledby="tab-territory" hidden>
+      <div class="grid">
+        <article class="panel span-12">
+          <header class="panel-head">
+            <div><h2>Comparação entre lugares</h2><p class="card-sub" id="rank-sub"></p></div>
+            <div class="scope-switch" data-switch="rank" role="radiogroup" aria-label="Recorte territorial do ranking"></div>
+          </header>
+          <div class="chart" id="chart-ranking"></div>
+          <div class="legend" id="rank-legend"></div>
+        </article>
+        <article class="panel span-12">
+          <header class="panel-head"><div><h2>Todos os números, com a origem na planilha do IBGE</h2><p class="card-sub">Clique numa linha para destacar o lugar no mapa e na comparação.</p></div></header>
+          <div class="table-wrap"><table class="data" id="table-territory"></table></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SÉRIE HISTÓRICA -->
+    <section class="page" id="page-history" role="tabpanel" aria-labelledby="tab-history" hidden>
+      <div class="grid">
+        <article class="panel span-12" id="micro-overview">
+          <header class="panel-head">
+            <div>
+              <p class="eyebrow">Série harmonizada · microdados 2015 · 2019 · 2024</p>
+              <h2>Como os indicadores mudaram no Brasil</h2>
+              <p class="card-sub" id="micro-overview-sub">Escolares de 13 a 17 anos. Mesma pergunta e mesma regra de cálculo em todos os anos; clique numa linha para ver o detalhe.</p>
+            </div>
+          </header>
+          <div class="table-wrap"><table class="data trend" id="table-micro-overview"></table></div>
+          <div class="legend" id="micro-overview-legend"></div>
+        </article>
+        <article class="panel span-12" id="micro-detail">
+          <header class="panel-head">
+            <div><p class="eyebrow" id="micro-eyebrow"></p><h2 id="micro-title"></h2><p class="card-sub" id="micro-question"></p><p class="map-reading" id="micro-reading"></p></div>
+          </header>
+          <div class="micro-filters slicers">
+            <div class="slicer wide"><label for="f-micro-indicator">Indicador</label><select id="f-micro-indicator"></select></div>
+            <div class="slicer"><label for="f-micro-terr">Território</label><select id="f-micro-terr"></select></div>
+            <div class="slicer"><label for="f-micro-cut">Recorte</label><select id="f-micro-cut"></select></div>
+          </div>
+          <div class="micro-body">
+            <div class="chart" id="chart-micro"></div>
+            <aside class="micro-side" id="micro-changes"></aside>
+          </div>
+          <div class="micro-evidence" id="micro-evidence"></div>
+        </article>
+        <article class="panel span-12" id="official-series">
+          <header class="panel-head">
+            <div>
+              <p class="eyebrow">Série oficial do IBGE · 9º ano · municípios das capitais</p>
+              <h2>2009 a 2019 publicados pelo IBGE, 2024 estendido com os microdados</h2>
+              <p class="card-sub" id="official-sub">Indicadores que o próprio IBGE publicou como comparáveis entre edições. O ponto de 2024 usa a mesma regra que reproduz a tabela oficial de 2019.</p>
+            </div>
+          </header>
+          <div class="table-wrap"><table class="data trend" id="table-official"></table></div>
+          <div class="micro-filters slicers">
+            <div class="slicer wide"><label for="f-off-table">Tabela</label><select id="f-off-table"></select></div>
+            <div class="slicer"><label for="f-off-terr">Capital</label><select id="f-off-terr"></select></div>
+            <div class="slicer"><label for="f-off-cut">Recorte</label><select id="f-off-cut"></select></div>
+          </div>
+          <div class="micro-body">
+            <div class="chart" id="chart-official"></div>
+            <aside class="micro-side" id="official-changes"></aside>
+          </div>
+          <div class="legend" id="official-legend"></div>
+        </article>
+        <article class="panel span-12" id="history-main"></article>
+        <article class="panel span-12">
+          <header class="panel-head"><div><h2>Correspondências avaliadas entre edições</h2>
+            <p class="card-sub">Pares candidatos definidos pelo pesquisador; o status vem da comparação dos atributos metodológicos e, quando houver, de decisão humana registrada.</p></div></header>
+          <div class="table-wrap"><table class="data" id="table-comparability"></table></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUALIDADE -->
+    <section class="page" id="page-quality" role="tabpanel" aria-labelledby="tab-quality" hidden>
+      <div class="grid">
+        <article class="panel span-4" id="tile-status"></article>
+        <article class="panel span-8 levels" aria-labelledby="levels-title">
+          <header class="panel-head"><div><h2 id="levels-title">Níveis de alerta: o que cada um significa</h2>
+            <p class="card-sub">Cada número passa por verificações automáticas. Nenhum valor é apagado ou corrigido: os alertas só avisam.</p></div></header>
+          <dl class="level-list">
+            <div><dt><span class="chip neutral">Informativo</span></dt><dd><b>Só um registro.</b> Algo que vale saber, mas que não muda a leitura do número. Ex.: margem de erro cortada em 0%, valor muito diferente dos outros lugares mas plausível.</dd></div>
+            <div><dt><span class="chip warning">Ressalva</span></dt><dd><b>O número é usado, com cuidado.</b> Aparece nos gráficos com uma observação. Ex.: estimativa pouco precisa, margem de erro publicada igual a zero.</dd></div>
+            <div><dt><span class="chip serious">Revisão</span></dt><dd><b>Fica fora dos gráficos até alguém conferir.</b> A leitura automática encontrou algo ambíguo. Ex.: cabeçalho de tabela que pode ter dois sentidos.</dd></div>
+            <div><dt><span class="chip critical">Erro</span></dt><dd><b>Inconsistência confirmada.</b> O número não entra na análise. Ex.: o mesmo dado publicado com valores diferentes em duas tabelas.</dd></div>
+          </dl>
+        </article>
+        <article class="panel span-12">
+          <header class="panel-head"><div><h2>Tudo o que as verificações encontraram (base inteira)</h2><p class="card-sub">Do mais grave ao mais leve. Passe o mouse ou foque no “?” para entender cada coluna.</p></div></header>
+          <div class="table-wrap"><table class="data" id="table-rules"></table></div>
+        </article>
+        <article class="panel span-12">
+          <header class="panel-head"><div><h2>Números deste indicador que estão fora dos gráficos ou com observação</h2><p class="card-sub" id="review-sub"></p></div></header>
+          <div class="table-wrap"><table class="data" id="table-review"></table></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="page" id="page-about" role="tabpanel" aria-labelledby="tab-about" hidden>
+      <div class="grid">
+        <article class="panel span-6 prose">
+          <div id="about-method" class="prose"></div>
+          <!-- download-base -->
+          <p><a class="btn ghost" href="data/pense_base_aprovada.csv" download>Baixar base aprovada (CSV)</a></p>
+          <!-- /download-base -->
+        </article>
+        <article class="panel span-6">
+          <header class="panel-head"><div><h2>Edições na base</h2></div></header>
+          <div class="table-wrap"><table class="data" id="table-editions"></table></div>
+          <header class="panel-head"><div><h2>Símbolos publicados</h2></div></header>
+          <div class="table-wrap"><table class="data" id="table-symbols"></table></div>
+        </article>
+        <article class="panel span-12">
+          <header class="panel-head"><div><h2>Dicionário de dados</h2><p class="card-sub">Gerado do esquema canônico da pipeline (mesma fonte da documentação).</p></div></header>
+          <div class="table-wrap"><table class="data" id="table-dictionary"></table></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p id="subtitle">Carregando base processada…</p>
+    <p id="rail-foot"></p>
+  </footer>
+</div>
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+<textarea id="copy-buffer" class="sr-only" aria-hidden="true" tabindex="-1"></textarea>
+<script src="assets/app.js"></script>
+</body>
+</html>

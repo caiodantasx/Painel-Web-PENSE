@@ -1,0 +1,413 @@
+# Indicadores calculados a partir dos microdados (escolares de 13 a 17 anos).
+#
+# Cada indicador define numerador e denominador por códigos de resposta. Com `any`, a
+# condição vale se QUALQUER uma das variáveis atender (ex.: cinto no banco da frente OU
+# de trás). Os códigos seguem o questionário; o prefixo "V" de 2015 é tratado pela edição.
+#
+# `editions` lista onde a variável existe COM O MESMO CÓDIGO. Pela convenção do IBGE
+# (Nota metodológica n. 01, 2015), código igual = mesma redação de pergunta e opções; um
+# sufixo novo ("A", "B") indica pergunta alterada. Por isso B09011A (2019/2024) não é a
+# VB09011 de 2015, e não entra na mesma série.
+#
+# `published` aponta a tabela publicada usada para validar o cálculo (família e categoria).
+# Fonte das regras de 2015: Nota metodológica n. 03 (tabelas 2.11.x).
+
+[TRAJETO_INSEGURO]
+label = "Faltaram à escola por falta de segurança no trajeto casa-escola"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro no caminho de casa para a escola ou da escola para casa?"
+var = "B09001"
+num = [2, 3, 4, 5, 6]
+den = [1, 2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.7", PENSE_2024 = "9.7", PENSE_2015_A2 = "2.11.1" }
+
+[ESCOLA_INSEGURA]
+label = "Faltaram à escola por falta de segurança na escola"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro na escola?"
+var = "B09002"
+num = [2, 3, 4, 5, 6]
+den = [1, 2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.8", PENSE_2024 = "9.8", PENSE_2015_A2 = "2.11.2" }
+
+[CINTO_NUNCA_RARAMENTE]
+label = "Nunca ou raramente usaram cinto de segurança (banco da frente ou de trás)"
+period = "30_DIAS"
+question = "Uso do cinto como passageiro no banco da frente (B09006A1) e no banco de trás (B09006A2); exclui quem não andou nesse tipo de veículo."
+any = [{ var = "B09006A1", num = [2, 3], den = [2, 3, 4, 5, 6] }, { var = "B09006A2", num = [2, 3], den = [2, 3, 4, 5, 6] }]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.1", PENSE_2024 = "9.1", PENSE_2015_A2 = "2.11.3" }
+
+[CINTO_FRENTE]
+label = "Nunca ou raramente usaram cinto no banco da frente"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) NO BANCO DA FRENTE de carro/automóvel, van ou táxi?"
+var = "B09006A1"
+num = [2, 3]
+den = [2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.2|Banco da frente", PENSE_2024 = "9.2|Banco da frente", PENSE_2015_A2 = "2.11.4|Banco da frente" }
+
+[CINTO_TRAS]
+label = "Nunca ou raramente usaram cinto no banco de trás"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) NO BANCO DE TRÁS de carro/automóvel, van ou táxi?"
+var = "B09006A2"
+num = [2, 3]
+den = [2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.2|Banco de trás", PENSE_2024 = "9.2|Banco de trás", PENSE_2015_A2 = "2.11.4|Banco de trás" }
+
+# Capacete: a MESMA pergunta (B09007A) foi publicada com definições diferentes.
+#   2015 (Nota n. 03, tabela 2.11.5): numerador = às vezes, na maior parte do tempo, sempre (4, 5, 6).
+#   2024 (tabela 9.3): numerador = raramente a sempre (3 a 6) — reproduz 87,9056% (Brasil).
+# Os microdados permitem calcular as duas definições nas três edições; cada série usa uma só.
+[CAPACETE_QUALQUER_USO]
+label = "Usaram capacete (de raramente a sempre), dentre os que andaram de motocicleta"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, com que frequência você usou capacete ao andar de motocicleta?"
+var = "B09007A"
+num = [3, 4, 5, 6]
+den = [2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.3", PENSE_2024 = "9.3" }
+definition_note = "Definição das tabelas 9.3 de 2019 e de 2024 (confirmada pelos microdados). Difere da definição publicada em 2015 (às vezes a sempre)."
+
+[CAPACETE_AS_VEZES_OU_MAIS]
+label = "Usaram capacete às vezes, na maior parte do tempo ou sempre, dentre os que andaram de motocicleta"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, com que frequência você usou capacete ao andar de motocicleta?"
+var = "B09007A"
+num = [4, 5, 6]
+den = [2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A2 = "2.11.5" }
+definition_note = "Definição da tabela 2.11.5 de 2015 (Nota metodológica n. 03). As tabelas 9.3 de 2019 e de 2024 usam a outra definição (raramente a sempre), conferido pelos microdados."
+series_exclude = "Fora da série: só 2015 publicou esta definição; em 2019 e 2024 não há tabela para validar a estimativa. Volta à série apenas com validação documental das três edições e decisão registrada."
+
+[CONDUZIU_VEICULO]
+label = "Conduziram veículo motorizado"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta, voadeira, barco)?"
+var = "B09008"
+num = [2, 3, 4, 5]
+den = [1, 2, 3, 4, 5]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.4", PENSE_2024 = "9.4", PENSE_2015_A2 = "2.11.6" }
+
+[CONDUTOR_ALCOOL]
+label = "Andaram em veículo cujo condutor tinha ingerido bebida alcoólica"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?"
+var = "B09009"
+num = [2, 3, 4, 5]
+den = [1, 2, 3, 4, 5]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.5", PENSE_2024 = "9.5", PENSE_2015_A2 = "2.11.7" }
+
+[BRIGA_ARMA_FOGO]
+label = "Envolveram-se em briga em que alguém usou arma de fogo"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou arma de fogo, como revólver ou espingarda?"
+var = "B09004"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.10", PENSE_2024 = "9.10", PENSE_2015_A2 = "2.11.9" }
+
+[BRIGA_ARMA_BRANCA]
+label = "Envolveram-se em briga em que alguém usou arma branca"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou alguma outra arma como faca, canivete, peixeira, pedra, pedaço de pau ou garrafa?"
+var = "B09005"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.11", PENSE_2024 = "9.11", PENSE_2015_A2 = "2.11.10" }
+
+# ---- variáveis com o mesmo código só em 2019 e 2024 (pergunta alterada desde 2015) ----
+
+[CONDUTOR_CELULAR]
+label = "Andaram em veículo cujo condutor usou celular"
+period = "30_DIAS"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); definição conferida pela tabela 9.6 de 2024."
+var = "B09019"
+num = [2, 3, 4, 5]
+den = [1, 2, 3, 4, 5]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.6", PENSE_2024 = "9.6" }
+
+[BRIGA_LUTA_FISICA]
+label = "Envolveram-se em briga com luta física"
+period = "30_DIAS"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); definição conferida pela tabela 9.9 de 2024."
+var = "B09011A"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.9", PENSE_2024 = "9.9" }
+
+[AGREDIDO_PAIS]
+label = "Foram agredidos fisicamente pela mãe, pai ou responsável"
+period = "12_MESES"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); definição conferida pela tabela 9.16 de 2024."
+var = "B09003A"
+num = [2, 3, 4]
+den = [1, 2, 3, 4]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.16", PENSE_2024 = "9.16" }
+
+[AGREDIDO_OUTROS]
+label = "Foram agredidos fisicamente por outra pessoa (não mãe, pai ou responsável)"
+period = "12_MESES"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); definição conferida pela tabela 9.17 de 2024."
+var = "B09010A1"
+num = [2, 3, 4]
+den = [1, 2, 3, 4]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.17", PENSE_2024 = "9.17" }
+
+[ACIDENTE_OU_AGRESSAO]
+label = "Sofreram acidente ou agressão"
+period = "12_MESES"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); definição conferida pela tabela 9.12 de 2024."
+var = "B09012A1"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.12", PENSE_2024 = "9.12" }
+
+[TOQUE_SEM_CONSENTIMENTO]
+label = "Alguém tocou, manipulou, beijou ou expôs partes do corpo contra a vontade"
+period = "VIDA"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); definição conferida pela tabela 9.19 de 2024."
+var = "B09016A1"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.19", PENSE_2024 = "9.19" }
+
+[RELACAO_SEXUAL_FORCADA]
+label = "Foram ameaçados, intimidados ou obrigados a ter relação ou ato sexual"
+period = "VIDA"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); definição conferida pela tabela 9.21 de 2024."
+var = "B09016A2"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "9.21", PENSE_2024 = "9.21" }
+
+# ---- Tema 17: características da escola informadas pelo diretor(a) ----
+# Interpretação (Nota n. 01): "escolares em escolas que…" — a PeNSE é amostra de alunos.
+# Variáveis identificadas por reprodução das tabelas 17.1 e 17.2 publicadas de 2019 e 2024
+# (códigos 3 e 4 = "sempre" ou "algumas vezes"; E01P59A1 = 1: suspendeu aulas).
+
+[ESCOLA_LOCAL_ASSALTOS]
+label = "Em escolas cujo diretor presenciou/ouviu falar de assaltos e roubos na localidade"
+period = "12_MESES"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); variável identificada pela tabela 17.1."
+informant = "Escola (diretor ou responsável)"
+var = "E01P79"
+num = [3, 4]
+den = [1, 2, 3, 4]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "17.1|Assaltos e roubos a pessoas, residências e comércios", PENSE_2024 = "17.1|Assaltos e roubos a pessoas, residências e comércios" }
+
+[ESCOLA_LOCAL_TIROS]
+label = "Em escolas cujo diretor presenciou/ouviu falar de tiros ou tiroteios na localidade"
+period = "12_MESES"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); variável identificada pela tabela 17.1."
+informant = "Escola (diretor ou responsável)"
+var = "E01P80"
+num = [3, 4]
+den = [1, 2, 3, 4]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "17.1|Tiros ou tiroteios", PENSE_2024 = "17.1|Tiros ou tiroteios" }
+
+[ESCOLA_LOCAL_DROGAS]
+label = "Em escolas cujo diretor presenciou/ouviu falar de venda de drogas na localidade"
+period = "12_MESES"
+question = "2019 (E01P81): alguém vendendo drogas; 2024 (E01P81A): alguém vendendo ou usando drogas — ver dicionários."
+informant = "Escola (diretor ou responsável)"
+var_by_edition = { PENSE_2019 = "E01P81", PENSE_2024 = "E01P81A" }
+num = [3, 4]
+den = [1, 2, 3, 4]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "17.1|Venda de drogas", PENSE_2024 = "17.1|Venda de drogas" }
+definition_note = "Pergunta alterada: 2024 (E01P81A) acrescenta 'ou usando' drogas ao texto de 2019 (E01P81), conforme os dicionários do IBGE. Conceito mais amplo em 2024: não comparável."
+
+[ESCOLA_LOCAL_AGRESSAO]
+label = "Em escolas cujo diretor presenciou/ouviu falar de agressão física ou espancamento na localidade"
+period = "12_MESES"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); variável identificada pela tabela 17.1."
+informant = "Escola (diretor ou responsável)"
+var = "E01P82"
+num = [3, 4]
+den = [1, 2, 3, 4]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "17.1|Agressão física ou espancamento", PENSE_2024 = "17.1|Agressão física ou espancamento" }
+
+[ESCOLA_LOCAL_ASSASSINATO]
+label = "Em escolas cujo diretor presenciou/ouviu falar de assassinato na localidade"
+period = "12_MESES"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); variável identificada pela tabela 17.1."
+informant = "Escola (diretor ou responsável)"
+var = "E01P83"
+num = [3, 4]
+den = [1, 2, 3, 4]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "17.1|Assassinato", PENSE_2024 = "17.1|Assassinato" }
+
+[ESCOLA_LOCAL_VIOLENCIA_SEXUAL]
+label = "Em escolas cujo diretor presenciou/ouviu falar de violência sexual na localidade"
+period = "12_MESES"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); variável identificada pela tabela 17.1."
+informant = "Escola (diretor ou responsável)"
+var = "E01P84"
+num = [3, 4]
+den = [1, 2, 3, 4]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "17.1|Violência sexual", PENSE_2024 = "17.1|Violência sexual" }
+
+[ESCOLA_SUSPENDEU_AULAS]
+label = "Em escolas que suspenderam ou interromperam aulas por violência"
+period = "12_MESES"
+question = "Texto oficial lido dos dicionários do IBGE (2019 e 2024); variável identificada pela tabela 17.2."
+informant = "Escola (diretor ou responsável)"
+var = "E01P59A1"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "17.2", PENSE_2024 = "17.2" }
+
+# ---- 9º ano do ensino fundamental (todas as idades): extensão da série oficial 2009–2019 ----
+# indirect_validation: o IBGE não publicou tabela do 9º ano para 2024. A edição de 2024 conta como
+# "validação indireta" quando os indicadores listados (mesma variável e mesmo denominador, 13 a 17 anos)
+# reproduzem as tabelas de 2024. Pontos com validação indireta aparecem como "calculado, não oficial".
+# 2015 (Amostra 1) é validada DIRETAMENTE contra a série oficial, na convenção de não resposta da série.
+# 2009, 2012 e 2015 ficam com os valores OFICIAIS da série: a regra harmonizada do IBGE para esses anos
+# não foi reproduzida pelos microdados (ver reports/tentativa_microdados_2009_2012_2015A1.csv e
+# docs/12_microdados.md). 2019 reproduz a série oficial exatamente; 2024 estende com a mesma regra.
+# O IBGE publicou indicadores comparáveis do 9º ano nas capitais para 2009, 2012, 2015 e 2019
+# (pasta 2009_2019_indicadores_comparaveis_9ano, Tema 10). Os mesmos indicadores são
+# recalculados com os microdados de 2019 (validação contra a tabela oficial) e de 2024
+# (extensão da série). Universo: turmas do 9º ano (ANO_TURMA = 3), sem filtro de idade.
+
+[NONO_CINTO_FRENTE]
+label = "9º ano · nunca ou raramente usaram cinto no banco da frente"
+population = "9ANO"
+period = "30_DIAS"
+var = "B09006A1"
+num = [2, 3]
+den = [2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.1", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.1" }
+indirect_validation = { PENSE_2024 = ["CINTO_FRENTE"] }
+
+[NONO_CINTO_TRAS]
+label = "9º ano · nunca ou raramente usaram cinto no banco de trás"
+population = "9ANO"
+period = "30_DIAS"
+var = "B09006A2"
+num = [2, 3]
+den = [2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.2", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.2" }
+indirect_validation = { PENSE_2024 = ["CINTO_TRAS"] }
+
+[NONO_CINTO_FRENTE_OU_TRAS]
+label = "9º ano · nunca ou raramente usaram cinto (banco da frente ou de trás)"
+definition_note = "A regra da tabela oficial 10.3 não foi reproduzida (calculado 33,2% × publicado 32,4% nas capitais em 2019; variantes testadas em docs/12_microdados.md). Mantido fora da série até a regra ser documentada."
+population = "9ANO"
+period = "30_DIAS"
+any = [{ var = "B09006A1", num = [2, 3], den = [2, 3, 4, 5, 6] }, { var = "B09006A2", num = [2, 3], den = [2, 3, 4, 5, 6] }]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.3", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.3" }
+
+[NONO_CAPACETE_NUNCA_RARAMENTE]
+label = "9º ano · nunca ou raramente usaram capacete, dentre os que andaram de moto"
+population = "9ANO"
+period = "30_DIAS"
+var = "B09007A"
+num = [2, 3]
+den = [2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.4", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.4" }
+indirect_validation = { PENSE_2024 = ["CAPACETE_QUALQUER_USO"] }
+
+[NONO_CONDUZIU_VEICULO]
+label = "9º ano · conduziram veículo motorizado"
+population = "9ANO"
+period = "30_DIAS"
+var = "B09008"
+num = [2, 3, 4, 5]
+den = [1, 2, 3, 4, 5]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.5", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.5" }
+indirect_validation = { PENSE_2024 = ["CONDUZIU_VEICULO"] }
+
+[NONO_CONDUTOR_ALCOOL]
+label = "9º ano · andaram em veículo cujo condutor tinha ingerido bebida alcoólica"
+population = "9ANO"
+period = "30_DIAS"
+var = "B09009"
+num = [2, 3, 4, 5]
+den = [1, 2, 3, 4, 5]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.6", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.6" }
+indirect_validation = { PENSE_2024 = ["CONDUTOR_ALCOOL"] }
+
+[NONO_TRAJETO_INSEGURO]
+label = "9º ano · faltaram por falta de segurança no trajeto casa-escola"
+population = "9ANO"
+period = "30_DIAS"
+var = "B09001"
+num = [2, 3, 4, 5, 6]
+den = [1, 2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.7", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.7" }
+indirect_validation = { PENSE_2024 = ["TRAJETO_INSEGURO"] }
+
+[NONO_ESCOLA_INSEGURA]
+label = "9º ano · faltaram por falta de segurança na escola"
+population = "9ANO"
+period = "30_DIAS"
+var = "B09002"
+num = [2, 3, 4, 5, 6]
+den = [1, 2, 3, 4, 5, 6]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.8", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.8" }
+indirect_validation = { PENSE_2024 = ["ESCOLA_INSEGURA"] }
+
+[NONO_TRAJETO_OU_ESCOLA]
+label = "9º ano · faltaram por falta de segurança no trajeto ou na escola"
+population = "9ANO"
+period = "30_DIAS"
+any = [{ var = "B09001", num = [2, 3, 4, 5, 6], den = [1, 2, 3, 4, 5, 6] }, { var = "B09002", num = [2, 3, 4, 5, 6], den = [1, 2, 3, 4, 5, 6] }]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.9", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.9" }
+indirect_validation = { PENSE_2024 = ["TRAJETO_INSEGURO", "ESCOLA_INSEGURA"] }
+
+[NONO_BRIGA_LUTA_FISICA]
+label = "9º ano · envolveram-se em briga com luta física"
+population = "9ANO"
+period = "30_DIAS"
+var = "B09011A"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.10" }
+indirect_validation = { PENSE_2024 = ["BRIGA_LUTA_FISICA"] }
+
+[NONO_BRIGA_ARMA_BRANCA]
+label = "9º ano · envolveram-se em briga em que alguém usou arma branca"
+population = "9ANO"
+period = "30_DIAS"
+var = "B09005"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.11", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.11" }
+indirect_validation = { PENSE_2024 = ["BRIGA_ARMA_BRANCA"] }

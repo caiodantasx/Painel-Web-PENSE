@@ -1,0 +1,703 @@
+﻿edition_id,sheet,variable,description,code,code_label,start,length
+PENSE_2009,DICIONARIO,ID,Identificação da escola,,,1,4
+PENSE_2009,DICIONARIO,QUESTIONARIO,identificação do tipo de questionario,,,5,1
+PENSE_2009,DICIONARIO,B00P01,"Prezado(a) estudante, você concorda em participar dessa pesquisa?",1,SIM,6,1
+PENSE_2009,DICIONARIO,B00P01,"Prezado(a) estudante, você concorda em participar dessa pesquisa?",2,NÃO,6,1
+PENSE_2009,DICIONARIO,B01P01,Qual é o seu sexo?,1,MASCULINO,7,1
+PENSE_2009,DICIONARIO,B01P01,Qual é o seu sexo?,2,FEMININO,7,1
+PENSE_2009,DICIONARIO,B01P02,Qual a sua cor ou raça?,1,Branca,8,1
+PENSE_2009,DICIONARIO,B01P02,Qual a sua cor ou raça?,2,Preta(Negra),8,1
+PENSE_2009,DICIONARIO,B01P02,Qual a sua cor ou raça?,3,Parda(Mulata),8,1
+PENSE_2009,DICIONARIO,B01P02,Qual a sua cor ou raça?,4,Amarela(Oriental),8,1
+PENSE_2009,DICIONARIO,B01P02,Qual a sua cor ou raça?,5,Indígena,8,1
+PENSE_2009,DICIONARIO,B01P03,Qual a sua idade?,1,11 ANOS,9,1
+PENSE_2009,DICIONARIO,B01P03,Qual a sua idade?,2,12 ANOS,9,1
+PENSE_2009,DICIONARIO,B01P03,Qual a sua idade?,3,13 ANOS,9,1
+PENSE_2009,DICIONARIO,B01P03,Qual a sua idade?,4,14 ANOS,9,1
+PENSE_2009,DICIONARIO,B01P03,Qual a sua idade?,5,15 ANOS,9,1
+PENSE_2009,DICIONARIO,B01P03,Qual a sua idade?,6,16 ANOS,9,1
+PENSE_2009,DICIONARIO,B01P03,Qual a sua idade?,7,17 ANOS,9,1
+PENSE_2009,DICIONARIO,B01P03,Qual a sua idade?,8,18 ANOS,9,1
+PENSE_2009,DICIONARIO,B01P03,Qual a sua idade?,9,19 ANOS OU MAIS,9,1
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,1,Janeiro,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,2,Fevereiro,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,3,Março,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,4,Abril,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,5,Maio,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,6,Junho,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,7,Julho,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,8,Agosto,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,9,Setembro,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,10,Outubro,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,11,Novembro,10,2
+PENSE_2009,DICIONARIO,B01P04,Qual o mês do seu aniversário?,12,Dezembro,10,2
+PENSE_2009,DICIONARIO,B01P05,Em que ano você nasceu?,1,Antes de 1990,12,1
+PENSE_2009,DICIONARIO,B01P05,Em que ano você nasceu?,2,1990,12,1
+PENSE_2009,DICIONARIO,B01P05,Em que ano você nasceu?,3,1991,12,1
+PENSE_2009,DICIONARIO,B01P05,Em que ano você nasceu?,4,1992,12,1
+PENSE_2009,DICIONARIO,B01P05,Em que ano você nasceu?,5,1993,12,1
+PENSE_2009,DICIONARIO,B01P05,Em que ano você nasceu?,6,1994,12,1
+PENSE_2009,DICIONARIO,B01P05,Em que ano você nasceu?,7,1995,12,1
+PENSE_2009,DICIONARIO,B01P05,Em que ano você nasceu?,8,1996,12,1
+PENSE_2009,DICIONARIO,B01P05,Em que ano você nasceu?,9,1997,12,1
+PENSE_2009,DICIONARIO,B01P06,Você mora com sua mãe?,1,Sim,13,1
+PENSE_2009,DICIONARIO,B01P06,Você mora com sua mãe?,2,Não,13,1
+PENSE_2009,DICIONARIO,B01P07,Você mora com seu pai?,1,Sim,14,1
+PENSE_2009,DICIONARIO,B01P07,Você mora com seu pai?,2,Não,14,1
+PENSE_2009,DICIONARIO,B01P08,Até que nível de ensino(grau) sua mãe estuda ou estudou?,1,Minha mãe não estudou,15,1
+PENSE_2009,DICIONARIO,B01P08,Até que nível de ensino(grau) sua mãe estuda ou estudou?,2,Minha mãe não terminou  o ensino fundamental ou 1º grau,15,1
+PENSE_2009,DICIONARIO,B01P08,Até que nível de ensino(grau) sua mãe estuda ou estudou?,3,Minha mãe terminou o ensino fundamental ou 1º grau,15,1
+PENSE_2009,DICIONARIO,B01P08,Até que nível de ensino(grau) sua mãe estuda ou estudou?,4,Minha mãe não terminou o ensino medio ou 2º grau,15,1
+PENSE_2009,DICIONARIO,B01P08,Até que nível de ensino(grau) sua mãe estuda ou estudou?,5,Minha mãe terminou o ensino médio ou 2 ° grau,15,1
+PENSE_2009,DICIONARIO,B01P08,Até que nível de ensino(grau) sua mãe estuda ou estudou?,6,Minha mãe não terminou a faculdade,15,1
+PENSE_2009,DICIONARIO,B01P08,Até que nível de ensino(grau) sua mãe estuda ou estudou?,7,Minha mãe terminou a faculdade,15,1
+PENSE_2009,DICIONARIO,B01P08,Até que nível de ensino(grau) sua mãe estuda ou estudou?,8,Não sei,15,1
+PENSE_2009,DICIONARIO,B01P12,Na sua casa tem televisão?,1,Sim,16,1
+PENSE_2009,DICIONARIO,B01P12,Na sua casa tem televisão?,2,Não,16,1
+PENSE_2009,DICIONARIO,B01P13,Na sua casa tem geladeira?,1,Sim,17,1
+PENSE_2009,DICIONARIO,B01P13,Na sua casa tem geladeira?,2,Não,17,1
+PENSE_2009,DICIONARIO,B01P14,Na sua casa tem fogão?,1,Sim,18,1
+PENSE_2009,DICIONARIO,B01P14,Na sua casa tem fogão?,2,Não,18,1
+PENSE_2009,DICIONARIO,B01P15,Na sua casa tem forno de microondas?,1,Sim,19,1
+PENSE_2009,DICIONARIO,B01P15,Na sua casa tem forno de microondas?,2,Não,19,1
+PENSE_2009,DICIONARIO,B01P16,Na sua casa tem máquina de lavar roupa? (Não considere o tanquinho),1,Sim,20,1
+PENSE_2009,DICIONARIO,B01P16,Na sua casa tem máquina de lavar roupa? (Não considere o tanquinho),2,Não,20,1
+PENSE_2009,DICIONARIO,B01P17,Na sua casa tem telefone fixo (convencional)?,1,Sim,21,1
+PENSE_2009,DICIONARIO,B01P17,Na sua casa tem telefone fixo (convencional)?,2,Não,21,1
+PENSE_2009,DICIONARIO,B01P18,Você tem celular?,1,Sim,22,1
+PENSE_2009,DICIONARIO,B01P18,Você tem celular?,2,Não,22,1
+PENSE_2009,DICIONARIO,B01P19,Na sua casa tem aparelho de DVD?,1,Sim,23,1
+PENSE_2009,DICIONARIO,B01P19,Na sua casa tem aparelho de DVD?,2,Não,23,1
+PENSE_2009,DICIONARIO,B01P20,Na sua casa tem computador?,1,Sim,24,1
+PENSE_2009,DICIONARIO,B01P20,Na sua casa tem computador?,2,Não,24,1
+PENSE_2009,DICIONARIO,B01P21,Na sua casa tem algum computador ligado à Internet?,1,Sim,25,1
+PENSE_2009,DICIONARIO,B01P21,Na sua casa tem algum computador ligado à Internet?,2,Não,25,1
+PENSE_2009,DICIONARIO,B01P22,Alguém que mora na sua casa tem carro?,1,Sim,26,1
+PENSE_2009,DICIONARIO,B01P22,Alguém que mora na sua casa tem carro?,2,Não,26,1
+PENSE_2009,DICIONARIO,B01P23,Alguém que mora na sua casa tem moto?,1,Sim,27,1
+PENSE_2009,DICIONARIO,B01P23,Alguém que mora na sua casa tem moto?,2,Não,27,1
+PENSE_2009,DICIONARIO,B01P24,Dentro da sua casa tem banheiro?,1,Sim,28,1
+PENSE_2009,DICIONARIO,B01P24,Dentro da sua casa tem banheiro?,2,Não,28,1
+PENSE_2009,DICIONARIO,B01P25,Quantos banheiros com chuveiro tem dentro da sua casa?,1,Nenhum,29,1
+PENSE_2009,DICIONARIO,B01P25,Quantos banheiros com chuveiro tem dentro da sua casa?,2,1 Banheiro,29,1
+PENSE_2009,DICIONARIO,B01P25,Quantos banheiros com chuveiro tem dentro da sua casa?,3,2 Banheiros,29,1
+PENSE_2009,DICIONARIO,B01P25,Quantos banheiros com chuveiro tem dentro da sua casa?,4,3 Banheiros,29,1
+PENSE_2009,DICIONARIO,B01P25,Quantos banheiros com chuveiro tem dentro da sua casa?,5,4 Banheiros ou mais,29,1
+PENSE_2009,DICIONARIO,B01P26,"Tem empregado(a) doméstico(a) recebendo dinheiro para fazer o trabalho em sua casa, cinco ou mais dias por semana?",1,Sim,30,1
+PENSE_2009,DICIONARIO,B01P26,"Tem empregado(a) doméstico(a) recebendo dinheiro para fazer o trabalho em sua casa, cinco ou mais dias por semana?",2,Não,30,1
+PENSE_2009,DICIONARIO,B02P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu feijão?",1,Não comi feijão nos últimos sete dias,31,1
+PENSE_2009,DICIONARIO,B02P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu feijão?",2,1 dia nos últimos sete dias,31,1
+PENSE_2009,DICIONARIO,B02P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu feijão?",3,2 dias nos últimos sete dias,31,1
+PENSE_2009,DICIONARIO,B02P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu feijão?",4,3 dias nos últimos sete dias,31,1
+PENSE_2009,DICIONARIO,B02P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu feijão?",5,4 dias nos últimos sete dias,31,1
+PENSE_2009,DICIONARIO,B02P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu feijão?",6,5 dias nos últimos sete dias,31,1
+PENSE_2009,DICIONARIO,B02P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu feijão?",7,6 dias nos últimos sete dias,31,1
+PENSE_2009,DICIONARIO,B02P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu feijão?",8,Todos os dias nos últimos sete dias,31,1
+PENSE_2009,DICIONARIO,B02P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu batata frita? (Incluir a batata de pacote)",1,Não comi batata frita nos últimos sete dias,32,1
+PENSE_2009,DICIONARIO,B02P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu batata frita? (Incluir a batata de pacote)",2,1 dia nos últimos sete dias,32,1
+PENSE_2009,DICIONARIO,B02P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu batata frita? (Incluir a batata de pacote)",3,2 dias nos últimos sete dias,32,1
+PENSE_2009,DICIONARIO,B02P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu batata frita? (Incluir a batata de pacote)",4,3 dias nos últimos sete dias,32,1
+PENSE_2009,DICIONARIO,B02P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu batata frita? (Incluir a batata de pacote)",5,4 dias nos últimos sete dias,32,1
+PENSE_2009,DICIONARIO,B02P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu batata frita? (Incluir a batata de pacote)",6,5 dias nos últimos sete dias,32,1
+PENSE_2009,DICIONARIO,B02P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu batata frita? (Incluir a batata de pacote)",7,6 dias nos últimos sete dias,32,1
+PENSE_2009,DICIONARIO,B02P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu batata frita? (Incluir a batata de pacote)",8,Todos os dias nos últimos sete dias,32,1
+PENSE_2009,DICIONARIO,B02P03,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salgados fritos? Exemplo: coxinha de galinha, quibe frito, 
+pastel frito, acarajé, etc.",1,Não comi salgados fritos nos últimos sete dias,33,1
+PENSE_2009,DICIONARIO,B02P03,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salgados fritos? Exemplo: coxinha de galinha, quibe frito, 
+pastel frito, acarajé, etc.",2,1 dia nos últimos sete dias,33,1
+PENSE_2009,DICIONARIO,B02P03,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salgados fritos? Exemplo: coxinha de galinha, quibe frito, 
+pastel frito, acarajé, etc.",3,2 dias nos últimos sete dias,33,1
+PENSE_2009,DICIONARIO,B02P03,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salgados fritos? Exemplo: coxinha de galinha, quibe frito, 
+pastel frito, acarajé, etc.",4,3 dias nos últimos sete dias,33,1
+PENSE_2009,DICIONARIO,B02P03,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salgados fritos? Exemplo: coxinha de galinha, quibe frito, 
+pastel frito, acarajé, etc.",5,4 dias nos últimos sete dias,33,1
+PENSE_2009,DICIONARIO,B02P03,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salgados fritos? Exemplo: coxinha de galinha, quibe frito, 
+pastel frito, acarajé, etc.",6,5 dias nos últimos sete dias,33,1
+PENSE_2009,DICIONARIO,B02P03,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salgados fritos? Exemplo: coxinha de galinha, quibe frito, 
+pastel frito, acarajé, etc.",7,6 dias nos últimos sete dias,33,1
+PENSE_2009,DICIONARIO,B02P03,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salgados fritos? Exemplo: coxinha de galinha, quibe frito, 
+pastel frito, acarajé, etc.",8,Todos os dias nos últimos sete dias,33,1
+PENSE_2009,DICIONARIO,B02P04,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu hambúrguer, salsicha, mortadela, salame, presunto, 
+nuggets ou linguiça?",1,Não comi nenhum desses alimentos nos últimos sete dias,34,1
+PENSE_2009,DICIONARIO,B02P04,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu hambúrguer, salsicha, mortadela, salame, presunto, 
+nuggets ou linguiça?",2,1 dia nos últimos sete dias,34,1
+PENSE_2009,DICIONARIO,B02P04,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu hambúrguer, salsicha, mortadela, salame, presunto, 
+nuggets ou linguiça?",3,2 dias nos últimos sete dias,34,1
+PENSE_2009,DICIONARIO,B02P04,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu hambúrguer, salsicha, mortadela, salame, presunto, 
+nuggets ou linguiça?",4,3 dias nos últimos sete dias,34,1
+PENSE_2009,DICIONARIO,B02P04,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu hambúrguer, salsicha, mortadela, salame, presunto, 
+nuggets ou linguiça?",5,4 dias nos últimos sete dias,34,1
+PENSE_2009,DICIONARIO,B02P04,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu hambúrguer, salsicha, mortadela, salame, presunto, 
+nuggets ou linguiça?",6,5 dias nos últimos sete dias,34,1
+PENSE_2009,DICIONARIO,B02P04,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu hambúrguer, salsicha, mortadela, salame, presunto, 
+nuggets ou linguiça?",7,6 dias nos últimos sete dias,34,1
+PENSE_2009,DICIONARIO,B02P04,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu hambúrguer, salsicha, mortadela, salame, presunto, 
+nuggets ou linguiça?",8,Todos os dias nos últimos sete dias,34,1
+PENSE_2009,DICIONARIO,B02P05,"NOS ULTIMOS 7 DIAS, em quantos dias você comeu pelo menos um tipo de legume ou verdura, excluindo batata e aipim (mandioca)? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",1,Não comi legumes ou verduras nos últimos sete dias,35,1
+PENSE_2009,DICIONARIO,B02P05,"NOS ULTIMOS 7 DIAS, em quantos dias você comeu pelo menos um tipo de legume ou verdura, excluindo batata e aipim (mandioca)? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",2,1 dia nos últimos sete dias,35,1
+PENSE_2009,DICIONARIO,B02P05,"NOS ULTIMOS 7 DIAS, em quantos dias você comeu pelo menos um tipo de legume ou verdura, excluindo batata e aipim (mandioca)? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",3,2 dias nos últimos sete dias,35,1
+PENSE_2009,DICIONARIO,B02P05,"NOS ULTIMOS 7 DIAS, em quantos dias você comeu pelo menos um tipo de legume ou verdura, excluindo batata e aipim (mandioca)? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",4,3 dias nos últimos sete dias,35,1
+PENSE_2009,DICIONARIO,B02P05,"NOS ULTIMOS 7 DIAS, em quantos dias você comeu pelo menos um tipo de legume ou verdura, excluindo batata e aipim (mandioca)? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",5,4 dias nos últimos sete dias,35,1
+PENSE_2009,DICIONARIO,B02P05,"NOS ULTIMOS 7 DIAS, em quantos dias você comeu pelo menos um tipo de legume ou verdura, excluindo batata e aipim (mandioca)? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",6,5 dias nos últimos sete dias,35,1
+PENSE_2009,DICIONARIO,B02P05,"NOS ULTIMOS 7 DIAS, em quantos dias você comeu pelo menos um tipo de legume ou verdura, excluindo batata e aipim (mandioca)? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",7,6 dias nos últimos sete dias,35,1
+PENSE_2009,DICIONARIO,B02P05,"NOS ULTIMOS 7 DIAS, em quantos dias você comeu pelo menos um tipo de legume ou verdura, excluindo batata e aipim (mandioca)? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",8,Todos os dias nos últimos sete dias,35,1
+PENSE_2009,DICIONARIO,B02P06,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola etc.",1,Não comi salada crua nos últimos sete dias,36,1
+PENSE_2009,DICIONARIO,B02P06,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola etc.",2,1 dia nos últimos sete dias,36,1
+PENSE_2009,DICIONARIO,B02P06,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola etc.",3,2 dias nos últimos sete dias,36,1
+PENSE_2009,DICIONARIO,B02P06,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola etc.",4,3 dias nos últimos sete dias,36,1
+PENSE_2009,DICIONARIO,B02P06,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola etc.",5,4 dias nos últimos sete dias,36,1
+PENSE_2009,DICIONARIO,B02P06,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola etc.",6,5 dias nos últimos sete dias,36,1
+PENSE_2009,DICIONARIO,B02P06,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola etc.",7,6 dias nos últimos sete dias,36,1
+PENSE_2009,DICIONARIO,B02P06,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola etc.",8,Todos os dias nos últimos sete dias,36,1
+PENSE_2009,DICIONARIO,B02P07,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu legumes ou verduras cozidos na comida ou sopa, excluindo batata e mandioca? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",1,Não comi legumes ou verduras cozidos nos últimos sete dias,37,1
+PENSE_2009,DICIONARIO,B02P07,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu legumes ou verduras cozidos na comida ou sopa, excluindo batata e mandioca? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",2,1 dia nos últimos sete dias,37,1
+PENSE_2009,DICIONARIO,B02P07,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu legumes ou verduras cozidos na comida ou sopa, excluindo batata e mandioca? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",3,2 dias nos últimos sete dias,37,1
+PENSE_2009,DICIONARIO,B02P07,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu legumes ou verduras cozidos na comida ou sopa, excluindo batata e mandioca? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",4,3 dias nos últimos sete dias,37,1
+PENSE_2009,DICIONARIO,B02P07,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu legumes ou verduras cozidos na comida ou sopa, excluindo batata e mandioca? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",5,4 dias nos últimos sete dias,37,1
+PENSE_2009,DICIONARIO,B02P07,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu legumes ou verduras cozidos na comida ou sopa, excluindo batata e mandioca? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",6,5 dias nos últimos sete dias,37,1
+PENSE_2009,DICIONARIO,B02P07,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu legumes ou verduras cozidos na comida ou sopa, excluindo batata e mandioca? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",7,6 dias nos últimos sete dias,37,1
+PENSE_2009,DICIONARIO,B02P07,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu legumes ou verduras cozidos na comida ou sopa, excluindo batata e mandioca? Exemplo: couve, abóbora, chuchu, brócolis, espinafre, etc.",8,Todos os dias nos últimos sete dias,37,1
+PENSE_2009,DICIONARIO,B02P08,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos salgados ou bolachas salgadas?",1,Não comi biscoitos salgados  ou bolachas salgadas nos últimos sete dias,38,1
+PENSE_2009,DICIONARIO,B02P08,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos salgados ou bolachas salgadas?",2,1 dia nos últimos sete dias,38,1
+PENSE_2009,DICIONARIO,B02P08,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos salgados ou bolachas salgadas?",3,2 dias nos últimos sete dias,38,1
+PENSE_2009,DICIONARIO,B02P08,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos salgados ou bolachas salgadas?",4,3 dias nos últimos sete dias,38,1
+PENSE_2009,DICIONARIO,B02P08,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos salgados ou bolachas salgadas?",5,4 dias nos últimos sete dias,38,1
+PENSE_2009,DICIONARIO,B02P08,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos salgados ou bolachas salgadas?",6,5 dias nos últimos sete dias,38,1
+PENSE_2009,DICIONARIO,B02P08,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos salgados ou bolachas salgadas?",7,6 dias nos últimos sete dias,38,1
+PENSE_2009,DICIONARIO,B02P08,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos salgados ou bolachas salgadas?",8,Todos os dias nos últimos sete dias,38,1
+PENSE_2009,DICIONARIO,B02P09,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos doces ou bolachas doces?",1,Não comi biscoitos doces ou bolachas doces nos últimos sete dias,39,1
+PENSE_2009,DICIONARIO,B02P09,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos doces ou bolachas doces?",2,1 dia nos últimos sete dias,39,1
+PENSE_2009,DICIONARIO,B02P09,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos doces ou bolachas doces?",3,2 dias nos últimos sete dias,39,1
+PENSE_2009,DICIONARIO,B02P09,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos doces ou bolachas doces?",4,3 dias nos últimos sete dias,39,1
+PENSE_2009,DICIONARIO,B02P09,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos doces ou bolachas doces?",5,4 dias nos últimos sete dias,39,1
+PENSE_2009,DICIONARIO,B02P09,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos doces ou bolachas doces?",6,5 dias nos últimos sete dias,39,1
+PENSE_2009,DICIONARIO,B02P09,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos doces ou bolachas doces?",7,6 dias nos últimos sete dias,39,1
+PENSE_2009,DICIONARIO,B02P09,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu biscoitos doces ou bolachas doces?",8,Todos os dias nos últimos sete dias,39,1
+PENSE_2009,DICIONARIO,B02P10,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu guloseimas (doces, balas, chocolates, chicletes, bombons ou pirulitos)?",1,Não comi guloseimas nos últimos sete dias,40,1
+PENSE_2009,DICIONARIO,B02P10,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu guloseimas (doces, balas, chocolates, chicletes, bombons ou pirulitos)?",2,1 dia nos últimos sete dias,40,1
+PENSE_2009,DICIONARIO,B02P10,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu guloseimas (doces, balas, chocolates, chicletes, bombons ou pirulitos)?",3,2 dias nos últimos sete dias,40,1
+PENSE_2009,DICIONARIO,B02P10,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu guloseimas (doces, balas, chocolates, chicletes, bombons ou pirulitos)?",4,3 dias nos últimos sete dias,40,1
+PENSE_2009,DICIONARIO,B02P10,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu guloseimas (doces, balas, chocolates, chicletes, bombons ou pirulitos)?",5,4 dias nos últimos sete dias,40,1
+PENSE_2009,DICIONARIO,B02P10,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu guloseimas (doces, balas, chocolates, chicletes, bombons ou pirulitos)?",6,5 dias nos últimos sete dias,40,1
+PENSE_2009,DICIONARIO,B02P10,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu guloseimas (doces, balas, chocolates, chicletes, bombons ou pirulitos)?",7,6 dias nos últimos sete dias,40,1
+PENSE_2009,DICIONARIO,B02P10,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu guloseimas (doces, balas, chocolates, chicletes, bombons ou pirulitos)?",8,Todos os dias nos últimos sete dias,40,1
+PENSE_2009,DICIONARIO,B02P11,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu frutas frescas ou salada de frutas?",1,Não comi frutas frescas ou saladas de frutas nos últimos sete dias,41,1
+PENSE_2009,DICIONARIO,B02P11,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu frutas frescas ou salada de frutas?",2,1 dia nos últimos sete dias,41,1
+PENSE_2009,DICIONARIO,B02P11,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu frutas frescas ou salada de frutas?",3,2 dias nos últimos sete dias,41,1
+PENSE_2009,DICIONARIO,B02P11,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu frutas frescas ou salada de frutas?",4,3 dias nos últimos sete dias,41,1
+PENSE_2009,DICIONARIO,B02P11,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu frutas frescas ou salada de frutas?",5,4 dias nos últimos sete dias,41,1
+PENSE_2009,DICIONARIO,B02P11,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu frutas frescas ou salada de frutas?",6,5 dias nos últimos sete dias,41,1
+PENSE_2009,DICIONARIO,B02P11,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu frutas frescas ou salada de frutas?",7,6 dias nos últimos sete dias,41,1
+PENSE_2009,DICIONARIO,B02P11,"NOS ÚLTIMOS 7 DIAS, em quantos dias você comeu frutas frescas ou salada de frutas?",8,Todos os dias nos últimos sete dias,41,1
+PENSE_2009,DICIONARIO,B02P12,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou leite? (Excluir leite de soja)",1,Não tomei leite nos últimos sete dias,42,1
+PENSE_2009,DICIONARIO,B02P12,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou leite? (Excluir leite de soja)",2,1 dia nos últimos sete dias,42,1
+PENSE_2009,DICIONARIO,B02P12,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou leite? (Excluir leite de soja)",3,2 dias nos últimos sete dias,42,1
+PENSE_2009,DICIONARIO,B02P12,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou leite? (Excluir leite de soja)",4,3 dias nos últimos sete dias,42,1
+PENSE_2009,DICIONARIO,B02P12,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou leite? (Excluir leite de soja)",5,4 dias nos últimos sete dias,42,1
+PENSE_2009,DICIONARIO,B02P12,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou leite? (Excluir leite de soja)",6,5 dias nos últimos sete dias,42,1
+PENSE_2009,DICIONARIO,B02P12,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou leite? (Excluir leite de soja)",7,6 dias nos últimos sete dias,42,1
+PENSE_2009,DICIONARIO,B02P12,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou leite? (Excluir leite de soja)",8,Todos os dias nos últimos sete dias,42,1
+PENSE_2009,DICIONARIO,B02P13,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou refrigerante?",1,Não tomei refrigerante  nos últimos sete dias,43,1
+PENSE_2009,DICIONARIO,B02P13,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou refrigerante?",2,1 dia nos últimos sete dias,43,1
+PENSE_2009,DICIONARIO,B02P13,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou refrigerante?",3,2 dias nos últimos sete dias,43,1
+PENSE_2009,DICIONARIO,B02P13,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou refrigerante?",4,3 dias nos últimos sete dias,43,1
+PENSE_2009,DICIONARIO,B02P13,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou refrigerante?",5,4 dias nos últimos sete dias,43,1
+PENSE_2009,DICIONARIO,B02P13,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou refrigerante?",6,5 dias nos últimos sete dias,43,1
+PENSE_2009,DICIONARIO,B02P13,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou refrigerante?",7,6 dias nos últimos sete dias,43,1
+PENSE_2009,DICIONARIO,B02P13,"NOS ÚLTIMOS 7 DIAS, em quantos dias você tomou refrigerante?",8,Todos os dias nos últimos sete dias,43,1
+PENSE_2009,DICIONARIO,B02P14,"NOS ÚLTIMOS 7 DIAS, na maioria das vezes em que você tomou refrigerante, ele foi de que tipo?",1,Normal,44,1
+PENSE_2009,DICIONARIO,B02P14,"NOS ÚLTIMOS 7 DIAS, na maioria das vezes em que você tomou refrigerante, ele foi de que tipo?",2,Light / diet/ zero,44,1
+PENSE_2009,DICIONARIO,B02P14,"NOS ÚLTIMOS 7 DIAS, na maioria das vezes em que você tomou refrigerante, ele foi de que tipo?",3,Não tomei refrigerante nos últimos sete dias,44,1
+PENSE_2009,DICIONARIO,B02P15,"Ontem, em quais refeições você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola  etc.",1,Não comi salada crua ontem,45,1
+PENSE_2009,DICIONARIO,B02P15,"Ontem, em quais refeições você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola  etc.",2,No almoço de ontem,45,1
+PENSE_2009,DICIONARIO,B02P15,"Ontem, em quais refeições você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola  etc.",3,No jantar de ontem,45,1
+PENSE_2009,DICIONARIO,B02P15,"Ontem, em quais refeições você comeu salada crua? Exemplo: alface ou tomate ou cenoura ou pepino ou cebola  etc.",4,No almoço e no jantar de ontem,45,1
+PENSE_2009,DICIONARIO,B02P16,"Ontem, em quais refeições você comeu legumes ou verduras cozidos, sem contar batata e aipim (mandioca/macaxeira)?",1,Não comi legumes nem verduras cozidos ontem,46,1
+PENSE_2009,DICIONARIO,B02P16,"Ontem, em quais refeições você comeu legumes ou verduras cozidos, sem contar batata e aipim (mandioca/macaxeira)?",2,No almoço de ontem,46,1
+PENSE_2009,DICIONARIO,B02P16,"Ontem, em quais refeições você comeu legumes ou verduras cozidos, sem contar batata e aipim (mandioca/macaxeira)?",3,No jantar de ontem,46,1
+PENSE_2009,DICIONARIO,B02P16,"Ontem, em quais refeições você comeu legumes ou verduras cozidos, sem contar batata e aipim (mandioca/macaxeira)?",4,No almoço e no jantar de ontem,46,1
+PENSE_2009,DICIONARIO,B02P17,"Ontem, quantas vezes você comeu frutas frescas?",1,Não comi frutas frescas ontem,47,1
+PENSE_2009,DICIONARIO,B02P17,"Ontem, quantas vezes você comeu frutas frescas?",2,Uma vez ontem,47,1
+PENSE_2009,DICIONARIO,B02P17,"Ontem, quantas vezes você comeu frutas frescas?",3,Duas vezes ontem,47,1
+PENSE_2009,DICIONARIO,B02P17,"Ontem, quantas vezes você comeu frutas frescas?",4,Três vezes ou mais ontem,47,1
+PENSE_2009,DICIONARIO,B02P18,Você costuma fazer alguma dessas refeições - almoço ou jantar - com sua mãe ou responsável?,1,Não,48,1
+PENSE_2009,DICIONARIO,B02P18,Você costuma fazer alguma dessas refeições - almoço ou jantar - com sua mãe ou responsável?,2,"Sim, todos os dias",48,1
+PENSE_2009,DICIONARIO,B02P18,Você costuma fazer alguma dessas refeições - almoço ou jantar - com sua mãe ou responsável?,3,"Sim, 5 a 6 dias por semana",48,1
+PENSE_2009,DICIONARIO,B02P18,Você costuma fazer alguma dessas refeições - almoço ou jantar - com sua mãe ou responsável?,4,"Sim, 3 a 4 dias por semana",48,1
+PENSE_2009,DICIONARIO,B02P18,Você costuma fazer alguma dessas refeições - almoço ou jantar - com sua mãe ou responsável?,5,"Sim, 1 a 2 dias por semana",48,1
+PENSE_2009,DICIONARIO,B02P18,Você costuma fazer alguma dessas refeições - almoço ou jantar - com sua mãe ou responsável?,6,"Sim, mas apenas raramente",48,1
+PENSE_2009,DICIONARIO,B02P19,Você costuma comer quando está assistindo à TV ou estudando?,1,Não,49,1
+PENSE_2009,DICIONARIO,B02P19,Você costuma comer quando está assistindo à TV ou estudando?,2,"Sim, todos os dias",49,1
+PENSE_2009,DICIONARIO,B02P19,Você costuma comer quando está assistindo à TV ou estudando?,3,"Sim, 5 a 6 dias por semana",49,1
+PENSE_2009,DICIONARIO,B02P19,Você costuma comer quando está assistindo à TV ou estudando?,4,"Sim, 3 a 4 dias por semana",49,1
+PENSE_2009,DICIONARIO,B02P19,Você costuma comer quando está assistindo à TV ou estudando?,5,"Sim, 1 a 2 dias por semana",49,1
+PENSE_2009,DICIONARIO,B02P19,Você costuma comer quando está assistindo à TV ou estudando?,6,"Sim, mas apenas raramente",49,1
+PENSE_2009,DICIONARIO,B03P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você foi a pé ou de bicicleta para a escola?",1,Nenhum dia nos últimos sete dias,50,1
+PENSE_2009,DICIONARIO,B03P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você foi a pé ou de bicicleta para a escola?",2,1 dia nos últimos sete dias,50,1
+PENSE_2009,DICIONARIO,B03P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você foi a pé ou de bicicleta para a escola?",3,2 dias nos últimos sete dias,50,1
+PENSE_2009,DICIONARIO,B03P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você foi a pé ou de bicicleta para a escola?",4,3 dias nos últimos sete dias,50,1
+PENSE_2009,DICIONARIO,B03P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você foi a pé ou de bicicleta para a escola?",5,4 dias nos últimos sete dias,50,1
+PENSE_2009,DICIONARIO,B03P01,"NOS ÚLTIMOS 7 DIAS, em quantos dias você foi a pé ou de bicicleta para a escola?",6,5 a 7 dias nos últimos sete dias,50,1
+PENSE_2009,DICIONARIO,B03P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você voltou a pé ou de bicicleta da escola?",1,Nenhum dia nos últimos sete dias,51,1
+PENSE_2009,DICIONARIO,B03P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você voltou a pé ou de bicicleta da escola?",2,1 dia nos últimos sete dias,51,1
+PENSE_2009,DICIONARIO,B03P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você voltou a pé ou de bicicleta da escola?",3,2 dia nos últimos sete dias,51,1
+PENSE_2009,DICIONARIO,B03P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você voltou a pé ou de bicicleta da escola?",4,3 dia nos últimos sete dias,51,1
+PENSE_2009,DICIONARIO,B03P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você voltou a pé ou de bicicleta da escola?",5,4 dia nos últimos sete dias,51,1
+PENSE_2009,DICIONARIO,B03P02,"NOS ÚLTIMOS 7 DIAS, em quantos dias você voltou a pé ou de bicicleta da escola?",6,5 a 7 dias nos últimos sete dias,51,1
+PENSE_2009,DICIONARIO,B03P03,"Quando você vai a pé ou de bicicleta para a escola, quanto tempo você gasta? (CONTAR APENAS O TEMPO GASTO NA IDA OU NA VOLTA. NÃO SOMAR IDA E VOLTA)",1,Não vou a pé nem de bicicleta para a escola,52,1
+PENSE_2009,DICIONARIO,B03P03,"Quando você vai a pé ou de bicicleta para a escola, quanto tempo você gasta? (CONTAR APENAS O TEMPO GASTO NA IDA OU NA VOLTA. NÃO SOMAR IDA E VOLTA)",2,Menos de 10 minutos por dia,52,1
+PENSE_2009,DICIONARIO,B03P03,"Quando você vai a pé ou de bicicleta para a escola, quanto tempo você gasta? (CONTAR APENAS O TEMPO GASTO NA IDA OU NA VOLTA. NÃO SOMAR IDA E VOLTA)",3,10 a 19 minutos por dia,52,1
+PENSE_2009,DICIONARIO,B03P03,"Quando você vai a pé ou de bicicleta para a escola, quanto tempo você gasta? (CONTAR APENAS O TEMPO GASTO NA IDA OU NA VOLTA. NÃO SOMAR IDA E VOLTA)",4,20 a 29 minutos por dia,52,1
+PENSE_2009,DICIONARIO,B03P03,"Quando você vai a pé ou de bicicleta para a escola, quanto tempo você gasta? (CONTAR APENAS O TEMPO GASTO NA IDA OU NA VOLTA. NÃO SOMAR IDA E VOLTA)",5,30 a 39 minutos por dia,52,1
+PENSE_2009,DICIONARIO,B03P03,"Quando você vai a pé ou de bicicleta para a escola, quanto tempo você gasta? (CONTAR APENAS O TEMPO GASTO NA IDA OU NA VOLTA. NÃO SOMAR IDA E VOLTA)",6,40 a 49 minutos por dia,52,1
+PENSE_2009,DICIONARIO,B03P03,"Quando você vai a pé ou de bicicleta para a escola, quanto tempo você gasta? (CONTAR APENAS O TEMPO GASTO NA IDA OU NA VOLTA. NÃO SOMAR IDA E VOLTA)",7,50 a 59 minutos por dia,52,1
+PENSE_2009,DICIONARIO,B03P03,"Quando você vai a pé ou de bicicleta para a escola, quanto tempo você gasta? (CONTAR APENAS O TEMPO GASTO NA IDA OU NA VOLTA. NÃO SOMAR IDA E VOLTA)",8,60 ou mais minutos por dia,52,1
+PENSE_2009,DICIONARIO,B03P04,"NOS ÚLTIMOS 7 DIAS, quantas vezes você teve aulas de educação física na escola?",1,Nenhum dia nos últimos sete dias,53,1
+PENSE_2009,DICIONARIO,B03P04,"NOS ÚLTIMOS 7 DIAS, quantas vezes você teve aulas de educação física na escola?",2,1 dia nos últimos sete dias,53,1
+PENSE_2009,DICIONARIO,B03P04,"NOS ÚLTIMOS 7 DIAS, quantas vezes você teve aulas de educação física na escola?",3,2 dias nos últimos sete dias,53,1
+PENSE_2009,DICIONARIO,B03P04,"NOS ÚLTIMOS 7 DIAS, quantas vezes você teve aulas de educação física na escola?",4,3 dias nos últimos sete dias,53,1
+PENSE_2009,DICIONARIO,B03P04,"NOS ÚLTIMOS 7 DIAS, quantas vezes você teve aulas de educação física na escola?",5,4 dias nos últimos sete dias,53,1
+PENSE_2009,DICIONARIO,B03P04,"NOS ÚLTIMOS 7 DIAS, quantas vezes você teve aulas de educação física na escola?",6,5 a 7 dias nos últimos sete dias,53,1
+PENSE_2009,DICIONARIO,B03P05,"NOS ÚLTIMOS 7 DIAS, quanto tempo por dia você fez atividade física ou esporte durante as aulas de Educação Física na escola?",1,Não fiz aula de educação física na escola,54,1
+PENSE_2009,DICIONARIO,B03P05,"NOS ÚLTIMOS 7 DIAS, quanto tempo por dia você fez atividade física ou esporte durante as aulas de Educação Física na escola?",2,Menos de 10 minutos por dia,54,1
+PENSE_2009,DICIONARIO,B03P05,"NOS ÚLTIMOS 7 DIAS, quanto tempo por dia você fez atividade física ou esporte durante as aulas de Educação Física na escola?",3,10 a 19 minutos por dia,54,1
+PENSE_2009,DICIONARIO,B03P05,"NOS ÚLTIMOS 7 DIAS, quanto tempo por dia você fez atividade física ou esporte durante as aulas de Educação Física na escola?",4,20 a 29 minutos por dia,54,1
+PENSE_2009,DICIONARIO,B03P05,"NOS ÚLTIMOS 7 DIAS, quanto tempo por dia você fez atividade física ou esporte durante as aulas de Educação Física na escola?",5,30 a 39 minutos por dia,54,1
+PENSE_2009,DICIONARIO,B03P05,"NOS ÚLTIMOS 7 DIAS, quanto tempo por dia você fez atividade física ou esporte durante as aulas de Educação Física na escola?",6,40 a 49 minutos por dia,54,1
+PENSE_2009,DICIONARIO,B03P05,"NOS ÚLTIMOS 7 DIAS, quanto tempo por dia você fez atividade física ou esporte durante as aulas de Educação Física na escola?",7,50 minutos a 1 hora por dia,54,1
+PENSE_2009,DICIONARIO,B03P05,"NOS ÚLTIMOS 7 DIAS, quanto tempo por dia você fez atividade física ou esporte durante as aulas de Educação Física na escola?",8,1 hora e 20  minutos por dia,54,1
+PENSE_2009,DICIONARIO,B03P05,"NOS ÚLTIMOS 7 DIAS, quanto tempo por dia você fez atividade física ou esporte durante as aulas de Educação Física na escola?",9,Mais de 1 hora e 20 minutos por dia,54,1
+PENSE_2009,DICIONARIO,B03P06,"NOS ÚLTIMOS 7 DIAS, sem contar as aulas de educação física da escola, em quantos dias você praticou alguma atividade física, como esportes, dança, ginástica, musculação, lutas ou outra atividade com a orientação de professor ou instrutor?",1,Nenhum dia nos últimos sete dias,55,1
+PENSE_2009,DICIONARIO,B03P06,"NOS ÚLTIMOS 7 DIAS, sem contar as aulas de educação física da escola, em quantos dias você praticou alguma atividade física, como esportes, dança, ginástica, musculação, lutas ou outra atividade com a orientação de professor ou instrutor?",2,1 dia nos últimos sete dias,55,1
+PENSE_2009,DICIONARIO,B03P06,"NOS ÚLTIMOS 7 DIAS, sem contar as aulas de educação física da escola, em quantos dias você praticou alguma atividade física, como esportes, dança, ginástica, musculação, lutas ou outra atividade com a orientação de professor ou instrutor?",3,2 dias nos últimos sete dias,55,1
+PENSE_2009,DICIONARIO,B03P06,"NOS ÚLTIMOS 7 DIAS, sem contar as aulas de educação física da escola, em quantos dias você praticou alguma atividade física, como esportes, dança, ginástica, musculação, lutas ou outra atividade com a orientação de professor ou instrutor?",4,3 dias nos últimos sete dias,55,1
+PENSE_2009,DICIONARIO,B03P06,"NOS ÚLTIMOS 7 DIAS, sem contar as aulas de educação física da escola, em quantos dias você praticou alguma atividade física, como esportes, dança, ginástica, musculação, lutas ou outra atividade com a orientação de professor ou instrutor?",5,4 dias nos últimos sete dias,55,1
+PENSE_2009,DICIONARIO,B03P06,"NOS ÚLTIMOS 7 DIAS, sem contar as aulas de educação física da escola, em quantos dias você praticou alguma atividade física, como esportes, dança, ginástica, musculação, lutas ou outra atividade com a orientação de professor ou instrutor?",6,5 a 7 dias nos últimos sete dias,55,1
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",1,Não faço atividade física com instrutor,56,2
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",2,Menos de 10 minutos por dia,56,2
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",3,10 a 19 minutos por dia,56,2
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",4,20 a 29 minutos por dia,56,2
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",5,30 a 39 minutos por dia,56,2
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",6,40 a 49 minutos por dia,56,2
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",7,50 a 60 minutos por dia,56,2
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",8,60 a 70 minutos por dia,56,2
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",9,70 a 80 minutos por dia,56,2
+PENSE_2009,DICIONARIO,B03P07,"Normalmente, quanto tempo por dia duram essas atividades que você faz com professor ou instrutor? (Não incluir as aulas de educação física)",10,80 ou mais minutos por dia,56,2
+PENSE_2009,DICIONARIO,B03P08,"NOS ÚLTIMOS 7 DIAS, no seu tempo livre, em quantos dias você praticou atividade física ou esporte sem professor ou instrutor?",1,Nenhum dia nos últimos sete dias,58,1
+PENSE_2009,DICIONARIO,B03P08,"NOS ÚLTIMOS 7 DIAS, no seu tempo livre, em quantos dias você praticou atividade física ou esporte sem professor ou instrutor?",2,1 dia nos últimos sete dias,58,1
+PENSE_2009,DICIONARIO,B03P08,"NOS ÚLTIMOS 7 DIAS, no seu tempo livre, em quantos dias você praticou atividade física ou esporte sem professor ou instrutor?",3,2 dias nos últimos sete dias,58,1
+PENSE_2009,DICIONARIO,B03P08,"NOS ÚLTIMOS 7 DIAS, no seu tempo livre, em quantos dias você praticou atividade física ou esporte sem professor ou instrutor?",4,3 dias nos últimos sete dias,58,1
+PENSE_2009,DICIONARIO,B03P08,"NOS ÚLTIMOS 7 DIAS, no seu tempo livre, em quantos dias você praticou atividade física ou esporte sem professor ou instrutor?",5,4 dias nos últimos sete dias,58,1
+PENSE_2009,DICIONARIO,B03P08,"NOS ÚLTIMOS 7 DIAS, no seu tempo livre, em quantos dias você praticou atividade física ou esporte sem professor ou instrutor?",6,5 a 7 dias nos últimos sete dias,58,1
+PENSE_2009,DICIONARIO,B03P09,"Normalmente, quanto tempo por dia duram essas atividades que você faz sem professor ou instrutor?",1,Não faço atividade física sem instrutor,59,1
+PENSE_2009,DICIONARIO,B03P09,"Normalmente, quanto tempo por dia duram essas atividades que você faz sem professor ou instrutor?",2,Menos de 10 minutos por dia,59,1
+PENSE_2009,DICIONARIO,B03P09,"Normalmente, quanto tempo por dia duram essas atividades que você faz sem professor ou instrutor?",3,10 a 19 minutos por dia,59,1
+PENSE_2009,DICIONARIO,B03P09,"Normalmente, quanto tempo por dia duram essas atividades que você faz sem professor ou instrutor?",4,20 a 29 minutos por dia,59,1
+PENSE_2009,DICIONARIO,B03P09,"Normalmente, quanto tempo por dia duram essas atividades que você faz sem professor ou instrutor?",5,30 a 39 minutos por dia,59,1
+PENSE_2009,DICIONARIO,B03P09,"Normalmente, quanto tempo por dia duram essas atividades que você faz sem professor ou instrutor?",6,40 a 49 minutos por dia,59,1
+PENSE_2009,DICIONARIO,B03P09,"Normalmente, quanto tempo por dia duram essas atividades que você faz sem professor ou instrutor?",7,1 hora por dia,59,1
+PENSE_2009,DICIONARIO,B03P09,"Normalmente, quanto tempo por dia duram essas atividades que você faz sem professor ou instrutor?",8,1 hora e 1h30 por dia,59,1
+PENSE_2009,DICIONARIO,B03P09,"Normalmente, quanto tempo por dia duram essas atividades que você faz sem professor ou instrutor?",9,Mais de 1h30 por dia,59,1
+PENSE_2009,DICIONARIO,B03P10,"Se você tivesse oportunidade de fazer atividade física na maioria dos dias da semana, qual seria a sua atitude?",1,Não faria mesmo assim,60,1
+PENSE_2009,DICIONARIO,B03P10,"Se você tivesse oportunidade de fazer atividade física na maioria dos dias da semana, qual seria a sua atitude?",2,Faria atividade física na maioria dos dias da semana,60,1
+PENSE_2009,DICIONARIO,B03P10,"Se você tivesse oportunidade de fazer atividade física na maioria dos dias da semana, qual seria a sua atitude?",3,Já faço atividade física na maioria dos dias da semana,60,1
+PENSE_2009,DICIONARIO,B03P11,"Num dia de semana comum, quantas horas por dia você assiste a TV?",1,Não assisto a TV,61,1
+PENSE_2009,DICIONARIO,B03P11,"Num dia de semana comum, quantas horas por dia você assiste a TV?",2,Menos de 1 hora por dia,61,1
+PENSE_2009,DICIONARIO,B03P11,"Num dia de semana comum, quantas horas por dia você assiste a TV?",3,Cerca de 1 hora por dia,61,1
+PENSE_2009,DICIONARIO,B03P11,"Num dia de semana comum, quantas horas por dia você assiste a TV?",4,Cerca de 2 horas por dia,61,1
+PENSE_2009,DICIONARIO,B03P11,"Num dia de semana comum, quantas horas por dia você assiste a TV?",5,Cerca de 3 horas por dia,61,1
+PENSE_2009,DICIONARIO,B03P11,"Num dia de semana comum, quantas horas por dia você assiste a TV?",6,Cerca de 4 horas por dia,61,1
+PENSE_2009,DICIONARIO,B03P11,"Num dia de semana comum, quantas horas por dia você assiste a TV?",7,Cerca de 5 horas por dia,61,1
+PENSE_2009,DICIONARIO,B03P11,"Num dia de semana comum, quantas horas por dia você assiste a TV?",8,Cerca de 6 horas por dia,61,1
+PENSE_2009,DICIONARIO,B03P11,"Num dia de semana comum, quantas horas por dia você assiste a TV?",9,Cerca de 7 ou mais horas por dia,61,1
+PENSE_2009,DICIONARIO,B03P12,"Num dia de semana comum, quantas horas por dia você joga videogame?",1,Não jogo videogame,62,1
+PENSE_2009,DICIONARIO,B03P12,"Num dia de semana comum, quantas horas por dia você joga videogame?",2,Menos de 1 hora por dia,62,1
+PENSE_2009,DICIONARIO,B03P12,"Num dia de semana comum, quantas horas por dia você joga videogame?",3,Cerca de 1 hora por dia,62,1
+PENSE_2009,DICIONARIO,B03P12,"Num dia de semana comum, quantas horas por dia você joga videogame?",4,Cerca de 2 horas por dia,62,1
+PENSE_2009,DICIONARIO,B03P12,"Num dia de semana comum, quantas horas por dia você joga videogame?",5,Cerca de 3 horas por dia,62,1
+PENSE_2009,DICIONARIO,B03P12,"Num dia de semana comum, quantas horas por dia você joga videogame?",6,Cerca de 4 horas por dia,62,1
+PENSE_2009,DICIONARIO,B03P12,"Num dia de semana comum, quantas horas por dia você joga videogame?",7,Cerca de 5 horas por dia,62,1
+PENSE_2009,DICIONARIO,B03P12,"Num dia de semana comum, quantas horas por dia você joga videogame?",8,Cerca de 6 horas por dia,62,1
+PENSE_2009,DICIONARIO,B03P12,"Num dia de semana comum, quantas horas por dia você joga videogame?",9,Cerca de 7 ou mais horas por dia,62,1
+PENSE_2009,DICIONARIO,B03P13,"Num dia de semana comum, quantas horas por dia você fica no computador?",1,Não fico no computador,63,1
+PENSE_2009,DICIONARIO,B03P13,"Num dia de semana comum, quantas horas por dia você fica no computador?",2,Menos de 1 hora por dia,63,1
+PENSE_2009,DICIONARIO,B03P13,"Num dia de semana comum, quantas horas por dia você fica no computador?",3,Cerca de 1 hora por dia,63,1
+PENSE_2009,DICIONARIO,B03P13,"Num dia de semana comum, quantas horas por dia você fica no computador?",4,Cerca de 2 horas por dia,63,1
+PENSE_2009,DICIONARIO,B03P13,"Num dia de semana comum, quantas horas por dia você fica no computador?",5,Cerca de 3 horas por dia,63,1
+PENSE_2009,DICIONARIO,B03P13,"Num dia de semana comum, quantas horas por dia você fica no computador?",6,Cerca de 4 horas por dia,63,1
+PENSE_2009,DICIONARIO,B03P13,"Num dia de semana comum, quantas horas por dia você fica no computador?",7,Cerca de 5 horas por dia,63,1
+PENSE_2009,DICIONARIO,B03P13,"Num dia de semana comum, quantas horas por dia você fica no computador?",8,Cerca de 6 horas por dia,63,1
+PENSE_2009,DICIONARIO,B03P13,"Num dia de semana comum, quantas horas por dia você fica no computador?",9,Cerca de 7 ou mais horas por dia,63,1
+PENSE_2009,DICIONARIO,B04P01,"Alguma vez na vida, você já fumou cigarro, mesmo uma ou duas tragadas?",1,Sim,64,1
+PENSE_2009,DICIONARIO,B04P01,"Alguma vez na vida, você já fumou cigarro, mesmo uma ou duas tragadas?",2,Não,64,1
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,1,Nunca experimentei cigarro,65,2
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,2,9 anos ou menos,65,2
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,3,10 anos,65,2
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,4,11 anos,65,2
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,5,12 anos,65,2
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,6,13 anos,65,2
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,7,14 anos,65,2
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,8,15 anos,65,2
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,9,16 anos,65,2
+PENSE_2009,DICIONARIO,B04P02,Que idade você tinha quando experimentou fumar cigarro pela primeira vez?,10,17 anos ou mais,65,2
+PENSE_2009,DICIONARIO,B04P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você fumou cigarros?",1,Nunca fumei,67,1
+PENSE_2009,DICIONARIO,B04P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você fumou cigarros?",2,Nenhum dia nos últimos 30 dias,67,1
+PENSE_2009,DICIONARIO,B04P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você fumou cigarros?",3,1 ou 2 dias nos últimos 30 dias,67,1
+PENSE_2009,DICIONARIO,B04P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você fumou cigarros?",4,3 a 5 dias nos últimos 30 dias,67,1
+PENSE_2009,DICIONARIO,B04P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você fumou cigarros?",5,6 a 9 dias nos últimos 30 dias,67,1
+PENSE_2009,DICIONARIO,B04P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você fumou cigarros?",6,10 a 19 dias nos últimos 30 dias,67,1
+PENSE_2009,DICIONARIO,B04P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você fumou cigarros?",7,20 a 29 dias nos últimos 30 dias,67,1
+PENSE_2009,DICIONARIO,B04P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você fumou cigarros?",8,Todos os 30 dias nos últimos 30 dias,67,1
+PENSE_2009,DICIONARIO,B04P04,"NOS ÚLTIMOS 12 MESES, você tentou parar de fumar?",1,Nunca fumei,68,1
+PENSE_2009,DICIONARIO,B04P04,"NOS ÚLTIMOS 12 MESES, você tentou parar de fumar?",2,Não fumei nos últimos 12 meses,68,1
+PENSE_2009,DICIONARIO,B04P04,"NOS ÚLTIMOS 12 MESES, você tentou parar de fumar?",3,"Sim, tentei parar nos últimos 12  meses",68,1
+PENSE_2009,DICIONARIO,B04P04,"NOS ÚLTIMOS 12 MESES, você tentou parar de fumar?",4,Não tentei parar nos últimos 12 meses,68,1
+PENSE_2009,DICIONARIO,B04P05,"NOS ULTIMOS 7 DIAS, em quantos dias outras pessoas fumaram na sua casa?",1,Nenhum dia nos últimos 7 dias,69,1
+PENSE_2009,DICIONARIO,B04P05,"NOS ULTIMOS 7 DIAS, em quantos dias outras pessoas fumaram na sua casa?",2,1 ou 2 dias nos últimos 7 dias,69,1
+PENSE_2009,DICIONARIO,B04P05,"NOS ULTIMOS 7 DIAS, em quantos dias outras pessoas fumaram na sua casa?",3,3 ou 4 dias nos últimos 7 dias,69,1
+PENSE_2009,DICIONARIO,B04P05,"NOS ULTIMOS 7 DIAS, em quantos dias outras pessoas fumaram na sua casa?",4,5 ou 6 dias nos últimos 7 dias,69,1
+PENSE_2009,DICIONARIO,B04P05,"NOS ULTIMOS 7 DIAS, em quantos dias outras pessoas fumaram na sua casa?",5,Todos os dias nos últimos 7 dias,69,1
+PENSE_2009,DICIONARIO,B04P06,Qual de seus pais ou responsáveis fuma?,1,Nenhum deles,70,1
+PENSE_2009,DICIONARIO,B04P06,Qual de seus pais ou responsáveis fuma?,2,Meu pai e minha mãe ou responsáveis,70,1
+PENSE_2009,DICIONARIO,B04P06,Qual de seus pais ou responsáveis fuma?,3,Só meu pai ou responsável do sexo masculino,70,1
+PENSE_2009,DICIONARIO,B04P06,Qual de seus pais ou responsáveis fuma?,4,Só minha mãe ou responsável do sexo feminino,70,1
+PENSE_2009,DICIONARIO,B04P06,Qual de seus pais ou responsáveis fuma?,5,Não sei,70,1
+PENSE_2009,DICIONARIO,B04P07,"Se quiser, você consegue comprar cigarro na escola?",1,"Sim, consigo",71,1
+PENSE_2009,DICIONARIO,B04P07,"Se quiser, você consegue comprar cigarro na escola?",2,"Não, não consigo",71,1
+PENSE_2009,DICIONARIO,B04P07,"Se quiser, você consegue comprar cigarro na escola?",3,Não sei,71,1
+PENSE_2009,DICIONARIO,B04P08,"Se você fumasse cigarros, qual seria a reação de sua família se ela ficasse sabendo?",1,Iria se importar muito,72,1
+PENSE_2009,DICIONARIO,B04P08,"Se você fumasse cigarros, qual seria a reação de sua família se ela ficasse sabendo?",2,Iria se importar um pouco,72,1
+PENSE_2009,DICIONARIO,B04P08,"Se você fumasse cigarros, qual seria a reação de sua família se ela ficasse sabendo?",3,Não iria se importar,72,1
+PENSE_2009,DICIONARIO,B04P08,"Se você fumasse cigarros, qual seria a reação de sua família se ela ficasse sabendo?",4,Não sei se ela iria se importar,72,1
+PENSE_2009,DICIONARIO,B05P01,"Alguma vez na vida, você já experimentou bebida alcoólica?",1,Sim,73,1
+PENSE_2009,DICIONARIO,B05P01,"Alguma vez na vida, você já experimentou bebida alcoólica?",2,Não,73,1
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,1,Nunca experimentei bebida alcoólica,74,2
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,2,9 anos ou menos,74,2
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,3,10 anos,74,2
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,4,11 anos,74,2
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,5,12 anos,74,2
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,6,13 anos,74,2
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,7,14 anos,74,2
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,8,15 anos,74,2
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,9,16 anos,74,2
+PENSE_2009,DICIONARIO,B05P02,Que idade você tinha quando experimentou bebida alcoólica pela primeira vez?,10,17 anos ou mais,74,2
+PENSE_2009,DICIONARIO,B05P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você tomou pelo menos um copo ou uma dose de bebida alcoólica?",1,Nenhum dia nos últimos 30 dias,76,1
+PENSE_2009,DICIONARIO,B05P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você tomou pelo menos um copo ou uma dose de bebida alcoólica?",2,1 ou 2 dias nos últimos 30 dias,76,1
+PENSE_2009,DICIONARIO,B05P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você tomou pelo menos um copo ou uma dose de bebida alcoólica?",3,3 a 5 dias nos últimos 30 dias,76,1
+PENSE_2009,DICIONARIO,B05P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você tomou pelo menos um copo ou uma dose de bebida alcoólica?",4,6 a 9 dias nos últimos 30 dias,76,1
+PENSE_2009,DICIONARIO,B05P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você tomou pelo menos um copo ou uma dose de bebida alcoólica?",5,10 a 19 dias nos últimos 30 dias,76,1
+PENSE_2009,DICIONARIO,B05P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você tomou pelo menos um copo ou uma dose de bebida alcoólica?",6,20 a 29 dias nos últimos 30 dias,76,1
+PENSE_2009,DICIONARIO,B05P03,"NOS ÚLTIMOS 30 DIAS, em quantos dias você tomou pelo menos um copo ou uma dose de bebida alcoólica?",7,Todos os 30 dias nos últimos 30 dias,76,1
+PENSE_2009,DICIONARIO,B05P04,"Nos últimos 30 dias, nos dias em que você tomou alguma bebida alcoólica, quantos copos ou doses você tomou por dia?",1,Não tomei nenhuma bebida alcoólica nos ultimos 30 dias,77,1
+PENSE_2009,DICIONARIO,B05P04,"Nos últimos 30 dias, nos dias em que você tomou alguma bebida alcoólica, quantos copos ou doses você tomou por dia?",2,Menos de um copo ou dose nos últimos 30 dias,77,1
+PENSE_2009,DICIONARIO,B05P04,"Nos últimos 30 dias, nos dias em que você tomou alguma bebida alcoólica, quantos copos ou doses você tomou por dia?",3,1 copo ou 1 dose nos últimos 30 dias,77,1
+PENSE_2009,DICIONARIO,B05P04,"Nos últimos 30 dias, nos dias em que você tomou alguma bebida alcoólica, quantos copos ou doses você tomou por dia?",4,2 copos ou 2 doses nos últimos 30 dias,77,1
+PENSE_2009,DICIONARIO,B05P04,"Nos últimos 30 dias, nos dias em que você tomou alguma bebida alcoólica, quantos copos ou doses você tomou por dia?",5,3 copos ou 3 doses nos últimos 30 dias,77,1
+PENSE_2009,DICIONARIO,B05P04,"Nos últimos 30 dias, nos dias em que você tomou alguma bebida alcoólica, quantos copos ou doses você tomou por dia?",6,4 copos ou 4 doses nos últimos 30 dias,77,1
+PENSE_2009,DICIONARIO,B05P04,"Nos últimos 30 dias, nos dias em que você tomou alguma bebida alcoólica, quantos copos ou doses você tomou por dia?",7,5 copos ou mais ou 5 doses ou mais nos últimos 30 dias,77,1
+PENSE_2009,DICIONARIO,B05P05,"NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu a bebida que tomou?",1,Não tomei nenhuma bebida alcoólica nos últimos 30 dias,78,1
+PENSE_2009,DICIONARIO,B05P05,"NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu a bebida que tomou?",2,"Comprei no mercado, loja, bar ou supermercado",78,1
+PENSE_2009,DICIONARIO,B05P05,"NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu a bebida que tomou?",3,Comprei de um vendedor de rua,78,1
+PENSE_2009,DICIONARIO,B05P05,"NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu a bebida que tomou?",4,Dei dinheiro a alguém que comprou para mim,78,1
+PENSE_2009,DICIONARIO,B05P05,"NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu a bebida que tomou?",5,Consegui com meus amigos,78,1
+PENSE_2009,DICIONARIO,B05P05,"NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu a bebida que tomou?",6,Consegui em casa,78,1
+PENSE_2009,DICIONARIO,B05P05,"NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu a bebida que tomou?",7,Consegui em uma festa,78,1
+PENSE_2009,DICIONARIO,B05P05,"NOS ÚLTIMOS 30 DIAS, na maioria das vezes, como você conseguiu a bebida que tomou?",8,Consegui de outro modo,78,1
+PENSE_2009,DICIONARIO,B05P06,"Na sua vida, quantas vezes você bebeu tanto que ficou realmente bêbado(a)?",1,Nenhuma vez na vida,79,1
+PENSE_2009,DICIONARIO,B05P06,"Na sua vida, quantas vezes você bebeu tanto que ficou realmente bêbado(a)?",2,1 ou 2 vezes na vida,79,1
+PENSE_2009,DICIONARIO,B05P06,"Na sua vida, quantas vezes você bebeu tanto que ficou realmente bêbado(a)?",3,3 a 5 vezes na vida,79,1
+PENSE_2009,DICIONARIO,B05P06,"Na sua vida, quantas vezes você bebeu tanto que ficou realmente bêbado(a)?",4,6 a 9 vezes na vida,79,1
+PENSE_2009,DICIONARIO,B05P06,"Na sua vida, quantas vezes você bebeu tanto que ficou realmente bêbado(a)?",5,10 ou mais vezes na vida,79,1
+PENSE_2009,DICIONARIO,B05P07,"Se você chegasse em casa bêbado(a), qual seria a reação de sua família se ela ficasse sabendo?",1,Iria se importar muito,80,1
+PENSE_2009,DICIONARIO,B05P07,"Se você chegasse em casa bêbado(a), qual seria a reação de sua família se ela ficasse sabendo?",2,Iria se importar um pouco,80,1
+PENSE_2009,DICIONARIO,B05P07,"Se você chegasse em casa bêbado(a), qual seria a reação de sua família se ela ficasse sabendo?",3,Não iria se importar,80,1
+PENSE_2009,DICIONARIO,B05P07,"Se você chegasse em casa bêbado(a), qual seria a reação de sua família se ela ficasse sabendo?",4,Não sei se ela iria se importar,80,1
+PENSE_2009,DICIONARIO,B05P07,"Se você chegasse em casa bêbado(a), qual seria a reação de sua família se ela ficasse sabendo?",1,Nenhuma vez na vida,80,1
+PENSE_2009,DICIONARIO,B05P07,"Se você chegasse em casa bêbado(a), qual seria a reação de sua família se ela ficasse sabendo?",2,1 ou 2 vezes na vida,80,1
+PENSE_2009,DICIONARIO,B05P07,"Se você chegasse em casa bêbado(a), qual seria a reação de sua família se ela ficasse sabendo?",3,3 a 5 vezes na vida,80,1
+PENSE_2009,DICIONARIO,B05P07,"Se você chegasse em casa bêbado(a), qual seria a reação de sua família se ela ficasse sabendo?",4,6 a 9 vezes na vida,80,1
+PENSE_2009,DICIONARIO,B05P07,"Se você chegasse em casa bêbado(a), qual seria a reação de sua família se ela ficasse sabendo?",5,10 ou mais vezes na vida,80,1
+PENSE_2009,DICIONARIO,B05P08,"Na sua vida, quantas vezes você teve problemas com sua família ou amigos, perdeu aulas, se machucou ou brigou porque tinha bebido?",1,Nenhuma vez na vida,81,1
+PENSE_2009,DICIONARIO,B05P08,"Na sua vida, quantas vezes você teve problemas com sua família ou amigos, perdeu aulas, se machucou ou brigou porque tinha bebido?",2,1 ou 2 vezes na vida,81,1
+PENSE_2009,DICIONARIO,B05P08,"Na sua vida, quantas vezes você teve problemas com sua família ou amigos, perdeu aulas, se machucou ou brigou porque tinha bebido?",3,3 a 5 vezes na vida,81,1
+PENSE_2009,DICIONARIO,B05P08,"Na sua vida, quantas vezes você teve problemas com sua família ou amigos, perdeu aulas, se machucou ou brigou porque tinha bebido?",4,6 a 9 vezes na vida,81,1
+PENSE_2009,DICIONARIO,B05P08,"Na sua vida, quantas vezes você teve problemas com sua família ou amigos, perdeu aulas, se machucou ou brigou porque tinha bebido?",5,10 ou mais vezes na vida,81,1
+PENSE_2009,DICIONARIO,B05P09,"Alguma vez na vida, você já usou alguma droga, tais como: maconha, cocaína, crack, cola, loló, lança perfume, ecstasy etc?",1,Sim,82,1
+PENSE_2009,DICIONARIO,B05P09,"Alguma vez na vida, você já usou alguma droga, tais como: maconha, cocaína, crack, cola, loló, lança perfume, ecstasy etc?",2,Não,82,1
+PENSE_2009,DICIONARIO,B05P10,"Nos últimos 30 dias, quantas vezes você usou drogas tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy etc?",1,Nenhuma vez nos últimos 30 dias,83,1
+PENSE_2009,DICIONARIO,B05P10,"Nos últimos 30 dias, quantas vezes você usou drogas tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy etc?",2,1 ou 2 vezes nos últimos 30 dias,83,1
+PENSE_2009,DICIONARIO,B05P10,"Nos últimos 30 dias, quantas vezes você usou drogas tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy etc?",3,3 a 5 vezes nos últimos 30 dias,83,1
+PENSE_2009,DICIONARIO,B05P10,"Nos últimos 30 dias, quantas vezes você usou drogas tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy etc?",4,6 a 9 vezes nos últimos 30 dias,83,1
+PENSE_2009,DICIONARIO,B05P10,"Nos últimos 30 dias, quantas vezes você usou drogas tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy etc?",5,10 ou mais vezes nos últimos 30 dias,83,1
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",1,Nunca usei drogas,84,2
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",2,9 anos ou menos,84,2
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",3,10 anos,84,2
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",4,11 anos,84,2
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",5,12 anos,84,2
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",6,13 anos,84,2
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",7,14 anos,84,2
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",8,15 anos,84,2
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",9,16 anos,84,2
+PENSE_2009,DICIONARIO,B05P11,"Que idade você tinha quando usou droga tais como maconha, cocaína, crack, cola, loló, lança perfume, ecstasy ou outra pela primeira vez?",10,17 anos ou mais,84,2
+PENSE_2009,DICIONARIO,B06P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você faltou às aulas  sem permissão dos seus pais ou responsáveis?",1,Nenhum dia nos últimos 30 dias,86,1
+PENSE_2009,DICIONARIO,B06P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você faltou às aulas  sem permissão dos seus pais ou responsáveis?",2,1 ou 2 dias nos últimos 30 dias,86,1
+PENSE_2009,DICIONARIO,B06P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você faltou às aulas  sem permissão dos seus pais ou responsáveis?",3,3 a 5 dias nos últimos 30 dias,86,1
+PENSE_2009,DICIONARIO,B06P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você faltou às aulas  sem permissão dos seus pais ou responsáveis?",4,6 a 9 dias nos últimos 30 dias,86,1
+PENSE_2009,DICIONARIO,B06P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você faltou às aulas  sem permissão dos seus pais ou responsáveis?",5,10 ou mais dias nos últimos 30 dias,86,1
+PENSE_2009,DICIONARIO,B06P02,"NOS ÚLTIMOS 30 DIAS, com que frequência seus pais ou responsáveis sabiam realmente o que você estava fazendo em seu tempo livre?",1,Nenhuma vez nos últimos 30 dias,87,1
+PENSE_2009,DICIONARIO,B06P02,"NOS ÚLTIMOS 30 DIAS, com que frequência seus pais ou responsáveis sabiam realmente o que você estava fazendo em seu tempo livre?",2,Raramente nos últimos 30 dias,87,1
+PENSE_2009,DICIONARIO,B06P02,"NOS ÚLTIMOS 30 DIAS, com que frequência seus pais ou responsáveis sabiam realmente o que você estava fazendo em seu tempo livre?",3,Às vezes nos últimos 30 dias,87,1
+PENSE_2009,DICIONARIO,B06P02,"NOS ÚLTIMOS 30 DIAS, com que frequência seus pais ou responsáveis sabiam realmente o que você estava fazendo em seu tempo livre?",4,Na maior parte das vezes nos últimos 30 dias,87,1
+PENSE_2009,DICIONARIO,B06P02,"NOS ÚLTIMOS 30 DIAS, com que frequência seus pais ou responsáveis sabiam realmente o que você estava fazendo em seu tempo livre?",5,Sempre nos últimos 30 dias,87,1
+PENSE_2009,DICIONARIO,B06P03,"NOS ÚLTIMOS 30 DIAS, com que frequência os colegas de sua escola trataram você bem e/ou foram prestativos com você?",1,Nenhuma vez nos últimos 30 dias,88,1
+PENSE_2009,DICIONARIO,B06P03,"NOS ÚLTIMOS 30 DIAS, com que frequência os colegas de sua escola trataram você bem e/ou foram prestativos com você?",2,Raramente nos últimos 30 dias,88,1
+PENSE_2009,DICIONARIO,B06P03,"NOS ÚLTIMOS 30 DIAS, com que frequência os colegas de sua escola trataram você bem e/ou foram prestativos com você?",3,Às vezes nos últimos 30 dias,88,1
+PENSE_2009,DICIONARIO,B06P03,"NOS ÚLTIMOS 30 DIAS, com que frequência os colegas de sua escola trataram você bem e/ou foram prestativos com você?",4,Na maior parte das vezes nos últimos 30 dias,88,1
+PENSE_2009,DICIONARIO,B06P03,"NOS ÚLTIMOS 30 DIAS, com que frequência os colegas de sua escola trataram você bem e/ou foram prestativos com você?",5,Sempre nos últimos 30 dias,88,1
+PENSE_2009,DICIONARIO,B06P04,"NOS ÚLTIMOS 30 DIAS, com que frequência algum dos seus colegas de sua escola te esculacharam, zoaram, mangaram, intimidaram ou caçoaram tanto que você ficou magoado / incomodado / aborrecido / ofendido / humilhado?",1,Nenhuma vez nos últimos trinta dias,89,1
+PENSE_2009,DICIONARIO,B06P04,"NOS ÚLTIMOS 30 DIAS, com que frequência algum dos seus colegas de sua escola te esculacharam, zoaram, mangaram, intimidaram ou caçoaram tanto que você ficou magoado / incomodado / aborrecido / ofendido / humilhado?",2,Raramente nos últimos trinta dias,89,1
+PENSE_2009,DICIONARIO,B06P04,"NOS ÚLTIMOS 30 DIAS, com que frequência algum dos seus colegas de sua escola te esculacharam, zoaram, mangaram, intimidaram ou caçoaram tanto que você ficou magoado / incomodado / aborrecido / ofendido / humilhado?",3,Às vezes nos últimos trinta dias,89,1
+PENSE_2009,DICIONARIO,B06P04,"NOS ÚLTIMOS 30 DIAS, com que frequência algum dos seus colegas de sua escola te esculacharam, zoaram, mangaram, intimidaram ou caçoaram tanto que você ficou magoado / incomodado / aborrecido / ofendido / humilhado?",4,Na maior parte das vezes nos últimos trinta dias,89,1
+PENSE_2009,DICIONARIO,B06P04,"NOS ÚLTIMOS 30 DIAS, com que frequência algum dos seus colegas de sua escola te esculacharam, zoaram, mangaram, intimidaram ou caçoaram tanto que você ficou magoado / incomodado / aborrecido / ofendido / humilhado?",5,Sempre nos últimos trinta dias,89,1
+PENSE_2009,DICIONARIO,B07P01,Você já teve relação sexual (transou) alguma vez?,1,Sim,90,1
+PENSE_2009,DICIONARIO,B07P01,Você já teve relação sexual (transou) alguma vez?,2,Não,90,1
+PENSE_2009,DICIONARIO,B07P02,Que idade você tinha quando teve relação sexual (transou) pela primeira vez?,1,Nunca tive relação sexual,91,1
+PENSE_2009,DICIONARIO,B07P02,Que idade você tinha quando teve relação sexual (transou) pela primeira vez?,2,9 anos ou menos,91,1
+PENSE_2009,DICIONARIO,B07P02,Que idade você tinha quando teve relação sexual (transou) pela primeira vez?,3,10 anos,91,1
+PENSE_2009,DICIONARIO,B07P02,Que idade você tinha quando teve relação sexual (transou) pela primeira vez?,4,11 anos,91,1
+PENSE_2009,DICIONARIO,B07P02,Que idade você tinha quando teve relação sexual (transou) pela primeira vez?,5,12 anos,91,1
+PENSE_2009,DICIONARIO,B07P02,Que idade você tinha quando teve relação sexual (transou) pela primeira vez?,6,13 anos,91,1
+PENSE_2009,DICIONARIO,B07P02,Que idade você tinha quando teve relação sexual (transou) pela primeira vez?,7,14 anos,91,1
+PENSE_2009,DICIONARIO,B07P02,Que idade você tinha quando teve relação sexual (transou) pela primeira vez?,8,15 anos,91,1
+PENSE_2009,DICIONARIO,B07P02,Que idade você tinha quando teve relação sexual (transou) pela primeira vez?,9,16 anos ou mais,91,1
+PENSE_2009,DICIONARIO,B07P03,"Na sua vida, você já teve relação sexual (transou) com quantas pessoas?",1,Nunca tive relação sexual na vida,92,1
+PENSE_2009,DICIONARIO,B07P03,"Na sua vida, você já teve relação sexual (transou) com quantas pessoas?",2,1 pessoa na vida,92,1
+PENSE_2009,DICIONARIO,B07P03,"Na sua vida, você já teve relação sexual (transou) com quantas pessoas?",3,2 pessoas na vida,92,1
+PENSE_2009,DICIONARIO,B07P03,"Na sua vida, você já teve relação sexual (transou) com quantas pessoas?",4,3  pessoas na vida,92,1
+PENSE_2009,DICIONARIO,B07P03,"Na sua vida, você já teve relação sexual (transou) com quantas pessoas?",5,4 pessoas na vida,92,1
+PENSE_2009,DICIONARIO,B07P03,"Na sua vida, você já teve relação sexual (transou) com quantas pessoas?",6,5 pessoas na vida,92,1
+PENSE_2009,DICIONARIO,B07P03,"Na sua vida, você já teve relação sexual (transou) com quantas pessoas?",7,6 ou mais pessoas na vida,92,1
+PENSE_2009,DICIONARIO,B07P03,"Na sua vida, você já teve relação sexual (transou) com quantas pessoas?",8,Não me lembro,92,1
+PENSE_2009,DICIONARIO,B07P04,"NOS ÚLTIMOS 12 MESES, você teve relações sexuais(transou)?",1,Sim,93,1
+PENSE_2009,DICIONARIO,B07P04,"NOS ÚLTIMOS 12 MESES, você teve relações sexuais(transou)?",2,Não,93,1
+PENSE_2009,DICIONARIO,B07P05,"Na última vez que você teve relação sexual(transou), você ou seu(sua) parceiro(a) usou algum método para evitar a gravidez?",1,Nunca tive relação sexual,94,1
+PENSE_2009,DICIONARIO,B07P05,"Na última vez que você teve relação sexual(transou), você ou seu(sua) parceiro(a) usou algum método para evitar a gravidez?",2,Sim,94,1
+PENSE_2009,DICIONARIO,B07P05,"Na última vez que você teve relação sexual(transou), você ou seu(sua) parceiro(a) usou algum método para evitar a gravidez?",3,Não,94,1
+PENSE_2009,DICIONARIO,B07P05,"Na última vez que você teve relação sexual(transou), você ou seu(sua) parceiro(a) usou algum método para evitar a gravidez?",4,Não sei,94,1
+PENSE_2009,DICIONARIO,B07P06,"Na última vez que você teve relação sexual(transou), você ou seu(sua) parceiro(a) usou camisinha(preservativo)?",1,Nunca tive relação sexual,95,1
+PENSE_2009,DICIONARIO,B07P06,"Na última vez que você teve relação sexual(transou), você ou seu(sua) parceiro(a) usou camisinha(preservativo)?",2,Sim,95,1
+PENSE_2009,DICIONARIO,B07P06,"Na última vez que você teve relação sexual(transou), você ou seu(sua) parceiro(a) usou camisinha(preservativo)?",3,Não,95,1
+PENSE_2009,DICIONARIO,B07P06,"Na última vez que você teve relação sexual(transou), você ou seu(sua) parceiro(a) usou camisinha(preservativo)?",4,Não sei,95,1
+PENSE_2009,DICIONARIO,B07P07,"Na escola, você já recebeu orientação sobre prevenção de gravidez?",1,Sim,96,1
+PENSE_2009,DICIONARIO,B07P07,"Na escola, você já recebeu orientação sobre prevenção de gravidez?",2,Não,96,1
+PENSE_2009,DICIONARIO,B07P07,"Na escola, você já recebeu orientação sobre prevenção de gravidez?",3,Não sei,96,1
+PENSE_2009,DICIONARIO,B07P08,"Na escola, você já recebeu orientação sobre Aids ou outras doenças sexualmente transmissiveis (DSTs)?",1,Sim,97,1
+PENSE_2009,DICIONARIO,B07P08,"Na escola, você já recebeu orientação sobre Aids ou outras doenças sexualmente transmissiveis (DSTs)?",2,Não,97,1
+PENSE_2009,DICIONARIO,B07P08,"Na escola, você já recebeu orientação sobre Aids ou outras doenças sexualmente transmissiveis (DSTs)?",3,Não sei,97,1
+PENSE_2009,DICIONARIO,B07P09,"Na escola, você já recebeu orientação sobre como conseguir camisinha(preservativo) gratuitamente?",1,Sim,98,1
+PENSE_2009,DICIONARIO,B07P09,"Na escola, você já recebeu orientação sobre como conseguir camisinha(preservativo) gratuitamente?",2,Não,98,1
+PENSE_2009,DICIONARIO,B07P09,"Na escola, você já recebeu orientação sobre como conseguir camisinha(preservativo) gratuitamente?",3,Não sei,98,1
+PENSE_2009,DICIONARIO,B08P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro no caminho de casa para a escola ou da escola para casa?",1,Nenhum dia nos últimos 30 dias,99,1
+PENSE_2009,DICIONARIO,B08P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro no caminho de casa para a escola ou da escola para casa?",2,1 dia nos últimos 30 dias,99,1
+PENSE_2009,DICIONARIO,B08P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro no caminho de casa para a escola ou da escola para casa?",3,2 dias nos últimos 30 dias,99,1
+PENSE_2009,DICIONARIO,B08P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro no caminho de casa para a escola ou da escola para casa?",4,3 dias nos últimos 30 dias,99,1
+PENSE_2009,DICIONARIO,B08P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro no caminho de casa para a escola ou da escola para casa?",5,4 dias nos últimos 30 dias,99,1
+PENSE_2009,DICIONARIO,B08P01,"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro no caminho de casa para a escola ou da escola para casa?",6,5 dias ou mais nos últimos 30 dias,99,1
+PENSE_2009,DICIONARIO,B08P02,"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro na escola?",1,Nenhum dia nos últimos 30 dias,100,1
+PENSE_2009,DICIONARIO,B08P02,"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro na escola?",2,1 dia nos últimos 30 dias,100,1
+PENSE_2009,DICIONARIO,B08P02,"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro na escola?",3,2 dias nos últimos 30 dias,100,1
+PENSE_2009,DICIONARIO,B08P02,"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro na escola?",4,3 dias nos últimos 30 dias,100,1
+PENSE_2009,DICIONARIO,B08P02,"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro na escola?",5,4 dias nos últimos 30 dias,100,1
+PENSE_2009,DICIONARIO,B08P02,"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro na escola?",6,5 dias ou mais nos últimos 30 dias,100,1
+PENSE_2009,DICIONARIO,B08P03,"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido fisicamente por um adulto da sua família?",1,Nenhuma vez nos últimos 30 dias,101,1
+PENSE_2009,DICIONARIO,B08P03,"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido fisicamente por um adulto da sua família?",2,1 vez nos últimos 30 dias,101,1
+PENSE_2009,DICIONARIO,B08P03,"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido fisicamente por um adulto da sua família?",3,2 ou 3 vezes nos últimos 30 dias,101,1
+PENSE_2009,DICIONARIO,B08P03,"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido fisicamente por um adulto da sua família?",4,4 ou 5 vezes nos últimos 30 dias,101,1
+PENSE_2009,DICIONARIO,B08P03,"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido fisicamente por um adulto da sua família?",5,6 ou 7 vezes nos últimos 30 dias,101,1
+PENSE_2009,DICIONARIO,B08P03,"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido fisicamente por um adulto da sua família?",6,8 ou 9 vezes nos últimos 30 dias,101,1
+PENSE_2009,DICIONARIO,B08P03,"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido fisicamente por um adulto da sua família?",7,10 ou 11 vezes nos últimos 30 dias,101,1
+PENSE_2009,DICIONARIO,B08P03,"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido fisicamente por um adulto da sua família?",8,12 vezes ou mais nos últimos 30 dias,101,1
+PENSE_2009,DICIONARIO,B08P04,"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguém foi fisicamente agredido?",1,Sim,102,1
+PENSE_2009,DICIONARIO,B08P04,"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguém foi fisicamente agredido?",2,Não,102,1
+PENSE_2009,DICIONARIO,B08P05,"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou arma de fogo como revólver ou espingarda?",1,Sim,103,1
+PENSE_2009,DICIONARIO,B08P05,"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou arma de fogo como revólver ou espingarda?",2,Não,103,1
+PENSE_2009,DICIONARIO,B08P06,"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou alguma outra arma como faca, canivete, peixeira, pedra, pedaço de pau ou garrafa?",1,Sim,104,1
+PENSE_2009,DICIONARIO,B08P06,"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou alguma outra arma como faca, canivete, peixeira, pedra, pedaço de pau ou garrafa?",2,Não,104,1
+PENSE_2009,DICIONARIO,B08P07,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou o cinto de segurança quando estava em um carro ou outro veículo motorizado dirigido por outra pessoa (excluindo ônibus)?",1,Não andei em veículo dirigido por outra pessoa nos últimos 30 dias,105,1
+PENSE_2009,DICIONARIO,B08P07,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou o cinto de segurança quando estava em um carro ou outro veículo motorizado dirigido por outra pessoa (excluindo ônibus)?",2,Nunca nos últimos 30 dias,105,1
+PENSE_2009,DICIONARIO,B08P07,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou o cinto de segurança quando estava em um carro ou outro veículo motorizado dirigido por outra pessoa (excluindo ônibus)?",3,Raramente nos últimos 30 dias,105,1
+PENSE_2009,DICIONARIO,B08P07,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou o cinto de segurança quando estava em um carro ou outro veículo motorizado dirigido por outra pessoa (excluindo ônibus)?",4,Às vezes nos últimos 30 dias,105,1
+PENSE_2009,DICIONARIO,B08P07,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou o cinto de segurança quando estava em um carro ou outro veículo motorizado dirigido por outra pessoa (excluindo ônibus)?",5,Na maioria das vezes nos últimos 30 dias,105,1
+PENSE_2009,DICIONARIO,B08P07,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou o cinto de segurança quando estava em um carro ou outro veículo motorizado dirigido por outra pessoa (excluindo ônibus)?",6,Sempre nos últimos 30 dias,105,1
+PENSE_2009,DICIONARIO,B08P08,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou um capacete ao andar de motocicleta?",1,Não andei de motocicleta nos últimos 30 dias,106,1
+PENSE_2009,DICIONARIO,B08P08,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou um capacete ao andar de motocicleta?",2,Nunca nos últimos 30 dias,106,1
+PENSE_2009,DICIONARIO,B08P08,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou um capacete ao andar de motocicleta?",3,Raramente nos últimos 30 dias,106,1
+PENSE_2009,DICIONARIO,B08P08,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou um capacete ao andar de motocicleta?",4,Às vezes nos últimos 30 dias,106,1
+PENSE_2009,DICIONARIO,B08P08,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou um capacete ao andar de motocicleta?",5,Na maioria das vezes nos últimos 30 dias,106,1
+PENSE_2009,DICIONARIO,B08P08,"NOS ÚLTIMOS 30 DIAS, quantas vezes você usou um capacete ao andar de motocicleta?",6,Sempre nos últimos 30 dias,106,1
+PENSE_2009,DICIONARIO,B08P09,"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta, voadeira, barco) ?",1,Não dirigi carro ou outro veículo nos últimos 30 dias,107,1
+PENSE_2009,DICIONARIO,B08P09,"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta, voadeira, barco) ?",2,1 vez nos últimos 30 dias,107,1
+PENSE_2009,DICIONARIO,B08P09,"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta, voadeira, barco) ?",3,2 ou 3 vezes nos últimos 30 dias,107,1
+PENSE_2009,DICIONARIO,B08P09,"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta, voadeira, barco) ?",4,4 ou 5 vezes nos últimos 30 dias,107,1
+PENSE_2009,DICIONARIO,B08P09,"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta, voadeira, barco) ?",5,6 ou mais vezes nos últimos 30 dias,107,1
+PENSE_2009,DICIONARIO,B08P10,"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?",1,Nenhuma vez nos últimos 30 dias,108,1
+PENSE_2009,DICIONARIO,B08P10,"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?",2,1 vez nos últimos 30 dias,108,1
+PENSE_2009,DICIONARIO,B08P10,"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?",3,2 ou 3  vezes nos últimos 30 dias,108,1
+PENSE_2009,DICIONARIO,B08P10,"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?",4,4 ou 5 vezes nos últimos 30 dias,108,1
+PENSE_2009,DICIONARIO,B08P10,"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?",5,6 ou mais vezes nos últimos 30 dias,108,1
+PENSE_2009,DICIONARIO,B09P01,"Normalmente, quantas vezes por dia você escova os dentes?",1,Não escovo os dentes,109,1
+PENSE_2009,DICIONARIO,B09P01,"Normalmente, quantas vezes por dia você escova os dentes?",2,Uma vez por dia,109,1
+PENSE_2009,DICIONARIO,B09P01,"Normalmente, quantas vezes por dia você escova os dentes?",3,Duas vezes por dia,109,1
+PENSE_2009,DICIONARIO,B09P01,"Normalmente, quantas vezes por dia você escova os dentes?",4,Três  vezes por dia,109,1
+PENSE_2009,DICIONARIO,B09P01,"Normalmente, quantas vezes por dia você escova os dentes?",5,Quatro ou mais vezes por dia,109,1
+PENSE_2009,DICIONARIO,B09P02,"NOS ÚLTIMOS SEIS MESES, você teve dor de dente (excluir dor de dente causada por uso de aparelho)?",1,Sim,110,1
+PENSE_2009,DICIONARIO,B09P02,"NOS ÚLTIMOS SEIS MESES, você teve dor de dente (excluir dor de dente causada por uso de aparelho)?",2,Não,110,1
+PENSE_2009,DICIONARIO,B09P02,"NOS ÚLTIMOS SEIS MESES, você teve dor de dente (excluir dor de dente causada por uso de aparelho)?",3,Não sei / não me lembro,110,1
+PENSE_2009,DICIONARIO,B10P01,"Quanto ao seu corpo, você se considera:",1,Muito magro(a),111,1
+PENSE_2009,DICIONARIO,B10P01,"Quanto ao seu corpo, você se considera:",2,Magro(a),111,1
+PENSE_2009,DICIONARIO,B10P01,"Quanto ao seu corpo, você se considera:",3,Normal,111,1
+PENSE_2009,DICIONARIO,B10P01,"Quanto ao seu corpo, você se considera:",4,Gordo(a),111,1
+PENSE_2009,DICIONARIO,B10P01,"Quanto ao seu corpo, você se considera:",5,Muito gordo(a),111,1
+PENSE_2009,DICIONARIO,B10P02,O que você está fazendo em relação a seu peso?,1,Não estou fazendo nada,112,1
+PENSE_2009,DICIONARIO,B10P02,O que você está fazendo em relação a seu peso?,2,Estou tentando perder peso,112,1
+PENSE_2009,DICIONARIO,B10P02,O que você está fazendo em relação a seu peso?,3,Estou tentando ganhar peso,112,1
+PENSE_2009,DICIONARIO,B10P02,O que você está fazendo em relação a seu peso?,4,Estou tentando manter o mesmo peso,112,1
+PENSE_2009,DICIONARIO,B10P03,"NOS ÚLTIMOS 30 DIAS, você vomitou ou tomou laxantes para perder peso ou evitar ganhar peso?",1,Sim,113,1
+PENSE_2009,DICIONARIO,B10P03,"NOS ÚLTIMOS 30 DIAS, você vomitou ou tomou laxantes para perder peso ou evitar ganhar peso?",2,Não,113,1
+PENSE_2009,DICIONARIO,B10P04,"NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para perder ou manter  seu  peso sem acompanhamento médico?",1,Sim,114,1
+PENSE_2009,DICIONARIO,B10P04,"NOS ÚLTIMOS 30 DIAS, você tomou algum remédio, fórmula ou outro produto para perder ou manter  seu  peso sem acompanhamento médico?",2,Não,114,1
+PENSE_2009,DICIONARIO,B11P01,O que você achou deste questionário?,1,Muito fácil de responder,115,1
+PENSE_2009,DICIONARIO,B11P01,O que você achou deste questionário?,2,Fácil de responder,115,1
+PENSE_2009,DICIONARIO,B11P01,O que você achou deste questionário?,3,Nem fácil nem difícil de responder,115,1
+PENSE_2009,DICIONARIO,B11P01,O que você achou deste questionário?,4,Difícil de responder,115,1
+PENSE_2009,DICIONARIO,B11P01,O que você achou deste questionário?,5,Muito difícil de responder,115,1
+PENSE_2009,DICIONARIO,Q2B01P01,Qual é o Peso do Aluno ?,,,116,6
+PENSE_2009,DICIONARIO,Q2B01P02,Qual é a Altura do Aluno ?,,,122,6
+PENSE_2009,DICIONARIO,COD_UF,CÓDIGO DA UF  DA ESCOLA,,,128,2
+PENSE_2009,DICIONARIO,COD_MUNICIPIO,CÓDIGO DO NUNICÍPIO DA ESCOLA,,,130,5
+PENSE_2009,DICIONARIO,DEPEND_ADM,DEPENDÊNCIA ADMINISTRATIVA,,,135,9
+PENSE_2009,DICIONARIO,ESTALOCA,Estrato de alocação do estudante na amostra,,,144,6
+PENSE_2009,DICIONARIO,B01P03M,Marca de imputação de idade,1,para os alunos que tiveram idade (B01P03) imputada,150,1
+PENSE_2009,DICIONARIO,B01P03M,Marca de imputação de idade,0,caso contrário,150,1
+PENSE_2009,DICIONARIO,TURMA,Identificação da turma selecionada na escola,,,151,1
+PENSE_2009,DICIONARIO,TURMAS,Número de turmas de 9º ano da escola,,,152,2
+PENSE_2009,DICIONARIO,MATRIC,Número de alunos matriculados na turma,,,154,2
+PENSE_2009,DICIONARIO,FREQ,Número de alunos que frequentavam regularmente as aulas na turma,,,156,2
+PENSE_2009,DICIONARIO,PESQ,Número de alunos presentes na turma no dia da pesquisa,,,158,2
+PENSE_2009,DICIONARIO,CAPITAL,Código de identificação da capital (mesmo código da UF),,,160,2
+PENSE_2009,DICIONARIO,PESQ_CRIT,Número corrigido de alunos presentes na turma no dia da pesquisa,,,162,2
+PENSE_2009,DICIONARIO,FREQ_CRIT,Número corrigido de alunos que frequentavam regularmente as aulas na turma,,,164,2
+PENSE_2009,DICIONARIO,PESO_ESCOLA,Peso amostral da escola (a ser usado na tabulação das variáveis de ambiente),,,166,15
+PENSE_2009,DICIONARIO,N_TURMAS,Número de turmas de 9º ano da escola selecionadas para a amostra,,,181,1
+PENSE_2009,DICIONARIO,PROBSELTURMA,Probabilidade de seleção das turmas em uma dada escola,,,182,10
+PENSE_2009,DICIONARIO,PESO_TURMA,Fator de expansão da turma,,,192,15
+PENSE_2009,DICIONARIO,PART,"Número de alunos presentes da turma, que efetivamente participaram da pesquisa",,,207,2
+PENSE_2009,DICIONARIO,N_PART,"Número de alunos presentes da turma, que se recusaram a participar da pesquisa",,,209,2
+PENSE_2009,DICIONARIO,SEXO,Número de alunos que participaram da pesquisa e informaram seu sexo,,,211,2
+PENSE_2009,DICIONARIO,PESO_AJU_FREQ,Fator de expansão da turma ajustado pela frequência escolar,,,213,15
+PENSE_2009,DICIONARIO,PESO_AJU_SEXO,Fator de expansão da turma ajustado pela frequência escolar,,,228,15
+PENSE_2009,DICIONARIO,DEP2,Dependência administrativa da escola,1,para escolas da rede pública,243,1
+PENSE_2009,DICIONARIO,DEP2,Dependência administrativa da escola,2,para escolas da rede privada,243,1
+PENSE_2009,DICIONARIO,GR_IDADE,Grupo de idade,1,alunos com até 12 anos de idade completos (B01P03 igual a 1 ou 2),244,1
+PENSE_2009,DICIONARIO,GR_IDADE,Grupo de idade,2,alunos com 13 anos de idade completos (B01P03 igual a 3),244,1
+PENSE_2009,DICIONARIO,GR_IDADE,Grupo de idade,3,alunos com 14 anos de idade completos (B01P03 igual a 4),244,1
+PENSE_2009,DICIONARIO,GR_IDADE,Grupo de idade,4,alunos com 15 anos de idade completos (B01P03 igual a 5),244,1
+PENSE_2009,DICIONARIO,GR_IDADE,Grupo de idade,5,alunos com 16 anos ou mais de idade (B01P03 maior que 5),244,1
+PENSE_2009,DICIONARIO,INST_MAE,Instrução da mãe,1,mãe do aluno não completou o ensino fundamental (B01P08 menor que 3),245,1
+PENSE_2009,DICIONARIO,INST_MAE,Instrução da mãe,2,mãe não completou o ensino médio (B01P08 menor do que 5),245,1
+PENSE_2009,DICIONARIO,INST_MAE,Instrução da mãe,3,mãe não completou a faculdade (B01P08 menor do que 7),245,1
+PENSE_2009,DICIONARIO,INST_MAE,Instrução da mãe,4,mãe completou a faculdade (B01P08 menor do que 8),245,1
+PENSE_2009,DICIONARIO,INST_MAE,Instrução da mãe,5,"aluno não sabia informar o nível de instrução da mãe,                                                                                                                                  “.”  - não houve declaração",245,1
+PENSE_2009,DICIONARIO,FRUTA,Comeu frutas frescas ou saladas de frutas,1,aluno comeu frutas frescas ou saladas de frutas 4 dias ou mais na semana (B02P11 maior que 4),246,1
+PENSE_2009,DICIONARIO,FRUTA,Comeu frutas frescas ou saladas de frutas,2,"se não comeu ou comeu 3 dias ou menos (B02P11 menor ou igual a 4),                                                                                                                                 “.” - houve declaração",246,1
+PENSE_2009,DICIONARIO,PARENTAL,Reside com os pais,1,o aluno reside com a mãe ou com o pai,247,1
+PENSE_2009,DICIONARIO,PARENTAL,Reside com os pais,2,reside apenas com a mãe,247,1
+PENSE_2009,DICIONARIO,PARENTAL,Reside com os pais,3,reside apenas com o pai,247,1
+PENSE_2009,DICIONARIO,PARENTAL,Reside com os pais,4,não reside com nenhum dos dois.,247,1
+PENSE_2009,DICIONARIO,COME_RESP,Refeições com os responsáveis,1,o aluno costuma fazer 5 ou mais refeições (almoço ou jantar) por semana com os responsáveis (B02P18 igual a 2 ou 3),248,1
+PENSE_2009,DICIONARIO,COME_RESP,Refeições com os responsáveis,2,caso contrário,248,1
+PENSE_2009,DICIONARIO,RESP_SABE,Responsáveis sabe o que fazia,1,"os responsáveis realmente sabiam o que o aluno fez nos últimos 30 dias (sempre ou na maior parte das vezes, B06P02 igual a 4 ou 5)",249,1
+PENSE_2009,DICIONARIO,RESP_FUMO,Responsáveis fumam,1,"pelo menos um dos responsáveis fuma (B04P06 igual a 2, 3 ou 4)",250,1
+PENSE_2009,DICIONARIO,RESP_FUMO,Responsáveis fumam,2,"nenhum dos responsáveis fumam ou se o aluno não soube informar (B04P06 igual a 1 ou 5),                                                                    “.” - não houve declaração.",250,1
+PENSE_2009,DICIONARIO,FALTA_AULA,Falta às aulas sem permissão dos pais,1,aluno faltou às aulas nos últimos 30 dias sem permissão dos pais (B06P01 maior que 1),251,1
+PENSE_2009,DICIONARIO,FALTA_AULA,Falta às aulas sem permissão dos pais,2,"caso não tenha faltado às aulas (B06P01 igual a 1),                                                                                                                                  “.” - não houve declaração",251,1
+PENSE_2009,DICIONARIO,AGRESSAO,Agressão por adulto da família,1,aluno foi agredido por algum adulto da família nos últimos 30 dias (B08P03 maior que 1),252,1
+PENSE_2009,DICIONARIO,AGRESSAO,Agressão por adulto da família,2,"caso não tenha sido agredido (B08P03 igual a 1),                                                                                                                                              “.”  - não houve declaração.",252,1
+PENSE_2009,DICIONARIO,COMEU_FEIJAO,Comeu feijão na semana,1,comeu feijão pelo menos 5 dias na semana (B02P01 maior que 5),253,1
+PENSE_2009,DICIONARIO,COMEU_FEIJAO,Comeu feijão na semana,2,"caso tenha comido feijão menos de 5 dias (B02P01 menor ou igual a 5),                                                                                                          “.”  - não houve declaração",253,1
+PENSE_2009,DICIONARIO,COMEU_FRUTA,Comeu frutas na semana,1,comeu frutas pelo menos 5 dias na semana (B02P11 maior que 5),254,1
+PENSE_2009,DICIONARIO,COMEU_FRUTA,Comeu frutas na semana,2,caso tenha comido frutas menos de 5 dias (B02P11 menor ou igual a 5)                                                                                                                                                                                                         “.” - não houve declaração,254,1
+PENSE_2009,DICIONARIO,COMEU_GULOS,Comeu guloseimas na semana,1,comeu guloseimas pelo menos 5 dias na semana (B02P10 maior que 5),255,1
+PENSE_2009,DICIONARIO,COMEU_GULOS,Comeu guloseimas na semana,2,"caso tenha comido guloseimas menos de 5 dias (B02P10 menor ou igual a 5),                                                                                              “.” - não houve declaração",255,1
+PENSE_2009,DICIONARIO,BEBEU_REFRI,Bebeu refrigerante na semana,1,bebeu refrigerante pelo menos 5 dias na semana (B02P13 maior que 5),256,1
+PENSE_2009,DICIONARIO,BEBEU_REFRI,Bebeu refrigerante na semana,2,"caso tenha bebido refrigerante menos de 5 dias (B02P13 menor ou igual a 5),                                                                                                        “.” - não houve declaração",256,1
+PENSE_2009,DICIONARIO,TV,Horas assistindo televisão,1,aluno assiste televisão por 2 horas ou mais por dia (B03P11 maior que 3),257,1
+PENSE_2009,DICIONARIO,TV,Horas assistindo televisão,2,"caso assista televisão menos que 2 horas por dia (B03P11 menor ou igual a 3),                                                                                                    “.” - não houve declaração",257,1
+PENSE_2009,DICIONARIO,PC,Horas no computador,,,258,1
+PENSE_2009,DICIONARIO,EXPCIG,Experimentou cigarro,1,aluno fumou alguma vez na vida (B04P01 igual a 1 ou  B04P02 maior que 1 ou B04P03 maior que 1 ou B04P04 maior que 1),259,1
+PENSE_2009,DICIONARIO,EXPCIG,Experimentou cigarro,2,"nunca fumou  (EXPCIG diferente de 1 e (B04P01 igual a 2 ou  B04P02 igual a 1 ou B04P03 igual a 1 ou B04P04 igual a 1)),                         “.” - não houve declaração",259,1
+PENSE_2009,DICIONARIO,FUMAREG,Fumou nos últimos 30 dias,1,aluno fumou pelo menos uma vez nos últimos 30 dias (B04P03 maior que 2),260,1
+PENSE_2009,DICIONARIO,FUMAREG,Fumou nos últimos 30 dias,2,"nunca fumou ou não fumou nos últimos 30 dias (B04P03  menor ou igual a 2),                                                                                                     “.”  - não houve declaração",260,1
+PENSE_2009,DICIONARIO,EXPALC,Experimentou bebida alcoólica,1,aluno bebeu alguma vez na vida (B05P01 igual a 1 ou  B05P02 maior que 1 ou B05P03 maior que 1 ou B05P04 maior que 1 ou B05P05 maior que 1 ou B05P06 maior que 1),261,1
+PENSE_2009,DICIONARIO,EXPALC,Experimentou bebida alcoólica,2,"nunca bebeu  (EXPALC diferente de 1 e (B05P01 igual a 2 ou  B05P02 igual a 1 ou B05P03 igual a 1 ou B05P04 igual a 1 ou B05P05 igual a 1 ou B05P06 igual a 1)),                                                                                                                                                                                    “.”  - não houve declaração",261,1
+PENSE_2009,DICIONARIO,BEBEREG,Bebeu nos últimos 30 dias,1,aluno ingeriu bebida alcoólica pelo menos uma vez nos últimos 30 dias (B05P03 maior que 1),262,1
+PENSE_2009,DICIONARIO,BEBEREG,Bebeu nos últimos 30 dias,2,"não bebeu (B05P03 igual a 1),                                                                                                                                                                “.” - não houve declaração",262,1
+PENSE_2009,DICIONARIO,EMBRIAGUEZ,Ficou bêbado alguma vez na vida,1,aluno ficou bêbado alguma vez na vida (B05P06 maior que 1),263,1
+PENSE_2009,DICIONARIO,EMBRIAGUEZ,Ficou bêbado alguma vez na vida,2,"nunca ficou (B05P06 igual a 1),                                                                                                                                                                      “.” - não houve declaração.",263,1
+PENSE_2009,DICIONARIO,EXPDRO,"Experimentou drogas como maconha, cocaína, crack etc",1,aluno usou droga alguma vez na vida (B05P09 igual a 1 ou  B05P10 maior que 1 ou B05P11 maior que 1),264,1
+PENSE_2009,DICIONARIO,EXPDRO,"Experimentou drogas como maconha, cocaína, crack etc",2,"nunca usou droga  (EXPDRO diferente de 1 e (B05P09 igual a 2 ou B05P10 igual a 1 ou  B05P11 igual a 1)),                                              “.” - não houve declaração",264,1
+PENSE_2009,DICIONARIO,EXPSEX,Iniciação sexual,1,aluno teve relação sexual alguma vez na vida (B07P01 igual a 1 ou  B07P02 maior que 1 ou B07P03 maior que 1 ou B07P04 igual a 1 ou B07P05 maior que 1 ou B07P06 maior que 1),265,1
+PENSE_2009,DICIONARIO,EXPSEX,Iniciação sexual,2,"nunca teve relações sexuais  (EXPSEX diferente de 1 e (B07P01 igual a 2 ou  B07P02 igual a 1 ou B07P03 igual a 1 ou B07P04 igual a 2 ou B07P05 igual a 1 ou B07P06 igual a 1)),                                                                                                                                                           “.” - não houve declaração",265,1
+PENSE_2009,DICIONARIO,AULASEF,Aulas de educação física,1,aluno teve aulas de educação física em 2 dias ou mais na semana (B03P04 maior que 2),266,1
+PENSE_2009,DICIONARIO,AULASEF,Aulas de educação física,2,"caso tenha tido uma ou nenhuma aula na semana (B03P04 menor ou igual a 2),                                                                                                 “.” - não houve declaração",266,1
+PENSE_2009,DICIONARIO,BULLYING,Sofreu bulling na escola,1,aluno não sofreu bullying nos últimos 30 dias (B06P04 igual a 1),267,1
+PENSE_2009,DICIONARIO,BULLYING,Sofreu bulling na escola,2,sofreu bullying raramente ou às vezes (B06P04 igual a 2 ou 3),267,1
+PENSE_2009,DICIONARIO,BULLYING,Sofreu bulling na escola,3,"sofreu bullying na maior parte das vezes ou sempre (B06P04 igual a 4 ou 5),                                                                                                        “.” - não houve declaração",267,1
+PENSE_2009,DICIONARIO,PRESERV,Usou preservativo na última relação sexual,1,aluno declarou ter usado preservativo na última relação sexual (B07P06 igual a 2),268,1
+PENSE_2009,DICIONARIO,PRESERV,Usou preservativo na última relação sexual,2,declarou não ter usado ou não se lembrar (B07P06 igual a 3 ou 4),268,1
+PENSE_2009,DICIONARIO,PRESERV,Usou preservativo na última relação sexual,3,"nunca teve relações sexuais na vida (B07P06 igual a 1),                                                                                                                                    “.” - não houve declaração",268,1
+PENSE_2009,DICIONARIO,SEGTRAJ,Deixou de ir a escola por insegurança no trajeto,1,"aluno faltou à escola pelo menos 1 dia, nos últimos 30 dias, por sentir insegurança no trajeto casa-escola (B08P01 maior que 1)",269,1
+PENSE_2009,DICIONARIO,SEGTRAJ,Deixou de ir a escola por insegurança no trajeto,2,"nunca faltou por este motivo (B08P01 igual a 1),                                                                                                                                               “.” - não houve declaração",269,1
+PENSE_2009,DICIONARIO,SEGESC,Deixou de ir a escola por insegurança na escola,1,"aluno faltou à escola pelo menos 1 dia, nos últimos 30 dias, por sentir insegurança na escola (B08P02 maior que 1)",270,1
+PENSE_2009,DICIONARIO,SEGESC,Deixou de ir a escola por insegurança na escola,2,"nunca faltou por este motivo (B08P02 igual a 1),                                                                                                                                        “.” - não houve declaração",270,1
+PENSE_2009,DICIONARIO,SENTINSEG,Deixou de ir a escola por insegurança no trajeto ou na escola,1,"aluno faltou à escola pelo menos 1 dia, nos últimos 30 dias, por sentir insegurança no trajeto casa-escola ou na escola (SEGTRAJ igual a 1 ou SEGESC igual a 1)",271,1
+PENSE_2009,DICIONARIO,SENTINSEG,Deixou de ir a escola por insegurança no trajeto ou na escola,2,"nunca faltou por nenhum dos dois motivos (SEGTRAJ igual a 2 e SEGESC igual a 2),                                                                                          “.” - caso contrário",271,1
+PENSE_2009,DICIONARIO,CINTO,Uso do cinto de segurança,1,aluno nunca ou raramente usou cinto de segurança nos últimos 30 dias (B08P07 igual a 2 ou 3),272,1
+PENSE_2009,DICIONARIO,CINTO,Uso do cinto de segurança,2,"usou o cinto às vezes, na maioria das vezes ou sempre (B08P07 maior que 3)",272,1
+PENSE_2009,DICIONARIO,CINTO,Uso do cinto de segurança,3,"não andou de carro,                                                                                                                                                                                       “.” - não houve declaração",272,1
+PENSE_2009,DICIONARIO,DIRIGIU,Dirigiu veículo motorizado com menos de 18 anos,1,aluno com menos de 18 anos de idade completos (B01P03 menor que 8) dirigiu veículos motorizados de transporte nos últimos 30 dias (B08P09 maior que 1),273,1
+PENSE_2009,DICIONARIO,DIRIGIU,Dirigiu veículo motorizado com menos de 18 anos,2,"não dirigiu (B08P09 igual a 1),                                                                                                                                                                         “.” - não houve declaração",273,1
+PENSE_2009,DICIONARIO,MOTALCOOL,Andou em veículo motorizado dirigido por motorista alcoolizado,1,aluno andou em veículo dirigido por motorista alcoolizado  pelo menos 1 vez nos últimos 30 dias (B08P10 maior que 1),274,1
+PENSE_2009,DICIONARIO,MOTALCOOL,Andou em veículo motorizado dirigido por motorista alcoolizado,2,"não andou (B08P10 igual a 1),                                                                                                                                                                       “.”  - não houve declaração",274,1
+PENSE_2009,DICIONARIO,ESCOVA,Escova os dentes com frequência,1,aluno escova os dentes 3 ou mais vezes por dia (B09P01 maior que 3),275,1
+PENSE_2009,DICIONARIO,ESCOVA,Escova os dentes com frequência,2,"não escova os dentes ou os escova 2 vezes ou menos (B09P10 menor ou igual a 3),                                                                                    “.” - não houve declaração",275,1
+PENSE_2009,DICIONARIO,DORDENTE,Teve dor de dente,1,aluno teve dor de dente nos últimos 6 meses (B09P02 igual a 1),276,1
+PENSE_2009,DICIONARIO,DORDENTE,Teve dor de dente,2,"não teve ou não lembra (B09P02 maior que 1),                                                                                                                                            “.” - não houve declaração",276,1
+PENSE_2009,DICIONARIO,IMAGEM,Obesidade,1,aluno se considera magro ou muito magro (B09P03 menor que 3),277,1
+PENSE_2009,DICIONARIO,IMAGEM,Obesidade,2,aluno se considera normal (B09P03 igual a 3),277,1
+PENSE_2009,DICIONARIO,IMAGEM,Obesidade,3,"aluno se considera gordo ou muito gordo (B09P03 maior que 3),                                                                                                                       “.” - não houve declaração",277,1
+PENSE_2009,DICIONARIO,PRODPESO,Vomitou ou tomou laxantes para perder peso,1,"aluno vomitou, tomou laxantes, remédios, fórmulas ou outro produto para perder ou manter seu peso nos últimos 30 dias (B10P03 igual a 1 ou B10P04 igual a 1)",278,1
+PENSE_2009,DICIONARIO,PRODPESO,Vomitou ou tomou laxantes para perder peso,2,"se o fez (B10P03 igual a 2 e B10P04 igual a 2),                                                                                                                                                “.” - caso contrário",278,1
+PENSE_2009,DICIONARIO,FEIJAO,Comeu feijão quantos dias na semana,6,"aluno comeu feijão 5 ou mais dias na semana (B02P01 maior que 5),                                                                                                         valor igual ao da variável B02P01 se caso contrário",279,1
+PENSE_2009,DICIONARIO,BATATA,Comeu batata frita quantos dias na semana,6,"aluno comeu batata frita 5 ou mais dias na semana (B02P02 maior que 5),                                                                                                   valor igual ao da variável B02P02 se caso contrário",280,1
+PENSE_2009,DICIONARIO,SALG,Comeu salgados fritos quantos dias na semana,6,"aluno comeu salgados fritos 5 ou mais dias na semana (B02P03 maior que 5),                                                                                             valor igual ao da variável B02P03 se caso contrário",281,1
+PENSE_2009,DICIONARIO,HAMB,Comeu hambúrguer quantos dias na semana,6,"aluno comeu hambúrguer, salsicha, mortadela, salame, presunto, nuggets ou linguiça 5 ou mais dias na semana (B02P04 maior que 5),                                                                                                    valor igual ao da variável B02P04 se caso contrário",282,1
+PENSE_2009,DICIONARIO,LEGU,Comeu legume ou verdura quantos dias na semana,6,"aluno comeu legume ou verdura 5 ou mais dias na semana (B02P05 maior que 5),                                                                                          valor igual ao da variável B02P05 se caso contrário",283,1
+PENSE_2009,DICIONARIO,SALADA,Comeu  salada crua quantos dias na semana,6,"aluno comeu salada crua 5 ou mais dias na semana (B02P06 maior que 5),                                                                                                    valor igual ao da variável B02P06 se caso contrário",284,1
+PENSE_2009,DICIONARIO,LEGUC,Comeu legume ou verdura cozidos ou sopa quantos dias na semana,6,"se o aluno comeu legume ou verdura cozidos ou sopa 5 ou mais dias na semana (B02P07 maior que 5),                                                      valor igual ao da variável B02P07 se caso contrário",285,1
+PENSE_2009,DICIONARIO,BISCSALG,Comeu biscoito salgados quantos dias na semana,6,"aluno comeu biscoitos salgados 5 ou mais dias na semana (B02P08 maior que 5),                                                                                         valor igual ao da variável B02P08 se caso contrário",286,1
+PENSE_2009,DICIONARIO,BISCDOCE,Comeu biscoito doces quantos dias na semana,6,"aluno comeu biscoitos doces 5 ou mais dias na semana (B02P09 maior que 5),                                                                                           valor igual ao da variável B02P09 se caso contrário",287,1
+PENSE_2009,DICIONARIO,GULO,Comeu guloseimas quantos dias na semana,6,"se o aluno comeu guloseimas 5 ou mais dias na semana (B02P10 maior que 5),                                                                                               valor igual ao da variável B02P10 se caso contrário",288,1
+PENSE_2009,DICIONARIO,FRUFRE,Comeu frutas frescas ou salada de frutas quantos dias na semana,6,"aluno comeu frutas frescas ou salada de frutas 5 ou mais dias na semana (B02P11 maior que 5),                                                                     valor igual ao da variável B02P11 se caso contrário",289,1
+PENSE_2009,DICIONARIO,LEITE,Bebeu leite quantos dias na semana,6,"aluno bebeu leite 5 ou mais dias na semana (B02P12 maior que 5), valor igual ao da variável B02P12 se caso contrário",290,1
+PENSE_2009,DICIONARIO,REFRI,Bebeu refrigerante quantos dias na semana,6,"aluno bebeu refrigerante 5 ou mais dias na semana (B02P13 maior que 5), valor igual ao da variável B02P13 se caso contrário",291,1
+PENSE_2009,DICIONARIO,TEMPATIV,Tempo semanal de atividade física em minutos,,,292,4
+PENSE_2009,DICIONARIO,ESCORATI,Classificação do aluno segundo seu tempo semanal de atividade física,1,aluno não fez atividade física (TEMPATIV igual a 0),296,1
+PENSE_2009,DICIONARIO,ESCORATI,Classificação do aluno segundo seu tempo semanal de atividade física,2,aluno fez até 149 minutos (TEMPATIV entre 1 e 149),296,1
+PENSE_2009,DICIONARIO,ESCORATI,Classificação do aluno segundo seu tempo semanal de atividade física,3,aluno fez entre 150 e 299 minutos (TEMPATIV entre 150 e 299),296,1
+PENSE_2009,DICIONARIO,ESCORATI,Classificação do aluno segundo seu tempo semanal de atividade física,4,"aluno fez 300 ou mais minutos (TEMPATIV maior ou igual a 300),                                                                                                                    “.”  - não houve declaração (TEMPATIV igual a “.”)",296,1
+PENSE_2009,DICIONARIO,Q2B01P01I,Massa corporal imputada,,,297,6
+PENSE_2009,DICIONARIO,Q2B01P02I,Altura imputada,,,303,6
+PENSE_2009,DICIONARIO,DEF_ALT,Deficit de altura,,,309,1
+PENSE_2009,DICIONARIO,DEF_PES,Deficit de peso,,,310,1
+PENSE_2009,DICIONARIO,EXC_PES,Excesso de peso,,,311,1

@@ -1,0 +1,487 @@
+{
+"2015_A2|B09001": [
+"AMOSTRA2_ALUNO",
+874,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro no caminho de casa para a escola ou da escola para casa?"
+],
+"2015_A2|B09002": [
+"AMOSTRA2_ALUNO",
+882,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro na escola?"
+],
+"2015_A2|B09006A1": [
+"AMOSTRA2_ALUNO",
+890,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) no BANCO DA FRENTE de carro/automóvel, van ou táxi?"
+],
+"2015_A2|B09006A2": [
+"AMOSTRA2_ALUNO",
+898,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) no BANCO DE TRÁS de carro/automóvel, van ou táxi?"
+],
+"2015_A2|B09007A": [
+"AMOSTRA2_ALUNO",
+906,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou capacete ao andar de motocicleta?"
+],
+"2015_A2|B09008": [
+"AMOSTRA2_ALUNO",
+914,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta, voadeira, barco)?"
+],
+"2015_A2|B09009": [
+"AMOSTRA2_ALUNO",
+921,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?"
+],
+"2015_A2|B09003": [
+"AMOSTRA2_ALUNO",
+928,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido(a) fisicamente por um adulto da sua família?"
+],
+"2015_A2|B09004": [
+"AMOSTRA2_ALUNO",
+938,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou arma de fogo, como revólver ou espingarda?"
+],
+"2015_A2|B09005": [
+"AMOSTRA2_ALUNO",
+942,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou alguma outra arma como faca, canivete, peixeira, pedra, pedaço de pau ou garrafa?"
+],
+"2015_A2|B09010": [
+"AMOSTRA2_ALUNO",
+946,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente?"
+],
+"2015_A2|B09011": [
+"AMOSTRA2_ALUNO",
+956,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você se envolveu em briga (uma luta física)?"
+],
+"2015_A2|B09012": [
+"AMOSTRA2_ALUNO",
+966,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi seriamente ferido(a)?"
+],
+"2015_A2|B09016": [
+"AMOSTRA2_ALUNO",
+1004,
+"Alguma vez na vida você foi forçado a ter relação sexual? "
+],
+"2015_A1|B09001": [
+"AMOSTRA1_ALUNO",
+921,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro no caminho de casa para a escola ou da escola para casa?"
+],
+"2015_A1|B09002": [
+"AMOSTRA1_ALUNO",
+929,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro na escola?"
+],
+"2015_A1|B09006A1": [
+"AMOSTRA1_ALUNO",
+937,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) no BANCO DA FRENTE de carro/automóvel, van ou táxi?"
+],
+"2015_A1|B09006A2": [
+"AMOSTRA1_ALUNO",
+945,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) no BANCO DE TRÁS de carro/automóvel, van ou táxi?"
+],
+"2015_A1|B09007A": [
+"AMOSTRA1_ALUNO",
+953,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou capacete ao andar de motocicleta?"
+],
+"2015_A1|B09008": [
+"AMOSTRA1_ALUNO",
+961,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta, voadeira, barco)?"
+],
+"2015_A1|B09009": [
+"AMOSTRA1_ALUNO",
+968,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?"
+],
+"2015_A1|B09003": [
+"AMOSTRA1_ALUNO",
+975,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você foi agredido(a) fisicamente por um adulto da sua família?"
+],
+"2015_A1|B09004": [
+"AMOSTRA1_ALUNO",
+985,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou arma de fogo, como revólver ou espingarda?"
+],
+"2015_A1|B09005": [
+"AMOSTRA1_ALUNO",
+989,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou alguma outra arma como faca, canivete, peixeira, pedra, pedaço de pau ou garrafa?"
+],
+"2015_A1|B09010": [
+"AMOSTRA1_ALUNO",
+993,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente?"
+],
+"2015_A1|B09011": [
+"AMOSTRA1_ALUNO",
+1003,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você se envolveu em briga (uma luta física)?"
+],
+"2015_A1|B09012": [
+"AMOSTRA1_ALUNO",
+1013,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi seriamente ferido(a)?"
+],
+"2015_A1|B09016": [
+"AMOSTRA1_ALUNO",
+1051,
+"Alguma vez na vida você foi forçado a ter relação sexual? "
+],
+"2019|B09006A1": [
+"Questionário ALUNO",
+885,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) NO BANCO DA FRENTE de carro/automóvel, van ou táxi?"
+],
+"2019|B09006A2": [
+"Questionário ALUNO",
+893,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) NO BANCO DE TRÁS de carro/automóvel, van ou táxi?"
+],
+"2019|B09007A": [
+"Questionário ALUNO",
+901,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou capacete ao andar de motocicleta/moto?"
+],
+"2019|B09008": [
+"Questionário ALUNO",
+909,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta/moto, voadeira, barco)?"
+],
+"2019|B09009": [
+"Questionário ALUNO",
+916,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?"
+],
+"2019|B09019": [
+"Questionário ALUNO",
+923,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que usou o celular enquanto dirigia?"
+],
+"2019|B09001": [
+"Questionário ALUNO",
+930,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro NO CAMINHO de casa para a escola ou da escola para casa?"
+],
+"2019|B09002": [
+"Questionário ALUNO",
+938,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro NA ESCOLA?"
+],
+"2019|B09011A": [
+"Questionário ALUNO",
+946,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em briga com luta física?"
+],
+"2019|B09004": [
+"Questionário ALUNO",
+950,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou arma de fogo, como revólver ou espingarda?"
+],
+"2019|B09005": [
+"Questionário ALUNO",
+954,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou alguma outra arma como faca, canivete, peixeira, pedra, pedaço de pau ou garrafa?"
+],
+"2019|B09012A1": [
+"Questionário ALUNO",
+958,
+"NOS ÚLTIMOS 12 MESES, você sofreu algum acidente ou agressão?"
+],
+"2019|B09003A": [
+"Questionário ALUNO",
+990,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente por sua mãe, pai ou responsável?"
+],
+"2019|B09010A1": [
+"Questionário ALUNO",
+996,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente por OUTRA PESSOA que não seja sua mãe, pai ou responsável?"
+],
+"2019|B09016A1": [
+"Questionário ALUNO",
+1037,
+"Alguma vez na vida alguém o(a) tocou, manipulou, beijou ou expôs partes do corpo contra a sua vontade?"
+],
+"2019|B09016A2": [
+"Questionário ALUNO",
+1072,
+"Alguma vez na vida alguém ameaçou, intimidou ou obrigou a ter relações sexuais ou qualquer outro ato sexual contra a sua vontade?"
+],
+"2019|E01P79": [
+"Questionário ESCOLA",
+296,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que ocorreram assaltos e roubos a pessoas, residências e comércios na localidade (bairro) onde a escola está situada?"
+],
+"2019|E01P80": [
+"Questionário ESCOLA",
+301,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que ocorreram tiros ou tiroteios na localidade (bairro) onde a escola está situada?"
+],
+"2019|E01P81": [
+"Questionário ESCOLA",
+306,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que havia alguém vendendo drogas na localidade (bairro) onde a escola está situada?"
+],
+"2019|E01P82": [
+"Questionário ESCOLA",
+311,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém tinha sido agredido fisicamente ou espancado na localidade (bairro) onde a escola está situada?"
+],
+"2019|E01P83": [
+"Questionário ESCOLA",
+316,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém foi assassinado na localidade (bairro) onde a escola está situada?,"
+],
+"2019|E01P84": [
+"Questionário ESCOLA",
+321,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém sofreu algum tipo de violência sexual na localidade (bairro) onde a escola está situada?"
+],
+"2019|E01P59A1": [
+"Questionário ESCOLA",
+326,
+"NOS ÚLTIMOS 12 MESES, a escola teve que suspender ou interromper suas aulas por motivo de segurança em termos de violência?"
+],
+"2019_b871|B09006A1": [
+"Questionário ALUNO",
+885,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) NO BANCO DA FRENTE de carro/automóvel, van ou táxi?"
+],
+"2019_b871|B09006A2": [
+"Questionário ALUNO",
+893,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) NO BANCO DE TRÁS de carro/automóvel, van ou táxi?"
+],
+"2019_b871|B09007A": [
+"Questionário ALUNO",
+901,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou capacete ao andar de motocicleta/moto?"
+],
+"2019_b871|B09008": [
+"Questionário ALUNO",
+909,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta/moto, voadeira, barco)?"
+],
+"2019_b871|B09009": [
+"Questionário ALUNO",
+916,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?"
+],
+"2019_b871|B09019": [
+"Questionário ALUNO",
+923,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que usou o celular enquanto dirigia?"
+],
+"2019_b871|B09001": [
+"Questionário ALUNO",
+930,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro NO CAMINHO de casa para a escola ou da escola para casa?"
+],
+"2019_b871|B09002": [
+"Questionário ALUNO",
+938,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro NA ESCOLA?"
+],
+"2019_b871|B09011A": [
+"Questionário ALUNO",
+946,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em briga com luta física?"
+],
+"2019_b871|B09004": [
+"Questionário ALUNO",
+950,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou arma de fogo, como revólver ou espingarda?"
+],
+"2019_b871|B09005": [
+"Questionário ALUNO",
+954,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou alguma outra arma como faca, canivete, peixeira, pedra, pedaço de pau ou garrafa?"
+],
+"2019_b871|B09012A1": [
+"Questionário ALUNO",
+958,
+"NOS ÚLTIMOS 12 MESES, você sofreu algum acidente ou agressão?"
+],
+"2019_b871|B09003A": [
+"Questionário ALUNO",
+990,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente por sua mãe, pai ou responsável?"
+],
+"2019_b871|B09010A1": [
+"Questionário ALUNO",
+996,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente por OUTRA PESSOA que não seja sua mãe, pai ou responsável?"
+],
+"2019_b871|B09016A1": [
+"Questionário ALUNO",
+1037,
+"Alguma vez na vida alguém o(a) tocou, manipulou, beijou ou expôs partes do corpo contra a sua vontade?"
+],
+"2019_b871|B09016A2": [
+"Questionário ALUNO",
+1072,
+"Alguma vez na vida alguém ameaçou, intimidou ou obrigou a ter relações sexuais ou qualquer outro ato sexual contra a sua vontade?"
+],
+"2019_b871|E01P79": [
+"Questionário ESCOLA",
+296,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que ocorreram assaltos e roubos a pessoas, residências e comércios na localidade (bairro) onde a escola está situada?"
+],
+"2019_b871|E01P80": [
+"Questionário ESCOLA",
+301,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que ocorreram tiros ou tiroteios na localidade (bairro) onde a escola está situada?"
+],
+"2019_b871|E01P81": [
+"Questionário ESCOLA",
+306,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que havia alguém vendendo drogas na localidade (bairro) onde a escola está situada?"
+],
+"2019_b871|E01P82": [
+"Questionário ESCOLA",
+311,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém tinha sido agredido fisicamente ou espancado na localidade (bairro) onde a escola está situada?"
+],
+"2019_b871|E01P83": [
+"Questionário ESCOLA",
+316,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém foi assassinado na localidade (bairro) onde a escola está situada?,"
+],
+"2019_b871|E01P84": [
+"Questionário ESCOLA",
+321,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém sofreu algum tipo de violência sexual na localidade (bairro) onde a escola está situada?"
+],
+"2019_b871|E01P59A1": [
+"Questionário ESCOLA",
+326,
+"NOS ÚLTIMOS 12 MESES, a escola teve que suspender ou interromper suas aulas por motivo de segurança em termos de violência?"
+],
+"2024|B09006A1": [
+"PeNSE2024",
+184,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) NO BANCO DA FRENTE de carro/automóvel, van ou táxi?"
+],
+"2024|B09006A2": [
+"PeNSE2024",
+185,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou cinto de segurança enquanto andava como passageiro(a) NO BANCO DE TRÁS de carro/automóvel, van ou táxi?"
+],
+"2024|B09007A": [
+"PeNSE2024",
+186,
+"NOS ÚLTIMOS 30 DIAS, com que frequência você usou capacete ao andar de motocicleta/moto?"
+],
+"2024|B09008": [
+"PeNSE2024",
+187,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você dirigiu um veículo motorizado de transporte (carro, motocicleta/moto, voadeira, barco)?"
+],
+"2024|B09009": [
+"PeNSE2024",
+188,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que tinha consumido alguma bebida alcoólica?"
+],
+"2024|B09019": [
+"PeNSE2024",
+189,
+"NOS ÚLTIMOS 30 DIAS, quantas vezes você andou em carro ou outro veículo motorizado dirigido por alguém que usou o celular enquanto dirigia?"
+],
+"2024|B09001": [
+"PeNSE2024",
+190,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você deixou de ir à escola porque não se sentia seguro NO CAMINHO de casa para a escola ou da escola para casa?"
+],
+"2024|B09002": [
+"PeNSE2024",
+191,
+"NOS ÚLTIMOS 30 DIAS, em quantos dias você não foi à escola porque não se sentia seguro NA ESCOLA?"
+],
+"2024|B09011A": [
+"PeNSE2024",
+192,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em briga com luta física?"
+],
+"2024|B09004": [
+"PeNSE2024",
+193,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou arma de fogo, como revólver ou espingarda?"
+],
+"2024|B09005": [
+"PeNSE2024",
+194,
+"NOS ÚLTIMOS 30 DIAS, você esteve envolvido(a) em alguma briga em que alguma pessoa usou alguma outra arma como faca, canivete, peixeira, pedra, pedaço de pau ou garrafa?"
+],
+"2024|B09012A1": [
+"PeNSE2024",
+195,
+"NOS ÚLTIMOS 12 MESES, você sofreu algum acidente ou agressão?"
+],
+"2024|B09003A": [
+"PeNSE2024",
+200,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente por sua mãe, pai ou responsável?"
+],
+"2024|B09010A1": [
+"PeNSE2024",
+201,
+"NOS ÚLTIMOS 12 MESES, quantas vezes você foi agredido(a) fisicamente por OUTRA PESSOA que não seja sua mãe, pai ou responsável?"
+],
+"2024|B09016A1": [
+"PeNSE2024",
+209,
+"Alguma vez na vida alguém o(a) tocou, manipulou, beijou ou expôs partes do corpo contra a sua vontade?"
+],
+"2024|B09016A2": [
+"PeNSE2024",
+216,
+"Alguma vez na vida alguém ameaçou, intimidou ou obrigou a ter relações sexuais ou qualquer outro ato sexual contra a sua vontade?"
+],
+"2024|E01P79": [
+"PeNSE2024",
+393,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que ocorreram assaltos e roubos a pessoas, residências e comércios na localidade (bairro) onde a escola está situada?"
+],
+"2024|E01P80": [
+"PeNSE2024",
+394,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que ocorreram tiros ou tiroteios na localidade (bairro) onde a escola está situada?"
+],
+"2024|E01P81A": [
+"PeNSE2024",
+395,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que havia alguém vendendo ou usando drogas na localidade (bairro) onde a escola está situada?"
+],
+"2024|E01P82": [
+"PeNSE2024",
+396,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém tinha sido agredido fisicamente ou espancado na localidade (bairro) onde a escola está situada?"
+],
+"2024|E01P83": [
+"PeNSE2024",
+397,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém foi assassinado na localidade (bairro) onde a escola está situada?,"
+],
+"2024|E01P84": [
+"PeNSE2024",
+398,
+"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém sofreu algum tipo de violência sexual na localidade (bairro) onde a escola está situada?"
+],
+"2024|E01P59A1": [
+"PeNSE2024",
+399,
+"NOS ÚLTIMOS 12 MESES, a escola teve que suspender ou interromper suas aulas por motivo de segurança em termos de violência?"
+]
+}

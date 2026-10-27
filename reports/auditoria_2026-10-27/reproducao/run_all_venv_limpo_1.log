@@ -1,0 +1,124 @@
+
+=== run_pipeline.py 
+INFO    Arquivo duplicado (mesmo SHA-256) — não reprocessado
+INFO    Arquivo duplicado (mesmo SHA-256) — não reprocessado
+INFO    Descoberta concluída
+INFO    Arquivos: 45 inventariados (2 duplicados); abas: 278
+INFO    Observações de estimativa: 33220; CV: 12463; aprovadas (canônicas): 31316
+INFO    Status: {'VALID': 32140, 'NOT_AVAILABLE': 120, 'VALID_WITH_WARNINGS': 904, 'REVIEW_REQUIRED': 56}
+INFO    Alertas por severidade: {'INFO': 7052, 'REVIEW': 57, 'WARNING': 920}
+INFO    Pares de comparabilidade: {'NOT_COMPARABLE': 16, 'PENDING_REVIEW': 14}; pontos de série: 0
+
+=== run_microdata.py 
+INFO    Edição sem indicador configurado — não carregada
+INFO    Edição sem indicador configurado — não carregada
+INFO    Microdados carregados
+INFO    Indicadores calculados
+INFO    Microdados carregados
+INFO    Indicadores calculados
+INFO    Microdados carregados
+INFO    Indicadores calculados
+INFO    Microdados carregados
+INFO    Indicadores calculados
+35084 estimativas; 15244 comparações com o publicado; 124.6 s
+  PENSE_2015_A1  NONO_BRIGA_ARMA_BRANCA   10.11                   133/140  ic≠ 1   ≈ 6   ✗ 0   máx Δ 0.1381 VALIDADO
+  PENSE_2015_A1  NONO_CAPACETE_NUNCA_RARAMENTE 10.4                    124/140  ic≠ 0   ≈ 16  ✗ 0   máx Δ 0.2274 VALIDADO_COM_RESSALVA
+  PENSE_2015_A1  NONO_CINTO_FRENTE        10.1                    127/140  ic≠ 0   ≈ 13  ✗ 0   máx Δ 0.1398 VALIDADO_COM_RESSALVA
+  PENSE_2015_A1  NONO_CINTO_FRENTE_OU_TRAS 10.3                      1/140  ic≠ 1   ≈ 34  ✗ 104 máx Δ 2.4024 NAO_VALIDADO
+  PENSE_2015_A1  NONO_CINTO_TRAS          10.2                    109/140  ic≠ 0   ≈ 31  ✗ 0   máx Δ 0.2652 VALIDADO_COM_RESSALVA
+  PENSE_2015_A1  NONO_CONDUTOR_ALCOOL     10.6                    112/140  ic≠ 0   ≈ 28  ✗ 0   máx Δ 0.1976 VALIDADO_COM_RESSALVA
+  PENSE_2015_A1  NONO_CONDUZIU_VEICULO    10.5                    107/140  ic≠ 0   ≈ 33  ✗ 0   máx Δ 0.2463 VALIDADO_COM_RESSALVA
+  PENSE_2015_A1  NONO_ESCOLA_INSEGURA     10.8                    137/140  ic≠ 1   ≈ 2   ✗ 0   máx Δ 0.0614 VALIDADO
+  PENSE_2015_A1  NONO_TRAJETO_INSEGURO    10.7                    135/140  ic≠ 1   ≈ 4   ✗ 0   máx Δ 0.0733 VALIDADO
+  PENSE_2015_A1  NONO_TRAJETO_OU_ESCOLA   10.9                    132/140  ic≠ 2   ≈ 6   ✗ 0   máx Δ 0.0906 VALIDADO_COM_RESSALVA
+  PENSE_2015_A2  BRIGA_ARMA_BRANCA        2.11.10                    42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2015_A2  BRIGA_ARMA_FOGO          2.11.9                    42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2015_A2  CAPACETE_AS_VEZES_OU_MAIS 2.11.5                    42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2015_A2  CINTO_FRENTE             2.11.4 Banco da frente    42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2015_A2  CINTO_NUNCA_RARAMENTE    2.11.3                    42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2015_A2  CINTO_TRAS               2.11.4 Banco de trás      42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2015_A2  CONDUTOR_ALCOOL          2.11.7                    42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2015_A2  CONDUZIU_VEICULO         2.11.6                    42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2015_A2  ESCOLA_INSEGURA          2.11.2                    42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2015_A2  TRAJETO_INSEGURO         2.11.1                    42/42   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0000 VALIDADO
+  PENSE_2019     ACIDENTE_OU_AGRESSAO     9.12                    247/317  ic≠ 0   ≈ 70  ✗ 0   máx Δ 0.2053 VALIDADO_COM_RESSALVA
+  PENSE_2019     AGREDIDO_OUTROS          9.17                    253/317  ic≠ 0   ≈ 62  ✗ 2   máx Δ 0.5079 VALIDADO_COM_RESSALVA
+  PENSE_2019     AGREDIDO_PAIS            9.16                    238/317  ic≠ 0   ≈ 78  ✗ 1   máx Δ 0.4184 VALIDADO_COM_RESSALVA
+  PENSE_2019     BRIGA_ARMA_BRANCA        9.11                    284/317  ic≠ 0   ≈ 32  ✗ 1   máx Δ 0.3096 VALIDADO_COM_RESSALVA
+  PENSE_2019     BRIGA_ARMA_FOGO          9.10                    289/317  ic≠ 0   ≈ 28  ✗ 0   máx Δ 0.2478 VALIDADO_COM_RESSALVA
+  PENSE_2019     BRIGA_LUTA_FISICA        9.9                     248/317  ic≠ 1   ≈ 68  ✗ 0   máx Δ 0.2436 VALIDADO_COM_RESSALVA
+  PENSE_2019     CAPACETE_QUALQUER_USO    9.3                     276/317  ic≠ 1   ≈ 34  ✗ 6   máx Δ 0.3820 VALIDADO_COM_RESSALVA
+  PENSE_2019     CINTO_FRENTE             9.2   Banco da frente   245/317  ic≠ 0   ≈ 72  ✗ 0   máx Δ 0.2088 VALIDADO_COM_RESSALVA
+  PENSE_2019     CINTO_NUNCA_RARAMENTE    9.1                     246/317  ic≠ 1   ≈ 69  ✗ 1   máx Δ 0.3433 VALIDADO_COM_RESSALVA
+  PENSE_2019     CINTO_TRAS               9.2   Banco de trás     244/317  ic≠ 2   ≈ 71  ✗ 0   máx Δ 0.2809 VALIDADO_COM_RESSALVA
+  PENSE_2019     CONDUTOR_ALCOOL          9.5                     228/317  ic≠ 0   ≈ 87  ✗ 2   máx Δ 0.4742 VALIDADO_COM_RESSALVA
+  PENSE_2019     CONDUTOR_CELULAR         9.6                     229/317  ic≠ 0   ≈ 86  ✗ 2   máx Δ 0.3801 VALIDADO_COM_RESSALVA
+  PENSE_2019     CONDUZIU_VEICULO         9.4                     220/317  ic≠ 0   ≈ 96  ✗ 1   máx Δ 0.4899 VALIDADO_COM_RESSALVA
+  PENSE_2019     ESCOLA_INSEGURA          9.8                     256/317  ic≠ 0   ≈ 59  ✗ 2   máx Δ 0.4892 VALIDADO_COM_RESSALVA
+  PENSE_2019     ESCOLA_LOCAL_AGRESSAO    17.1  Agressão física    59/73   ic≠ 2   ≈ 12  ✗ 0   máx Δ 0.2711 VALIDADO_COM_RESSALVA
+  PENSE_2019     ESCOLA_LOCAL_ASSALTOS    17.1  Assaltos e roubo   53/73   ic≠ 6   ≈ 14  ✗ 0   máx Δ 0.1824 VALIDADO_COM_RESSALVA
+  PENSE_2019     ESCOLA_LOCAL_ASSASSINATO 17.1  Assassinato        65/73   ic≠ 0   ≈ 8   ✗ 0   máx Δ 0.1627 VALIDADO_COM_RESSALVA
+  PENSE_2019     ESCOLA_LOCAL_DROGAS      17.1  Venda de drogas    61/73   ic≠ 1   ≈ 11  ✗ 0   máx Δ 0.1572 VALIDADO_COM_RESSALVA
+  PENSE_2019     ESCOLA_LOCAL_TIROS       17.1  Tiros ou tirotei   56/73   ic≠ 1   ≈ 16  ✗ 0   máx Δ 0.2880 VALIDADO_COM_RESSALVA
+  PENSE_2019     ESCOLA_LOCAL_VIOLENCIA_SEXUAL 17.1  Violência sexual   65/73   ic≠ 3   ≈ 5   ✗ 0   máx Δ 0.2242 VALIDADO_COM_RESSALVA
+  PENSE_2019     ESCOLA_SUSPENDEU_AULAS   17.2                     68/73   ic≠ 1   ≈ 4   ✗ 0   máx Δ 0.1873 VALIDADO_COM_RESSALVA
+  PENSE_2019     NONO_BRIGA_ARMA_BRANCA   10.11                   135/140  ic≠ 0   ≈ 5   ✗ 0   máx Δ 0.2308 VALIDADO
+  PENSE_2019     NONO_BRIGA_LUTA_FISICA   10.10                   129/140  ic≠ 0   ≈ 10  ✗ 1   máx Δ 0.3728 VALIDADO_COM_RESSALVA
+  PENSE_2019     NONO_CAPACETE_NUNCA_RARAMENTE 10.4                    131/140  ic≠ 0   ≈ 7   ✗ 2   máx Δ 1.7164 VALIDADO_COM_RESSALVA
+  PENSE_2019     NONO_CINTO_FRENTE        10.1                    130/140  ic≠ 2   ≈ 6   ✗ 2   máx Δ 0.9347 VALIDADO_COM_RESSALVA
+  PENSE_2019     NONO_CINTO_FRENTE_OU_TRAS 10.3                      1/140  ic≠ 6   ≈ 22  ✗ 111 máx Δ 5.5425 NAO_VALIDADO
+  PENSE_2019     NONO_CINTO_TRAS          10.2                    127/140  ic≠ 0   ≈ 10  ✗ 3   máx Δ 0.5023 VALIDADO_COM_RESSALVA
+  PENSE_2019     NONO_CONDUTOR_ALCOOL     10.6                    127/140  ic≠ 0   ≈ 8   ✗ 5   máx Δ 0.6285 VALIDADO_COM_RESSALVA
+  PENSE_2019     NONO_CONDUZIU_VEICULO    10.5                    126/140  ic≠ 1   ≈ 12  ✗ 1   máx Δ 0.4208 VALIDADO_COM_RESSALVA
+  PENSE_2019     NONO_ESCOLA_INSEGURA     10.8                    129/140  ic≠ 1   ≈ 6   ✗ 4   máx Δ 0.7115 VALIDADO_COM_RESSALVA
+  PENSE_2019     NONO_TRAJETO_INSEGURO    10.7                    129/140  ic≠ 0   ≈ 7   ✗ 4   máx Δ 0.6066 VALIDADO_COM_RESSALVA
+  PENSE_2019     NONO_TRAJETO_OU_ESCOLA   10.9                    125/140  ic≠ 3   ≈ 8   ✗ 4   máx Δ 0.6681 VALIDADO_COM_RESSALVA
+  PENSE_2019     RELACAO_SEXUAL_FORCADA   9.21                    275/317  ic≠ 0   ≈ 42  ✗ 0   máx Δ 0.2462 VALIDADO_COM_RESSALVA
+  PENSE_2019     TOQUE_SEM_CONSENTIMENTO  9.19                    260/317  ic≠ 0   ≈ 56  ✗ 1   máx Δ 0.3139 VALIDADO_COM_RESSALVA
+  PENSE_2019     TRAJETO_INSEGURO         9.7                     256/317  ic≠ 0   ≈ 58  ✗ 3   máx Δ 0.4793 VALIDADO_COM_RESSALVA
+  PENSE_2024     ACIDENTE_OU_AGRESSAO     9.12                    306/317  ic≠ 4   ≈ 7   ✗ 0   máx Δ 0.1176 VALIDADO
+  PENSE_2024     AGREDIDO_OUTROS          9.17                    311/317  ic≠ 2   ≈ 4   ✗ 0   máx Δ 0.0720 VALIDADO
+  PENSE_2024     AGREDIDO_PAIS            9.16                    307/317  ic≠ 3   ≈ 7   ✗ 0   máx Δ 0.2689 VALIDADO
+  PENSE_2024     BRIGA_ARMA_BRANCA        9.11                    312/317  ic≠ 0   ≈ 5   ✗ 0   máx Δ 0.1254 VALIDADO
+  PENSE_2024     BRIGA_ARMA_FOGO          9.10                    316/317  ic≠ 0   ≈ 1   ✗ 0   máx Δ 0.0870 VALIDADO
+  PENSE_2024     BRIGA_LUTA_FISICA        9.9                     304/317  ic≠ 5   ≈ 8   ✗ 0   máx Δ 0.0991 VALIDADO
+  PENSE_2024     CAPACETE_QUALQUER_USO    9.3                     308/317  ic≠ 5   ≈ 4   ✗ 0   máx Δ 0.1653 VALIDADO
+  PENSE_2024     CINTO_FRENTE             9.2   Banco da frente   309/317  ic≠ 7   ≈ 1   ✗ 0   máx Δ 0.1193 VALIDADO
+  PENSE_2024     CINTO_NUNCA_RARAMENTE    9.1                     304/317  ic≠ 5   ≈ 8   ✗ 0   máx Δ 0.1944 VALIDADO
+  PENSE_2024     CINTO_TRAS               9.2   Banco de trás     305/317  ic≠ 5   ≈ 7   ✗ 0   máx Δ 0.1542 VALIDADO
+  PENSE_2024     CONDUTOR_ALCOOL          9.5                     309/317  ic≠ 1   ≈ 7   ✗ 0   máx Δ 0.2099 VALIDADO
+  PENSE_2024     CONDUTOR_CELULAR         9.6                     303/317  ic≠ 6   ≈ 8   ✗ 0   máx Δ 0.1280 VALIDADO
+  PENSE_2024     CONDUZIU_VEICULO         9.4                     300/317  ic≠ 8   ≈ 9   ✗ 0   máx Δ 0.2285 VALIDADO_COM_RESSALVA
+  PENSE_2024     ESCOLA_INSEGURA          9.8                     305/317  ic≠ 5   ≈ 7   ✗ 0   máx Δ 0.1010 VALIDADO
+  PENSE_2024     ESCOLA_LOCAL_AGRESSAO    17.1  Agressão física    84/85   ic≠ 1   ≈ 0   ✗ 0   máx Δ 0.0259 VALIDADO
+  PENSE_2024     ESCOLA_LOCAL_ASSALTOS    17.1  Assaltos e roubo   83/85   ic≠ 2   ≈ 0   ✗ 0   máx Δ 0.0461 VALIDADO
+  PENSE_2024     ESCOLA_LOCAL_ASSASSINATO 17.1  Assassinato        84/85   ic≠ 1   ≈ 0   ✗ 0   máx Δ 0.0451 VALIDADO
+  PENSE_2024     ESCOLA_LOCAL_DROGAS      17.1  Venda de drogas    83/85   ic≠ 2   ≈ 0   ✗ 0   máx Δ 0.0224 VALIDADO
+  PENSE_2024     ESCOLA_LOCAL_TIROS       17.1  Tiros ou tirotei   84/85   ic≠ 1   ≈ 0   ✗ 0   máx Δ 0.0245 VALIDADO
+  PENSE_2024     ESCOLA_LOCAL_VIOLENCIA_SEXUAL 17.1  Violência sexual   85/85   ic≠ 0   ≈ 0   ✗ 0   máx Δ 0.0276 VALIDADO
+  PENSE_2024     ESCOLA_SUSPENDEU_AULAS   17.2                     82/85   ic≠ 3   ≈ 0   ✗ 0   máx Δ 0.0328 VALIDADO
+  PENSE_2024     RELACAO_SEXUAL_FORCADA   9.21                    313/317  ic≠ 0   ≈ 4   ✗ 0   máx Δ 0.1093 VALIDADO
+  PENSE_2024     TOQUE_SEM_CONSENTIMENTO  9.19                    309/317  ic≠ 0   ≈ 8   ✗ 0   máx Δ 0.1061 VALIDADO
+  PENSE_2024     TRAJETO_INSEGURO         9.7                     306/317  ic≠ 7   ≈ 4   ✗ 0   máx Δ 0.1011 VALIDADO
+
+=== run_pipeline.py 
+INFO    Arquivo duplicado (mesmo SHA-256) — não reprocessado
+INFO    Arquivo duplicado (mesmo SHA-256) — não reprocessado
+INFO    Descoberta concluída
+INFO    Arquivos: 45 inventariados (2 duplicados); abas: 278
+INFO    Observações de estimativa: 33220; CV: 12463; aprovadas (canônicas): 31316
+INFO    Status: {'VALID': 32140, 'NOT_AVAILABLE': 120, 'VALID_WITH_WARNINGS': 904, 'REVIEW_REQUIRED': 56}
+INFO    Alertas por severidade: {'INFO': 7052, 'REVIEW': 57, 'WARNING': 920}
+INFO    Pares de comparabilidade: {'NOT_COMPARABLE': 16, 'PENDING_REVIEW': 14}; pontos de série: 0
+
+=== report_microdata.py 
+docs/12_microdados.md atualizado
+
+=== build_evidence_matrix.py 
+matriz de evidências: 93 linhas → data/curated/methodological_evidence_matrix.csv e docs/13_matriz_evidencias.md
+
+=== generate_docs.py 
+....................................................................     [100%]
+
+=== build_dashboard.py 
+Painel gerado em /tmp/claude-0/limpo2/dist/dashboard

@@ -1,23 +1,18 @@
-# Dados: arquivos do IBGE são baixados pelo pipeline, não versionados.
-# O manifesto (URL + SHA-256) é versionado para garantir rastreabilidade.
-data/raw/*
-!data/raw/.gitkeep
-!data/raw/manifesto.csv
-data/interim/*
-!data/interim/.gitkeep
-*.part
-
-# Python
 __pycache__/
-*.py[cod]
+*.pyc
 .venv/
-venv/
-.env
 .pytest_cache/
-.ipynb_checkpoints/
-
-# Sistema
+logs/*.jsonl
+dist/
 .DS_Store
-Thumbs.db
-.vscode/
-.idea/
+~$*
+
+# microdados do IBGE (centenas de MB): baixar do site do IBGE, ver docs/12_microdados.md
+data/microdata/
+
+# saídas intermediárias grandes (regeradas por scripts/run_all.py; passam do limite do GitHub)
+data/staging/
+data/processed/observations_*.csv
+data/curated/pense_observations_approved.*
+data/curated/microdata_estimates.csv
+.ruff_cache/

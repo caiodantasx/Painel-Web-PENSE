@@ -1,0 +1,4 @@
+execução 1: código 0, 195 s
+execução 2: código 0, 199 s
+pytest venv limpo: código 0
+work exit=0

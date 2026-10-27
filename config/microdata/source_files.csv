@@ -1,0 +1,7 @@
+edition_id,ibge_zip_suggested_name,member_in_zip,target_path,size_bytes,sha256,note
+PENSE_2009,PENSE_2009_microdados.zip,Dados/Base_Pense Completa_2009.txt,data/microdata/PENSE_2009/Base_Pense_Completa_2009.txt,19847643,070b32e000e2bf0ac5a93701e6495c7e5bb649f55a816d489b62450234b8f6d3,"O nome original tem ESPAÇO ('Base_Pense Completa_2009.txt'); o destino troca o espaço por '_' (nome usado em editions.toml)"
+PENSE_2012,PENSE_2012_microdados.zip,pense2012Estudantes.txt,data/microdata/PENSE_2012/pense2012Estudantes.txt,19747824,68753f2cf3dc672af8213e9dce4916f6234632ae3b803deeef858505aebd8734,Arquivo de largura fixa (pasta '3ª edição/Dados')
+PENSE_2015_A1,PeNSE_2015_AMOSTRA1.zip,arquivos csv/PENSE_AMOSTRA1_ALUNOESCOLA.CSV,data/microdata/PENSE_2015_A1/PENSE_AMOSTRA1_ALUNOESCOLA.CSV,69745878,73e87152ca2f99e7d12d7450814357e9b60b8b79596994b348589d6f94d22103,Usa o arquivo ALUNO+ESCOLA (V0007 só existe nele)
+PENSE_2015_A2,PeNSE_2015_AMOSTRA2.zip,arquivos csv/PENSE_AMOSTRA2_ALUNO.CSV,data/microdata/PENSE_2015_A2/PENSE_AMOSTRA2_ALUNO.CSV,7262170,274d2cb54e8d1cdf2007868d08c40b97a67a26b800fc9bd98681b45740dc56ed,
+PENSE_2019,PENSE_2019_microdados (Dados.zip),Dados/CSV/PENSE2019_MICRODADOS.csv,data/microdata/PENSE_2019/PENSE2019_MICRODADOS.csv,118915250,6473f6f4392ddf33cc866d351f6757a4a6574b229b700af9c8c591be30d0f733,
+PENSE_2024,PENSE_2024_microdados (Dados.zip),CSV/PENSE2024_MICRODADOS.csv,data/microdata/PENSE_2024/PENSE2024_MICRODADOS.csv,154563662,77eb75284172ac88e2717152bc7477f621c30b5a9dde7d2c5a222930f6a203dd,

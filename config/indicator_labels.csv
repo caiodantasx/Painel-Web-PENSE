@@ -1,0 +1,79 @@
+﻿indicator_id,short_label,theme_label
+PENSE_2024__17.1,Violência no entorno da escola relatada pelo diretor (por tipo),Segurança da escola
+PENSE_2024__17.2,Escola suspendeu aulas por violência (relato do diretor),Segurança da escola
+PENSE_2024__17.3,"Violência no entorno relatada pelo diretor, entre alunos que faltaram por insegurança",Segurança da escola
+PENSE_2024__9.1,Nunca/raramente usou cinto (frente ou trás),Segurança
+PENSE_2024__9.2,Nunca/raramente usou cinto (por banco),Segurança
+PENSE_2024__9.3,Usou capacete (entre quem andou de moto),Segurança
+PENSE_2024__9.4,Conduziu veículo motorizado,Segurança
+PENSE_2024__9.5,Andou com condutor que bebeu,Segurança
+PENSE_2024__9.6,Andou com condutor usando celular,Segurança
+PENSE_2024__9.7,Faltou por insegurança no trajeto,Segurança
+PENSE_2024__9.8,Faltou por insegurança na escola,Segurança
+PENSE_2024__9.9,Briga com luta física,Segurança
+PENSE_2024__9.10,Briga com arma de fogo,Segurança
+PENSE_2024__9.11,Briga com arma branca,Segurança
+PENSE_2024__9.12,Sofreu acidente ou agressão,Segurança
+PENSE_2024__9.13,"Consequências do acidente/agressão",Segurança
+PENSE_2024__9.14,Tipo de lesão mais grave (distribuição),Segurança
+PENSE_2024__9.15,Causa da lesão mais grave (distribuição),Segurança
+PENSE_2024__9.16,"Agredido por mãe, pai ou responsável",Segurança
+PENSE_2024__9.17,Agredido por outra pessoa,Segurança
+PENSE_2024__9.18,Agredido por outra pessoa (por agressor),Segurança
+PENSE_2024__9.19,Sofreu toque/exposição sem consentimento,Segurança
+PENSE_2024__9.20,Toque/exposição sem consentimento (por agressor),Segurança
+PENSE_2024__9.21,Ameaçado ou forçado a ato sexual,Segurança
+PENSE_2024__9.22,Ameaçado/forçado a ato sexual (por agressor),Segurança
+PENSE_2024__9.23,Idade quando ocorreu a violência sexual (distribuição),Segurança
+PENSE_2015_A1__1.6.1,Escola em área de risco de violência (relato do diretor),Segurança da escola
+PENSE_2015_A1__1.6.2,Escola suspendeu aulas por segurança (relato do diretor),Segurança da escola
+PENSE_2009__8.1,Faltou por insegurança (trajeto ou escola),Segurança
+PENSE_2009__8.2,Humilhado por provocações de colegas,Segurança
+PENSE_2009__8.3,Briga com agressão física,Segurança
+PENSE_2009__8.4,Briga com arma branca,Segurança
+PENSE_2009__8.5,Briga com arma de fogo,Segurança
+PENSE_2009__8.6,Agredido por adulto da família,Segurança
+PENSE_2009__8.7,Não usou cinto de segurança,Segurança
+PENSE_2009__8.8,Dirigiu veículo motorizado (menores de 18),Segurança
+PENSE_2009__8.9,Andou com condutor que bebeu,Segurança
+PENSE_2019__17.1,Violência no entorno da escola relatada pelo diretor (por tipo),Segurança da escola
+PENSE_2019__17.2,Escola suspendeu aulas por violência (relato do diretor),Segurança da escola
+PENSE_2019__17.3,"Violência no entorno relatada pelo diretor, entre alunos que faltaram por insegurança",Segurança da escola
+PENSE_2019__9.1,Nunca/raramente usou cinto (frente ou trás),Segurança
+PENSE_2019__9.2,Nunca/raramente usou cinto (por banco),Segurança
+PENSE_2019__9.3,Usou capacete (entre quem andou de moto),Segurança
+PENSE_2019__9.4,Conduziu veículo motorizado,Segurança
+PENSE_2019__9.5,Andou com condutor que bebeu,Segurança
+PENSE_2019__9.6,Andou com condutor usando celular,Segurança
+PENSE_2019__9.7,Faltou por insegurança no trajeto,Segurança
+PENSE_2019__9.8,Faltou por insegurança na escola,Segurança
+PENSE_2019__9.9,Briga com luta física,Segurança
+PENSE_2019__9.10,Briga com arma de fogo,Segurança
+PENSE_2019__9.11,Briga com arma branca,Segurança
+PENSE_2019__9.12,Sofreu acidente ou agressão,Segurança
+PENSE_2019__9.13,Consequências do acidente/agressão,Segurança
+PENSE_2019__9.14,Tipo de lesão mais grave (distribuição),Segurança
+PENSE_2019__9.15,Causa da lesão mais grave (distribuição),Segurança
+PENSE_2019__9.16,"Agredido por mãe, pai ou responsável",Segurança
+PENSE_2019__9.17,Agredido por outra pessoa,Segurança
+PENSE_2019__9.18,Agredido por outra pessoa (por agressor),Segurança
+PENSE_2019__9.19,Sofreu toque/exposição sem consentimento,Segurança
+PENSE_2019__9.20,Toque/exposição sem consentimento (por agressor),Segurança
+PENSE_2019__9.21,Ameaçado ou forçado a ato sexual,Segurança
+PENSE_2019__9.22,Ameaçado/forçado a ato sexual (por agressor),Segurança
+PENSE_2019__9.23,Idade quando ocorreu a violência sexual (distribuição),Segurança
+PENSE_2015_A2__2.11.1,Faltou à escola por insegurança no trajeto,"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.2,Faltou à escola por insegurança na escola,"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.3,Nunca/raramente usou cinto (frente ou trás),"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.4,Nunca/raramente usou cinto (por banco),"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.5,Usou capacete às vezes ou mais (quem andou de moto),"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.6,Conduziu veículo motorizado,"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.7,Andou com condutor que bebeu,"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.8,Agredido por adulto da família (30 dias),"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.9,Briga com arma de fogo,"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.10,Briga com arma branca,"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.11,Sofreu agressão física (12 meses),"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.12,Envolveu-se em briga ou luta física (12 meses),"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.13,Ferido seriamente (12 meses),"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.14,Tipo de ferimento ou lesão mais séria,"Segurança (2015, Amostra 2)"
+PENSE_2015_A2__2.11.15,Forçado a ter relação sexual (na vida),"Segurança (2015, Amostra 2)"

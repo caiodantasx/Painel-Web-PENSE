@@ -1,0 +1,398 @@
+{
+  "pipeline_version": "2.0.0",
+  "executed_at_utc": "2026-10-27T21:48:14+00:00",
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v165-x86_64-with-glibc2.39",
+  "libraries": {
+    "openpyxl": "3.1.5",
+    "xlrd": "2.0.2",
+    "odf": ""
+  },
+  "inputs": [
+    {
+      "source_id": "Amostra_1_Tema_06_Seguranca_da_Escola.xls",
+      "sha256": "e55e058ecf7f464600d63433e61f07ae0a07e3614495fb531adf3d07d4d98410",
+      "size_bytes": 61952,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Amostra_2_Tema_11_Seguranca_2015.xls",
+      "sha256": "cf9540c96eb9c7175ef7cad30879cd397eb14beeac31d515e39e228a258e6ffd",
+      "size_bytes": 135168,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Serie_9ano_2009_2019_Tema_10_Seguranca_e_Violencias.xls",
+      "sha256": "b30bc2feeaef818137754b16054d8f565949e710bf9c1b9d1b328a21bd08553e",
+      "size_bytes": 397312,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_2019_20260615.xls",
+      "sha256": "4035639e2b1a731a88b0485a988627e6395f296d425213eb1e00b16c5d50caa6",
+      "size_bytes": 797696,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip",
+      "sha256": "66a31a59f1904f243b1972cb389e53fb323bc9aa25e9b3d03602b6e79d47c650",
+      "size_bytes": 1220433,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.1.xlsx",
+      "sha256": "5d98a3a87fe6293bd44462f51b565abf778cffc7aaecf444e339288b634e05ae",
+      "size_bytes": 51447,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.10.xlsx",
+      "sha256": "05452c50303001c25e11b642cf48a2138bbca11437d8bf70221031d40180bc8c",
+      "size_bytes": 51246,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.11.xlsx",
+      "sha256": "4c0434cab2488f3a87a4fba9b4d09c7852f938abcac19825375473367292b0b9",
+      "size_bytes": 51167,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.12.xlsx",
+      "sha256": "d56b4e31dc17be024a59b518b163699f59ab899b859a5d927e34749880099a29",
+      "size_bytes": 50657,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.13.xlsx",
+      "sha256": "8ba97f8d7d54335add895a563718b345639e66b1ca2aac199bb49e0e3e053401",
+      "size_bytes": 64428,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.14.xlsx",
+      "sha256": "67284e1ea0014ba48e026a5993d64cbac01574cb16c42825c9d3d3bc2cf420e9",
+      "size_bytes": 70020,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.15.xlsx",
+      "sha256": "968192539cae29d7db03f9e08ac78b9919b57f1ce73e394d0048038e48ed1a18",
+      "size_bytes": 69250,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.16.xlsx",
+      "sha256": "c0a648f56b20834afce8eed309650f369d6e9f057ef3bd68b74891fa3714c038",
+      "size_bytes": 50449,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.17.xlsx",
+      "sha256": "0f0f14bc7ae55bd203d05d39bdf8dbe0b019e544fcdb213134532f6c89c9680b",
+      "size_bytes": 50649,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.18.xlsx",
+      "sha256": "3d53645e84b32801b74bb9a46cbd5471196a1b7a2de245b3c5654ac977f8b346",
+      "size_bytes": 78161,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.19.xlsx",
+      "sha256": "9f0b90e21e5572a9d4444f62caea1ebf829e0a88f5a85837022701380a2da45a",
+      "size_bytes": 50927,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.2.xlsx",
+      "sha256": "36ce1abad2e84691deaca368359075eb684f222e3aaef444168074638843ef14",
+      "size_bytes": 84192,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.20.xlsx",
+      "sha256": "ccdd6c749896edee2f2a9feb9d8d46237392ca0a97c8a3b2b9600f37bb3435c0",
+      "size_bytes": 69526,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.21.xlsx",
+      "sha256": "19ceac2e5a045b9abf329e60545a926b297366a4acf217e025b50c8b68c03751",
+      "size_bytes": 51328,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.22.xlsx",
+      "sha256": "7832a1fd04bb117c47e2e26a769f1055cb33686ee267a4888dfc3c439fbd312f",
+      "size_bytes": 69904,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.23.xlsx",
+      "sha256": "579ca77e14ecc0da7cdb0b4bc3fe9f6b63b519688754b9f7073376a357400565",
+      "size_bytes": 63087,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.3.xlsx",
+      "sha256": "1c4ec9821435941b0da138a56291265e268254666407479780309b61084d2596",
+      "size_bytes": 50955,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.4.xlsx",
+      "sha256": "1b81d2a7603e166447e4b6b016f6aad5f2613498b5147d281850c655003013b5",
+      "size_bytes": 51079,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.5.xlsx",
+      "sha256": "84fcc7814b1f892ed8159b68a8db5010d06135f5fb641981a2b6a7ca3b5082cf",
+      "size_bytes": 50345,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.6.xlsx",
+      "sha256": "722bc9075218bf750edfebb11bdeb7bb134c3123ccc5b8218f4f4188bad0863b",
+      "size_bytes": 50908,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.7.xlsx",
+      "sha256": "dbf3d380eee2802f202160e59b3253dfeed74a604070ffffbb5a6116cc5b4f39",
+      "size_bytes": 51207,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.8.xlsx",
+      "sha256": "c86133c7b9240d1233ec71282e2f7b258d5ff89ef8ed11417b2c15e0f29ffdfd",
+      "size_bytes": 50614,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_09_Seguranca_XLSX_20260525.zip!Tabelas 9.9.xlsx",
+      "sha256": "41e8aec053087c206c09173b06d9afbaf4209a6b0deac6d09859b51d142a268e",
+      "size_bytes": 50928,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_17_Seguranca_da_Escola_2019_20260615.xls",
+      "sha256": "3a667d142e2833a88dda7b0c1bf9e29ad4a8fbdcc7fbf7f9b6014a2da089b03f",
+      "size_bytes": 106496,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip",
+      "sha256": "c6de1f8f07d030aa0a091f8f39eba89e2889bbf522ae3ec9af7616249619dffe",
+      "size_bytes": 160137,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip!Tabelas 17.1.xlsx",
+      "sha256": "ce3dfbef0086075edee27044888ef4ec737e9733d2abef86ec855469b567048a",
+      "size_bytes": 63533,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip!Tabelas 17.2.xlsx",
+      "sha256": "7e6283dfff8858141873c1ee8e592ba430e472f9dd3599d71e1168098bfe2b0d",
+      "size_bytes": 40028,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip!Tabelas 17.3.xlsx",
+      "sha256": "9a4dd4669be09b038741c9e0ff446820b61267de0e5ae4c0b598d91a7fd14af1",
+      "size_bytes": 72056,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_17_Seguranca_da_Escola_XLSX_20260525.zip",
+      "sha256": "c6de1f8f07d030aa0a091f8f39eba89e2889bbf522ae3ec9af7616249619dffe",
+      "size_bytes": 160137,
+      "status": "DUPLICADO",
+      "duplicate_of": "Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip"
+    },
+    {
+      "source_id": "avulsos/Tabelas 17.1.xlsx",
+      "sha256": "ce3dfbef0086075edee27044888ef4ec737e9733d2abef86ec855469b567048a",
+      "size_bytes": 63533,
+      "status": "DUPLICADO",
+      "duplicate_of": "Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip!Tabelas 17.1.xlsx"
+    },
+    {
+      "source_id": "tab08avs.zip",
+      "sha256": "358a0c0c14e03f81e1754f7139b419e9c39551e664f6085537406bad5b4f8b3c",
+      "size_bytes": 153264,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "tab08avs.zip!tab801.xls",
+      "sha256": "4991c8e4683f3b906131a979428cdada7200779be00ebf88d6717b9bf6f73f17",
+      "size_bytes": 34816,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "tab08avs.zip!tab802.xls",
+      "sha256": "44b25f5f6c3158cb210178f43643a4d911f5612c20e1a79735505df52942e1d5",
+      "size_bytes": 81408,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "tab08avs.zip!tab803.xls",
+      "sha256": "0a638f61cb7138a7523ae8f4c6dbcf1651234dacf7c6a980d2c6dab5e44c9cad",
+      "size_bytes": 45056,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "tab08avs.zip!tab804.xls",
+      "sha256": "d614c274ee135f879ca22c4960d881c13b8b166d2c9f8c7dc653b640654066f3",
+      "size_bytes": 45056,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "tab08avs.zip!tab805.xls",
+      "sha256": "59ed8769490a6b687db91ea7cf225cf5e3f2fcd13bcd9385b40ad3d242893647",
+      "size_bytes": 45056,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "tab08avs.zip!tab806.xls",
+      "sha256": "ee03ae23f4042b9cb668a229777946bdc684a9c708f83c945587256f14d82090",
+      "size_bytes": 45056,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "tab08avs.zip!tab807.xls",
+      "sha256": "3ad67c00f1a83e1c46de576dd8738998bcff6743f7dcf6bd6be9a007292ece3e",
+      "size_bytes": 45056,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "tab08avs.zip!tab808.xls",
+      "sha256": "644d25aec8680c9c88d4ff2a3816d8605b6b86c571ea593fe42fbe3ad54cab9f",
+      "size_bytes": 45056,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "tab08avs.zip!tab809.xls",
+      "sha256": "5a5a284bd60e343f97e2a39f684d4ac127a6d30ae62f73ddcf4c386a5d69c689",
+      "size_bytes": 45056,
+      "status": "OK",
+      "duplicate_of": ""
+    }
+  ],
+  "counts": {
+    "files_inventoried": 45,
+    "files_unique": 40,
+    "duplicates": 2,
+    "sheets": 278,
+    "sheets_by_family": {
+      "PENSE_2015_A1": 4,
+      "PENSE_2015_A2": 15,
+      "PENSE_MULTIANO": 12,
+      "PENSE_2019_IC": 78,
+      "PENSE_2024_IC": 78,
+      "PENSE_2024_CV": 78,
+      "PENSE_2009_CAPITAIS": 13
+    },
+    "estimate_records": 33220,
+    "cv_records": 12463,
+    "validation_status": {
+      "VALID": 32140,
+      "NOT_AVAILABLE": 120,
+      "VALID_WITH_WARNINGS": 904,
+      "REVIEW_REQUIRED": 56
+    },
+    "approved_canonical": 31316,
+    "analytical_duplicates": 1728,
+    "issues_by_severity": {
+      "INFO": 7052,
+      "REVIEW": 57,
+      "WARNING": 920
+    },
+    "indicators": 90,
+    "measures": 197,
+    "comparability_pairs": 30,
+    "comparability_status": {
+      "NOT_COMPARABLE": 16,
+      "PENDING_REVIEW": 14
+    },
+    "series_points": 0,
+    "unparsed_items": 0,
+    "microdata_estimates": 35084,
+    "microdata_series_points": 26036,
+    "microdata_comparability": {
+      "COMPARABLE_WITH_CAVEATS": 33,
+      "PENDING_REVIEW": 2,
+      "NOT_COMPARABLE": 1
+    }
+  },
+  "rule_checks": {
+    "OUT001": 22795,
+    "VAL002": 99304,
+    "VAL003/VAL004": 33100,
+    "VAL008": 12428,
+    "VAL009": 12128,
+    "VAL011": 33220,
+    "VAL014": 465,
+    "VAL015": 15066,
+    "VAL019": 74,
+    "VAL020": 1728,
+    "VAL010": 12459,
+    "REF_abas_conferidas": 156,
+    "REF_temas": 2,
+    "REF_titulos_iguais": 156,
+    "QST_perguntas_ligadas": 22864
+  },
+  "dashboard_bundle_sha256": "bdfb3f8ff70b9f5f6926b6aa65dee5d7902f42d101dfda2a555da5d208a3c938",
+  "timings_seconds": {
+    "ingestion": 0.02,
+    "adapters": 5.21,
+    "validation": 0.73,
+    "total": 7.42
+  }
+}

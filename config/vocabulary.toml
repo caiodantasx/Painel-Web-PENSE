@@ -1,0 +1,51 @@
+# Vocabulário controlado usado pela leitura estrutural.
+# Todas as comparações são feitas sobre o texto normalizado (sem acento, minúsculo,
+# pontuação trocada por espaço). A forma "compacta" (sem espaços) também é testada,
+# o que cobre hifenizações como "Percen-tual" e "Limite infe- rior".
+
+[measure_leaf]
+estimate = ["percentual", "total", "estimativa"]
+ci_lower = ["limite inferior"]
+ci_upper = ["limite superior"]
+cv = ["cv", "coeficiente de variacao"]
+
+[measure_containers]
+# Rótulos intermediários que apenas agrupam colunas de medida.
+ci = ["intervalo de confianca de 95", "intervalo de confianca"]
+
+[statement_prefixes]
+# Rótulos de cabeçalho que descrevem o indicador (enunciado), não uma desagregação.
+proportion = ["percentual de"]
+distribution = ["distribuicao percentual"]
+count = ["estimativa total", "numero de"]
+
+[dimensions.sex]
+label = "Sexo"
+containers = ["sexo"]
+[dimensions.sex.values]
+homem = "Homem"
+masculino = "Homem"
+mulher = "Mulher"
+feminino = "Mulher"
+
+[dimensions.admin_dependency]
+label = "Dependência administrativa da escola"
+containers = ["dependencia administrativa", "dependencia administrativa da escola"]
+[dimensions.admin_dependency.values]
+publica = "Pública"
+privada = "Privada"
+
+[dimensions.age_group]
+label = "Grupo de idade"
+containers = ["grupos de idade", "idade"]
+# Grupos etários aparecem como rótulos de linha (stub); reconhecidos por padrão.
+row_pattern = '^(\d{2}) (a|e) (\d{2}) anos$'
+
+[total_labels]
+values = ["total"]
+
+[footnote_prefixes]
+values = ["fonte", "nota", "notas", "1)", "(1)", "(2)", "obs"]
+
+[continuation_markers]
+values = ["continua", "continuacao", "conclusao"]
