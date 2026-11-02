@@ -1,0 +1,45 @@
+/* Base: reset, superfícies do navegador (seleção, rolagem, foco) e acessibilidade. */
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; scrollbar-color: var(--axis) transparent; }
+body {
+  margin: 0; color: var(--ink); font: var(--fs-md)/1.5 var(--font-ui);
+  font-feature-settings: "ss01";
+  background:
+    radial-gradient(900px 480px at 8% -10%, var(--bg-glow-1), transparent 70%),
+    radial-gradient(800px 420px at 100% 0%, var(--bg-glow-2), transparent 70%),
+    var(--bg);
+  background-attachment: fixed;
+  accent-color: var(--brand-violet);
+  caret-color: var(--brand-violet);
+  transition: background-color var(--dur) var(--ease-out), color var(--dur) var(--ease-out);
+}
+/* faixa sob o entalhe (iPhone) com a mesma cor da barra superior */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 25; background: var(--topbar); }
+
+::selection { background: color-mix(in srgb, var(--brand-violet) 38%, transparent); color: var(--ink); }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--axis); border-radius: 999px; border: 2px solid var(--card); }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { text-wrap: pretty; }
+button, select, input { font: inherit; color: inherit; }
+a { color: var(--accent); text-underline-offset: 3px; }
+code { font-family: var(--font-mono); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; left: -999px; top: 8px; z-index: 40; background: var(--card); padding: 8px 12px; border-radius: var(--r-sm); }
+.skip:focus { left: 16px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+@media (forced-colors: active) {
+  .chart .bar, .rbar .fill, .mini .bar { fill: CanvasText; background: CanvasText; }
+  .chart .bar.sel, tr.sel .rbar .fill, .mini .bar.sel { fill: Highlight; background: Highlight; }
+  .tabs button[aria-selected="true"], .btn { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+}

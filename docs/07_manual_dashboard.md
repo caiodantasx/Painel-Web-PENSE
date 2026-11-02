@@ -124,3 +124,27 @@ Navegação por teclado (Tab/Enter em abas, barras, mapa e linhas de tabela), fo
 rótulos em todos os controles, tooltips também por foco, tabela como alternativa a todo
 gráfico, temas claro e escuro, layout de uma coluna a partir de 360 px, respeito a
 `prefers-reduced-motion` e `forced-colors`.
+
+## Organização do código do painel
+
+Sem bundler nem dependências: arquivos simples servidos como estão, na ordem declarada em
+`dashboard/index.html`. `scripts/build_dashboard.py` junta tudo, na mesma ordem, numa página única
+(CSS num `<style>`, JavaScript numa função isolada).
+
+| Pasta / arquivo | Conteúdo |
+|---|---|
+| `assets/css/tokens.css` | cores, tipografia, espaços e movimento; tema escuro (padrão) e claro |
+| `assets/css/base.css`, `layout.css` | reset, seleção e rolagem do navegador; barra superior, grade e carregamento |
+| `assets/css/components.css` | abas, botões, filtros, painéis, chips, tabelas, tooltip, glossário, ficha "Como ler" |
+| `assets/css/charts.css`, `pages.css` | mapa, barras e gráficos SVG; estilos próprios de cada página |
+| `assets/js/config.js` | rótulos de status, textos das regras de validação e glossário dos "?" |
+| `assets/js/format.js`, `reading.js` | números em pt-BR, IC da diferença (`fmt:start`/`fmt:end`, testado em Node), frases "Como ler" |
+| `assets/js/dom.js`, `data.js` | criação de elementos, tooltip, tabelas; estado e acesso ao `pense_bundle.json` |
+| `assets/js/filters.js`, `charts.js`, `map.js` | filtros e faixa de edições; gráficos SVG; mapa do Brasil |
+| `assets/js/pages/*.js` | uma função de desenho por página (Visão geral, Territórios, Série histórica, Qualidade, Sobre) |
+| `assets/js/export.js`, `main.js` | CSV e cópia; navegação, tema, carregamento e início |
+
+Interface: o botão de lua/sol no topo alterna entre tema escuro (padrão) e claro, lembrado no
+navegador; **Limpar recortes** volta idade, sexo e rede de ensino para Total; as abas aceitam as
+setas do teclado; as barras crescem a partir do zero só quando o dado exibido muda (desligado com
+"reduzir movimento" do sistema).

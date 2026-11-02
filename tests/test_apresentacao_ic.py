@@ -6,7 +6,7 @@
 * estados internos, intervalo e rótulo exibido são coerentes no pacote do painel;
 * todo arquivo citado nas decisões e exclusões registradas existe no projeto.
 
-As funções de formatação são executadas de verdade (Node.js), copiadas do próprio app.js entre os
+As funções de formatação são executadas de verdade (Node.js), copiadas do próprio painel (dashboard/assets/js/format.js) entre os
 marcadores ``fmt:start`` e ``fmt:end``. Node é opcional: sem ele, esses testes são pulados.
 """
 from __future__ import annotations
@@ -21,14 +21,14 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-JS = (ROOT / "dashboard" / "assets" / "app.js").read_text(encoding="utf-8")
+JS = "\n".join(p.read_text(encoding="utf-8") for p in sorted((ROOT / "dashboard" / "assets" / "js").rglob("*.js")))
 BUNDLE = ROOT / "dashboard" / "data" / "pense_bundle.json"
 SIG_STATES = {"SIGNIFICATIVA_5PCT_COM_DECISAO", "SIGNIFICATIVA_SEM_DECISAO", "SIGNIFICATIVA_APROXIMADA"}
 
 
 def _fmt_source() -> str:
     m = re.search(r"// fmt:start.*?\n(.*?)// fmt:end", JS, re.S)
-    assert m, "marcadores fmt:start/fmt:end ausentes em app.js"
+    assert m, "marcadores fmt:start/fmt:end ausentes em format.js"
     return m.group(1)
 
 

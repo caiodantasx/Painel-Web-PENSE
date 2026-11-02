@@ -1,17 +1,25 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Painel PeNSE Segurança</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Dashboard de indicadores de segurança da Pesquisa Nacional de Saúde do Escolar (PeNSE/IBGE), alimentado pela pipeline reprodutível do TCC.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#07080d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<!-- estilos: a ordem importa (tokens → base → layout → componentes → gráficos → páginas) -->
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/charts.css">
+<link rel="stylesheet" href="assets/css/pages.css">
 </head>
-<body>
+<body class="is-loading">
 <a class="skip" href="#main">Pular para o conteúdo</a>
 
 <header class="topbar">
@@ -22,29 +30,38 @@
     </div>
     <nav class="tabs" aria-label="Páginas do painel">
       <div role="tablist">
-        <button role="tab" id="tab-overview" data-page="overview" aria-selected="true">Visão geral</button>
-        <button role="tab" id="tab-territory" data-page="territory" aria-selected="false">Territórios</button>
-        <button role="tab" id="tab-history" data-page="history" aria-selected="false">Série histórica</button>
-        <button role="tab" id="tab-quality" data-page="quality" aria-selected="false">Qualidade</button>
-        <button role="tab" id="tab-about" data-page="about" aria-selected="false">Sobre os dados</button>
+        <button role="tab" id="tab-overview" data-page="overview" aria-selected="true" aria-controls="page-overview">Visão geral</button>
+        <button role="tab" id="tab-territory" data-page="territory" aria-selected="false" aria-controls="page-territory" tabindex="-1">Territórios</button>
+        <button role="tab" id="tab-history" data-page="history" aria-selected="false" aria-controls="page-history" tabindex="-1">Série histórica</button>
+        <button role="tab" id="tab-quality" data-page="quality" aria-selected="false" aria-controls="page-quality" tabindex="-1">Qualidade</button>
+        <button role="tab" id="tab-about" data-page="about" aria-selected="false" aria-controls="page-about" tabindex="-1">Sobre os dados</button>
       </div>
     </nav>
     <div class="head-actions">
-      <button type="button" class="btn" id="btn-export">Exportar CSV</button>
+      <button type="button" class="btn" id="btn-export">
+        <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 12.5h10"/></svg>Exportar CSV
+      </button>
       <button type="button" class="btn ghost" id="btn-copy">Copiar</button>
+      <button type="button" class="btn icon ghost" id="btn-theme" aria-label="Usar tema claro" aria-pressed="false">
+        <svg class="ico moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 10.1A5.5 5.5 0 0 1 5.9 2.8a5.5 5.5 0 1 0 7.3 7.3Z"/></svg>
+        <svg class="ico sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.8"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg>
+      </button>
     </div>
   </div>
 </header>
 
 <div class="shell">
-  <section class="slicers" aria-label="Filtros">
-    <div class="slicer"><label for="f-edition">Ano da pesquisa</label><select id="f-edition"></select></div>
-    <div class="slicer wide"><label for="f-indicator">O que é medido</label><select id="f-indicator"></select></div>
-    <div class="slicer wide"><label for="f-category">Tipo</label><select id="f-category"></select></div>
-    <div class="slicer" id="slicer-unit"><label for="f-unit">Mostrar como</label><select id="f-unit"></select></div>
-    <div class="slicer"><label for="f-age">Faixa de idade</label><select id="f-age"></select></div>
-    <div class="slicer"><label for="f-sex">Sexo</label><select id="f-sex"></select></div>
-    <div class="slicer"><label for="f-dep">Rede de ensino</label><select id="f-dep"></select></div>
+  <section class="filterbar" aria-label="Filtros">
+    <div class="slicers">
+      <div class="slicer"><label for="f-edition">Ano da pesquisa</label><select id="f-edition"></select></div>
+      <div class="slicer wide"><label for="f-indicator">O que é medido</label><select id="f-indicator"></select></div>
+      <div class="slicer wide"><label for="f-category">Tipo</label><select id="f-category"></select></div>
+      <div class="slicer" id="slicer-unit"><label for="f-unit">Mostrar como</label><select id="f-unit"></select></div>
+      <div class="slicer"><label for="f-age">Faixa de idade</label><select id="f-age"></select></div>
+      <div class="slicer"><label for="f-sex">Sexo</label><select id="f-sex"></select></div>
+      <div class="slicer"><label for="f-dep">Rede de ensino</label><select id="f-dep"></select></div>
+    </div>
+    <button type="button" class="btn ghost small" id="btn-reset" disabled title="Volta idade, sexo e rede de ensino para Total">Limpar recortes</button>
   </section>
   <details class="glossary">
     <summary>Como ler os números deste painel</summary>
@@ -57,10 +74,15 @@
       <div><dt>Pontos percentuais (p.p.)</dt><dd>Diferença entre dois percentuais: de 10% para 13% são <b>+3 p.p.</b></dd></div>
       <div><dt>Diferença significativa a 5%</dt><dd>O intervalo de confiança de 95% da diferença entre os dois anos não inclui o zero (teste a 5%) <b>e</b> o pesquisador registrou que os anos são comparáveis. Se não houvesse diferença real, uma diferença deste tamanho ou maior apareceria em menos de 5% das amostras possíveis; isso não é a chance de a mudança ser real, e um resultado significativo não é certeza absoluta. Significativa não quer dizer grande nem importante, não explica a causa e não elimina outras limitações. Abaixo do selo aparece o IC 95% da diferença, com casas decimais suficientes para mostrar o sinal dos limites. Sem a decisão aparece “significativa · aguarda decisão”. “Pode ser acaso” não significa que nada mudou.</dd></div>
       <div><dt>Situação do número</dt><dd><b>Confiável</b>: passou em todas as verificações. <b>Usar com cuidado</b>: passou, com uma observação. <b>Em revisão</b>: fora dos gráficos até ser conferido. <b>Sem valor publicado</b>: o IBGE publicou um símbolo.</dd></div>
-      <div><dt>Ano da pesquisa</dt><dd>O painel abre na edição mais recente (2024) e mostra <b>uma edição por vez</b>; troque na faixa “Edição exibida”. 2009 e 2015 (Amostra 1) entrevistaram o 9º ano; 2015 (Amostra 2), 2019 e 2024, alunos de 13 a 17 anos. Públicos diferentes não se comparam diretamente — a evolução no tempo fica na página “Série histórica”.</dd></div>
+      <div><dt>Ano da pesquisa</dt><dd>O painel abre na edição mais recente (2024) e mostra <b>uma edição por vez</b>; troque na faixa “Ano da pesquisa”, acima do mapa. 2009 e 2015 (Amostra 1) entrevistaram o 9º ano; 2015 (Amostra 2), 2019 e 2024, alunos de 13 a 17 anos. Públicos diferentes não se comparam diretamente — a evolução no tempo fica na página “Série histórica”.</dd></div>
     </dl>
   </details>
   <p class="notice" id="notice" role="status" aria-live="polite" hidden></p>
+
+  <div class="boot" id="boot" role="status" aria-live="polite">
+    <span class="boot-spin" aria-hidden="true"></span>
+    <p id="boot-msg">Carregando a base processada…</p>
+  </div>
 
   <main id="main" tabindex="-1">
     <!-- VISÃO GERAL: o mapa abre a página -->
@@ -70,8 +92,8 @@
         <article class="panel map-panel">
           <header class="panel-head">
             <div>
-              <p class="eyebrow" id="map-eyebrow">Mapa do Brasil</p>
               <h1 id="map-title">Segurança na escola e no entorno</h1>
+              <p class="meta" id="map-eyebrow">Mapa do Brasil</p>
               <p class="map-reading" id="map-reading"></p>
             </div>
             <div class="scope-switch" data-switch="map" role="radiogroup" aria-label="Recorte territorial do mapa"></div>
@@ -144,8 +166,8 @@
         <article class="panel span-12" id="micro-overview">
           <header class="panel-head">
             <div>
-              <p class="eyebrow">Série harmonizada · microdados 2015 · 2019 · 2024</p>
               <h2>Como os indicadores mudaram no Brasil</h2>
+              <p class="meta">Série harmonizada · microdados 2015 · 2019 · 2024</p>
               <p class="card-sub" id="micro-overview-sub">Escolares de 13 a 17 anos. Mesma pergunta e mesma regra de cálculo em todos os anos; clique numa linha para ver o detalhe.</p>
             </div>
           </header>
@@ -154,7 +176,7 @@
         </article>
         <article class="panel span-12" id="micro-detail">
           <header class="panel-head">
-            <div><p class="eyebrow" id="micro-eyebrow"></p><h2 id="micro-title"></h2><p class="card-sub" id="micro-question"></p><p class="map-reading" id="micro-reading"></p></div>
+            <div><h2 id="micro-title"></h2><p class="meta" id="micro-eyebrow"></p><p class="card-sub" id="micro-question"></p><p class="map-reading" id="micro-reading"></p></div>
           </header>
           <div class="micro-filters slicers">
             <div class="slicer wide"><label for="f-micro-indicator">Indicador</label><select id="f-micro-indicator"></select></div>
@@ -170,8 +192,8 @@
         <article class="panel span-12" id="official-series">
           <header class="panel-head">
             <div>
-              <p class="eyebrow">Série oficial do IBGE · 9º ano · municípios das capitais</p>
               <h2>2009 a 2019 publicados pelo IBGE, 2024 estendido com os microdados</h2>
+              <p class="meta">Série oficial do IBGE · 9º ano · municípios das capitais</p>
               <p class="card-sub" id="official-sub">Indicadores que o próprio IBGE publicou como comparáveis entre edições. O ponto de 2024 usa a mesma regra que reproduz a tabela oficial de 2019.</p>
             </div>
           </header>
@@ -251,6 +273,22 @@
 </div>
 <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
 <textarea id="copy-buffer" class="sr-only" aria-hidden="true" tabindex="-1"></textarea>
-<script src="assets/app.js"></script>
+<!-- scripts: arquivos simples (sem bundler) que compartilham o escopo global; main.js inicia o painel.
+     scripts/build_dashboard.py junta todos, nesta ordem, num único bloco isolado. -->
+<script src="assets/js/config.js"></script>
+<script src="assets/js/format.js"></script>
+<script src="assets/js/dom.js"></script>
+<script src="assets/js/reading.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/map.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/pages/overview.js"></script>
+<script src="assets/js/pages/territory.js"></script>
+<script src="assets/js/pages/history.js"></script>
+<script src="assets/js/pages/quality.js"></script>
+<script src="assets/js/pages/about.js"></script>
+<script src="assets/js/export.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

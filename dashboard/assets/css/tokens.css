@@ -1,0 +1,86 @@
+/* Tokens de design do painel.
+   Tema: escuro é o padrão (escolha do projeto), mesmo com o sistema em modo claro; o claro só aparece
+   quando o visitante escolhe no botão do topo (data-theme="light", lembrado no navegador).
+   Identidade: preto azulado + azul e roxo (marca). Dados: azul = estimativa, magenta = selecionado
+   (par validado para daltonismo), rampa sequencial índigo no mapa. */
+:root {
+  /* superfícies e texto */
+  --bg: #07080d;
+  --bg-glow-1: rgba(79, 110, 247, 0.14);
+  --bg-glow-2: rgba(139, 92, 246, 0.12);
+  --card: #10121c;
+  --card-2: #161a28;
+  --card-3: #1d2235;
+  --ink: #eef0fa;
+  --ink-2: #b4b9d0;
+  --muted: #959bb8;
+  --line: #232741;
+  --axis: #343a5a;
+  --topbar: rgba(7, 8, 13, 0.82);
+
+  /* marca */
+  --brand-blue: #4f6ef7;
+  --brand-violet: #8b5cf6;
+  --brand-grad: linear-gradient(120deg, #4f6ef7 0%, #8b5cf6 100%);
+  --on-brand: #ffffff;
+
+  /* dados */
+  --accent: #4f86f7;           /* série 1 — estimativa */
+  --accent-soft: rgba(79, 134, 247, 0.14);
+  --select: #e0569e;           /* série 2 — selecionado */
+  --select-soft: rgba(224, 86, 158, 0.14);
+  --reference: #c9cde3;        /* Brasil / agregado de referência */
+  --whisker: #e6e8f5;
+  --nodata: #1a1e2e;
+  --map-stroke: #07080d;
+  --seq-1: #272463; --seq-2: #3f37a8; --seq-3: #5f52d9; --seq-4: #8f80f5; --seq-5: #c8bdff;
+
+  /* estados (forma + texto nos chips, nunca só cor) */
+  --good: #22c55e; --warning: #f5b324; --serious: #f0875a; --critical: #ef4f4f;
+  --good-ink: #5ee08e; --warning-ink: #f7c75a; --serious-ink: #f5a582; --critical-ink: #ff8585;
+  --focus: #8fa6ff;
+
+  /* profundidade */
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 12px 32px -8px rgba(0, 0, 0, 0.45);
+  --shadow-pop: 0 14px 34px -6px rgba(0, 0, 0, 0.5);
+  --shadow-brand: 0 6px 16px -6px rgba(0, 0, 0, 0.55);
+
+  /* tipografia */
+  --font-display: "Unbounded", "Figtree", system-ui, sans-serif;
+  --font-ui: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --fs-xs: 11px; --fs-sm: 12.5px; --fs-md: 14px; --fs-lg: 15.5px;
+
+  /* espaço e forma */
+  --gap: 16px;
+  --r: 14px;
+  --r-sm: 8px;
+  --control-h: 36px;
+
+  /* movimento: saída exponencial, curta; desligado com prefers-reduced-motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 140ms;
+  --dur: 240ms;
+  --dur-slow: 560ms;
+
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #f3f4fb; --bg-glow-1: rgba(79, 110, 247, 0.09); --bg-glow-2: rgba(139, 92, 246, 0.08);
+  --card: #ffffff; --card-2: #f5f6fc; --card-3: #eceefa;
+  --ink: #0d1024; --ink-2: #44496a; --muted: #62678a;
+  --line: #e1e4f2; --axis: #c6cae0; --topbar: rgba(255, 255, 255, 0.85);
+  --brand-blue: #3b5bdb; --brand-violet: #7c3aed;
+  --brand-grad: linear-gradient(120deg, #3b5bdb 0%, #7c3aed 100%);
+  --accent: #2a6fdb; --accent-soft: rgba(42, 111, 219, 0.10);
+  --select: #c8357f; --select-soft: rgba(200, 53, 127, 0.10);
+  --reference: #3a3f5c; --whisker: #1b1f36; --nodata: #e6e8f3; --map-stroke: #ffffff;
+  --seq-1: #e4dfff; --seq-2: #bdb2fa; --seq-3: #9584ee; --seq-4: #6a54d6; --seq-5: #3f2da3;
+  --good-ink: #157a3a; --warning-ink: #8a5a00; --serious-ink: #a8431a; --critical-ink: #b42323;
+  --focus: #3b5bdb;
+  --shadow: 0 1px 2px rgba(13, 16, 36, 0.05), 0 8px 24px -6px rgba(13, 16, 36, 0.08);
+  --shadow-pop: 0 14px 34px -8px rgba(13, 16, 36, 0.18);
+  --shadow-brand: 0 6px 16px -4px rgba(59, 91, 219, 0.35);
+  color-scheme: light;
+}

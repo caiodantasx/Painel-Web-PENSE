@@ -24,7 +24,8 @@ from pense.microdata.series import (CHANGE_NS, CHANGE_PENDING, CHANGE_SIGNIFICAN
 
 ROOT = Path(__file__).resolve().parents[1]
 CUR = ROOT / "data" / "curated"
-JS = (ROOT / "dashboard" / "assets" / "app.js").read_text(encoding="utf-8")
+JS_FILES = sorted((ROOT / "dashboard" / "assets" / "js").rglob("*.js"))
+JS = "\n".join(p.read_text(encoding="utf-8") for p in JS_FILES)
 HTML = (ROOT / "dashboard" / "index.html").read_text(encoding="utf-8")
 NEW = "Diferença significativa a 5%"
 
@@ -92,7 +93,7 @@ def test_dashboard_labels_map_every_state():
     assert f'status === "{CHANGE_SIGNIFICANT}"' in JS, "seta colorida só para o selo novo"
 
 
-@pytest.mark.parametrize("path", ["dashboard/assets/app.js", "dashboard/index.html", "src/pense/microdata/series.py",
+@pytest.mark.parametrize("path", [*(p.relative_to(ROOT).as_posix() for p in JS_FILES), "dashboard/index.html", "src/pense/microdata/series.py",
                                   "src/pense/microdata/integrate.py", "scripts/report_microdata.py",
                                   "docs/06_guia_serie_historica.md", "docs/07_manual_dashboard.md",
                                   "docs/10_pendencias.md", "README.md"])
