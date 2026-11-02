@@ -1,5 +1,7 @@
 # Pipeline e painel PeNSE — Segurança na escola
 
+[![Testes](https://github.com/caiodantasx/Painel-Web-PENSE/actions/workflows/testes.yml/badge.svg)](https://github.com/caiodantasx/Painel-Web-PENSE/actions/workflows/testes.yml)
+
 Sistema reprodutível que transforma tabelas oficiais da **Pesquisa Nacional de Saúde do
 Escolar (PeNSE/IBGE)** — publicadas em XLS, XLSX e ZIP, com estruturas diferentes entre
 edições — em uma base analítica padronizada, rastreável e validada, consumida por um

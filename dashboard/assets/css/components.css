@@ -145,6 +145,7 @@ table.data tr.is-ref td { background: var(--card-2); }
 .glossary dl { margin: 0; padding: 12px 14px 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px 20px; }
 .glossary dt, .level-list dt { font-weight: 700; color: var(--ink); margin-bottom: 2px; }
 .glossary dd, .level-list dd { margin: 0; color: var(--ink-2); font-size: 13px; line-height: 1.5; }
+.glossary dd ul { margin: 6px 0 0; padding-left: 16px; display: flex; flex-direction: column; gap: 4px; }
 
 /* “Como ler”: frase com o valor e ficha do número */
 .linkish { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }

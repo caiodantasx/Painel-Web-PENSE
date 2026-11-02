@@ -37,7 +37,7 @@ def _node(cases: list[list]) -> list[str]:
     if not node:
         pytest.skip("Node.js indisponível (opcional)")
     prog = _fmt_source() + f"\nconsole.log(JSON.stringify({json.dumps(cases)}.map(([lo, hi, s]) => ciDiffText(lo, hi, s))));"
-    out = subprocess.run([node, "-e", prog], capture_output=True, text=True, check=True)
+    out = subprocess.run([node, "-e", prog], capture_output=True, text=True, encoding="utf-8", check=True)
     return json.loads(out.stdout)
 
 

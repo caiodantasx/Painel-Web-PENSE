@@ -26,6 +26,8 @@ function renderEditionSwitch() {
     b.addEventListener("click", () => { state.edition = e; state.indicator = ""; state.measure = -1; state.selected = null; update(); });
     group.append(b);
   }
+  // no celular a faixa rola para o lado: mantém a edição escolhida à vista
+  requestAnimationFrame(() => { const on = group.querySelector(".on"); if (on) group.scrollLeft = on.offsetLeft - group.offsetLeft - 8; });
   box.append(group, el("p", { class: "es-note" }, "Uma edição por vez (públicos e territórios diferentes). Evolução no tempo: ",
     el("button", { type: "button", class: "linkish", onclick: () => setPage("history") }, "Série histórica"), "."));
 }
