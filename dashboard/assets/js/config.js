@@ -68,6 +68,7 @@ const RULE_TEXT = {
   ADP000: "aba sem leitor reconhecido", ADP900: "falha do leitor da tabela",
   REF001: "tabela do guia oficial que não veio nos arquivos", REF002: "título diferente do guia oficial do IBGE",
   REF003: "aba que não está no guia oficial",
+  REV001: "conferido por pessoa na planilha original: decisão registrada e aplicada (ver docs/14, seção 8)",
 };
 const ISSUE_CLASS = {
   ERRO_CONFIRMADO: "erro confirmado", POSSIVEL_ANOMALIA: "pode ser problema", POSSIVEL_VALOR_EXTREMO_LEGITIMO: "valor extremo, provavelmente real",
