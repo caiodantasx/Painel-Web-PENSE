@@ -32,7 +32,7 @@ def gestor_section(config_dir: Path, bundle: dict[str, Any]) -> dict[str, Any] |
         micro = it.get("micro", "")
         items[key] = {"short": it["short"], "phrase": it["phrase"], "m": m_index[it["measure"]],
                       "micro": micro if micro in micro_keys else "", "table": it.get("table", ""),
-                      "school": bool(it.get("school"))}
+                      "school": bool(it.get("school")), "complement": bool(it.get("complement"))}
     if missing:
         log.warning("painel_gestor.toml: medidas ausentes do pacote (itens fora da tela inicial)",
                     extra={"detail": "; ".join(missing)})
@@ -50,5 +50,13 @@ def gestor_section(config_dir: Path, bundle: dict[str, Any]) -> dict[str, Any] |
             blocks.pop(k)
     if blocks.get("any_violence") not in micro_keys:
         blocks.pop("any_violence", None)
+    estimates = [{"title": e["title"], "items": [k for k in e["items"] if k in items]} for e in conf.get("estimates", [])]
+    motives = {}
+    for side, mv in conf.get("motives", {}).items():
+        ms = [i for i, m in enumerate(bundle["measures"]) if m["indicator_id"] == mv["indicator"]]
+        if ms:
+            motives[side] = {"measures": ms, "base": mv["base"] if mv.get("base") in items else ""}
+    pop = conf.get("population_micro", "")
     return {"ibge_url": conf["ibge_url"], "edition": conf["edition"], "groups": conf["groups"],
+            "population_micro": pop if pop in micro_keys else "", "estimates": estimates, "motives": motives,
             "topics": [t for t in conf["topics"] if t["main"] in items], "items": items, "blocks": blocks}

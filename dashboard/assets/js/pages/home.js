@@ -36,7 +36,9 @@ function hRow(itemKey, place, group) {
   if (!it) return null;
   const [s, d] = G.groups[group || hstate.group] || ["Total", "Total"];
   const r = rowsOf(it.m).find((x) => x.t.code === (place || hstate.place) && isAgeTotal(x.a) && x.s === s && x.d === d);
-  return r && approved(r) ? r : null;
+  if (!r || !approved(r)) return null;
+  // "pelo menos uma vez" = 100% menos "nenhuma vez" (mesma tabela; a margem de erro inverte os limites)
+  return it.complement ? { ...r, e: 100 - r.e, lo: r.hi === null ? null : 100 - r.hi, hi: r.lo === null ? null : 100 - r.lo } : r;
 }
 // Ponto calculado pelos microdados (série e número estimado de estudantes).
 function hMicro(key, place, year) {
@@ -53,8 +55,9 @@ function hMicro(key, place, year) {
 // Cerca de quantos estudantes: percentual publicado × total estimado de escolares (soma dos pesos).
 function hPeople(itemKey, r) {
   const it = G.items[itemKey];
-  if (!r || !it || !it.micro) return null;
-  const p = hMicro(it.micro, r.t.code, 2024)[0];
+  const key = it && (it.micro || G.population_micro);
+  if (!r || !key) return null;
+  const p = hMicro(key, r.t.code, 2024)[0];
   if (!p || !p.w) return null;
   return { n: (r.e / 100) * p.w, lo: (r.lo / 100) * p.w, hi: (r.hi / 100) * p.w };
 }
@@ -86,7 +89,8 @@ function hDownload(itemKey) {
   const lines = [["Indicador", "Lugar", "Tipo de lugar", "Sexo", "Rede de ensino", "Valor (%)", "Mínimo (%)", "Máximo (%)",
     "Tabela IBGE", "Ano"].join(";")];
   for (const r of rowsOf(it.m).filter((x) => isAgeTotal(x.a) && approved(x))) {
-    lines.push([it.short, r.t.name, H_TYPES[r.t.type] || r.t.type, r.s, r.d, num(r.e), num(r.lo), num(r.hi), it.table, m.year].map(esc).join(";"));
+    const v = it.complement ? { e: 100 - r.e, lo: 100 - r.hi, hi: 100 - r.lo } : r;   // "pelo menos uma vez"
+    lines.push([it.short, r.t.name, H_TYPES[r.t.type] || r.t.type, r.s, r.d, num(v.e), num(v.lo), num(v.hi), it.table, m.year].map(esc).join(";"));
   }
   const blob = new Blob(["﻿" + lines.join("\n")], { type: "text/csv;charset=utf-8" });
   const a = el("a", { href: URL.createObjectURL(blob), download: `pense_${itemKey}.csv` });

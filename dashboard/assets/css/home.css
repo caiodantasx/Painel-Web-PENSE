@@ -2,13 +2,15 @@
    no estilo de um painel de BI. Celular primeiro; a grade abre em colunas a partir de 900 px. */
 
 /* filtros detalhados, glossário e exportação ficam só nas páginas de detalhe */
-body[data-page="home"] .detail-only { display: none !important; }
+body[data-page="home"] .detail-only, body[data-page="estimates"] .detail-only { display: none !important; }
 .tabs-sep { align-self: center; font-size: var(--fs-xs); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; padding: 0 2px 0 8px; white-space: nowrap; }
 
 .home { display: flex; flex-direction: column; gap: var(--gap); }
 
 /* ---- três escolhas */
-.h-choices { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 14px 16px; position: sticky; top: 64px; z-index: 5; }
+.h-choices { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 14px 16px; }
+.h-top { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gap); }
+.h-left, .h-right { display: flex; flex-direction: column; gap: var(--gap); min-width: 0; }
 .h-choice { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .h-choice label, .h-choice-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
 .h-choice select { appearance: none; -webkit-appearance: none; width: 100%; height: 40px; border: 1px solid var(--axis); border-radius: var(--r-sm);
@@ -112,16 +114,36 @@ button.link { background: none; border: 0; padding: 0; color: var(--accent); fon
 
 /* ---- telas largas: tudo o que importa na primeira dobra */
 @media (min-width: 900px) {
-  .h-choices { grid-template-columns: minmax(200px, 1fr) minmax(0, 2.3fr) minmax(0, 2fr); align-items: end; }
+  .h-top { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start; }
+  .e-choices { grid-template-columns: minmax(200px, 1fr) minmax(0, 2fr) auto; align-items: end; }
   .seg-group .seg { font-size: var(--fs-sm); padding: 5px 10px; }
   .h-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
-  .h-answer { grid-column: span 5; }
-  .h-kpis { grid-column: span 7; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .h-map-panel { grid-column: span 5; }
-  .h-types { grid-column: span 7; }
+  .h-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .h-types { grid-column: span 12; }
   .h-trend { grid-column: span 6; }
   .h-absence { grid-column: span 6; }
 }
-@media (max-width: 899px) {
-  .h-choices { position: static; }
+
+/* ---- aba Estimativas */
+.estimates { display: flex; flex-direction: column; gap: var(--gap); }
+.e-head h1 { font-family: var(--font-display); font-size: clamp(22px, 3vw, 30px); margin-bottom: 4px; }
+.e-head .card-sub { max-width: 75ch; }
+.e-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gap); }
+.e-lead { font-size: clamp(16px, 1.8vw, 20px); line-height: 1.45; }
+.e-any { border-color: color-mix(in srgb, var(--select) 45%, var(--line)); }
+.e-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; }
+.e-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.e-row:first-child { border-top: 0; }
+.e-what { display: flex; flex-direction: column; gap: 2px; }
+.e-what span { font-size: var(--fs-sm); color: var(--ink-2); }
+.e-people b { font-family: var(--font-display); font-size: 24px; color: var(--ink); }
+.e-people span { color: var(--ink-2); }
+.e-pct b { font-size: var(--fs-lg); }
+.e-range { font-size: var(--fs-sm); color: var(--muted); }
+.e-row .h-foot { padding-top: 0; }
+@media (min-width: 900px) {
+  .e-row { grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.2fr) minmax(0, 1.2fr); align-items: start; }
+  .e-row .h-foot { grid-column: 1 / -1; }
+  .e-body { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .e-body > .e-any { grid-column: 1 / -1; }
 }

@@ -1,7 +1,7 @@
 /* Navegação entre páginas e inicialização (carrega o pacote de dados e a malha). */
 "use strict";
 
-const PAGES = ["home", "overview", "territory", "history", "quality", "about"];
+const PAGES = ["home", "estimates", "overview", "territory", "history", "quality", "about"];
 
 // ------------------------------------------------------------------ navegação
 function setPage(page) {
@@ -19,6 +19,7 @@ function setPage(page) {
 function renderPage() {
   hideTip();
   if (state.page === "home") renderHome();
+  else if (state.page === "estimates") renderEstimates();
   else if (state.page === "overview") {
     renderEditionSwitch(); renderMap(); renderHeroSide(); renderRankTable(); renderCategories(); renderBreakdown(); renderDefinition(); renderCoverage();
   } else if (state.page === "territory") { renderRanking(); renderTerritoryTable(); }

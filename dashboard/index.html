@@ -32,6 +32,7 @@
     <nav class="tabs" aria-label="Páginas do painel">
       <div role="tablist">
         <button role="tab" id="tab-home" data-page="home" aria-selected="true" aria-controls="page-home">Painel</button>
+        <button role="tab" id="tab-estimates" data-page="estimates" aria-selected="false" aria-controls="page-estimates" tabindex="-1">Estimativas</button>
         <span class="tabs-sep" aria-hidden="true">Detalhes:</span>
         <button role="tab" id="tab-overview" data-page="overview" aria-selected="false" aria-controls="page-overview" tabindex="-1">Mapa e tabelas</button>
         <button role="tab" id="tab-territory" data-page="territory" aria-selected="false" aria-controls="page-territory" tabindex="-1">Territórios</button>
@@ -96,19 +97,25 @@
   <main id="main" tabindex="-1">
     <!-- PAINEL: responde em menos de 1 minuto (três escolhas e os números principais na mesma tela) -->
     <section class="page home" id="page-home" role="tabpanel" aria-labelledby="tab-home">
-      <div class="h-choices panel" role="group" aria-label="Escolhas do painel">
-        <div class="h-choice"><label for="h-place">Onde?</label><select id="h-place"></select></div>
-        <div class="h-choice"><span class="h-choice-label" id="h-topic-label">Sobre o quê?</span><div class="seg-group" id="h-topic" role="radiogroup" aria-labelledby="h-topic-label"></div></div>
-        <div class="h-choice"><span class="h-choice-label" id="h-group-label">Quais alunos?</span><div class="seg-group" id="h-group" role="radiogroup" aria-labelledby="h-group-label"></div></div>
+      <div class="h-top">
+        <div class="h-left">
+          <div class="h-choices panel" role="group" aria-label="Escolhas do painel">
+            <div class="h-choice"><label for="h-place">Onde?</label><select id="h-place"></select></div>
+            <div class="h-choice"><span class="h-choice-label" id="h-topic-label">Sobre o quê?</span><div class="seg-group" id="h-topic" role="radiogroup" aria-labelledby="h-topic-label"></div></div>
+            <div class="h-choice"><span class="h-choice-label" id="h-group-label">Quais alunos?</span><div class="seg-group" id="h-group" role="radiogroup" aria-labelledby="h-group-label"></div></div>
+          </div>
+          <article class="panel h-map-panel">
+            <header class="panel-head"><div><h2>Mapa</h2><p class="card-sub" id="h-map-sub"></p></div></header>
+            <div class="map-wrap h-map" id="h-map"></div>
+            <div class="legend" id="h-map-legend"></div>
+          </article>
+        </div>
+        <div class="h-right">
+          <article class="panel h-answer" id="h-answer" aria-live="polite"></article>
+          <section class="h-kpis" id="h-bully-body" aria-label="Bullying e violência em números"></section>
+        </div>
       </div>
       <div class="h-grid">
-        <article class="panel h-answer" id="h-answer" aria-live="polite"></article>
-        <section class="h-kpis" id="h-bully-body" aria-label="Bullying e violência em números"></section>
-        <article class="panel h-map-panel">
-          <header class="panel-head"><div><h2>Mapa</h2><p class="card-sub" id="h-map-sub"></p></div></header>
-          <div class="map-wrap h-map" id="h-map"></div>
-          <div class="legend" id="h-map-legend"></div>
-        </article>
         <article class="panel h-types">
           <header class="panel-head"><div><h2 id="h-types-title">Tipos de violência</h2><p class="card-sub">No lugar escolhido, com o Brasil como referência.</p></div></header>
           <div id="h-types-body"></div>
@@ -122,7 +129,19 @@
           <div id="h-absence-body"></div>
         </article>
       </div>
-      <p class="h-more">Quer mais? Veja os <button type="button" class="link" data-goto="overview">mapas e tabelas completos</button>, a <button type="button" class="link" data-goto="history">série histórica</button> ou <button type="button" class="link" data-goto="about">de onde vêm os dados</button>.</p>
+      <p class="h-more">Quer mais? Veja as <button type="button" class="link" data-goto="estimates">estimativas de quantos estudantes</button>, os <button type="button" class="link" data-goto="overview">mapas e tabelas completos</button>, a <button type="button" class="link" data-goto="history">série histórica</button> ou <button type="button" class="link" data-goto="about">de onde vêm os dados</button>.</p>
+    </section>
+
+    <!-- ESTIMATIVAS: quantos estudantes, em cada situação -->
+    <section class="page estimates" id="page-estimates" role="tabpanel" aria-labelledby="tab-estimates" hidden>
+      <div class="h-choices panel e-choices" role="group" aria-label="Escolhas das estimativas">
+        <div class="h-choice"><label for="e-place">Onde?</label><select id="e-place"></select></div>
+        <div class="h-choice"><span class="h-choice-label" id="e-group-label">Quais alunos?</span><div class="seg-group" id="e-group" role="radiogroup" aria-labelledby="e-group-label"></div></div>
+        <button type="button" class="btn ghost small" id="e-download">Baixar estimativas (CSV)</button>
+      </div>
+      <header class="e-head"><h1>Quantos estudantes?</h1><p class="card-sub" id="e-title"></p>
+        <p class="card-sub">Estimativas da PeNSE 2024 (IBGE): a parte dos alunos multiplicada pelo total estimado de escolares do lugar. Como a pesquisa ouve uma amostra, cada número vem com a faixa onde o valor real provavelmente está.</p></header>
+      <div class="e-body" id="e-body"></div>
     </section>
 
     <!-- VISÃO GERAL: o mapa abre a página -->
@@ -324,6 +343,7 @@
 <script src="assets/js/map.js"></script>
 <script src="assets/js/filters.js"></script>
 <script src="assets/js/pages/home.js"></script>
+<script src="assets/js/pages/estimates.js"></script>
 <script src="assets/js/pages/overview.js"></script>
 <script src="assets/js/pages/territory.js"></script>
 <script src="assets/js/pages/history.js"></script>

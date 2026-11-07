@@ -211,6 +211,10 @@ def test_dashboard_shows_badge_only_with_decision(tmp_path):
             page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
             page.route("**/data/pense_bundle.json", lambda r: r.fulfill(status=200, content_type="application/json", body=body))
             page.goto(f"http://127.0.0.1:{httpd.server_address[1]}", wait_until="networkidle")
+            try:   # só clica depois de o painel carregar
+                page.wait_for_selector("body:not(.is-loading)", timeout=60000)
+            except Exception:
+                raise AssertionError(f"painel não carregou: {page.inner_text('#boot-msg')} · erros: {errors}")
             page.click("#tab-history")
             try:
                 page.wait_for_selector("#table-micro-overview tbody tr", timeout=8000)

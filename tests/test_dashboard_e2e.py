@@ -275,3 +275,22 @@ def test_home_has_no_horizontal_scroll_on_phone_and_desktop(server, browser):
         sw, iw = page.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
         assert sw <= iw, f"rolagem horizontal a {w}px: {sw} > {iw}"
         assert errors == []
+
+
+def test_estimates_tab_shows_how_many_students(server, browser):
+    """Aba "Estimativas": quantos estudantes sofreram/praticaram bullying e foram agredidos, com faixa."""
+    if "gestor" not in _bundle():
+        pytest.skip("configuração da tela inicial ausente do pacote")
+    page, errors = _open(browser, server, start="home")
+    page.click("#tab-estimates")
+    page.wait_for_selector("#e-body .e-row")
+    text = page.inner_text("#e-body")
+    for s in ("Sofreram bullying", "Praticaram bullying", "agredidos", "estudantes", "entre"):
+        assert s in text, s
+    assert "soma passa de 100" in text, "motivos (2.6 e 2.13) lidos entre quem sofreu/praticou, não entre todos"
+    page.select_option("#e-place", "24")
+    page.wait_for_timeout(150)
+    assert "Rio Grande do Norte" in page.inner_text("#e-title")
+    sw, iw = page.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
+    assert sw <= iw
+    assert errors == []

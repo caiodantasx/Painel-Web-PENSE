@@ -181,6 +181,7 @@ def test_dashboard_shows_sign_preserving_interval(tmp_path):
             page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
             page.route("**/data/pense_bundle.json", lambda r: r.fulfill(status=200, content_type="application/json", body=body))
             page.goto(f"http://127.0.0.1:{httpd.server_address[1]}", wait_until="networkidle")
+            page.wait_for_selector("body:not(.is-loading)", timeout=60000)   # só clica depois de o painel carregar
             page.click("#tab-history")
             page.wait_for_selector("#table-micro-overview tbody tr")
             page.select_option("#f-micro-indicator", "TRAJETO_INSEGURO")
