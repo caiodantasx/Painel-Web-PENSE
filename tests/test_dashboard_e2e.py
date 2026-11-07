@@ -39,19 +39,21 @@ def browser():
         b.close()
 
 
-def _open(browser, url, **ctx):
+def _open(browser, url, start="overview", **ctx):
+    """Abre o painel. Desde nov/2026 a página inicial é o "Painel" simples (#home); os testes das
+    páginas de detalhe abrem direto em #overview, que continua com os mesmos filtros e gráficos."""
     page = browser.new_page(**ctx)
     errors = []
     page.on("pageerror", lambda e: errors.append(str(e)))
     page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
-    page.goto(url, wait_until="networkidle")
-    page.wait_for_selector("#chart-categories svg")
+    page.goto(f"{url}#{start}", wait_until="networkidle")
+    page.wait_for_selector("#h-answer .h-big" if start == "home" else "#chart-categories svg")
     return page, errors
 
 
 def test_all_pages_render_without_script_errors(server, browser):
     page, errors = _open(browser, server)
-    for tab in ["territory", "history", "quality", "about", "overview"]:
+    for tab in ["territory", "history", "quality", "about", "overview", "home"]:
         page.click(f"#tab-{tab}")
         page.wait_for_timeout(150)
         assert page.is_visible(f"#page-{tab}")
@@ -87,7 +89,7 @@ def test_keyboard_navigation_and_labels(server, browser):
 
 def test_mobile_360_has_no_horizontal_scroll(server, browser):
     page, errors = _open(browser, server, viewport={"width": 360, "height": 780})
-    for tab in ["overview", "territory", "quality"]:
+    for tab in ["home", "overview", "territory", "quality"]:
         page.click(f"#tab-{tab}")
         page.wait_for_timeout(150)
         sw, iw = page.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
@@ -216,3 +218,60 @@ def test_edition_switch_lists_single_year_editions_only(server, browser):
     page.locator("#edition-switch .es-btn").nth(1).click()
     page.wait_for_timeout(200)
     assert page.locator("#edition-switch .es-btn.on").count() == 1 and errors == []
+
+
+# ---------------------------------------------------------------- página inicial "Painel" (nov/2026)
+def _bundle():
+    return json.loads((ROOT / "dashboard" / "data" / "pense_bundle.json").read_text(encoding="utf-8"))
+
+
+def test_home_is_default_and_answers_in_plain_language(server, browser):
+    """Pedido dos gestores: abrir já respondendo, em "X em cada 100", sem procurar no site."""
+    bundle = _bundle()
+    if "gestor" not in bundle:
+        pytest.skip("configuração da tela inicial ausente do pacote")
+    page = browser.new_page(viewport={"width": 1440, "height": 900})
+    errors = []
+    page.on("pageerror", lambda e: errors.append(str(e)))
+    page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
+    page.goto(server, wait_until="networkidle")
+    page.wait_for_selector("#h-answer .h-big")
+    assert page.is_visible("#page-home") and not page.is_visible("#f-indicator"), "abre no Painel, sem os 7 filtros"
+    text = page.inner_text("#h-answer")
+    assert "em cada 100" in text and "entre" in text
+    # o número grande é o percentual publicado (Brasil, todos os alunos) arredondado
+    it = bundle["gestor"]["items"][bundle["gestor"]["topics"][0]["main"]]
+    o = bundle["obs"]
+    br = bundle["territories"].index(next(t for t in bundle["territories"] if t["code"] == "BR"))
+    vals = [o["e"][i] for i in range(len(o["m"])) if o["m"][i] == it["m"] and o["t"][i] == br
+            and bundle["dims"]["sex"][o["s"][i]] == "Total" and bundle["dims"]["admin_dependency"][o["d"][i]] == "Total"]
+    assert int(page.inner_text("#h-answer .h-big b")) in {round(v) for v in vals if v is not None}
+    for sel in ("#h-bully-body .h-card", "#h-types-body li", "#h-map svg path", "#h-trend-body .h-verdict"):
+        assert page.locator(sel).count() > 0, sel
+    assert page.locator("#h-answer a[href*='ibge.gov.br']").count() == 1, "botão Ver no IBGE"
+    assert errors == []
+
+
+def test_home_map_click_changes_place_and_choices_work(server, browser):
+    if "gestor" not in _bundle():
+        pytest.skip("configuração da tela inicial ausente do pacote")
+    page, errors = _open(browser, server, start="home")
+    page.click("#h-map svg path[tabindex='0']")
+    page.wait_for_timeout(120)
+    assert page.eval_on_selector("#h-place", "s => s.value") != "BR"
+    assert "Brasil" in page.inner_text("#h-answer"), "fora do Brasil, a frase compara com o Brasil"
+    page.click("#h-topic .seg:nth-child(2)")
+    page.click("#h-group .seg:nth-child(2)")
+    page.wait_for_timeout(120)
+    assert "meninas" in page.inner_text("#h-answer").lower()
+    assert errors == []
+
+
+def test_home_has_no_horizontal_scroll_on_phone_and_desktop(server, browser):
+    if "gestor" not in _bundle():
+        pytest.skip("configuração da tela inicial ausente do pacote")
+    for w, h in ((375, 812), (1440, 900)):
+        page, errors = _open(browser, server, start="home", viewport={"width": w, "height": h})
+        sw, iw = page.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
+        assert sw <= iw, f"rolagem horizontal a {w}px: {sw} > {iw}"
+        assert errors == []

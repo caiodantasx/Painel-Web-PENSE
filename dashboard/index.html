@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="assets/css/components.css">
 <link rel="stylesheet" href="assets/css/charts.css">
 <link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body class="is-loading">
 <a class="skip" href="#main">Pular para o conteúdo</a>
@@ -30,7 +31,9 @@
     </div>
     <nav class="tabs" aria-label="Páginas do painel">
       <div role="tablist">
-        <button role="tab" id="tab-overview" data-page="overview" aria-selected="true" aria-controls="page-overview">Visão geral</button>
+        <button role="tab" id="tab-home" data-page="home" aria-selected="true" aria-controls="page-home">Painel</button>
+        <span class="tabs-sep" aria-hidden="true">Detalhes:</span>
+        <button role="tab" id="tab-overview" data-page="overview" aria-selected="false" aria-controls="page-overview" tabindex="-1">Mapa e tabelas</button>
         <button role="tab" id="tab-territory" data-page="territory" aria-selected="false" aria-controls="page-territory" tabindex="-1">Territórios</button>
         <button role="tab" id="tab-history" data-page="history" aria-selected="false" aria-controls="page-history" tabindex="-1">Série histórica</button>
         <button role="tab" id="tab-quality" data-page="quality" aria-selected="false" aria-controls="page-quality" tabindex="-1">Qualidade</button>
@@ -38,10 +41,10 @@
       </div>
     </nav>
     <div class="head-actions">
-      <button type="button" class="btn" id="btn-export">
+      <button type="button" class="btn detail-only" id="btn-export">
         <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 12.5h10"/></svg>Exportar CSV
       </button>
-      <button type="button" class="btn ghost" id="btn-copy">Copiar</button>
+      <button type="button" class="btn ghost detail-only" id="btn-copy">Copiar</button>
       <button type="button" class="btn icon ghost" id="btn-theme" aria-label="Usar tema claro" aria-pressed="false">
         <svg class="ico moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 10.1A5.5 5.5 0 0 1 5.9 2.8a5.5 5.5 0 1 0 7.3 7.3Z"/></svg>
         <svg class="ico sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.8"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg>
@@ -51,7 +54,7 @@
 </header>
 
 <div class="shell">
-  <section class="filterbar" aria-label="Filtros">
+  <section class="filterbar detail-only" aria-label="Filtros">
     <div class="slicers">
       <div class="slicer"><label for="f-edition">Ano da pesquisa</label><select id="f-edition"></select></div>
       <div class="slicer wide"><label for="f-indicator">O que é medido</label><select id="f-indicator"></select></div>
@@ -63,7 +66,7 @@
     </div>
     <button type="button" class="btn ghost small" id="btn-reset" disabled title="Volta idade, sexo e rede de ensino para Total">Limpar recortes</button>
   </section>
-  <details class="glossary">
+  <details class="glossary detail-only">
     <summary>Como ler os números deste painel</summary>
     <dl>
       <div><dt>“X%” de quê?</dt><dd>Todo percentual é uma <b>parcela de alunos</b>: “28% dos escolares de 13 a 17 anos…”. A frase <b>Como ler</b> ao lado de cada número diz quem são os 100% (a base) e quem respondeu. Quando a pergunta foi feita ao <b>diretor da escola</b> (Tema 17), o número é a parcela de alunos que estudam em escolas com aquela resposta. Nunca é número de ocorrências, de escolas ou de boletins de ocorrência: são respostas a um questionário.</dd></div>
@@ -91,8 +94,39 @@
   </div>
 
   <main id="main" tabindex="-1">
+    <!-- PAINEL: responde em menos de 1 minuto (três escolhas e os números principais na mesma tela) -->
+    <section class="page home" id="page-home" role="tabpanel" aria-labelledby="tab-home">
+      <div class="h-choices panel" role="group" aria-label="Escolhas do painel">
+        <div class="h-choice"><label for="h-place">Onde?</label><select id="h-place"></select></div>
+        <div class="h-choice"><span class="h-choice-label" id="h-topic-label">Sobre o quê?</span><div class="seg-group" id="h-topic" role="radiogroup" aria-labelledby="h-topic-label"></div></div>
+        <div class="h-choice"><span class="h-choice-label" id="h-group-label">Quais alunos?</span><div class="seg-group" id="h-group" role="radiogroup" aria-labelledby="h-group-label"></div></div>
+      </div>
+      <div class="h-grid">
+        <article class="panel h-answer" id="h-answer" aria-live="polite"></article>
+        <section class="h-kpis" id="h-bully-body" aria-label="Bullying e violência em números"></section>
+        <article class="panel h-map-panel">
+          <header class="panel-head"><div><h2>Mapa</h2><p class="card-sub" id="h-map-sub"></p></div></header>
+          <div class="map-wrap h-map" id="h-map"></div>
+          <div class="legend" id="h-map-legend"></div>
+        </article>
+        <article class="panel h-types">
+          <header class="panel-head"><div><h2 id="h-types-title">Tipos de violência</h2><p class="card-sub">No lugar escolhido, com o Brasil como referência.</p></div></header>
+          <div id="h-types-body"></div>
+        </article>
+        <article class="panel h-trend">
+          <header class="panel-head"><div><h2 id="h-trend-title">Mudou com o tempo?</h2><p class="card-sub">2015 · 2019 · 2024, com a margem de erro.</p></div></header>
+          <div id="h-trend-body"></div>
+        </article>
+        <article class="panel h-absence" id="h-absence">
+          <header class="panel-head"><div><h2>Quem sofre bullying falta mais à escola?</h2><p class="card-sub">Faltas por não se sentir seguro na escola, no último mês.</p></div></header>
+          <div id="h-absence-body"></div>
+        </article>
+      </div>
+      <p class="h-more">Quer mais? Veja os <button type="button" class="link" data-goto="overview">mapas e tabelas completos</button>, a <button type="button" class="link" data-goto="history">série histórica</button> ou <button type="button" class="link" data-goto="about">de onde vêm os dados</button>.</p>
+    </section>
+
     <!-- VISÃO GERAL: o mapa abre a página -->
-    <section class="page" id="page-overview" role="tabpanel" aria-labelledby="tab-overview">
+    <section class="page" id="page-overview" role="tabpanel" aria-labelledby="tab-overview" hidden>
       <div class="edition-switch" id="edition-switch" aria-label="Ano da pesquisa exibido"></div>
       <div class="hero">
         <article class="panel map-panel">
@@ -289,6 +323,7 @@
 <script src="assets/js/charts.js"></script>
 <script src="assets/js/map.js"></script>
 <script src="assets/js/filters.js"></script>
+<script src="assets/js/pages/home.js"></script>
 <script src="assets/js/pages/overview.js"></script>
 <script src="assets/js/pages/territory.js"></script>
 <script src="assets/js/pages/history.js"></script>

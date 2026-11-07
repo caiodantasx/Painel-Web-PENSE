@@ -1,7 +1,7 @@
 /* Navegação entre páginas e inicialização (carrega o pacote de dados e a malha). */
 "use strict";
 
-const PAGES = ["overview", "territory", "history", "quality", "about"];
+const PAGES = ["home", "overview", "territory", "history", "quality", "about"];
 
 // ------------------------------------------------------------------ navegação
 function setPage(page) {
@@ -12,12 +12,14 @@ function setPage(page) {
     b.tabIndex = on ? 0 : -1;
   });
   document.querySelectorAll(".page").forEach((p) => { p.hidden = p.id !== `page-${page}`; });
+  document.body.dataset.page = page;   // filtros detalhados, glossário e exportação só nas páginas de detalhe
   try { history.replaceState(null, "", "#" + page); } catch (e) { /* hash opcional */ }
   renderPage();
 }
 function renderPage() {
   hideTip();
-  if (state.page === "overview") {
+  if (state.page === "home") renderHome();
+  else if (state.page === "overview") {
     renderEditionSwitch(); renderMap(); renderHeroSide(); renderRankTable(); renderCategories(); renderBreakdown(); renderDefinition(); renderCoverage();
   } else if (state.page === "territory") { renderRanking(); renderTerritoryTable(); }
   else if (state.page === "history") { renderMicro(); renderOfficial(); renderHistory(); renderComparability(); }
@@ -102,6 +104,7 @@ async function boot() {
   try { const c = await fetch("assets/geo/capitais.json"); if (c.ok) CAPS = await c.json(); } catch (e) { CAPS = null; }
   prepare();
   microPrepare();
+  homePrepare();
   const sub = $("subtitle");
   sub.textContent = `Estimativas publicadas pelo IBGE (PeNSE) · ${nf0.format(B.meta.n_observations)} observações extraídas e validadas pela pipeline v${B.meta.pipeline_version} · `;
   sub.append(el("code", { text: "sha256 " + B.meta.content_sha256.slice(0, 12) }));
@@ -124,6 +127,7 @@ async function boot() {
   syncFilters();
   setLoading("");
   animateNext();
-  setPage(PAGES.includes(fromHash) ? fromHash : "overview");
+  document.querySelectorAll("[data-goto]").forEach((b) => b.addEventListener("click", () => { setPage(b.dataset.goto); window.scrollTo(0, 0); }));
+  setPage(PAGES.includes(fromHash) ? fromHash : "home");
 }
 boot();
