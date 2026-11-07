@@ -12,9 +12,24 @@ function fillSelect(sel, options, value) {
   sel.value = value;
 }
 
+// "O que é medido" agrupado pelos temas do painel (avaliação heurística, problema 3)
+const GROUP_ORDER = ["Bullying", "Brigas e agressões", "Faltas por insegurança", "Violência no entorno da escola", "Trânsito", "Casa e escola"];
+function fillGrouped(sel, options, value) {
+  clear(sel);
+  const groups = [...new Set(options.map((o) => o.group || "Outros"))]
+    .sort((a, b) => ((GROUP_ORDER.indexOf(a) + 1) || 99) - ((GROUP_ORDER.indexOf(b) + 1) || 99));
+  for (const g of groups) {
+    const og = el("optgroup", { label: g });
+    for (const o of options.filter((x) => (x.group || "Outros") === g)) og.append(el("option", { value: o.value, text: o.label }));
+    sel.append(og);
+  }
+  sel.value = value;
+}
+
 function renderEditionSwitch() {
+  // a faixa de edições foi retirada (avaliação heurística, problema 4): o ano se escolhe só no filtro
+  if (!$("edition-switch")) return;
   const box = clear($("edition-switch"));
-  if (!box) return;
   const eds = editions();
   box.append(el("span", { class: "es-title", text: `Ano da pesquisa (${eds.length} edições):` }));
   const group = el("div", { class: "es-buttons", role: "radiogroup", "aria-label": "Edição da pesquisa" });
@@ -37,11 +52,13 @@ function syncFilters(changed) {
   if (!state.edition || !eds.some(([e]) => e === state.edition)) state.edition = eds.find(([e]) => e === "PENSE_2024")?.[0] || eds[0][0];
   fillSelect($("f-edition"), eds.map(([e, y]) => ({ value: e, label: editionLabel(e, y) })), state.edition);
 
-  const inds = indicatorsOf(state.edition);
-  if (!inds.includes(state.indicator)) state.indicator = inds[0];
-  fillSelect($("f-indicator"), inds.map((k) => {
+  const gi = (k) => ((GROUP_ORDER.indexOf(B.measures[idx.indicators.get(k)[0]].theme_label) + 1) || 99);
+  const inds = indicatorsOf(state.edition).map((k, i) => [k, i]).sort((a, b) => gi(a[0]) - gi(b[0]) || a[1] - b[1]).map(([k]) => k);
+  // abre no primeiro indicador do grupo Bullying que é um número só (sem distribuição por categoria)
+  if (!inds.includes(state.indicator)) state.indicator = inds.find((k) => idx.indicators.get(k).length === 1) || inds[0];
+  fillGrouped($("f-indicator"), inds.map((k) => {
     const m = B.measures[idx.indicators.get(k)[0]];
-    return { value: k, label: `${m.table_family_id} · ${m.short_label}` };
+    return { value: k, label: m.short_label, group: m.theme_label };
   }), state.indicator);
 
   const ms = idx.indicators.get(state.indicator);

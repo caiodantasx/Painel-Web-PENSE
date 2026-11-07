@@ -45,7 +45,8 @@
       <button type="button" class="btn detail-only" id="btn-export">
         <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 12.5h10"/></svg>Exportar CSV
       </button>
-      <button type="button" class="btn ghost detail-only" id="btn-copy">Copiar</button>
+      <button type="button" class="btn ghost detail-only" id="btn-copy" aria-describedby="copy-status">Copiar</button>
+      <span class="copy-status detail-only" id="copy-status" role="status" aria-live="polite"></span>
       <button type="button" class="btn icon ghost" id="btn-theme" aria-label="Usar tema claro" aria-pressed="false">
         <svg class="ico moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 10.1A5.5 5.5 0 0 1 5.9 2.8a5.5 5.5 0 1 0 7.3 7.3Z"/></svg>
         <svg class="ico sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.8"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg>
@@ -84,7 +85,7 @@
           <li>Abaixo do selo aparece o IC 95% da diferença, com casas decimais suficientes para mostrar o sinal dos limites.</li>
         </ul></dd></div>
       <div><dt>Situação do número</dt><dd><b>Confiável</b>: passou em todas as verificações. <b>Usar com cuidado</b>: passou, com uma observação. <b>Em revisão</b>: fora dos gráficos até ser conferido. <b>Sem valor publicado</b>: o IBGE publicou um símbolo.</dd></div>
-      <div><dt>Ano da pesquisa</dt><dd>O painel abre na edição mais recente (2024) e mostra <b>uma edição por vez</b>; troque na faixa “Ano da pesquisa”, acima do mapa. 2009 e 2015 (Amostra 1) entrevistaram o 9º ano; 2015 (Amostra 2), 2019 e 2024, alunos de 13 a 17 anos. Públicos diferentes não se comparam diretamente — a evolução no tempo fica na página “Série histórica”.</dd></div>
+      <div><dt>Ano da pesquisa</dt><dd>O painel abre na edição mais recente (2024) e mostra <b>uma edição por vez</b>; troque no filtro “Ano da pesquisa”, no topo. 2009 e 2015 (Amostra 1) entrevistaram o 9º ano; 2015 (Amostra 2), 2019 e 2024, alunos de 13 a 17 anos. Públicos diferentes não se comparam diretamente — a evolução no tempo fica na página “Série histórica”.</dd></div>
     </dl>
   </details>
   <p class="notice" id="notice" role="status" aria-live="polite" hidden></p>
@@ -100,7 +101,7 @@
       <div class="h-top">
         <div class="h-left">
           <div class="h-choices panel" role="group" aria-label="Escolhas do painel">
-            <div class="h-choice"><label for="h-place">Onde?</label><select id="h-place"></select></div>
+            <div class="h-choice"><label for="h-place">Onde?</label><select id="h-place"></select><p class="h-scope-note">A PeNSE só tem números para o Brasil, as regiões, os estados e as capitais. Não há dados por município (fora as capitais) nem por escola.</p></div>
             <div class="h-choice"><span class="h-choice-label" id="h-topic-label">Sobre o quê?</span><div class="seg-group" id="h-topic" role="radiogroup" aria-labelledby="h-topic-label"></div></div>
             <div class="h-choice"><span class="h-choice-label" id="h-group-label">Quais alunos?</span><div class="seg-group" id="h-group" role="radiogroup" aria-labelledby="h-group-label"></div></div>
           </div>
@@ -129,24 +130,52 @@
           <div id="h-absence-body"></div>
         </article>
       </div>
+      <details class="panel h-gloss">
+        <summary>Palavras desta página, em linguagem simples</summary>
+        <dl>
+          <div><dt>“X em cada 100”</dt><dd>De cada 100 estudantes de 13 a 17 anos do lugar escolhido, quantos responderam assim. 27 em cada 100 é o mesmo que 27%.</dd></div>
+          <div><dt>“Entre A% e B%” (margem de erro)</dt><dd>A pesquisa ouve uma parte dos alunos, não todos. Por isso o valor real fica numa faixa, e não num número exato.</dd></div>
+          <div><dt>“Cerca de N estudantes”</dt><dd>Uma estimativa: a parte dos alunos multiplicada pelo total estimado de estudantes de 13 a 17 anos do lugar.</dd></div>
+          <div><dt>Maior, menor ou parecido com o Brasil</dt><dd>Maior ou menor: a diferença passa da margem de erro. Parecido: as faixas se encontram, então a diferença pode ser só efeito da amostra.</dd></div>
+          <div><dt>Bullying</dt><dd>Ser humilhado, zombado ou intimidado por colegas da escola a ponto de ficar magoado. “Sofreu” conta quem passou por isso duas ou mais vezes no último mês.</dd></div>
+          <div><dt>Cyberbullying</dt><dd>Ser ameaçado, ofendido ou humilhado pela internet: redes sociais ou aplicativos de celular.</dd></div>
+          <div><dt>Aumentou, diminuiu ou não dá para dizer</dt><dd>Compara o mesmo número em anos diferentes. “Não dá para dizer” quer dizer que a diferença cabe na margem de erro, e não que nada mudou.</dd></div>
+          <div><dt>Associação não é causa</dt><dd>Duas coisas que aparecem juntas (sofrer bullying e faltar) não provam que uma causou a outra.</dd></div>
+          <div><dt>Onde estão os dados</dt><dd>Todos os números vêm da Pesquisa Nacional de Saúde do Escolar (PeNSE), do IBGE. O link “Ver no IBGE” abre a página oficial da pesquisa.</dd></div>
+        </dl>
+      </details>
       <p class="h-more">Quer mais? Veja as <button type="button" class="link" data-goto="estimates">estimativas de quantos estudantes</button>, os <button type="button" class="link" data-goto="overview">mapas e tabelas completos</button>, a <button type="button" class="link" data-goto="history">série histórica</button> ou <button type="button" class="link" data-goto="about">de onde vêm os dados</button>.</p>
     </section>
 
     <!-- ESTIMATIVAS: quantos estudantes, em cada situação -->
     <section class="page estimates" id="page-estimates" role="tabpanel" aria-labelledby="tab-estimates" hidden>
       <div class="h-choices panel e-choices" role="group" aria-label="Escolhas das estimativas">
-        <div class="h-choice"><label for="e-place">Onde?</label><select id="e-place"></select></div>
+        <div class="h-choice"><label for="e-place">Onde?</label><select id="e-place"></select><p class="h-scope-note">A PeNSE só tem números para o Brasil, as regiões, os estados e as capitais. Não há dados por município (fora as capitais) nem por escola.</p></div>
         <div class="h-choice"><span class="h-choice-label" id="e-group-label">Quais alunos?</span><div class="seg-group" id="e-group" role="radiogroup" aria-labelledby="e-group-label"></div></div>
         <button type="button" class="btn ghost small" id="e-download">Baixar estimativas (CSV)</button>
       </div>
       <header class="e-head"><h1>Quantos estudantes?</h1><p class="card-sub" id="e-title"></p>
         <p class="card-sub">Estimativas da PeNSE 2024 (IBGE): a parte dos alunos multiplicada pelo total estimado de escolares do lugar. Como a pesquisa ouve uma amostra, cada número vem com a faixa onde o valor real provavelmente está.</p></header>
       <div class="e-body" id="e-body"></div>
+      <details class="panel h-gloss e-gloss">
+        <summary>Palavras desta página, em linguagem simples</summary>
+        <dl>
+          <div><dt>“X em cada 100”</dt><dd>De cada 100 estudantes de 13 a 17 anos do lugar escolhido, quantos responderam assim. 27 em cada 100 é o mesmo que 27%.</dd></div>
+          <div><dt>“Entre A% e B%” (margem de erro)</dt><dd>A pesquisa ouve uma parte dos alunos, não todos. Por isso o valor real fica numa faixa, e não num número exato.</dd></div>
+          <div><dt>“Cerca de N estudantes”</dt><dd>Uma estimativa: a parte dos alunos multiplicada pelo total estimado de estudantes de 13 a 17 anos do lugar.</dd></div>
+          <div><dt>Maior, menor ou parecido com o Brasil</dt><dd>Maior ou menor: a diferença passa da margem de erro. Parecido: as faixas se encontram, então a diferença pode ser só efeito da amostra.</dd></div>
+          <div><dt>Bullying</dt><dd>Ser humilhado, zombado ou intimidado por colegas da escola a ponto de ficar magoado. “Sofreu” conta quem passou por isso duas ou mais vezes no último mês.</dd></div>
+          <div><dt>Cyberbullying</dt><dd>Ser ameaçado, ofendido ou humilhado pela internet: redes sociais ou aplicativos de celular.</dd></div>
+          <div><dt>Aumentou, diminuiu ou não dá para dizer</dt><dd>Compara o mesmo número em anos diferentes. “Não dá para dizer” quer dizer que a diferença cabe na margem de erro, e não que nada mudou.</dd></div>
+          <div><dt>Associação não é causa</dt><dd>Duas coisas que aparecem juntas (sofrer bullying e faltar) não provam que uma causou a outra.</dd></div>
+          <div><dt>Onde estão os dados</dt><dd>Todos os números vêm da Pesquisa Nacional de Saúde do Escolar (PeNSE), do IBGE. O link “Ver no IBGE” abre a página oficial da pesquisa.</dd></div>
+        </dl>
+      </details>
+
     </section>
 
     <!-- VISÃO GERAL: o mapa abre a página -->
     <section class="page" id="page-overview" role="tabpanel" aria-labelledby="tab-overview" hidden>
-      <div class="edition-switch" id="edition-switch" aria-label="Ano da pesquisa exibido"></div>
       <div class="hero">
         <article class="panel map-panel">
           <header class="panel-head">

@@ -166,7 +166,7 @@ def test_dashboard_shows_sign_preserving_interval(tmp_path):
     bundle["micro"]["diffs"], bundle["micro"]["indicators"] = micro["diffs"], micro["indicators"]
     body = json.dumps(bundle)
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT / "dashboard"))
-    httpd = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    httpd = type("Srv", (http.server.ThreadingHTTPServer,), {"request_queue_size": 128})(("127.0.0.1", 0), handler)   # fila padrão (5) recusava conexões no Windows
     httpd.RequestHandlerClass.log_message = lambda *a, **k: None
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     try:

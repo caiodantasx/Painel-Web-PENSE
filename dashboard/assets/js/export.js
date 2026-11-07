@@ -31,11 +31,14 @@ function doExport() {
 }
 async function doCopy() {
   const text = exportRows();
-  const n = $("notice");
-  try { await navigator.clipboard.writeText(text); n.textContent = "CSV da seleção copiado para a área de transferência."; }
+  const n = $("copy-status");   // o aviso aparece junto do botão (avaliação heurística, problema 6)
+  n.classList.remove("fail");
+  try { await navigator.clipboard.writeText(text); n.textContent = "Copiado."; }
   catch (e) {
     const ta = $("copy-buffer"); ta.value = text; ta.select();
-    n.textContent = "Não foi possível copiar automaticamente; o conteúdo foi selecionado — use Ctrl+C.";
+    n.textContent = "Não copiou sozinho: use Ctrl+C.";
+    n.classList.add("fail");
   }
-  n.hidden = false;
+  clearTimeout(doCopy.t);
+  doCopy.t = setTimeout(() => { n.textContent = ""; }, 6000);
 }

@@ -3,12 +3,11 @@
 
 function renderDefinition() {
   const m = measure(), box = clear($("definition"));
-  const comp = m.comparability_status || "SEM_CORRESPONDENTE_IDENTIFICADO";
   const head = refRowFor(currentRows());
   box.append(
     el("header", { class: "panel-head" }, el("div", null, el("h2", { text: "O que este número mede" }),
       el("p", { class: "meta", text: `Tabela ${m.tables} · PeNSE ${m.year} · ${m.theme_label}` }))),
-    readingBlock(m, head),
+    readingBlock(m, null),   // a ficha "Como ler este número" fica só no número principal (heurística, problema 5)
     el("p", { class: "source-note", text: B.meta.source_note || "" }),
     el("p", { class: "statement" }, el("b", { text: "Título oficial da tabela: " }), m.definition),
     m.question_text && m.question_text !== "PENDENTE"
@@ -23,8 +22,9 @@ function renderDefinition() {
       el("span", null, el("b", { text: "O percentual é calculado sobre: " }), m.denominator, " "),
       m.denominator_status === "REGRA_DERIVADA_REVISAR" ? chip("REVIEW_REQUIRED", { REVIEW_REQUIRED: ["base de cálculo a conferir", "serious"] }) : null),
     el("div", { class: "meta-row" },
-      el("span", null, el("b", { text: "Dá para comparar com outros anos? " })), chip(comp, COMP_LABEL),
+      el("span", null, el("b", { text: "Dá para comparar com outros anos? " })),
       m.multi_response ? el("span", null, " O aluno podia marcar mais de uma resposta: os tipos não somam 100%.") : null),
+    compSummary(compVerdict(m)),
   );
 }
 

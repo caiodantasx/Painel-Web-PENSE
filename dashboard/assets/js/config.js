@@ -19,6 +19,15 @@ const COMP_LABEL = {
   NOT_COMPARABLE: ["Não comparável", "critical"], PENDING_REVIEW: ["Pendente de revisão", "serious"],
   SEM_CORRESPONDENTE_IDENTIFICADO: ["Sem correspondente", "neutral"],
 };
+// Veredito de comparabilidade em linguagem simples (avaliação heurística, problemas 1 e 2): o mesmo
+// rótulo e a mesma frase em todas as telas; detalhes técnicos só em "ver detalhes".
+const COMP_SIMPLE = {
+  COMPARABLE: ["Dá para comparar", "good", "Mesma pergunta e mesmo público nos anos comparados."],
+  COMPARABLE_WITH_CAVEATS: ["Dá para comparar com cuidado", "warning", "Mesma pergunta e mesmo público, com pequenas diferenças registradas."],
+  NOT_COMPARABLE: ["Não dá para comparar", "critical", "A pergunta, as respostas ou o público mudaram entre os anos."],
+  PENDING_REVIEW: ["Ainda não dá para comparar", "serious", "A comparação entre os anos ainda está sendo conferida."],
+  SEM_CORRESPONDENTE_IDENTIFICADO: ["Só existe neste ano", "neutral", "A base não tem este número em outra edição."],
+};
 // Estado da diferença entre dois anos, decidido pela pipeline (src/pense/microdata/series.py):
 // o selo "Diferença significativa a 5%" só existe com decisão registrada do pesquisador e evidência
 // nas duas edições (D27). Significância não é relevância prática nem causa.

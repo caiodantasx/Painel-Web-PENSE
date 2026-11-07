@@ -150,3 +150,22 @@ button.link { background: none; border: 0; padding: 0; color: var(--accent); fon
 
 .h-trend-item + .h-trend-item { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
 .h-trend-h { font-size: var(--fs-md); font-weight: 650; color: var(--ink-2); }
+
+/* aviso de cobertura territorial e glossário simples (formulário dos gestores) */
+.h-scope-note { font-size: var(--fs-xs); color: var(--muted); line-height: 1.4; }
+.h-gloss summary { cursor: pointer; font-weight: 650; font-size: var(--fs-md); }
+.h-gloss dl { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px 24px; margin: 12px 0 0; }
+.h-gloss dt { font-weight: 650; font-size: var(--fs-md); }
+.h-gloss dd { margin: 2px 0 0; color: var(--ink-2); font-size: var(--fs-sm); line-height: 1.45; }
+@media (min-width: 900px) { .h-gloss dl { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* veredito único de comparabilidade (avaliação heurística, problemas 1 e 2) */
+.comp-summary { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: var(--fs-md); margin-top: 6px; }
+.comp-base { flex-basis: 100%; color: var(--muted); font-size: var(--fs-sm); }
+.comp-details { flex-basis: 100%; font-size: var(--fs-sm); color: var(--ink-2); }
+.comp-details summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+.comp-details ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; overflow-wrap: anywhere; }
+
+/* aviso da cópia junto do botão (problema 6) */
+.copy-status { font-size: var(--fs-sm); color: var(--good-ink); min-width: 0; }
+.copy-status.fail { color: var(--warning-ink); }

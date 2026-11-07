@@ -200,7 +200,7 @@ def test_dashboard_shows_badge_only_with_decision(tmp_path):
 
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(site))
     handler.log_message = lambda *a, **k: None
-    httpd = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    httpd = type("Srv", (http.server.ThreadingHTTPServer,), {"request_queue_size": 128})(("127.0.0.1", 0), handler)   # fila padrão (5) recusava conexões no Windows
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     try:
         with pw.sync_playwright() as p:

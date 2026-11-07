@@ -21,7 +21,7 @@ def server():
         pytest.skip("rode a pipeline antes (dashboard/data/pense_bundle.json ausente)")
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT / "dashboard"))
     handler.log_message = lambda *a, **k: None
-    httpd = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    httpd = type("Srv", (http.server.ThreadingHTTPServer,), {"request_queue_size": 128})(("127.0.0.1", 0), handler)   # fila padrão (5) recusava conexões no Windows
     t = threading.Thread(target=httpd.serve_forever, daemon=True)
     t.start()
     yield f"http://127.0.0.1:{httpd.server_address[1]}"
@@ -196,28 +196,53 @@ def test_no_confirmed_change_without_researcher_decision(server, browser):
 
 
 def test_every_number_says_what_it_is_a_percentage_of(server, browser):
-    """Mapa, número principal e definição dizem 'X% dos escolares…', a base e quem respondeu."""
+    """Mapa, número principal e definição dizem 'X% dos escolares…', a base e quem respondeu.
+    Usa o 17.1 (respondido pelo diretor), que era o indicador padrão antes de a lista ser agrupada por tema."""
     page, errors = _open(browser, server)
+    page.select_option("#f-indicator", "PENSE_2024__17.1")
+    page.wait_for_timeout(300)
     assert "dos escolares" in page.inner_text("#map-reading")
     head = page.inner_text("#tile-headline")
     assert "em cada 100 escolares" in head and "Os 100% são" in head and "Quem respondeu" in head
     assert "ocorrências" in head and "boletim de ocorrência" in head, "diz explicitamente o que o número NÃO é"
+    # avaliação heurística (problema 5, H8): a ficha "Como ler este número" aparece uma vez só, no número
+    # principal; a definição mantém quem respondeu e ganhou o veredito único de comparabilidade
+    assert page.locator("#page-overview .number-card").count() == 1, "ficha 'Como ler' só no número principal"
     d = page.inner_text("#definition")
-    assert "como ler" in d.lower() and "Os 100% são" in d and "Quem respondeu" in d
+    assert "Quem respondeu" in d and "Base:" in d and "Dá para comparar com outros anos?" in d
     assert "valores em % dos escolares" in page.inner_text("#tile-extremes"), "lista de destaques diz a unidade"
     assert errors == []
 
 
-def test_edition_switch_lists_single_year_editions_only(server, browser):
+def test_year_is_chosen_in_one_place_only(server, browser):
+    """Avaliação heurística (problema 4, H4): o ano se escolhe só no filtro "Ano da pesquisa";
+    a faixa de edições foi retirada. O filtro lista só as edições de um ano, com rótulos únicos."""
     bundle = json.loads((ROOT / "dashboard" / "data" / "pense_bundle.json").read_text(encoding="utf-8"))
     single = {m["edition_id"] for m in bundle["measures"] if not m["multi_year"]}
     page, errors = _open(browser, server)
-    assert page.locator("#edition-switch .es-btn").count() == len(single)
+    assert page.locator("#edition-switch").count() == 0
     labels = page.eval_on_selector_all("#f-edition option", "os => os.map(o => o.textContent)")
     assert len(labels) == len(set(labels)) == len(single), "rótulos de edição únicos, sem a série multianual"
-    page.locator("#edition-switch .es-btn").nth(1).click()
-    page.wait_for_timeout(200)
-    assert page.locator("#edition-switch .es-btn.on").count() == 1 and errors == []
+    assert errors == []
+
+
+def test_indicator_list_is_grouped_by_theme(server, browser):
+    """Avaliação heurística (problema 3, H6): "O que é medido" agrupado pelos temas do painel."""
+    page, errors = _open(browser, server)
+    groups = page.eval_on_selector_all("#f-indicator optgroup", "gs => gs.map(g => g.label)")
+    assert groups[0] == "Bullying" and "Brigas e agressões" in groups and "Faltas por insegurança" in groups
+    assert errors == []
+
+
+def test_copy_notice_appears_next_to_button(server, browser):
+    """Avaliação heurística (problema 6, H9): o aviso da cópia aparece junto do botão."""
+    page, errors = _open(browser, server)
+    page.click("#btn-copy")
+    page.wait_for_timeout(300)
+    assert page.inner_text("#copy-status").strip() != ""
+    b, n = (page.eval_on_selector(s, "e => e.getBoundingClientRect().toJSON()") for s in ("#btn-copy", "#copy-status"))
+    assert abs(n["top"] - b["top"]) < 60 and abs(n["left"] - b["right"]) < 200, "aviso ao lado do botão"
+    assert errors == []
 
 
 # ---------------------------------------------------------------- página inicial "Painel" (nov/2026)

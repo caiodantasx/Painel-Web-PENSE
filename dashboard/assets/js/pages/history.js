@@ -97,7 +97,8 @@ function microDiff(key, terr, cutIdx, year) {
   return M.diffs[`${key}|${terr}|${a}|${s}|${d}|${year}`] || null;
 }
 const comparable = (ind) => ind.comparability.final_status.startsWith("COMPARABLE");
-const compChip = (c) => el("span", null, chip(c.final_status, COMP_LABEL),
+// mesmo rótulo simples da Visão geral (COMP_SIMPLE): um único veredito por indicador em todas as telas
+const compChip = (c) => el("span", null, chip(c.final_status, Object.fromEntries(Object.entries(COMP_SIMPLE).map(([k, v]) => [k, v.slice(0, 2)]))),
   el("small", { class: "decision", text: c.decision_status === "DECISAO_REGISTRADA" ? " decisão registrada" : " proposta automática" }));
 
 function renderMicroOverview() {
@@ -126,7 +127,7 @@ function renderMicroOverview() {
       const dd = last && comparable(r.ind) ? microDiff(r.ind.key, "BR", 0, last.year) : null;
       return dd ? changeChip(dd[5]) : "";
     } },
-    { label: "Pode comparar os anos?", render: (r) => compChip(r.ind.comparability), help: "", helpText: "Comparável com ressalvas: mesma pergunta e mesmo público, com pequenas diferenças registradas no detalhe. Pendente de revisão: falta conferir algo antes de comparar. Não comparável: a pergunta ou o público mudou. “Proposta automática” quer dizer que a pipeline sugeriu, mas o pesquisador ainda não decidiu." },
+    { label: "Pode comparar os anos?", render: (r) => compChip(r.ind.comparability), help: "", helpText: "Dá para comparar com cuidado: mesma pergunta e mesmo público, com pequenas diferenças registradas no detalhe. Ainda não dá para comparar: falta conferir algo antes. Não dá para comparar: a pergunta, as respostas ou o público mudaram. “Proposta automática” quer dizer que a pipeline sugeriu, mas o pesquisador ainda não decidiu." },
   ];
   table($("table-micro-overview"), cols, rows, { onClick: (r) => { mstate.key = r.ind.key; renderMicroDetail(); $("micro-detail").scrollIntoView({ behavior: "smooth", block: "start" }); },
     isSel: (r) => r.ind.key === mstate.key });
@@ -224,12 +225,15 @@ function renderMicroDetail() {
 
   const ev = clear($("micro-evidence"));
   const c = ind.comparability;
-  ev.append(el("div", { class: "ev" }, el("h3", { text: "Comparabilidade entre anos" }),
-    el("div", null, compChip(c)), el("p", { text: c.decision_source }),
-    c.evidence_by_edition ? el("p", { text: `Conferência por edição: ${c.evidence_by_edition.replaceAll("DIRETA", "tabela do IBGE reproduzida").replaceAll("INDIRETA", "mesma variável reproduz tabelas da edição").replaceAll("AUSENTE", "sem tabela para conferir").replaceAll("FALHOU", "não reproduz")}` }) : null,
-    el("ul", null, ...c.justification.split("; ").filter(Boolean).map((t) => el("li", { text: t })))));
-  if (c.caveats) ev.append(el("div", { class: "ev" }, el("h3", { text: "Ressalvas" }),
-    el("ul", null, ...c.caveats.split("; ").filter(Boolean).map((t) => el("li", { text: t })))));
+  const yrs = (c.series_editions || "").split("|").filter(Boolean).map((e) => (M.editions.find((x) => x.id === e) || {}).year).filter(Boolean);
+  ev.append(el("div", { class: "ev" }, el("h3", { text: "Dá para comparar os anos?" }),
+    compSummary({ status: c.final_status, base: "série calculada pelos microdados do IBGE, com a mesma regra em todos os anos", years: yrs, details: [] }),
+    el("details", { class: "comp-details" }, el("summary", { text: "ver detalhes técnicos" }),
+      el("p", { text: c.decision_source }),
+      c.evidence_by_edition ? el("p", { text: `Conferência por edição: ${c.evidence_by_edition.replaceAll("DIRETA", "tabela do IBGE reproduzida").replaceAll("INDIRETA", "mesma variável reproduz tabelas da edição").replaceAll("AUSENTE", "sem tabela para conferir").replaceAll("FALHOU", "não reproduz")}` }) : null,
+      el("ul", null, ...c.justification.split("; ").filter(Boolean).map((t) => el("li", { text: t }))),
+      c.caveats ? el("h4", { text: "Ressalvas" }) : null,
+      c.caveats ? el("ul", null, ...c.caveats.split("; ").filter(Boolean).map((t) => el("li", { text: t }))) : null)));
   const val = el("div", { class: "ev" }, el("h3", { text: "Conferência com as tabelas do IBGE" }));
   for (const e of M.editions) {
     if (!ind.editions.includes(e.id)) continue;

@@ -73,3 +73,39 @@ function scopeRows() {
   const sc = SCOPES[state.scope];
   return currentRows().filter((r) => sc.types.includes(r.t.type));
 }
+
+// Um único veredito de comparabilidade por indicador. Se o número tem série pelos microdados (mesma regra
+// em todos os anos, conferida com as tabelas do IBGE), vale a decisão dessa série; senão, a avaliação das
+// tabelas publicadas. A tela sempre diz qual base foi usada.
+function microFor(m) {
+  if (typeof M === "undefined" || !M) return null;
+  return M.indicators.find((i) => Object.entries(i.published || {}).some(([ed, ref]) => {
+    const [fam, cat] = String(ref).split("|");
+    return ed === m.edition_id && fam === m.table_family_id && (!cat || cat === m.category);
+  })) || null;
+}
+function compVerdict(m) {
+  const mi = microFor(m);
+  if (mi) {
+    const c = mi.comparability;
+    const yrs = (c.series_editions || "").split("|").filter(Boolean)
+      .map((e) => (M.editions.find((x) => x.id === e) || {}).year).filter(Boolean);
+    return { status: c.final_status, base: "série calculada pelos microdados do IBGE, com a mesma regra em todos os anos", years: yrs,
+      details: [c.decision_status === "DECISAO_REGISTRADA" ? "Decisão registrada pelo pesquisador." : "Proposta automática da pipeline (sem decisão registrada).",
+        c.justification, c.caveats].filter(Boolean) };
+  }
+  return { status: m.comparability_status || "SEM_CORRESPONDENTE_IDENTIFICADO", base: "tabelas publicadas pelo IBGE", years: [],
+    details: [] };
+}
+function compSummary(v) {
+  const [label, cls, why] = COMP_SIMPLE[v.status] || COMP_SIMPLE.SEM_CORRESPONDENTE_IDENTIFICADO;
+  const box = el("div", { class: "comp-summary" },
+    el("span", { class: `chip ${cls}`, text: label }), " ",
+    el("span", { text: `${why}${v.years.length > 1 ? ` Anos: ${v.years.join(", ")}.` : ""} ` }),
+    el("small", { class: "comp-base", text: `Base: ${v.base}.` }));
+  if (v.details.length) {
+    box.append(el("details", { class: "comp-details" }, el("summary", { text: "ver detalhes" }),
+      el("ul", null, ...v.details.flatMap((t) => String(t).split("; ")).filter(Boolean).map((t) => el("li", { text: t })))));
+  }
+  return box;
+}

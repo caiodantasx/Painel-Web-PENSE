@@ -1,6 +1,6 @@
 {
   "pipeline_version": "2.0.0",
-  "executed_at_utc": "2026-11-07T19:35:07+00:00",
+  "executed_at_utc": "2026-11-07T19:48:29+00:00",
   "python": "3.13.5",
   "platform": "Windows-10-10.0.19045-SP0",
   "libraries": {
@@ -517,11 +517,11 @@
     "REF_titulos_iguais": 246,
     "QST_perguntas_ligadas": 25719
   },
-  "dashboard_bundle_sha256": "5a54dbacf1dd8a5bb80bbc56f4abc773696e57e03a62b2720f64ad5a36fdedc5",
+  "dashboard_bundle_sha256": "8daf89fd6615be3574f5e7887559eb25ad9778ad48150912ac6ddd281dfaa595",
   "timings_seconds": {
     "ingestion": 0.08,
-    "adapters": 24.65,
-    "validation": 2.44,
-    "total": 31.54
+    "adapters": 24.33,
+    "validation": 2.47,
+    "total": 31.26
   }
 }
