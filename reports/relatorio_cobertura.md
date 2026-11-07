@@ -76,7 +76,7 @@
 | Amostra_2_Tema_07_Situacoes_em_Casa_e_na_Escola_2015.xls |  | 9 | PENSE_2015_A2 | 2015 | 1206 | {'EXTRAIDA': 9} |
 | Amostra_2_Tema_11_Seguranca_2015.xls |  | 15 | PENSE_2015_A2 | 2015 | 1476 | {'EXTRAIDA': 15} |
 | Serie_9ano_2009_2019_Tema_10_Seguranca_e_Violencias.xls |  | 12 | PENSE_MULTIANO |  | 5740 | {'EXTRAIDA': 12} |
-| Tema_02_Situacoes_em_Casa_e_na_Escola_2019_20260615.xls |  | 30 | PENSE_2019_IC, — | 2019 | 7142 | {'EXTRAIDA': 29, 'NAO_MAPEADA': 1} |
+| Tema_02_Situacoes_em_Casa_e_na_Escola_2019_20260615.xls |  | 30 | PENSE_2019_IC | 2019 | 7268 | {'EXTRAIDA': 30} |
 | Tabelas 2.1.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
 | Tabelas 2.10.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
 | Tabelas 2.11.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
@@ -134,7 +134,7 @@
 
 | Edição | Tabela | Indicador | Categorias | Territórios | Observações | Aprovadas (canônicas) |
 |---|---|---|---|---|---|---|
-| PENSE_2009 | 8.1 | Percentual de escolares frequentando o 9º ano do ensino fundamental que não compareceram à | 3 | aggregate, capital | 112 | 56 |
+| PENSE_2009 | 8.1 | Percentual de escolares frequentando o 9º ano do ensino fundamental que não compareceram à | 3 | aggregate, capital | 112 | 112 |
 | PENSE_2009 | 8.2 | Percentual de escolares frequentando o 9º ano do ensino fundamental por frequência com que | 3 | aggregate, capital | 420 | 420 |
 | PENSE_2009 | 8.3 | Percentual de escolares frequentando o 9º ano do ensino fundamental que estiveram envolvid | 1 | aggregate, capital | 140 | 140 |
 | PENSE_2009 | 8.4 | Percentual de escolares frequentando o 9º ano do ensino fundamental que estiveram envolvid | 1 | aggregate, capital | 140 | 140 |
@@ -178,7 +178,7 @@
 | PENSE_2019 | 2.3 | Percentual de escolares de 13 a 17 anos cujos pais ou responsáveis entenderam seus problem | 1 | aggregate, capital, country, region, uf | 395 | 365 |
 | PENSE_2019 | 2.4 | Percentual de escolares de 13 a 17 anos cujos colegas de escola os trataram bem e/ou foram | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
 | PENSE_2019 | 2.5 | Percentual de escolares de 13 a 17 anos que se sentiram humilhados por provocações de cole | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
-| PENSE_2019 | 2.6 | Percentual de escolares de 13 a 17 anos que se sentiram humilhados por provocações de cole | 7 | aggregate, capital, country, region, uf | 427 | 231 |
+| PENSE_2019 | 2.6 | Percentual de escolares de 13 a 17 anos que se sentiram humilhados por provocações de cole | 7 | aggregate, capital, country, region, uf | 553 | 511 |
 | PENSE_2019 | 2.7 | Percentual de escolares de 13 a 17 anos, por frequência com que algum de seus colegas deix | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
 | PENSE_2019 | 2.8 | Percentual de escolares de 13 a 17 anos, por frequência com que foram agredidos fisicament | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
 | PENSE_2019 | 2.9 | Percentual de escolares de 13 a 17 anos, que se sentiram ameaçados, ofendidos ou humilhado | 1 | aggregate, capital, country, region, uf | 395 | 365 |

@@ -1,3 +1,4 @@
+from pathlib import Path
 """Integração ponta a ponta em projeto temporário + rastreabilidade + idempotência."""
 import json
 import shutil
@@ -97,9 +98,15 @@ def test_run_is_idempotent(project):
 
 
 def test_no_series_from_incompatible_editions_in_real_data(project):
+    """Série entre tabelas publicadas só nasce de decisão humana registrada (config/comparability_decisions.csv).
+    Até out/2026 não havia nenhuma; em nov/2026 o pesquisador decidiu os pares 17.1–17.3 de 2019 × 2024."""
     _, res = project
-    assert res.series == []
-    assert {p["final_status"] for p in res.comparability} <= {"NOT_COMPARABLE", "PENDING_REVIEW"}
+    approved = {p["concept_id"] for p in res.comparability if p["final_status"].startswith("COMPARABLE")}
+    assert all(p["decision_source"].startswith("decisão humana") for p in res.comparability if p["final_status"].startswith("COMPARABLE"))
+    assert {p["concept_id"] for p in res.series} <= approved, "nenhum ponto de série sem par aprovado"
+    # na base real (todas as planilhas), nenhum par fica sem conferência; o projeto do teste usa só parte dos arquivos
+    real = read_csv(Path(__file__).resolve().parents[1] / "data" / "curated" / "comparability_catalog.csv")
+    assert real and "PENDING_REVIEW" not in {p["final_status"] for p in real}, "nenhum par fica sem conferência"
 
 
 def test_csv_writer_roundtrip(tmp_path):

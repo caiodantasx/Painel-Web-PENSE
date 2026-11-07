@@ -14,6 +14,7 @@ from pense.ingestion.readers import read_grids
 from pense.models import SourceFile
 from pense.parsing.header import Vocab
 from pense.parsing.title import extract_footnotes, extract_title, parse_title
+from pense.review import apply_title_review
 from pense.standardization.normalize import join_cv
 from pense.standardization.territories import TerritoryResolver
 
@@ -35,6 +36,7 @@ def _extract(cfg, grid):
     notes, _ = extract_footnotes(grid, max(rows) + 1)
     info = parse_title(title, notes)
     info.title_rows = rows
+    apply_title_review(info, grid.source.source_id, grid.sheet, cfg.config_dir)   # errata registradas (config/review_decisions.csv)
     ctx = SheetContext(grid, info, cfg, Vocab.from_config(cfg.vocabulary), frozenset(cfg.symbols), TerritoryResolver(cfg))
     sel = select_adapter(ctx)
     return sel, sel.adapter.extract(ctx) if sel.adapter else None
@@ -106,9 +108,10 @@ def test_2009_legacy_capitals_and_continuation_sheets(cfg, raw_dir):
     r = _find(out.records, territory_code="CAPITAIS", response_category="Trajeto casa-escola")
     assert r["estimate"] == pytest.approx(6.403346390648046) and r["source_cell"] == "B11"
     assert r["edition_year"] == 2009 and r["population_code"] == "ESCOLARES_9ANO_EF"
-    dep = _find(out.records, territory_code="CAPITAIS", admin_dependency="Pública", response_category="")
-    assert "CABECALHO_ASSIMETRICO" in dep["extraction_flags"]
-    assert any(i.rule_id == "HDR006" for i in out.issues)
+    # cabeçalho assimétrico conferido (config/review_decisions.csv): colunas por rede = "trajeto ou escola"
+    dep = _find(out.records, territory_code="CAPITAIS", admin_dependency="Pública", response_category="Trajeto ou escola")
+    assert dep["estimate"] == pytest.approx(9.67909366964187) and "CABECALHO_ASSIMETRICO" not in dep["extraction_flags"]
+    assert not any(i.rule_id == "HDR006" for i in out.issues) and any(i.rule_id == "REV001" for i in out.issues)
     g2 = _grids(raw_dir, "tab08avs.zip", "tab802.xls", "xls")
     _, fem = _extract(cfg, g2["tab 8.2 continuacaoA"])
     r2 = _find(fem.records, territory_code="CAPITAIS", response_category="Nenhuma")
@@ -138,13 +141,8 @@ def test_every_raw_sheet_gets_an_adapter(cfg, raw_dir):
     for item in res.items:
         for g in read_grids(item.source, item.data):
             sel, _ = _extract(cfg, g)
-            if sel.adapter is None and (item.source.source_id, g.sheet) not in IBGE_FOOTER_DEFECTS:
+            if sel.adapter is None:
                 unmapped.append((item.source.source_id, g.sheet, sel.reason))
     assert not unmapped, unmapped
 
 
-# Abas em que o próprio IBGE publicou o rodapé de outra edição (verificado na planilha em 07/11/2026).
-# Ficar sem família é o comportamento correto: a leitura não escolhe entre duas edições possíveis.
-IBGE_FOOTER_DEFECTS = {
-    ("Tema_02_Situacoes_em_Casa_e_na_Escola_2019_20260615.xls", "2.6.1"),   # rodapé "Amostra 2, 2015" numa tabela de 2019
-}

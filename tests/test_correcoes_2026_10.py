@@ -210,7 +210,10 @@ def test_criterion_a_2015_a1_reproduces_official_series_totals():
 
 def test_capacete_as_vezes_out_of_series_and_no_confirmed_change_without_decisions():
     comp = {r["indicator_key"]: r for r in _csv(CUR / "microdata_comparability.csv")}
-    assert comp["CAPACETE_AS_VEZES_OU_MAIS"]["final_status"] == "PENDING_REVIEW"
+    # proposta automática continua "pendente"; o pesquisador conferiu e decidiu "não comparável" (nov/2026)
+    assert comp["CAPACETE_AS_VEZES_OU_MAIS"]["proposed_status"] == "PENDING_REVIEW"
+    assert comp["CAPACETE_AS_VEZES_OU_MAIS"]["final_status"] == "NOT_COMPARABLE"
+    assert comp["CAPACETE_AS_VEZES_OU_MAIS"]["decision_status"] == "DECISAO_REGISTRADA"
     series = _csv(CUR / "microdata_series.csv")
     assert not any(r["indicator_key"] == "CAPACETE_AS_VEZES_OU_MAIS" for r in series)
     decided = {k for k, c in comp.items() if c["decision_status"] == "DECISAO_REGISTRADA"}

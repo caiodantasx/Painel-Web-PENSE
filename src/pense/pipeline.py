@@ -42,6 +42,7 @@ from .logging_utils import get_logger, setup_logging
 from .models import Issue, IssueClass, Severity
 from .parsing.header import Vocab
 from .parsing.title import extract_footnotes, extract_title, parse_title
+from .review import apply_title_review
 from .reporting.reports import write_reports
 from .harmonization.questions import apply_questions, build_question_map
 from .microdata.integrate import load_microdata_outputs
@@ -170,6 +171,13 @@ def _process_sheet(grid: Any, cfg: Config, vocab: Vocab, symbols: frozenset[str]
     notes, _ = extract_footnotes(grid, (max(rows) + 1) if rows else 0)
     info = parse_title(title, notes)
     info.title_rows = rows
+    review = apply_title_review(info, grid.source.source_id, grid.sheet, cfg.config_dir)   # errata de rodapé registrada
+    if review:
+        res.issues.append(Issue(rule_id="REV001", severity=Severity.INFO.value, issue_class=IssueClass.INFORMATIONAL.value,
+                                message=f"Decisão de revisão aplicada ({review['action']}): {review['justification'][:300]}",
+                                source_file=grid.source.source_id, source_sheet=grid.sheet, table_id=info.table_id,
+                                recommended_action=f"Registrada por {review['reviewer']} em {review['decision_date']} (config/review_decisions.csv).",
+                                stage="review"))
     ctx = SheetContext(grid, info, cfg, vocab, symbols, resolver)
     sel = select_adapter(ctx)
     sheet_row = {

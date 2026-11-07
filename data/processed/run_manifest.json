@@ -1,6 +1,6 @@
 {
   "pipeline_version": "2.0.0",
-  "executed_at_utc": "2026-11-07T20:37:19+00:00",
+  "executed_at_utc": "2026-11-07T21:03:46+00:00",
   "python": "3.13.5",
   "platform": "Windows-10-10.0.19045-SP0",
   "libraries": {
@@ -463,65 +463,59 @@
       "PENSE_2024_CV": 123,
       "PENSE_MULTIANO": 12,
       "PENSE_2009_CAPITAIS": 13,
-      "PENSE_2019_IC": 107,
-      "NAO_MAPEADA": 1
+      "PENSE_2019_IC": 108
     },
-    "estimate_records": 52713,
+    "estimate_records": 52839,
     "cv_records": 23608,
     "validation_status": {
-      "VALID": 51395,
+      "VALID": 51773,
       "NOT_AVAILABLE": 121,
-      "VALID_WITH_WARNINGS": 945,
-      "REVIEW_REQUIRED": 56,
-      "ERROR": 196
+      "VALID_WITH_WARNINGS": 945
     },
-    "approved_canonical": 49298,
-    "analytical_duplicates": 3042,
+    "approved_canonical": 49634,
+    "analytical_duplicates": 3084,
     "issues_by_severity": {
-      "REVIEW": 58,
-      "INFO": 7817,
-      "WARNING": 961,
-      "ERROR": 196
+      "INFO": 7820,
+      "WARNING": 961
     },
     "indicators": 124,
     "measures": 284,
     "comparability_pairs": 30,
     "comparability_status": {
-      "NOT_COMPARABLE": 16,
-      "PENDING_REVIEW": 14
+      "NOT_COMPARABLE": 19,
+      "COMPARABLE_WITH_CAVEATS": 11
     },
-    "series_points": 0,
-    "unparsed_items": 1,
+    "series_points": 1606,
+    "unparsed_items": 0,
     "microdata_estimates": 44545,
     "microdata_series_points": 28640,
     "microdata_comparability": {
       "COMPARABLE_WITH_CAVEATS": 36,
-      "PENDING_REVIEW": 2,
-      "NOT_COMPARABLE": 17
+      "NOT_COMPARABLE": 19
     }
   },
   "rule_checks": {
     "OUT001": 35053,
-    "VAL002": 157780,
-    "VAL003/VAL004": 52592,
+    "VAL002": 158158,
+    "VAL003/VAL004": 52718,
     "VAL008": 23573,
     "VAL009": 23273,
-    "VAL011": 52713,
+    "VAL011": 52839,
     "VAL014": 2440,
-    "VAL015": 26307,
+    "VAL015": 26370,
     "VAL019": 74,
-    "VAL020": 3042,
+    "VAL020": 3084,
     "VAL010": 23604,
     "REF_abas_conferidas": 246,
     "REF_temas": 3,
     "REF_titulos_iguais": 246,
-    "QST_perguntas_ligadas": 25719
+    "QST_perguntas_ligadas": 25663
   },
-  "dashboard_bundle_sha256": "57e6d85153be97d0509f67223b4abbba624f2a1688c37451ae1428e85e37757a",
+  "dashboard_bundle_sha256": "7cfb59ef64d10828e60afeec7f2bb27b4b2b063e587999537b059710980850a4",
   "timings_seconds": {
-    "ingestion": 0.14,
-    "adapters": 41.26,
-    "validation": 3.53,
-    "total": 50.95
+    "ingestion": 0.08,
+    "adapters": 24.28,
+    "validation": 2.4,
+    "total": 31.48
   }
 }

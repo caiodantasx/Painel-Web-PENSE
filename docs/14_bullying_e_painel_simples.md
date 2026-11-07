@@ -111,3 +111,19 @@ grupo 2 = não sofreu nenhuma vez / não foi agredido / sem tiroteios relatados.
 Visual: mapa maior (coluna de 7/12), resposta e cartões laterais compactos; série e ligações em largura total; materiais
 translúcidos no estilo Apple (vidro com desfoque nos cartões, na barra do topo e nas dicas, borda clara no topo, luz ambiente
 fixa ao fundo), com versão sólida para `prefers-reduced-transparency` e `prefers-contrast: more`. O rótulo "Detalhes:" saiu do menu.
+
+## 8. Revisão de todos os alertas "ainda não conferido" (07/11/2026)
+
+Nenhum número fica mais como "em revisão / ainda não conferido". Cada caso foi conferido na planilha original e a decisão
+foi registrada com justificativa, evidência, responsável e data. A pipeline aplica a decisão e mostra a regra REV001
+(informativa) na página Qualidade.
+
+| Alerta | O que era | O que a conferência mostrou | Decisão (arquivo) |
+|---|---|---|---|
+| VAL013 (196, erro) e ADP000 (1) — 2019, abas 2.6.3 e 2.6.1 | rodapé do IBGE citando 2015 numa tabela de 2019 | título, arquivo, guia e abas vizinhas são de 2019; valores diferentes da 2.7.8 de 2015 (Brasil 4,56% × 5,96%) | errata de rodapé: vale 2019 (`config/review_decisions.csv`) |
+| VAL022 (56) e HDR006 (1) — 2009, tabela 8.1 | colunas por rede sem dizer o local da falta | título "no trajeto ou na escola"; pública (9,68%) acima dos dois totais; valores acompanham a série oficial 10.9 de 2009 | colunas por rede = "Trajeto ou escola" (`config/review_decisions.csv`) |
+| 14 pares de tabelas 17.1–17.3, 2019 × 2024, "pendente de revisão" | comparação entre anos sem decisão | mesmas variáveis e escala, exceto "venda de drogas" (pergunta ampliada em 2024) | 11 "dá para comparar com cuidado", 3 "não dá" (`config/comparability_decisions.csv`) |
+| 2 indicadores dos microdados "pendente" | CAPACETE_AS_VEZES_OU_MAIS, NONO_CINTO_FRENTE_OU_TRAS | sem tabela para validar (capacete) / cálculo não reproduz a tabela oficial (cinto) | "não dá para comparar", com o motivo (`config/microdata/comparability_decisions.csv`) |
+
+Resultado: alertas de revisão 58 → 0; erros 196 → 0; pares pendentes 14 → 0 (tabelas) e 2 → 0 (microdados). As tabelas
+publicadas 17.1–17.3 passam a ter série 2019–2024 (1.606 pontos) nos pares aprovados.

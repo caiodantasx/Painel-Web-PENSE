@@ -184,7 +184,7 @@ Valores na convenção da série (2015 difere da tabela publicada pelo efeito da
 | Nunca ou raramente usaram cinto no banco da frente | 19,1 (17,0–21,2) | 17,5 (16,8–18,2) | 19,1 (18,2–19,9) *✓ | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
 | Nunca ou raramente usaram cinto no banco de trás | 33,3 (31,3–35,2) | 30,2 (29,4–30,9) *✓ | 31,2 (30,4–32,0) | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
 | Usaram capacete (de raramente a sempre), dentre os que andaram de motocicleta | 91,2 (89,8–92,6) † | 88,9 (87,8–89,9) | 87,9 (87,1–88,7) | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
-| Usaram capacete às vezes, na maior parte do tempo ou sempre, dentre os que andaram de motocicleta | 83,5 (81,2–85,8) | 80,9 (79,7–82,1) † | 78,3 (77,2–79,4) † | `PENDING_REVIEW` | PROPOSTA_AUTOMATICA |
+| Usaram capacete às vezes, na maior parte do tempo ou sempre, dentre os que andaram de motocicleta | 83,5 (81,2–85,8) | 80,9 (79,7–82,1) † | 78,3 (77,2–79,4) † | `PENDING_REVIEW` | DECISAO_REGISTRADA |
 | Conduziram veículo motorizado | 31,0 (29,4–32,7) | 33,0 (32,3–33,7) *✓ | 34,2 (33,3–35,0) *✓ | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
 | Andaram em veículo cujo condutor tinha ingerido bebida alcoólica | 25,2 (23,8–26,6) | 27,1 (26,5–27,7) *✓ | 27,2 (26,6–27,7) | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
 | Envolveram-se em briga em que alguém usou arma de fogo | 6,3 (5,5–7,1) | 2,9 (2,7–3,1) *✓ | 3,9 (3,6–4,2) *✓ | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
@@ -210,6 +210,18 @@ Valores na convenção da série (2015 difere da tabela publicada pelo efeito da
 | Faltaram por insegurança na escola, entre quem sofreu bullying duas ou mais vezes | — | — | 22,7 (21,4–23,9) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
 | Faltaram por insegurança na escola, entre quem não sofreu bullying nenhuma vez | — | — | 8,8 (8,3–9,4) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
 | Sofreram pelo menos um tipo de violência: bullying, cyberbullying ou agressão física | — | — | 46,4 (45,8–47,1) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Sentiram-se tristes na maioria das vezes ou sempre, entre quem sofreu bullying 2 ou mais vezes | — | — | 45,1 (43,3–46,8) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Sentiram-se tristes na maioria das vezes ou sempre, entre quem não sofreu nenhuma vez | — | — | 21,3 (20,6–21,9) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Sentiram na maioria das vezes ou sempre que ninguém se preocupa com eles, entre quem sofreu bullying 2 ou mais vezes | — | — | 40,9 (39,4–42,4) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Sentiram na maioria das vezes ou sempre que ninguém se preocupa com eles, entre quem não sofreu nenhuma vez | — | — | 19,4 (18,8–20,1) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Sofreram bullying 2 ou mais vezes, entre quem foi agredido por pai, mãe ou responsável | — | — | 39,6 (38,5–40,8) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Sofreram bullying 2 ou mais vezes, entre quem não foi | — | — | 24,2 (23,5–24,8) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Sofreram cyberbullying, entre quem sofreu bullying 2 ou mais vezes | — | — | 24,0 (22,9–25,2) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Sofreram cyberbullying, entre quem não sofreu nenhuma vez | — | — | 7,2 (6,8–7,6) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Praticaram bullying, entre quem sofreu bullying 2 ou mais vezes | — | — | 25,0 (23,5–26,5) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Praticaram bullying, entre quem não sofreu nenhuma vez | — | — | 7,9 (7,4–8,3) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Faltaram por insegurança no caminho de casa para a escola, entre alunos de escolas cujo diretor soube de tiroteios perto (sempre ou algumas vezes) | — | — | 18,7 (16,3–21,2) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Faltaram por insegurança no caminho de casa para a escola, entre alunos de escolas sem tiroteios relatados (nunca ou raramente) | — | — | 11,5 (10,9–12,0) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
 
 `⊘` = edição fora da série principal por decisão registrada em `config/microdata/series_exclusions.csv` (o valor continua disponível para consulta; não entra em variação nem selo).
 
@@ -231,13 +243,25 @@ Valores na convenção da série (2015 difere da tabela publicada pelo efeito da
 
 Evidências usadas: mesma variável e códigos; **redação comparada palavra por palavra nos dicionários do IBGE**; mesmo universo; reprodução das tabelas publicadas. Para confirmar ou alterar, registrar em `config/microdata/comparability_decisions.csv`.
 
-* `CAPACETE_AS_VEZES_OU_MAIS` → **PENDING_REVIEW**: Fora da série: só 2015 publicou esta definição; em 2019 e 2024 não há tabela para validar a estimativa. Volta à série apenas com validação documental das três edições e decisão registrada.; fora da série por falta de evidência: 2019 (sem tabela publicada para conferir), 2024 (sem tabela publicada pa
+* `CAPACETE_AS_VEZES_OU_MAIS` → **NOT_COMPARABLE**: Fora da série: só 2015 publicou esta definição; em 2019 e 2024 não há tabela para validar a estimativa. Volta à série apenas com validação documental das três edições e decisão registrada.; fora da série por falta de evidência: 2019 (sem tabela publicada para conferir), 2024 (sem tabela publicada pa
 * `ESCOLA_LOCAL_DROGAS` → **NOT_COMPARABLE**: variável muda entre edições ({'PENSE_2019': 'E01P81', 'PENSE_2024': 'E01P81A'}); sufixo novo indica pergunta alterada; redação difere nos dicionários: 2019 → 2024: acrescenta “ou usando”; 2019: Microdados públicos de 2019 com controle de confidencialidade (Nota técnica 01/2022): supressão de sexo/id
-* `NONO_CINTO_FRENTE_OU_TRAS` → **PENDING_REVIEW**: fora da série por falta de evidência: 2015 (cálculo não reproduz a tabela publicada), 2019 (cálculo não reproduz a tabela publicada), 2024 (sem tabela publicada para conferir); cálculo NÃO reproduz a tabela publicada em 2015, 2019; A regra da tabela oficial 10.3 não foi reproduzida (calculado 33,2% 
+* `NONO_CINTO_FRENTE_OU_TRAS` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2015 (cálculo não reproduz a tabela publicada), 2019 (cálculo não reproduz a tabela publicada), 2024 (sem tabela publicada para conferir); cálculo NÃO reproduz a tabela publicada em 2015, 2019; A regra da tabela oficial 10.3 não foi reproduzida (calculado 33,2% 
 * `CYBER_PRATICOU` → **NOT_COMPARABLE**: 
 * `FALTOU_INSEGURANCA_SOFREU_BULLYING` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: a PeNSE não pergunta se a falta foi por bullying.
 * `FALTOU_INSEGURANCA_NAO_SOFREU_BULLYING` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: a PeNSE não pergunta se a falta foi por bullying.
 * `ALGUMA_VIOLENCIA` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Indicador composto do projeto, sem tabela publicada equivalente: soma quem sofreu pelo menos uma das quatro situações (sem contar duas vezes quem sofreu mais de uma). Períodos: 30 dias (bullying, cyberbullying) e 12 mes
+* `LIGA_TRISTE_SIM` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_TRISTE_NAO` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_NINGUEM_SE_PREOCUPA_SIM` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_NINGUEM_SE_PREOCUPA_NAO` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_BULLYING_SE_AGREDIDO_PAIS_SIM` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_BULLYING_SE_AGREDIDO_PAIS_NAO` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_CYBER_SE_BULLYING_SIM` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_CYBER_SE_BULLYING_NAO` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_PRATICOU_SE_BULLYING_SIM` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_PRATICOU_SE_BULLYING_NAO` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_TRAJETO_SE_TIROS_SIM` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
+* `LIGA_TRAJETO_SE_TIROS_NAO` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: compara duas respostas do mesmo questionário.
 
 ## Efeito medido da harmonização da não resposta (total: Brasil ou conjunto das capitais)
 

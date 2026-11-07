@@ -109,7 +109,15 @@ class BaseAdapter:
         ages = (t.age_min, t.age_max) if t.age_min is not None else None
         stub = parse_stub(g, layout.body_start, layout.blocks, ctx.vocab, ctx.symbols, ages)
         structure_flags = {p[0] for p in layout.problems if p[0] == "HDR006"}
+        # cabeçalho assimétrico com decisão de revisão registrada: as colunas por dimensão recebem a categoria decidida
+        from ..review import decision
+        dim_cat = decision(ctx.cfg.config_dir, g.source.source_id, g.sheet, "CATEGORY_FOR_DIMENSION_COLUMNS") if structure_flags else None
         for rule, msg, ref in layout.problems + stub.problems:
+            if rule == "HDR006" and dim_cat:
+                res.issues.append(self._issue(ctx, "REV001", Severity.INFO,
+                                              f"Decisão de revisão aplicada (colunas por dimensão = '{dim_cat['value']}'): {dim_cat['justification'][:300]}",
+                                              ref, f"Registrada por {dim_cat['reviewer']} em {dim_cat['decision_date']} (config/review_decisions.csv)."))
+                continue
             res.issues.append(self._issue(ctx, rule, PROBLEM_SEVERITY.get(rule, Severity.REVIEW), msg, ref,
                                           PROBLEM_ACTION.get(rule, "Revisar.")))
             if rule == "HDR001":
@@ -132,7 +140,11 @@ class BaseAdapter:
                 rec = self._record(ctx, row, blk, terr, edition, theme, family, notes)
                 flags = list(row_flags)
                 if "HDR006" in structure_flags and not blk.category_path and blk.dims:
-                    flags.append("CABECALHO_ASSIMETRICO")
+                    if dim_cat:
+                        rec["response_category"] = dim_cat["value"]
+                        rec["category_code"] = code_from_label(dim_cat["value"])
+                    else:
+                        flags.append("CABECALHO_ASSIMETRICO")
                 if blk.dims.get("year") or row.context.get("year"):
                     flags.append("ANO_DA_CELULA")
                 elif ctx.title.multi_year:
