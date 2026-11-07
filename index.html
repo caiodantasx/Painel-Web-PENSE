@@ -696,14 +696,27 @@ button.link { background: none; border: 0; padding: 0; color: var(--accent); fon
 
 /* ---- telas largas: tudo o que importa na primeira dobra */
 @media (min-width: 900px) {
-  .h-top { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start; }
+  .h-top { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: start; }
   .e-choices { grid-template-columns: minmax(200px, 1fr) minmax(0, 2fr) auto; align-items: end; }
   .seg-group .seg { font-size: var(--fs-sm); padding: 5px 10px; }
   .h-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
   .h-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .h-types { grid-column: span 12; }
-  .h-trend { grid-column: span 6; }
-  .h-absence { grid-column: span 6; }
+  .h-types, .h-trend, .h-absence { grid-column: span 12; }
+  #h-trend-body { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 24px; }
+  #h-trend-body > .h-trend-item + .h-trend-item { margin-top: 0; padding-top: 0; border-top: 0; padding-left: 24px; border-left: 1px solid var(--line); }
+  #h-trend-body > .h-verdict, #h-trend-body > .h-note { grid-column: 1 / -1; }
+  /* lateral compacta: o mapa é o destaque */
+  .h-answer { padding: 14px 16px; gap: 6px; }
+  .h-big b { font-size: clamp(40px, 4.4vw, 60px); }
+  .h-big span { font-size: 18px; }
+  .h-sentence { font-size: var(--fs-md); }
+  .h-range, .h-people, .h-cmp { font-size: var(--fs-sm); }
+  .h-right .h-card { padding: 10px 12px; gap: 4px; }
+  .h-right .h-card h3 { font-size: var(--fs-sm); }
+  .h-right .h-card-big b { font-size: 26px; }
+  .h-right .h-card-text { display: none; }
+  .h-right .h-foot { padding-top: 4px; gap: 4px 10px; }
+  .h-map svg { max-height: 640px; }
 }
 
 /* ---- aba Estimativas */
@@ -751,6 +764,48 @@ button.link { background: none; border: 0; padding: 0; color: var(--accent); fon
 /* aviso da cópia junto do botão (problema 6) */
 .copy-status { font-size: var(--fs-sm); color: var(--good-ink); min-width: 0; }
 .copy-status.fail { color: var(--warning-ink); }
+
+/* ---- ligações */
+.h-link-pick { margin: 6px 0 12px; }
+.h-link-pick .seg { white-space: normal; text-align: left; flex: 1 1 220px; }
+.h-ratio { font-size: var(--fs-md); color: var(--ink-2); margin-top: 4px; }
+
+/* ---- materiais (vidro): camadas que flutuam ficam translúcidas, com borda clara no topo
+   (luz batendo no material). Nunca vidro sobre vidro: só os cartões de primeiro nível. */
+:root { --glass: rgba(16, 18, 30, 0.58); --glass-strong: rgba(10, 12, 20, 0.62); --glass-edge: rgba(255, 255, 255, 0.09);
+  --glass-line: rgba(140, 150, 220, 0.16); --ambient-1: rgba(79, 110, 247, 0.16); --ambient-2: rgba(139, 92, 246, 0.14); }
+:root[data-theme="light"] { --glass: rgba(255, 255, 255, 0.62); --glass-strong: rgba(255, 255, 255, 0.7); --glass-edge: rgba(255, 255, 255, 0.85);
+  --glass-line: rgba(120, 130, 200, 0.22); --ambient-1: rgba(79, 110, 247, 0.12); --ambient-2: rgba(139, 92, 246, 0.10); }
+/* luz ambiente fixa atrás do conteúdo, para o vidro ter o que desfocar */
+body[data-page="home"], body[data-page="estimates"] {
+  background:
+    radial-gradient(700px 520px at 85% 35%, var(--ambient-2), transparent 70%),
+    radial-gradient(760px 560px at 10% 75%, var(--ambient-1), transparent 70%),
+    radial-gradient(900px 480px at 8% -10%, var(--bg-glow-1), transparent 70%),
+    radial-gradient(800px 420px at 100% 0%, var(--bg-glow-2), transparent 70%),
+    var(--bg);
+  background-attachment: fixed;
+}
+.home .panel, .home .h-card, .estimates .panel {
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(22px) saturate(170%); backdrop-filter: blur(22px) saturate(170%);
+  border-color: var(--glass-line);
+  box-shadow: inset 0 1px 0 var(--glass-edge), 0 18px 40px -18px rgba(0, 0, 0, 0.55);
+}
+.home .h-answer { background: linear-gradient(160deg, color-mix(in srgb, var(--brand-blue) 14%, transparent) 0%, var(--glass) 60%); }
+.topbar { background: var(--glass-strong); -webkit-backdrop-filter: blur(24px) saturate(180%); backdrop-filter: blur(24px) saturate(180%);
+  border-bottom-color: var(--glass-line); box-shadow: inset 0 -1px 0 var(--glass-edge); }
+.tooltip { background: var(--glass-strong); -webkit-backdrop-filter: blur(18px) saturate(170%); backdrop-filter: blur(18px) saturate(170%);
+  border-color: var(--glass-line); box-shadow: inset 0 1px 0 var(--glass-edge), var(--shadow-pop); }
+/* dentro do vidro, superfícies internas ficam sólidas e discretas (sem empilhar translucidez) */
+.home .h-track, .home .seg-group, .estimates .seg-group { background: color-mix(in srgb, var(--card-2) 70%, transparent); }
+@media (prefers-reduced-transparency: reduce) {
+  .home .panel, .home .h-card, .estimates .panel, .topbar, .tooltip { background: var(--card); -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+@media (prefers-contrast: more) {
+  .home .panel, .home .h-card, .estimates .panel { background: var(--card); border-color: var(--axis); }
+}
+.home .h-card.any { border-color: color-mix(in srgb, var(--select) 45%, transparent); }
 </style>
 </head>
 <body class="is-loading">
@@ -766,7 +821,6 @@ button.link { background: none; border: 0; padding: 0; color: var(--accent); fon
       <div role="tablist">
         <button role="tab" id="tab-home" data-page="home" aria-selected="true" aria-controls="page-home">Painel</button>
         <button role="tab" id="tab-estimates" data-page="estimates" aria-selected="false" aria-controls="page-estimates" tabindex="-1">Estimativas</button>
-        <span class="tabs-sep" aria-hidden="true">Detalhes:</span>
         <button role="tab" id="tab-overview" data-page="overview" aria-selected="false" aria-controls="page-overview" tabindex="-1">Mapa e tabelas</button>
         <button role="tab" id="tab-territory" data-page="territory" aria-selected="false" aria-controls="page-territory" tabindex="-1">Territórios</button>
         <button role="tab" id="tab-history" data-page="history" aria-selected="false" aria-controls="page-history" tabindex="-1">Série histórica</button>
@@ -859,7 +913,7 @@ button.link { background: none; border: 0; padding: 0; color: var(--accent); fon
           <div id="h-trend-body"></div>
         </article>
         <article class="panel h-absence" id="h-absence">
-          <header class="panel-head"><div><h2>Quem sofre bullying falta mais à escola?</h2><p class="card-sub">Faltas por não se sentir seguro na escola, no último mês.</p></div></header>
+          <header class="panel-head"><div><h2 id="h-absence-title">Ligações</h2><p class="card-sub">Uma situação ligada a outra: compara dois grupos de alunos. Escolha a pergunta.</p></div></header>
           <div id="h-absence-body"></div>
         </article>
       </div>
@@ -2175,13 +2229,22 @@ function renderHomeBullying() {
 }
 
 // ------------------------------------------------------------------ bloco 4: bullying e faltas
+// Ligações: a mesma resposta comparada entre dois grupos (microdados de 2024). Associação, não causa.
+let hLink = 0;
 function renderHomeAbsence() {
   const panel = $("h-absence"), box = clear($("h-absence-body"));
-  const ab = G.blocks.absence;
-  if (!ab || !M) { panel.hidden = true; return; }
-  const w = hMicro(ab.with, hstate.place, 2024)[0], wo = hMicro(ab.without, hstate.place, 2024)[0];
+  const links = (G.links || []).filter((lk) => M && M.kIndex.has(lk.with) && M.kIndex.has(lk.without));
+  if (!links.length) { panel.hidden = true; return; }
   panel.hidden = false;
-  if (!w || !wo) { box.append(el("p", { class: "empty", text: "Sem dados suficientes para este lugar e grupo." })); return; }
+  if (hLink >= links.length) hLink = 0;
+  const lk = links[hLink];
+  $("h-absence-title").textContent = lk.question;
+  const pick = el("div", { class: "seg-group h-link-pick", role: "radiogroup", "aria-label": "Escolha a ligação" });
+  links.forEach((x, i) => pick.append(el("button", { type: "button", class: "seg", role: "radio", "aria-checked": String(i === hLink),
+    onclick: () => { hLink = i; renderHomeAbsence(); } }, x.question)));
+  box.append(pick);
+  const w = hMicro(lk.with, hstate.place, 2024)[0], wo = hMicro(lk.without, hstate.place, 2024)[0];
+  if (!w || !wo || w.e === null || wo.e === null) { box.append(el("p", { class: "empty", text: "Sem dados suficientes para este lugar e grupo." })); return; }
   const max = niceMax(Math.max(w.hi, wo.hi));
   const bar = (label, p, cls) => el("li", null,
     el("div", { class: "h-bar-head" }, el("span", { class: "h-bar-label", text: label }), el("span", { class: "h-bar-val" }, el("b", { text: in100(p.e) }), " em cada 100")),
@@ -2189,14 +2252,16 @@ function renderHomeAbsence() {
       el("span", { class: "h-ci", style: `left:${(p.lo / max * 100).toFixed(2)}%;width:${((p.hi - p.lo) / max * 100).toFixed(2)}%` })),
     el("div", { class: "h-bar-sub", text: between(p) }));
   const differ = w.lo > wo.hi || w.hi < wo.lo;
+  const ratio = wo.e > 0 ? w.e / wo.e : null;
   box.append(
-    el("p", { class: "h-sentence" }, `Entre quem sofreu bullying (duas ou mais vezes no mês), `, el("b", { text: `${in100(w.e)} em cada 100` }),
-      ` faltaram à escola por não se sentirem seguros lá. Entre quem não sofreu, `, el("b", { text: `${in100(wo.e)} em cada 100` }), "."),
-    el("ul", { class: "h-bars" }, bar("Sofreram bullying", w, "sel"), bar("Não sofreram bullying", wo, "")),
+    el("p", { class: "h-sentence" }, `${lk.with_label}: `, el("b", { text: `${in100(w.e)} em cada 100` }), ` ${lk.outcome}. ${lk.without_label}: `,
+      el("b", { text: `${in100(wo.e)} em cada 100` }), "."),
+    differ && ratio && ratio >= 1.3 ? el("p", { class: "h-ratio" }, "Cerca de ", el("b", { text: `${nf1.format(ratio)} vezes` }), " mais no primeiro grupo.") : null,
+    el("ul", { class: "h-bars" }, bar(lk.with_label, w, "sel"), bar(lk.without_label, wo, "")),
     el("p", { class: "h-warn" }, el("b", { text: "Atenção: " }),
-      differ ? "a diferença entre os dois grupos é maior que a margem de erro, mas isso mostra que as duas coisas andam juntas, não que o bullying causou as faltas. "
-             : "a diferença cabe na margem de erro. Mesmo quando há diferença, ela mostra que as duas coisas andam juntas, não que uma causou a outra. ",
-      "A pesquisa não pergunta o motivo da falta; pergunta só se o aluno faltou por não se sentir seguro na escola."),
+      differ ? "a diferença é maior que a margem de erro, mas isso mostra que as duas coisas andam juntas, não que uma causou a outra. "
+             : "a diferença cabe na margem de erro: não dá para dizer que os grupos são diferentes. ",
+      lk.note || ""),
     el("p", { class: "h-note", text: "Calculado pelo projeto com os microdados da PeNSE 2024 (IBGE); não há tabela publicada com este cruzamento." }));
 }
 
