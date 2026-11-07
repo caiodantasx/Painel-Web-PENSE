@@ -82,6 +82,8 @@ Por recorte: **REPRODUZ** (Δ estimativa ≤ 0,05 p.p. e limites do IC ≤ 0,15 
 | 2024 | BRIGA_ARMA_BRANCA | 9.11  | 312/317 | 5 | 0 | 0.125 | VALIDADO |
 | 2024 | BRIGA_ARMA_FOGO | 9.10  | 316/317 | 1 | 0 | 0.087 | VALIDADO |
 | 2024 | BRIGA_LUTA_FISICA | 9.9  | 304/317 | 8 | 0 | 0.099 | VALIDADO |
+| 2024 | BULLYING_PRATICOU | 2.10  | 313/317 | 3 | 0 | 0.082 | VALIDADO |
+| 2024 | BULLYING_SOFREU | 2.5 Duas ou mais vezes | 314/317 | 1 | 0 | 0.098 | VALIDADO |
 | 2024 | CAPACETE_QUALQUER_USO | 9.3  | 308/317 | 4 | 0 | 0.165 | VALIDADO |
 | 2024 | CINTO_FRENTE | 9.2 Banco da frente | 309/317 | 1 | 0 | 0.119 | VALIDADO |
 | 2024 | CINTO_NUNCA_RARAMENTE | 9.1  | 304/317 | 8 | 0 | 0.194 | VALIDADO |
@@ -89,6 +91,8 @@ Por recorte: **REPRODUZ** (Δ estimativa ≤ 0,05 p.p. e limites do IC ≤ 0,15 
 | 2024 | CONDUTOR_ALCOOL | 9.5  | 309/317 | 7 | 0 | 0.210 | VALIDADO |
 | 2024 | CONDUTOR_CELULAR | 9.6  | 303/317 | 8 | 0 | 0.128 | VALIDADO |
 | 2024 | CONDUZIU_VEICULO | 9.4  | 300/317 | 9 | 0 | 0.229 | VALIDADO_COM_RESSALVA |
+| 2024 | CYBER_PRATICOU | 2.15  | 308/317 | 8 | 0 | 0.122 | VALIDADO |
+| 2024 | CYBER_SOFREU | 2.9  | 308/317 | 6 | 0 | 0.072 | VALIDADO |
 | 2024 | ESCOLA_INSEGURA | 9.8  | 305/317 | 7 | 0 | 0.101 | VALIDADO |
 | 2024 | ESCOLA_LOCAL_AGRESSAO | 17.1 Agressão física ou espan | 84/85 | 0 | 0 | 0.026 | VALIDADO |
 | 2024 | ESCOLA_LOCAL_ASSALTOS | 17.1 Assaltos e roubos a pess | 83/85 | 0 | 0 | 0.046 | VALIDADO |
@@ -195,6 +199,13 @@ Valores na convenção da série (2015 difere da tabela publicada pelo efeito da
 | Em escolas cujo diretor presenciou/ouviu falar de assassinato na localidade | — | 15,5 (13,0–18,1) | 10,7 (7,9–13,5) *✓ | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
 | Em escolas cujo diretor presenciou/ouviu falar de violência sexual na localidade | — | 10,1 (8,3–12,0) | 9,8 (7,7–11,8) | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
 | Em escolas que suspenderam ou interromperam aulas por violência | — | 8,0 (6,0–10,0) | 7,7 (6,4–9,0) | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
+| Sentiram-se humilhados por provocações de colegas da escola duas ou mais vezes | — | 23,0 (22,4–23,6) † | 27,2 (26,6–27,8) | `PENDING_REVIEW` | PROPOSTA_AUTOMATICA |
+| Esculacharam, zombaram, intimidaram ou caçoaram de colegas a ponto de magoá-los | 20,3 (19,1–21,4) † | 12,0 (11,6–12,5) † | 13,7 (13,0–14,3) | `PENDING_REVIEW` | PROPOSTA_AUTOMATICA |
+| Sentiram-se ameaçados, ofendidos ou humilhados nas redes sociais ou aplicativos de celular | — | 13,2 (12,8–13,7) † | 12,7 (12,3–13,2) | `PENDING_REVIEW` | PROPOSTA_AUTOMATICA |
+| Ameaçaram, ofenderam ou humilharam outras pessoas nas redes sociais ou aplicativos de celular | — | — | 10,0 (9,6–10,4) | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Faltaram por insegurança na escola, entre quem sofreu bullying duas ou mais vezes | — | — | 22,7 (21,4–23,9) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Faltaram por insegurança na escola, entre quem não sofreu bullying nenhuma vez | — | — | 8,8 (8,3–9,4) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
+| Sofreram pelo menos um tipo de violência: bullying, cyberbullying ou agressão física | — | — | 46,4 (45,8–47,1) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
 
 `⊘` = edição fora da série principal por decisão registrada em `config/microdata/series_exclusions.csv` (o valor continua disponível para consulta; não entra em variação nem selo).
 
@@ -219,6 +230,13 @@ Evidências usadas: mesma variável e códigos; **redação comparada palavra po
 * `CAPACETE_AS_VEZES_OU_MAIS` → **PENDING_REVIEW**: Fora da série: só 2015 publicou esta definição; em 2019 e 2024 não há tabela para validar a estimativa. Volta à série apenas com validação documental das três edições e decisão registrada.; fora da série por falta de evidência: 2019 (sem tabela publicada para conferir), 2024 (sem tabela publicada pa
 * `ESCOLA_LOCAL_DROGAS` → **NOT_COMPARABLE**: variável muda entre edições ({'PENSE_2019': 'E01P81', 'PENSE_2024': 'E01P81A'}); sufixo novo indica pergunta alterada; redação difere nos dicionários: 2019 → 2024: acrescenta “ou usando”; 2019: Microdados públicos de 2019 com controle de confidencialidade (Nota técnica 01/2022): supressão de sexo/id
 * `NONO_CINTO_FRENTE_OU_TRAS` → **PENDING_REVIEW**: fora da série por falta de evidência: 2015 (cálculo não reproduz a tabela publicada), 2019 (cálculo não reproduz a tabela publicada), 2024 (sem tabela publicada para conferir); cálculo NÃO reproduz a tabela publicada em 2015, 2019; A regra da tabela oficial 10.3 não foi reproduzida (calculado 33,2% 
+* `BULLYING_SOFREU` → **PENDING_REVIEW**: fora da série por falta de evidência: 2019 (sem tabela publicada para conferir); Pergunta alterada entre 2019 (B07007A: nenhuma, 1, 2 ou mais vezes) e 2024 (B07007B: nenhuma, 1, 2, 3 ou mais vezes). '2 ou mais vezes' é harmonizável, mas o sufixo novo indica pergunta revista pelo IBGE: comparação só 
+* `BULLYING_PRATICOU` → **PENDING_REVIEW**: fora da série por falta de evidência: 2015 (sem tabela publicada para conferir), 2019 (sem tabela publicada para conferir)
+* `CYBER_SOFREU` → **PENDING_REVIEW**: fora da série por falta de evidência: 2019 (sem tabela publicada para conferir)
+* `CYBER_PRATICOU` → **NOT_COMPARABLE**: 
+* `FALTOU_INSEGURANCA_SOFREU_BULLYING` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: a PeNSE não pergunta se a falta foi por bullying.
+* `FALTOU_INSEGURANCA_NAO_SOFREU_BULLYING` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: a PeNSE não pergunta se a falta foi por bullying.
+* `ALGUMA_VIOLENCIA` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Indicador composto do projeto, sem tabela publicada equivalente: soma quem sofreu pelo menos uma das quatro situações (sem contar duas vezes quem sofreu mais de uma). Períodos: 30 dias (bullying, cyberbullying) e 12 mes
 
 ## Efeito medido da harmonização da não resposta (total: Brasil ou conjunto das capitais)
 
@@ -235,6 +253,7 @@ Evidências usadas: mesma variável e códigos; **redação comparada palavra po
 | CONDUTOR_ALCOOL | 2015_A2 | 25,4 | 25,4 | 25,2 | -0.21 |
 | BRIGA_ARMA_FOGO | 2015_A2 | 6,4 | 6,4 | 6,3 | -0.04 |
 | BRIGA_ARMA_BRANCA | 2015_A2 | 7,9 | 7,9 | 7,8 | -0.06 |
+| BULLYING_PRATICOU | 2015_A2 | 20,4 | 20,4 | 20,3 | -0.09 |
 | NONO_CINTO_FRENTE | 2015_A1 | 19,7 | 19,7 | 19,6 | -0.16 |
 | NONO_CINTO_TRAS | 2015_A1 | 30,8 | 30,8 | 30,5 | -0.30 |
 | NONO_CINTO_FRENTE_OU_TRAS | 2015_A1 | 33,6 | 33,6 | 33,3 | -0.23 |

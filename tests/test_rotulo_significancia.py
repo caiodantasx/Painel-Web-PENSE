@@ -179,7 +179,11 @@ def test_dashboard_shows_badge_only_with_decision(tmp_path):
     if not bpath.exists() or not (CUR / "microdata_estimates.csv").exists():
         pytest.skip("rode scripts/run_all.py")
     shutil.copytree(ROOT / "config", tmp_path / "config")
-    (tmp_path / "data").symlink_to(ROOT / "data", target_is_directory=True)
+    try:
+        (tmp_path / "data").symlink_to(ROOT / "data", target_is_directory=True)
+    except OSError:   # Windows sem privilégio de link simbólico: junção de diretório não exige
+        import _winapi
+        _winapi.CreateJunction(str(ROOT / "data"), str(tmp_path / "data"))
     with (tmp_path / "config" / "microdata" / "comparability_decisions.csv").open("w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh, lineterminator="\n")
         w.writerow(["indicator_key", "final_status", "justification", "evidence_reference", "reviewer", "decision_date"])
@@ -208,7 +212,10 @@ def test_dashboard_shows_badge_only_with_decision(tmp_path):
             page.route("**/data/pense_bundle.json", lambda r: r.fulfill(status=200, content_type="application/json", body=body))
             page.goto(f"http://127.0.0.1:{httpd.server_address[1]}", wait_until="networkidle")
             page.click("#tab-history")
-            page.wait_for_selector("#table-micro-overview tbody tr")
+            try:
+                page.wait_for_selector("#table-micro-overview tbody tr", timeout=8000)
+            except Exception:
+                raise AssertionError(f"erros no navegador: {errors}")
             head = page.text_content("#table-micro-overview thead")   # texto do DOM (o CSS põe em maiúsculas)
             assert "Diferença significativa?" in head and "confirmada" not in head.lower()
             chips = lambda: page.eval_on_selector_all("#micro-detail .chip, #page-history .change .chip",  # noqa: E731

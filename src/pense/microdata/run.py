@@ -88,6 +88,8 @@ def _columns(spec: dict, indicators: dict[str, dict], key: str) -> list[str]:
         if key in ind["editions"]:
             for cond in _conditions(ind, key):
                 cols.add(pre + cond["var"])
+            if ind.get("given"):
+                cols.add(pre + ind["given"]["var"])
     return sorted(cols)
 
 
@@ -196,6 +198,13 @@ def _masks(ed: EditionData, ind: dict, convention: str = CONV_PUB) -> tuple[np.n
     num &= den
     rule_n = " OU ".join(f"{pre}{c['var']} ∈ {c['num']}" for c in conds)
     rule_d = " OU ".join(f"{pre}{c['var']} ∈ {list(c['den']) + nr}" for c in conds) + extra
+    g = ind.get("given")
+    if g:   # subgrupo (ex.: só quem sofreu bullying): restringe numerador e denominador
+        gmask = df[pre + g["var"]].isin(g["codes"]).to_numpy()
+        num &= gmask
+        den &= gmask
+        rule_d += f"; somente {pre}{g['var']} ∈ {g['codes']}"
+    return num, den, rule_n, rule_d
     return num, den, rule_n, rule_d
 
 

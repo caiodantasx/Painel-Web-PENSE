@@ -153,7 +153,11 @@ def test_dashboard_shows_sign_preserving_interval(tmp_path):
     if not BUNDLE.exists() or not (ROOT / "data" / "curated" / "microdata_estimates.csv").exists():
         pytest.skip("rode scripts/run_all.py")
     shutil.copytree(ROOT / "config", tmp_path / "config")
-    (tmp_path / "data").symlink_to(ROOT / "data", target_is_directory=True)
+    try:
+        (tmp_path / "data").symlink_to(ROOT / "data", target_is_directory=True)
+    except OSError:   # Windows sem privilégio de link simbólico: junção de diretório não exige
+        import _winapi
+        _winapi.CreateJunction(str(ROOT / "data"), str(tmp_path / "data"))
     (tmp_path / "config" / "microdata" / "comparability_decisions.csv").write_text(
         "indicator_key,final_status,justification,evidence_reference,reviewer,decision_date\n"
         "TRAJETO_INSEGURO,COMPARABLE_WITH_CAVEATS,teste,teste,REVISOR_DE_TESTE,2026-10-27\n", encoding="utf-8")

@@ -241,7 +241,7 @@ def _bundle(estimates, comp, series, editions, indicators, summary, pub_values=N
             "status": s["status"], "compared": int(s["compared"]), "reproduz": int(s["reproduz"]),
             "proximo": int(s.get("proximo") or 0), "max_diff": float(s["max_abs_diff_estimate_pp"]),
             "table": s["published_table"], "brasil": s.get("brasil_reproduz") == "True"}
-    cols: dict[str, list] = {k: [] for k in ("k", "ed", "t", "a", "s", "d", "e", "lo", "hi", "se", "cv", "n", "lp", "pe")}
+    cols: dict[str, list] = {k: [] for k in ("k", "ed", "t", "a", "s", "d", "e", "lo", "hi", "se", "cv", "n", "w", "lp", "pe")}
     pub_values = pub_values or {}
     for r in estimates:
         cols["k"].append(keys.index(r["indicator_key"]))
@@ -254,6 +254,8 @@ def _bundle(estimates, comp, series, editions, indicators, summary, pub_values=N
                      ("cv", "coefficient_of_variation")):
             cols[c].append(_num(r[f]))
         cols["n"].append(int(r["n_denominator"]))
+        # total estimado de escolares no denominador (soma dos pesos): base do "cerca de N estudantes"
+        cols["w"].append(round(_num(r.get("weighted_denominator", "")) or 0))
         cols["lp"].append(1 if r["low_precision"] == "True" else 0)
         pv = pub_values.get((r["indicator_key"], r["edition_id"], r["territory_code"], r["age_group"], r["sex"],
                              r["admin_dependency"])) if r.get("nonresponse_convention") == "SERIE" else None

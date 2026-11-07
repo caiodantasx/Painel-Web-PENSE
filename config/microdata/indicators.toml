@@ -411,3 +411,91 @@ den = [1, 2]
 editions = ["PENSE_2015_A1", "PENSE_2019", "PENSE_2024"]
 published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.11", PENSE_2019 = "PENSE_SERIE_9ANO_CAPITAIS@10.11" }
 indirect_validation = { PENSE_2024 = ["BRIGA_ARMA_BRANCA"] }
+
+# ---- Tema 2 (situações na escola): bullying e cyberbullying — pedidos dos gestores (nov/2026) ----
+# Definições conferidas pelas tabelas publicadas de 2024 (2.5, 2.9, 2.10 e 2.15). As tabelas do Tema 2
+# de 2015 e 2019 não estão na base: nessas edições a regra só é sustentada pelo desenho amostral já
+# validado em outros temas, e a comparabilidade fica como PROPOSTA AUTOMÁTICA até decisão registrada.
+
+# Sofreu bullying: o código mudou a cada edição (VB07007 → B07007A → B07007B), com escalas diferentes:
+# 2015 = nunca/raramente/às vezes/maior parte/sempre (não comparável); 2019 = nenhuma/1/2 ou mais;
+# 2024 = nenhuma/1/2/3 ou mais. "2 ou mais vezes" é definível em 2019 e 2024 (2024: códigos 3 e 4).
+[BULLYING_SOFREU]
+label = "Sentiram-se humilhados por provocações de colegas da escola duas ou mais vezes"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, quantas vezes algum dos seus colegas de escola o esculachou, zoou, mangou, intimidou ou caçoou tanto que você ficou magoado, incomodado, aborrecido, ofendido ou humilhado?"
+by_edition = { PENSE_2019 = { var = "B07007A", num = [3], den = [1, 2, 3] }, PENSE_2024 = { var = "B07007B", num = [3, 4], den = [1, 2, 3, 4] } }
+var = "B07007B"
+num = [3, 4]
+den = [1, 2, 3, 4]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2024 = "2.5|Duas ou mais vezes" }
+definition_note = "Pergunta alterada entre 2019 (B07007A: nenhuma, 1, 2 ou mais vezes) e 2024 (B07007B: nenhuma, 1, 2, 3 ou mais vezes). '2 ou mais vezes' é harmonizável, mas o sufixo novo indica pergunta revista pelo IBGE: comparação só com decisão registrada."
+
+[BULLYING_PRATICOU]
+label = "Esculacharam, zombaram, intimidaram ou caçoaram de colegas a ponto de magoá-los"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, você esculachou, zombou, mangou, intimidou ou caçoou algum de seus colegas da escola tanto que ele ficou magoado, aborrecido, ofendido ou humilhado?"
+var = "B07009"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
+published = { PENSE_2024 = "2.10" }
+
+[CYBER_SOFREU]
+label = "Sentiram-se ameaçados, ofendidos ou humilhados nas redes sociais ou aplicativos de celular"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, você se sentiu ameaçado(a), ofendido(a) ou humilhado(a) nas redes sociais ou aplicativos de celular?"
+var = "B07013"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2019", "PENSE_2024"]
+published = { PENSE_2024 = "2.9" }
+
+[CYBER_PRATICOU]
+label = "Ameaçaram, ofenderam ou humilharam outras pessoas nas redes sociais ou aplicativos de celular"
+period = "30_DIAS"
+question = "NOS ÚLTIMOS 30 DIAS, você ameaçou, ofendeu ou humilhou outras pessoas nas redes sociais ou aplicativos de celular?"
+var = "B07016"
+num = [1]
+den = [1, 2]
+editions = ["PENSE_2024"]
+published = { PENSE_2024 = "2.15" }
+
+# Bullying × faltas (pergunta do gestor "os alunos faltam por medo de bullying?"). A PeNSE NÃO pergunta
+# o motivo da falta; só se o aluno faltou por não se sentir seguro NA ESCOLA (B09002). `given` restringe
+# numerador e denominador ao grupo: quem sofreu bullying 2 ou mais vezes × quem não sofreu nenhuma vez.
+# É ASSOCIAÇÃO entre duas respostas do mesmo questionário, não prova de causa.
+[FALTOU_INSEGURANCA_SOFREU_BULLYING]
+label = "Faltaram por insegurança na escola, entre quem sofreu bullying duas ou mais vezes"
+period = "30_DIAS"
+question = "B09002 (faltou por não se sentir seguro na escola) entre quem respondeu 2 ou mais vezes em B07007B."
+var = "B09002"
+num = [2, 3, 4, 5, 6]
+den = [1, 2, 3, 4, 5, 6]
+given = { var = "B07007B", codes = [3, 4] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: a PeNSE não pergunta se a falta foi por bullying."
+
+[FALTOU_INSEGURANCA_NAO_SOFREU_BULLYING]
+label = "Faltaram por insegurança na escola, entre quem não sofreu bullying nenhuma vez"
+period = "30_DIAS"
+question = "B09002 (faltou por não se sentir seguro na escola) entre quem respondeu nenhuma vez em B07007B."
+var = "B09002"
+num = [2, 3, 4, 5, 6]
+den = [1, 2, 3, 4, 5, 6]
+given = { var = "B07007B", codes = [1] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: a PeNSE não pergunta se a falta foi por bullying."
+
+# "Algum tipo de violência" (pergunta do gestor "quantos estudantes foram vítimas?"): sofreu pelo menos
+# uma de quatro situações com o aluno como vítima — bullying 2 ou mais vezes ou cyberbullying (30 dias),
+# agressão física por pais/responsáveis ou por outra pessoa (12 meses). Violência sexual fica fora por
+# ser "alguma vez na vida" (período diferente). Denominador: respondeu a pelo menos uma das quatro.
+[ALGUMA_VIOLENCIA]
+label = "Sofreram pelo menos um tipo de violência: bullying, cyberbullying ou agressão física"
+period = "MISTO"
+question = "B07007B ∈ {3,4} OU B07013 = 1 OU B09003A ∈ {2,3,4} OU B09010A1 ∈ {2,3,4}"
+any = [{ var = "B07007B", num = [3, 4], den = [1, 2, 3, 4] }, { var = "B07013", num = [1], den = [1, 2] }, { var = "B09003A", num = [2, 3, 4], den = [1, 2, 3, 4] }, { var = "B09010A1", num = [2, 3, 4], den = [1, 2, 3, 4] }]
+editions = ["PENSE_2024"]
+definition_note = "Indicador composto do projeto, sem tabela publicada equivalente: soma quem sofreu pelo menos uma das quatro situações (sem contar duas vezes quem sofreu mais de uma). Períodos: 30 dias (bullying, cyberbullying) e 12 meses (agressões)."

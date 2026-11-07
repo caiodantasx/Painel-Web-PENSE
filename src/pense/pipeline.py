@@ -31,6 +31,7 @@ from .adapters.base import SheetContext
 from .adapters.registry import select_adapter
 from .config import Config
 from .exports.dashboard import build_bundle, stamp_hash
+from .exports.gestor import gestor_section
 from .exports.writers import SLIM_FIELDS, write_csv, write_json
 from .harmonization.catalog import build_catalog
 from .harmonization.comparability import evaluate, status_index
@@ -276,6 +277,10 @@ def _write(cfg: Config, res: RunResult) -> None:
         write_csv(cfg.config_dir / "microdata" / "comparability_decisions_MODELO.csv", res.micro["decision_template"])
         for msg in res.micro.get("invalid_decisions", []):
             log.warning("Decisão de comparabilidade ignorada", extra={"detail": msg})
+    gestor = gestor_section(cfg.config_dir, bundle)
+    if gestor:
+        bundle["gestor"] = gestor
+        stamp_hash(bundle)
     write_json(cfg.path("dashboard_data") / "pense_bundle.json", bundle, compact=True)
     manifest = {
         "pipeline_version": __version__,
