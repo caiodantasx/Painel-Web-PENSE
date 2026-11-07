@@ -1,0 +1,144 @@
+/* Liquid Glass (estilo Apple, iOS 26) — camada visual carregada por último.
+   Ideia: superfícies de vidro claro sobre uma luz ambiente colorida; borda de luz (aro) mais forte nos
+   cantos onde a luz bate; reflexo especular que acompanha o ponteiro (assets/js/glass.js); profundidade
+   por sombras internas. Mapa e filtros usam um vidro mais denso (leitura em primeiro lugar).
+   Acessibilidade: com "reduzir transparência" ou "mais contraste" no sistema, tudo fica sólido. */
+
+:root {
+  --lg-tint: rgba(24, 28, 52, 0.30);          /* vidro claro: cartões */
+  --lg-tint-dense: rgba(14, 16, 30, 0.74);    /* vidro denso: mapa e filtros */
+  --lg-tint-bar: rgba(16, 18, 34, 0.46);      /* barra flutuante */
+  --lg-blur: 20px;
+  --lg-rim: rgba(255, 255, 255, 0.55);
+  --lg-rim-low: rgba(255, 255, 255, 0.06);
+  --lg-spec: rgba(255, 255, 255, 0.12);
+  --lg-inner: rgba(255, 255, 255, 0.18);
+  --lg-drop: 0 26px 50px -26px rgba(0, 0, 0, 0.7), 0 3px 8px -3px rgba(0, 0, 0, 0.35);
+  --lg-radius: 22px;
+  --amb-1: rgba(79, 110, 247, 0.30); --amb-2: rgba(139, 92, 246, 0.28); --amb-3: rgba(224, 86, 158, 0.12);
+}
+:root[data-theme="light"] {
+  --lg-tint: rgba(255, 255, 255, 0.42);
+  --lg-tint-dense: rgba(255, 255, 255, 0.82);
+  --lg-tint-bar: rgba(255, 255, 255, 0.55);
+  --lg-rim: rgba(255, 255, 255, 1);
+  --lg-rim-low: rgba(255, 255, 255, 0.35);
+  --lg-spec: rgba(255, 255, 255, 0.55);
+  --lg-inner: rgba(255, 255, 255, 0.7);
+  --lg-drop: 0 22px 44px -24px rgba(40, 40, 110, 0.28), 0 2px 6px -2px rgba(40, 40, 110, 0.12);
+  --amb-1: rgba(79, 110, 247, 0.20); --amb-2: rgba(139, 92, 246, 0.18); --amb-3: rgba(224, 86, 158, 0.10);
+}
+
+/* luz ambiente fixa: é o que o vidro desfoca e colore */
+body {
+  background:
+    radial-gradient(620px 520px at 88% 22%, var(--amb-2), transparent 70%),
+    radial-gradient(720px 560px at 6% 62%, var(--amb-1), transparent 70%),
+    radial-gradient(520px 420px at 60% 100%, var(--amb-3), transparent 70%),
+    radial-gradient(900px 480px at 8% -10%, var(--bg-glow-1), transparent 70%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+/* ---- o material */
+.panel, .h-card {
+  position: relative; isolation: isolate;
+  background: var(--lg-tint);
+  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(190%) brightness(1.06);
+  backdrop-filter: blur(var(--lg-blur)) saturate(190%) brightness(1.06);
+  border: 1px solid transparent;
+  border-radius: var(--lg-radius);
+  box-shadow:
+    inset 0 1px 0 var(--lg-inner),                 /* luz batendo no topo */
+    inset 0 -1px 0 var(--lg-rim-low),              /* reflexo fraco na base */
+    inset 0 14px 28px -20px var(--lg-inner),       /* espessura: brilho que entra pela borda */
+    inset 0 -18px 30px -24px rgba(0, 0, 0, 0.25),  /* espessura: sombra interna na base */
+    var(--lg-drop);
+}
+/* aro de luz: mais forte nos cantos superior esquerdo e inferior direito */
+.panel:not(.map-panel)::before, .h-card::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; pointer-events: none; z-index: 2;
+  background: linear-gradient(140deg, var(--lg-rim) 0%, rgba(255, 255, 255, 0.14) 18%, rgba(255, 255, 255, 0.02) 46%,
+    rgba(255, 255, 255, 0.04) 70%, rgba(255, 255, 255, 0.30) 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+}
+/* reflexo especular que acompanha o ponteiro (glass.js define --mx/--my) */
+.panel::after, .h-card::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: -1;
+  background: radial-gradient(380px circle at var(--mx, 18%) var(--my, -10%), var(--lg-spec), transparent 46%);
+  transition: opacity 300ms ease;
+}
+
+/* vidro denso: mapa e filtros (o conteúdo precisa de fundo mais estável) */
+.h-choices, .h-map-panel, .map-panel, .filterbar, .e-choices { background: var(--lg-tint-dense); }
+
+/* destaques coloridos continuam no vidro */
+.h-answer { background: linear-gradient(155deg, color-mix(in srgb, var(--brand-blue) 22%, transparent) 0%,
+  color-mix(in srgb, var(--brand-violet) 12%, transparent) 45%, var(--lg-tint) 75%); }
+.h-card.any { background: linear-gradient(155deg, color-mix(in srgb, var(--select) 16%, transparent), var(--lg-tint) 60%); }
+.h-card.any::before { background: linear-gradient(140deg, color-mix(in srgb, var(--select) 80%, white) 0%, rgba(255, 255, 255, 0.1) 22%,
+  rgba(255, 255, 255, 0.02) 50%, color-mix(in srgb, var(--select) 40%, transparent) 100%); }
+
+/* superfícies internas: sólidas e discretas (nunca vidro sobre vidro) */
+.h-track, .seg-group, .h-cmp, .h-verdict, .h-warn { -webkit-backdrop-filter: none; backdrop-filter: none; }
+.seg-group, .tabs [role=tablist] {
+  background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+}
+:root[data-theme="light"] .seg-group, :root[data-theme="light"] .tabs [role=tablist] {
+  background: rgba(20, 30, 80, 0.05); border-color: rgba(20, 30, 80, 0.06); box-shadow: inset 0 1px 2px rgba(20, 30, 80, 0.12);
+}
+
+/* pílula ativa: lente colorida com brilho no topo */
+.seg-group .seg[aria-checked="true"], .tabs button[aria-selected="true"] {
+  background: linear-gradient(135deg, rgba(79, 110, 247, 0.92), rgba(139, 92, 246, 0.92));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.15), 0 6px 16px -6px rgba(99, 102, 241, 0.75);
+  color: #fff;
+}
+/* resposta imediata ao toque */
+.seg, .tabs button, .btn, .h-act, button.link { transition: transform 120ms ease-out, background-color 160ms ease, color 160ms ease; }
+.seg:active, .tabs button:active, .btn:active { transform: scale(0.97); }
+
+/* ---- barra de navegação: cápsula de vidro flutuante */
+.topbar { background: transparent; border-bottom: 0; -webkit-backdrop-filter: none; backdrop-filter: none; padding-top: 10px; }
+body::before { background: transparent; }
+.topbar-in {
+  position: relative; isolation: isolate;
+  max-width: calc(1440px - 32px); margin: 0 auto; border-radius: 999px; padding: 8px 10px 8px 14px;
+  background: var(--lg-tint-bar);
+  -webkit-backdrop-filter: blur(26px) saturate(200%) brightness(1.05); backdrop-filter: blur(26px) saturate(200%) brightness(1.05);
+  box-shadow: inset 0 1px 0 var(--lg-inner), inset 0 -1px 0 var(--lg-rim-low), 0 18px 40px -20px rgba(0, 0, 0, 0.7);
+}
+.topbar-in::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; pointer-events: none;
+  background: linear-gradient(120deg, var(--lg-rim) 0%, rgba(255, 255, 255, 0.10) 25%, rgba(255, 255, 255, 0.02) 60%, rgba(255, 255, 255, 0.28) 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
+}
+.tabs [role=tablist] { border-radius: 999px; }
+@media (max-width: 899px) {
+  .topbar { padding: 8px 10px 0; }
+  .topbar-in { border-radius: 22px; max-width: none; }
+}
+
+/* dicas flutuantes */
+.tooltip {
+  background: var(--lg-tint-bar); border-color: transparent; border-radius: 14px;
+  -webkit-backdrop-filter: blur(22px) saturate(190%); backdrop-filter: blur(22px) saturate(190%);
+  box-shadow: inset 0 1px 0 var(--lg-inner), 0 16px 34px -14px rgba(0, 0, 0, 0.7);
+}
+
+/* legibilidade sobre o vidro: texto secundário um pouco mais forte */
+.panel .card-sub, .h-card .h-bar-sub, .h-note { color: color-mix(in srgb, var(--ink-2) 85%, var(--muted)); }
+
+/* ---- acessibilidade */
+@media (prefers-reduced-transparency: reduce) {
+  .panel, .h-card, .topbar-in, .tooltip, .h-choices, .h-map-panel, .map-panel, .filterbar, .e-choices, .h-answer, .h-card.any {
+    background: var(--card); -webkit-backdrop-filter: none; backdrop-filter: none;
+  }
+  .panel::after, .h-card::after { display: none; }
+}
+@media (prefers-contrast: more) {
+  .panel, .h-card, .topbar-in { background: var(--card); border: 1px solid var(--axis); }
+  .panel::before, .h-card::before, .topbar-in::before, .panel::after, .h-card::after { display: none; }
+}
