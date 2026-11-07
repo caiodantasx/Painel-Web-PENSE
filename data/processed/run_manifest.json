@@ -1,6 +1,6 @@
 {
   "pipeline_version": "2.0.0",
-  "executed_at_utc": "2026-11-07T19:08:19+00:00",
+  "executed_at_utc": "2026-11-07T19:35:07+00:00",
   "python": "3.13.5",
   "platform": "Windows-10-10.0.19045-SP0",
   "libraries": {
@@ -13,6 +13,13 @@
       "source_id": "Amostra_1_Tema_06_Seguranca_da_Escola.xls",
       "sha256": "e55e058ecf7f464600d63433e61f07ae0a07e3614495fb531adf3d07d4d98410",
       "size_bytes": 61952,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Amostra_2_Tema_07_Situacoes_em_Casa_e_na_Escola_2015.xls",
+      "sha256": "2b5d1264ba8aa07c74b445a25b86671587cdddaea1094521bd0c81140b78d146",
+      "size_bytes": 103936,
       "status": "OK",
       "duplicate_of": ""
     },
@@ -104,6 +111,13 @@
       "source_id": "tab08avs.zip!tab809.xls",
       "sha256": "5a5a284bd60e343f97e2a39f684d4ac127a6d30ae62f73ddcf4c386a5d69c689",
       "size_bytes": 45056,
+      "status": "OK",
+      "duplicate_of": ""
+    },
+    {
+      "source_id": "Tema_02_Situacoes_em_Casa_e_na_Escola_2019_20260615.xls",
+      "sha256": "c0eee5c0d1d96d5bc02a4a9124e0d36f578ef00c92a622c1d602ed0d76f125d5",
+      "size_bytes": 531456,
       "status": "OK",
       "duplicate_of": ""
     },
@@ -438,73 +452,76 @@
     }
   ],
   "counts": {
-    "files_inventoried": 61,
-    "files_unique": 55,
+    "files_inventoried": 63,
+    "files_unique": 57,
     "duplicates": 2,
-    "sheets": 368,
+    "sheets": 407,
     "sheets_by_family": {
       "PENSE_2015_A1": 4,
-      "PENSE_2015_A2": 15,
+      "PENSE_2015_A2": 24,
       "PENSE_2024_IC": 123,
       "PENSE_2024_CV": 123,
       "PENSE_MULTIANO": 12,
       "PENSE_2009_CAPITAIS": 13,
-      "PENSE_2019_IC": 78
+      "PENSE_2019_IC": 107,
+      "NAO_MAPEADA": 1
     },
-    "estimate_records": 44365,
+    "estimate_records": 52713,
     "cv_records": 23608,
     "validation_status": {
-      "VALID": 43244,
-      "NOT_AVAILABLE": 120,
+      "VALID": 51395,
+      "NOT_AVAILABLE": 121,
       "VALID_WITH_WARNINGS": 945,
-      "REVIEW_REQUIRED": 56
+      "REVIEW_REQUIRED": 56,
+      "ERROR": 196
     },
-    "approved_canonical": 41657,
-    "analytical_duplicates": 2532,
+    "approved_canonical": 49298,
+    "analytical_duplicates": 3042,
     "issues_by_severity": {
-      "REVIEW": 57,
-      "INFO": 7770,
-      "WARNING": 961
+      "REVIEW": 58,
+      "INFO": 7817,
+      "WARNING": 961,
+      "ERROR": 196
     },
-    "indicators": 105,
-    "measures": 241,
+    "indicators": 124,
+    "measures": 284,
     "comparability_pairs": 30,
     "comparability_status": {
       "NOT_COMPARABLE": 16,
       "PENDING_REVIEW": 14
     },
     "series_points": 0,
-    "unparsed_items": 0,
+    "unparsed_items": 1,
     "microdata_estimates": 39438,
-    "microdata_series_points": 26036,
+    "microdata_series_points": 28640,
     "microdata_comparability": {
-      "COMPARABLE_WITH_CAVEATS": 33,
-      "PENDING_REVIEW": 5,
+      "COMPARABLE_WITH_CAVEATS": 36,
+      "PENDING_REVIEW": 2,
       "NOT_COMPARABLE": 5
     }
   },
   "rule_checks": {
-    "OUT001": 30085,
-    "VAL002": 132739,
-    "VAL003/VAL004": 44245,
+    "OUT001": 35053,
+    "VAL002": 157780,
+    "VAL003/VAL004": 52592,
     "VAL008": 23573,
     "VAL009": 23273,
-    "VAL011": 44365,
+    "VAL011": 52713,
     "VAL014": 2440,
-    "VAL015": 21180,
+    "VAL015": 26307,
     "VAL019": 74,
-    "VAL020": 2532,
+    "VAL020": 3042,
     "VAL010": 23604,
     "REF_abas_conferidas": 246,
     "REF_temas": 3,
     "REF_titulos_iguais": 246,
-    "QST_perguntas_ligadas": 24444
+    "QST_perguntas_ligadas": 25719
   },
-  "dashboard_bundle_sha256": "be4e7fbd11de0878036a282e1b29309278a081b0edba1535fd19da428e63ffa2",
+  "dashboard_bundle_sha256": "5a54dbacf1dd8a5bb80bbc56f4abc773696e57e03a62b2720f64ad5a36fdedc5",
   "timings_seconds": {
-    "ingestion": 0.07,
-    "adapters": 23.27,
-    "validation": 2.09,
-    "total": 29.89
+    "ingestion": 0.08,
+    "adapters": 24.65,
+    "validation": 2.44,
+    "total": 31.54
   }
 }

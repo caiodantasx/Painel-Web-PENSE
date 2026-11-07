@@ -33,6 +33,7 @@ Por recorte: **REPRODUZ** (Δ estimativa ≤ 0,05 p.p. e limites do IC ≤ 0,15 
 | 2015_A1 | NONO_TRAJETO_OU_ESCOLA | 10.9  | 132/140 | 6 | 0 | 0.091 | VALIDADO_COM_RESSALVA |
 | 2015_A2 | BRIGA_ARMA_BRANCA | 2.11.10  | 42/42 | 0 | 0 | 0.000 | VALIDADO |
 | 2015_A2 | BRIGA_ARMA_FOGO | 2.11.9  | 42/42 | 0 | 0 | 0.000 | VALIDADO |
+| 2015_A2 | BULLYING_PRATICOU | 2.7.9  | 42/42 | 0 | 0 | 0.000 | VALIDADO |
 | 2015_A2 | CAPACETE_AS_VEZES_OU_MAIS | 2.11.5  | 42/42 | 0 | 0 | 0.000 | VALIDADO |
 | 2015_A2 | CINTO_FRENTE | 2.11.4 Banco da frente | 42/42 | 0 | 0 | 0.000 | VALIDADO |
 | 2015_A2 | CINTO_NUNCA_RARAMENTE | 2.11.3  | 42/42 | 0 | 0 | 0.000 | VALIDADO |
@@ -47,6 +48,8 @@ Por recorte: **REPRODUZ** (Δ estimativa ≤ 0,05 p.p. e limites do IC ≤ 0,15 
 | 2019 | BRIGA_ARMA_BRANCA | 9.11  | 284/317 | 32 | 1 | 0.310 | VALIDADO_COM_RESSALVA |
 | 2019 | BRIGA_ARMA_FOGO | 9.10  | 289/317 | 28 | 0 | 0.248 | VALIDADO_COM_RESSALVA |
 | 2019 | BRIGA_LUTA_FISICA | 9.9  | 248/317 | 68 | 0 | 0.244 | VALIDADO_COM_RESSALVA |
+| 2019 | BULLYING_PRATICOU | 2.10  | 263/317 | 54 | 0 | 0.215 | VALIDADO_COM_RESSALVA |
+| 2019 | BULLYING_SOFREU | 2.5 Duas ou mais vezes | 256/317 | 60 | 1 | 0.423 | VALIDADO_COM_RESSALVA |
 | 2019 | CAPACETE_QUALQUER_USO | 9.3  | 276/317 | 34 | 6 | 0.382 | VALIDADO_COM_RESSALVA |
 | 2019 | CINTO_FRENTE | 9.2 Banco da frente | 245/317 | 72 | 0 | 0.209 | VALIDADO_COM_RESSALVA |
 | 2019 | CINTO_NUNCA_RARAMENTE | 9.1  | 246/317 | 69 | 1 | 0.343 | VALIDADO_COM_RESSALVA |
@@ -54,6 +57,7 @@ Por recorte: **REPRODUZ** (Δ estimativa ≤ 0,05 p.p. e limites do IC ≤ 0,15 
 | 2019 | CONDUTOR_ALCOOL | 9.5  | 228/317 | 87 | 2 | 0.474 | VALIDADO_COM_RESSALVA |
 | 2019 | CONDUTOR_CELULAR | 9.6  | 229/317 | 86 | 2 | 0.380 | VALIDADO_COM_RESSALVA |
 | 2019 | CONDUZIU_VEICULO | 9.4  | 220/317 | 96 | 1 | 0.490 | VALIDADO_COM_RESSALVA |
+| 2019 | CYBER_SOFREU | 2.9  | 253/317 | 63 | 1 | 0.334 | VALIDADO_COM_RESSALVA |
 | 2019 | ESCOLA_INSEGURA | 9.8  | 256/317 | 59 | 2 | 0.489 | VALIDADO_COM_RESSALVA |
 | 2019 | ESCOLA_LOCAL_AGRESSAO | 17.1 Agressão física ou espan | 59/73 | 12 | 0 | 0.271 | VALIDADO_COM_RESSALVA |
 | 2019 | ESCOLA_LOCAL_ASSALTOS | 17.1 Assaltos e roubos a pess | 53/73 | 14 | 0 | 0.182 | VALIDADO_COM_RESSALVA |
@@ -199,9 +203,9 @@ Valores na convenção da série (2015 difere da tabela publicada pelo efeito da
 | Em escolas cujo diretor presenciou/ouviu falar de assassinato na localidade | — | 15,5 (13,0–18,1) | 10,7 (7,9–13,5) *✓ | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
 | Em escolas cujo diretor presenciou/ouviu falar de violência sexual na localidade | — | 10,1 (8,3–12,0) | 9,8 (7,7–11,8) | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
 | Em escolas que suspenderam ou interromperam aulas por violência | — | 8,0 (6,0–10,0) | 7,7 (6,4–9,0) | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
-| Sentiram-se humilhados por provocações de colegas da escola duas ou mais vezes | — | 23,0 (22,4–23,6) † | 27,2 (26,6–27,8) | `PENDING_REVIEW` | PROPOSTA_AUTOMATICA |
-| Esculacharam, zombaram, intimidaram ou caçoaram de colegas a ponto de magoá-los | 20,3 (19,1–21,4) † | 12,0 (11,6–12,5) † | 13,7 (13,0–14,3) | `PENDING_REVIEW` | PROPOSTA_AUTOMATICA |
-| Sentiram-se ameaçados, ofendidos ou humilhados nas redes sociais ou aplicativos de celular | — | 13,2 (12,8–13,7) † | 12,7 (12,3–13,2) | `PENDING_REVIEW` | PROPOSTA_AUTOMATICA |
+| Sentiram-se humilhados por provocações de colegas da escola duas ou mais vezes | — | 23,0 (22,4–23,6) | 27,2 (26,6–27,8) *✓ | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
+| Esculacharam, zombaram, intimidaram ou caçoaram de colegas a ponto de magoá-los | 20,3 (19,1–21,4) | 12,0 (11,6–12,5) *✓ | 13,7 (13,0–14,3) *✓ | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
+| Sentiram-se ameaçados, ofendidos ou humilhados nas redes sociais ou aplicativos de celular | — | 13,2 (12,8–13,7) | 12,7 (12,3–13,2) | `COMPARABLE_WITH_CAVEATS` | DECISAO_REGISTRADA |
 | Ameaçaram, ofenderam ou humilharam outras pessoas nas redes sociais ou aplicativos de celular | — | — | 10,0 (9,6–10,4) | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
 | Faltaram por insegurança na escola, entre quem sofreu bullying duas ou mais vezes | — | — | 22,7 (21,4–23,9) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
 | Faltaram por insegurança na escola, entre quem não sofreu bullying nenhuma vez | — | — | 8,8 (8,3–9,4) † | `NOT_COMPARABLE` | PROPOSTA_AUTOMATICA |
@@ -230,9 +234,6 @@ Evidências usadas: mesma variável e códigos; **redação comparada palavra po
 * `CAPACETE_AS_VEZES_OU_MAIS` → **PENDING_REVIEW**: Fora da série: só 2015 publicou esta definição; em 2019 e 2024 não há tabela para validar a estimativa. Volta à série apenas com validação documental das três edições e decisão registrada.; fora da série por falta de evidência: 2019 (sem tabela publicada para conferir), 2024 (sem tabela publicada pa
 * `ESCOLA_LOCAL_DROGAS` → **NOT_COMPARABLE**: variável muda entre edições ({'PENSE_2019': 'E01P81', 'PENSE_2024': 'E01P81A'}); sufixo novo indica pergunta alterada; redação difere nos dicionários: 2019 → 2024: acrescenta “ou usando”; 2019: Microdados públicos de 2019 com controle de confidencialidade (Nota técnica 01/2022): supressão de sexo/id
 * `NONO_CINTO_FRENTE_OU_TRAS` → **PENDING_REVIEW**: fora da série por falta de evidência: 2015 (cálculo não reproduz a tabela publicada), 2019 (cálculo não reproduz a tabela publicada), 2024 (sem tabela publicada para conferir); cálculo NÃO reproduz a tabela publicada em 2015, 2019; A regra da tabela oficial 10.3 não foi reproduzida (calculado 33,2% 
-* `BULLYING_SOFREU` → **PENDING_REVIEW**: fora da série por falta de evidência: 2019 (sem tabela publicada para conferir); Pergunta alterada entre 2019 (B07007A: nenhuma, 1, 2 ou mais vezes) e 2024 (B07007B: nenhuma, 1, 2, 3 ou mais vezes). '2 ou mais vezes' é harmonizável, mas o sufixo novo indica pergunta revista pelo IBGE: comparação só 
-* `BULLYING_PRATICOU` → **PENDING_REVIEW**: fora da série por falta de evidência: 2015 (sem tabela publicada para conferir), 2019 (sem tabela publicada para conferir)
-* `CYBER_SOFREU` → **PENDING_REVIEW**: fora da série por falta de evidência: 2019 (sem tabela publicada para conferir)
 * `CYBER_PRATICOU` → **NOT_COMPARABLE**: 
 * `FALTOU_INSEGURANCA_SOFREU_BULLYING` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: a PeNSE não pergunta se a falta foi por bullying.
 * `FALTOU_INSEGURANCA_NAO_SOFREU_BULLYING` → **NOT_COMPARABLE**: fora da série por falta de evidência: 2024 (sem tabela publicada para conferir); Associação, não causa: a PeNSE não pergunta se a falta foi por bullying.

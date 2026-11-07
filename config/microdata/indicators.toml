@@ -413,9 +413,8 @@ published = { PENSE_2015_A1 = "PENSE_SERIE_9ANO_CAPITAIS@10.11", PENSE_2019 = "P
 indirect_validation = { PENSE_2024 = ["BRIGA_ARMA_BRANCA"] }
 
 # ---- Tema 2 (situações na escola): bullying e cyberbullying — pedidos dos gestores (nov/2026) ----
-# Definições conferidas pelas tabelas publicadas de 2024 (2.5, 2.9, 2.10 e 2.15). As tabelas do Tema 2
-# de 2015 e 2019 não estão na base: nessas edições a regra só é sustentada pelo desenho amostral já
-# validado em outros temas, e a comparabilidade fica como PROPOSTA AUTOMÁTICA até decisão registrada.
+# Definições conferidas pelas tabelas publicadas: 2024 (Tema 2: 2.5, 2.9, 2.10, 2.15), 2019 (Tema 2: 2.5, 2.9,
+# 2.10; baixado do FTP do IBGE em 07/11/2026) e 2015 Amostra 2 (Tema 7: 2.7.9).
 
 # Sofreu bullying: o código mudou a cada edição (VB07007 → B07007A → B07007B), com escalas diferentes:
 # 2015 = nunca/raramente/às vezes/maior parte/sempre (não comparável); 2019 = nenhuma/1/2 ou mais;
@@ -429,7 +428,7 @@ var = "B07007B"
 num = [3, 4]
 den = [1, 2, 3, 4]
 editions = ["PENSE_2019", "PENSE_2024"]
-published = { PENSE_2024 = "2.5|Duas ou mais vezes" }
+published = { PENSE_2019 = "2.5|Duas ou mais vezes", PENSE_2024 = "2.5|Duas ou mais vezes" }
 definition_note = "Pergunta alterada entre 2019 (B07007A: nenhuma, 1, 2 ou mais vezes) e 2024 (B07007B: nenhuma, 1, 2, 3 ou mais vezes). '2 ou mais vezes' é harmonizável, mas o sufixo novo indica pergunta revista pelo IBGE: comparação só com decisão registrada."
 
 [BULLYING_PRATICOU]
@@ -440,7 +439,7 @@ var = "B07009"
 num = [1]
 den = [1, 2]
 editions = ["PENSE_2015_A2", "PENSE_2019", "PENSE_2024"]
-published = { PENSE_2024 = "2.10" }
+published = { PENSE_2015_A2 = "2.7.9", PENSE_2019 = "2.10", PENSE_2024 = "2.10" }
 
 [CYBER_SOFREU]
 label = "Sentiram-se ameaçados, ofendidos ou humilhados nas redes sociais ou aplicativos de celular"
@@ -450,7 +449,7 @@ var = "B07013"
 num = [1]
 den = [1, 2]
 editions = ["PENSE_2019", "PENSE_2024"]
-published = { PENSE_2024 = "2.9" }
+published = { PENSE_2019 = "2.9", PENSE_2024 = "2.9" }
 
 [CYBER_PRATICOU]
 label = "Ameaçaram, ofenderam ou humilharam outras pessoas nas redes sociais ou aplicativos de celular"

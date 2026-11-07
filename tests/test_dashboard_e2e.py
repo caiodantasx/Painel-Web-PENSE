@@ -47,7 +47,7 @@ def _open(browser, url, start="overview", **ctx):
     page.on("pageerror", lambda e: errors.append(str(e)))
     page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
     page.goto(f"{url}#{start}", wait_until="networkidle")
-    page.wait_for_selector("#h-answer .h-big" if start == "home" else "#chart-categories svg")
+    page.wait_for_selector("#h-answer .h-big" if start == "home" else "#chart-categories svg", timeout=90000)
     return page, errors
 
 

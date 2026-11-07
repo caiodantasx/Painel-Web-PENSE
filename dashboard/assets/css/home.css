@@ -147,3 +147,6 @@ button.link { background: none; border: 0; padding: 0; color: var(--accent); fon
   .e-body { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .e-body > .e-any { grid-column: 1 / -1; }
 }
+
+.h-trend-item + .h-trend-item { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+.h-trend-h { font-size: var(--fs-md); font-weight: 650; color: var(--ink-2); }

@@ -279,7 +279,17 @@ function renderHomeAbsence() {
 function renderHomeTrend() {
   const box = clear($("h-trend-body"));
   const topic = G.topics.find((t) => t.id === hstate.topic), it = G.items[topic.main];
-  $("h-trend-title").textContent = `Mudou com o tempo? ${it.short}`;
+  // no tema Bullying, as três séries pedidas pelos gestores aparecem juntas
+  const keys = hstate.topic === "bullying" ? ["bullying_sofreu", "bullying_praticou", "cyber_sofreu"].filter((k) => G.items[k]) : [topic.main];
+  $("h-trend-title").textContent = keys.length > 1 ? "Mudou com o tempo?" : `Mudou com o tempo? ${it.short}`;
+  for (const k of keys) {
+    const sub = el("div", { class: "h-trend-item" });
+    if (keys.length > 1) sub.append(el("h3", { class: "h-trend-h", text: G.items[k].short }));
+    renderTrendItem(G.items[k], sub);
+    box.append(sub);
+  }
+}
+function renderTrendItem(it, box) {
   const key = it.micro;
   const info = M && key && M.kIndex.has(key) ? M.indicators[M.kIndex.get(key)] : null;
   const pts = info ? hMicro(key, hstate.place).filter((p) => p.e !== null) : [];
@@ -312,7 +322,16 @@ function renderHomeTrend() {
         ` Foi de ${in100(prev.e)} em cada 100 (${prev.year}) para ${in100(last.e)} em cada 100 (${last.year}), mas a diferença cabe na margem de erro.`);
     }
   }
-  box.append(verdict, hTrendChart(shown, ok));
+  box.append(verdict);
+  if (ok && shown.length >= 3) {   // trecho anterior da série (ex.: 2015 → 2019)
+    const a = shown[shown.length - 3], b = shown[shown.length - 2];
+    const [s2, d2] = groupDims();
+    const df = M.diffs[`${key}|${hstate.place}|Total|${s2}|${d2}|${b.year}`];
+    if (df) box.append(el("p", { class: "h-note" }, `Antes, de ${a.year} para ${b.year}: `,
+      el("b", { text: df[4] ? (df[1] > 0 ? "aumentou" : "diminuiu") : "não dá para dizer" }),
+      ` (de ${in100(a.e)} para ${in100(b.e)} em cada 100).`));
+  }
+  box.append(hTrendChart(shown, ok));
   if (ok && shown.length < pts.length) box.append(el("p", { class: "h-note", text: "Anos sem comparação aprovada ficam fora da linha (ver detalhes na página Série histórica)." }));
 }
 function hTrendChart(pts, joined) {
@@ -337,7 +356,8 @@ function hTrendChart(pts, joined) {
   for (const p of pts) {
     if (!joined) root.append(svg("line", { x1: x(p.year), x2: x(p.year), y1: y(p.lo), y2: y(p.hi), class: "whisker" }));
     root.append(svg("circle", { cx: x(p.year), cy: y(p.e), r: 5, class: "dot" }),
-      svg("text", { x: x(p.year), y: y(p.e) - 10, "text-anchor": "middle", class: "val", text: pct0(p.e) }),
+      svg("text", { x: x(p.year) + (p === pts[0] && pts.length > 1 ? 8 : 0), y: y(p.e) - 10,
+        "text-anchor": p === pts[0] && pts.length > 1 ? "start" : p === pts[pts.length - 1] && pts.length > 1 ? "end" : "middle", class: "val", text: pct0(p.e) }),
       svg("text", { x: x(p.year), y: H - 8, "text-anchor": "middle", class: "tick", text: p.year }));
   }
   return root;

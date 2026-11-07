@@ -193,9 +193,12 @@ def test_dashboard_shows_badge_only_with_decision(tmp_path):
     assert micro["diffs"]["ESCOLA_INSEGURA|BR|Total|Total|Total|2024"][5] == CHANGE_PENDING
     bundle = json.loads(bpath.read_text(encoding="utf-8"))
     bundle["micro"]["diffs"], bundle["micro"]["indicators"] = micro["diffs"], micro["indicators"]
-    body = json.dumps(bundle)
+    # cópia do painel com o pacote alterado em disco (interceptar ~10 MB pela rede travava às vezes)
+    site = tmp_path / "site"
+    shutil.copytree(ROOT / "dashboard", site, ignore=shutil.ignore_patterns("pense_bundle.json"))
+    (site / "data" / "pense_bundle.json").write_text(json.dumps(bundle), encoding="utf-8")
 
-    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT / "dashboard"))
+    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(site))
     handler.log_message = lambda *a, **k: None
     httpd = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
@@ -209,7 +212,6 @@ def test_dashboard_shows_badge_only_with_decision(tmp_path):
             errors = []
             page.on("pageerror", lambda e: errors.append(str(e)))
             page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
-            page.route("**/data/pense_bundle.json", lambda r: r.fulfill(status=200, content_type="application/json", body=body))
             page.goto(f"http://127.0.0.1:{httpd.server_address[1]}", wait_until="networkidle")
             try:   # só clica depois de o painel carregar
                 page.wait_for_selector("body:not(.is-loading)", timeout=60000)

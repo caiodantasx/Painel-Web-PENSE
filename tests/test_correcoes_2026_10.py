@@ -50,7 +50,9 @@ def test_2015_a2_third_level_is_the_table_not_a_cut():
 
 
 def test_2015_a2_tables_extracted_with_traceability():
-    obs = [r for r in _csv(ROOT / "data" / "processed" / "observations_validated.csv") if r["edition_id"] == "PENSE_2015_A2"]
+    # só o Tema 11 (Segurança, 2.11.x); o Tema 7 (Situações em casa e na escola, 2.7.x) entrou em nov/2026
+    obs = [r for r in _csv(ROOT / "data" / "processed" / "observations_validated.csv")
+           if r["edition_id"] == "PENSE_2015_A2" and r["table_id"].startswith("2.11.")]
     assert obs, "tabelas 2.11.x devem ser lidas pelo adaptador PENSE_2015_A2"
     assert {r["adapter_family"] for r in obs} == {"PENSE_2015_A2"}
     assert {r["validation_status"] for r in obs} <= {"VALID", "VALID_WITH_WARNINGS"}
@@ -191,7 +193,7 @@ def test_series_uses_harmonized_rows_not_publication_rows():
 # --------------------------------------------------------------------------- critérios de aceitação (saídas)
 def test_2015_a2_reproduces_published_tables_with_estrato_exp():
     rows = [r for r in _csv(CUR / "microdata_validation_summary.csv") if r["edition_id"] == "PENSE_2015_A2"]
-    assert len(rows) == 10, "tabelas 2.11.1–2.11.7, 2.11.9 e 2.11.10"
+    assert len(rows) == 11, "tabelas 2.11.1–2.11.7, 2.11.9, 2.11.10 e 2.7.9 (bullying praticado, nov/2026)"
     assert all(r["status"] == "VALIDADO" and r["reproduz"] == r["compared"] for r in rows), \
         "estimativa ≤ 0,05 p.p. e limites do IC ≤ 0,15 p.p. em todos os recortes"
 

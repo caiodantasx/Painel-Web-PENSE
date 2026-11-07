@@ -138,6 +138,13 @@ def test_every_raw_sheet_gets_an_adapter(cfg, raw_dir):
     for item in res.items:
         for g in read_grids(item.source, item.data):
             sel, _ = _extract(cfg, g)
-            if sel.adapter is None:
+            if sel.adapter is None and (item.source.source_id, g.sheet) not in IBGE_FOOTER_DEFECTS:
                 unmapped.append((item.source.source_id, g.sheet, sel.reason))
     assert not unmapped, unmapped
+
+
+# Abas em que o próprio IBGE publicou o rodapé de outra edição (verificado na planilha em 07/11/2026).
+# Ficar sem família é o comportamento correto: a leitura não escolhe entre duas edições possíveis.
+IBGE_FOOTER_DEFECTS = {
+    ("Tema_02_Situacoes_em_Casa_e_na_Escola_2019_20260615.xls", "2.6.1"),   # rodapé "Amostra 2, 2015" numa tabela de 2019
+}
