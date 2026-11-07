@@ -252,3 +252,67 @@ base = "bullying_sofreu_1mais"
 [motives.praticou]
 indicator = "PENSE_2024__2.13"
 base = "bullying_praticou"
+
+# ---- bloco "Ligações": a mesma resposta comparada entre dois grupos (microdados de 2024). Associação, não causa.
+[[links]]
+question = "Quem sofre bullying falta mais à escola?"
+outcome = "faltaram à escola por não se sentirem seguros lá (último mês)"
+with = "FALTOU_INSEGURANCA_SOFREU_BULLYING"
+without = "FALTOU_INSEGURANCA_NAO_SOFREU_BULLYING"
+with_label = "Sofreram bullying"
+without_label = "Não sofreram bullying"
+note = "A pesquisa não pergunta o motivo da falta; pergunta só se o aluno faltou por não se sentir seguro na escola."
+
+[[links]]
+question = "Quem sofre bullying se sente mais triste?"
+outcome = "se sentiram tristes na maioria das vezes ou sempre (último mês)"
+with = "LIGA_TRISTE_SIM"
+without = "LIGA_TRISTE_NAO"
+with_label = "Sofreram bullying"
+without_label = "Não sofreram bullying"
+note = "Tristeza frequente pode ter muitas causas; o número mostra que as duas respostas aparecem juntas."
+
+[[links]]
+question = "Quem sofre bullying sente que ninguém se importa?"
+outcome = "sentiram na maioria das vezes ou sempre que ninguém se preocupa com eles (último mês)"
+with = "LIGA_NINGUEM_SE_PREOCUPA_SIM"
+without = "LIGA_NINGUEM_SE_PREOCUPA_NAO"
+with_label = "Sofreram bullying"
+without_label = "Não sofreram bullying"
+note = "Se um aluno precisar de ajuda, o CVV atende de graça pelo 188, a qualquer hora."
+
+[[links]]
+question = "Quem apanha em casa sofre mais bullying na escola?"
+outcome = "sofreram bullying duas ou mais vezes no último mês"
+with = "LIGA_BULLYING_SE_AGREDIDO_PAIS_SIM"
+without = "LIGA_BULLYING_SE_AGREDIDO_PAIS_NAO"
+with_label = "Agredidos por pai, mãe ou responsável"
+without_label = "Não agredidos em casa"
+note = "Agressão em casa no último ano; bullying no último mês."
+
+[[links]]
+question = "Quem sofre bullying na escola também sofre na internet?"
+outcome = "sofreram cyberbullying (internet ou celular) no último mês"
+with = "LIGA_CYBER_SE_BULLYING_SIM"
+without = "LIGA_CYBER_SE_BULLYING_NAO"
+with_label = "Sofreram bullying na escola"
+without_label = "Não sofreram bullying na escola"
+note = ""
+
+[[links]]
+question = "Quem sofre bullying também pratica?"
+outcome = "praticaram bullying contra colegas no último mês"
+with = "LIGA_PRATICOU_SE_BULLYING_SIM"
+without = "LIGA_PRATICOU_SE_BULLYING_NAO"
+with_label = "Sofreram bullying"
+without_label = "Não sofreram bullying"
+note = "Vítima e autor não são grupos separados: parte dos alunos está nos dois."
+
+[[links]]
+question = "Tiroteio perto da escola faz o aluno faltar mais?"
+outcome = "faltaram por não se sentirem seguros no caminho de casa para a escola (último mês)"
+with = "LIGA_TRAJETO_SE_TIROS_SIM"
+without = "LIGA_TRAJETO_SE_TIROS_NAO"
+with_label = "Escolas com tiroteios perto"
+without_label = "Escolas sem tiroteios relatados"
+note = "Tiroteios segundo o diretor da escola, no último ano."

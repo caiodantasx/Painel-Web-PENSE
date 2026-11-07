@@ -89,3 +89,25 @@ A PeNSE não tem dados por município, só por capital, e não tem dados por esc
 * Série de bullying sofrido com 2015 (escala diferente) e série dos motivos (2.6/2.13).
 * Validar o rótulo "Os 100% são" das tabelas por motivo nas páginas de detalhe: a leitura automática diz "escolares de 13 a 17 anos",
   mas a base real é quem sofreu ou quem praticou (a página Estimativas já usa a base certa).
+
+## 7. Ligações e visual (atualização de 07/11/2026, noite)
+
+O bloco "Quem sofre bullying falta mais à escola?" virou **Ligações**: um seletor com 7 perguntas, todas no mesmo desenho
+(a mesma resposta comparada entre dois grupos, microdados de 2024, indicadores `LIGA_*` com `given`). Associação, não causa.
+
+| Pergunta | Grupo 1 | Grupo 2 |
+|---|---|---|
+| Quem sofre bullying falta mais à escola? (faltou por insegurança na escola) | 22,7% | 8,8% |
+| Quem sofre bullying se sente mais triste? (triste na maioria das vezes ou sempre) | 45,1% | 21,3% |
+| Quem sofre bullying sente que ninguém se importa? | 40,9% | 19,4% |
+| Quem apanha em casa sofre mais bullying na escola? (bullying 2+ vezes) | 39,6% | 24,2% |
+| Quem sofre bullying na escola também sofre na internet? (cyberbullying) | 24,0% | 7,2% |
+| Quem sofre bullying também pratica? | 25,0% | 7,9% |
+| Tiroteio perto da escola faz o aluno faltar mais? (faltou por insegurança no caminho) | 18,7% | 11,5% |
+
+Brasil, todos os alunos; grupo 1 = sofreu bullying 2+ vezes / foi agredido em casa / escola com tiroteios perto (diretor);
+grupo 2 = não sofreu nenhuma vez / não foi agredido / sem tiroteios relatados. Em todas, a diferença passa da margem de erro.
+
+Visual: mapa maior (coluna de 7/12), resposta e cartões laterais compactos; série e ligações em largura total; materiais
+translúcidos no estilo Apple (vidro com desfoque nos cartões, na barra do topo e nas dicas, borda clara no topo, luz ambiente
+fixa ao fundo), com versão sólida para `prefers-reduced-transparency` e `prefers-contrast: more`. O rótulo "Detalhes:" saiu do menu.

@@ -56,7 +56,8 @@ def gestor_section(config_dir: Path, bundle: dict[str, Any]) -> dict[str, Any] |
         ms = [i for i, m in enumerate(bundle["measures"]) if m["indicator_id"] == mv["indicator"]]
         if ms:
             motives[side] = {"measures": ms, "base": mv["base"] if mv.get("base") in items else ""}
+    links = [lk for lk in conf.get("links", []) if lk["with"] in micro_keys and lk["without"] in micro_keys]
     pop = conf.get("population_micro", "")
     return {"ibge_url": conf["ibge_url"], "edition": conf["edition"], "groups": conf["groups"],
-            "population_micro": pop if pop in micro_keys else "", "estimates": estimates, "motives": motives,
+            "population_micro": pop if pop in micro_keys else "", "estimates": estimates, "motives": motives, "links": links,
             "topics": [t for t in conf["topics"] if t["main"] in items], "items": items, "blocks": blocks}

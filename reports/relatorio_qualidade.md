@@ -1,6 +1,6 @@
 # Relatório de qualidade dos dados
 
-Gerado pela pipeline v2.0.0 em 2026-11-07T19:48:29+00:00 (UTC).
+Gerado pela pipeline v2.0.0 em 2026-11-07T20:37:19+00:00 (UTC).
 
 ## Resumo
 

@@ -319,3 +319,18 @@ def test_estimates_tab_shows_how_many_students(server, browser):
     sw, iw = page.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
     assert sw <= iw
     assert errors == []
+
+
+def test_home_links_switch_between_questions(server, browser):
+    """Ligações: a mesma resposta entre dois grupos (microdados), sempre com o aviso de associação."""
+    b = _bundle()
+    if not b.get("gestor", {}).get("links"):
+        pytest.skip("ligações ausentes do pacote")
+    page, errors = _open(browser, server, start="home")
+    picks = page.locator("#h-absence-body .h-link-pick .seg")
+    assert picks.count() == len(b["gestor"]["links"])
+    picks.nth(1).click()
+    page.wait_for_timeout(150)
+    assert page.inner_text("#h-absence-title") == b["gestor"]["links"][1]["question"]
+    assert "não que uma causou a outra" in page.inner_text("#h-absence-body") or "cabe na margem" in page.inner_text("#h-absence-body")
+    assert errors == []

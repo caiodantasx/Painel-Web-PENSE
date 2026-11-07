@@ -498,3 +498,137 @@ question = "B07007B ∈ {3,4} OU B07013 = 1 OU B09003A ∈ {2,3,4} OU B09010A1 �
 any = [{ var = "B07007B", num = [3, 4], den = [1, 2, 3, 4] }, { var = "B07013", num = [1], den = [1, 2] }, { var = "B09003A", num = [2, 3, 4], den = [1, 2, 3, 4] }, { var = "B09010A1", num = [2, 3, 4], den = [1, 2, 3, 4] }]
 editions = ["PENSE_2024"]
 definition_note = "Indicador composto do projeto, sem tabela publicada equivalente: soma quem sofreu pelo menos uma das quatro situações (sem contar duas vezes quem sofreu mais de uma). Períodos: 30 dias (bullying, cyberbullying) e 12 meses (agressões)."
+
+# ---- Ligações (nov/2026): o mesmo desenho do bloco bullying × faltas, para outras perguntas dos gestores.
+# Cada par compara a mesma resposta entre dois grupos (`given`). Associação, não causa. Microdados de 2024, sem tabela publicada.
+[LIGA_TRISTE_SIM]
+label = "Sentiram-se tristes na maioria das vezes ou sempre, entre quem sofreu bullying 2 ou mais vezes"
+period = "MISTO"
+question = "B12005 ∈ [4, 5] entre B07007B ∈ [3, 4]"
+var = "B12005"
+num = [4, 5]
+den = [1, 2, 3, 4, 5]
+given = { var = "B07007B", codes = [3, 4] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_TRISTE_NAO]
+label = "Sentiram-se tristes na maioria das vezes ou sempre, entre quem não sofreu nenhuma vez"
+period = "MISTO"
+question = "B12005 ∈ [4, 5] entre B07007B ∈ [1]"
+var = "B12005"
+num = [4, 5]
+den = [1, 2, 3, 4, 5]
+given = { var = "B07007B", codes = [1] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_NINGUEM_SE_PREOCUPA_SIM]
+label = "Sentiram na maioria das vezes ou sempre que ninguém se preocupa com eles, entre quem sofreu bullying 2 ou mais vezes"
+period = "MISTO"
+question = "B12006 ∈ [4, 5] entre B07007B ∈ [3, 4]"
+var = "B12006"
+num = [4, 5]
+den = [1, 2, 3, 4, 5]
+given = { var = "B07007B", codes = [3, 4] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_NINGUEM_SE_PREOCUPA_NAO]
+label = "Sentiram na maioria das vezes ou sempre que ninguém se preocupa com eles, entre quem não sofreu nenhuma vez"
+period = "MISTO"
+question = "B12006 ∈ [4, 5] entre B07007B ∈ [1]"
+var = "B12006"
+num = [4, 5]
+den = [1, 2, 3, 4, 5]
+given = { var = "B07007B", codes = [1] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_BULLYING_SE_AGREDIDO_PAIS_SIM]
+label = "Sofreram bullying 2 ou mais vezes, entre quem foi agredido por pai, mãe ou responsável"
+period = "MISTO"
+question = "B07007B ∈ [3, 4] entre B09003A ∈ [2, 3, 4]"
+var = "B07007B"
+num = [3, 4]
+den = [1, 2, 3, 4]
+given = { var = "B09003A", codes = [2, 3, 4] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_BULLYING_SE_AGREDIDO_PAIS_NAO]
+label = "Sofreram bullying 2 ou mais vezes, entre quem não foi"
+period = "MISTO"
+question = "B07007B ∈ [3, 4] entre B09003A ∈ [1]"
+var = "B07007B"
+num = [3, 4]
+den = [1, 2, 3, 4]
+given = { var = "B09003A", codes = [1] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_CYBER_SE_BULLYING_SIM]
+label = "Sofreram cyberbullying, entre quem sofreu bullying 2 ou mais vezes"
+period = "MISTO"
+question = "B07013 ∈ [1] entre B07007B ∈ [3, 4]"
+var = "B07013"
+num = [1]
+den = [1, 2]
+given = { var = "B07007B", codes = [3, 4] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_CYBER_SE_BULLYING_NAO]
+label = "Sofreram cyberbullying, entre quem não sofreu nenhuma vez"
+period = "MISTO"
+question = "B07013 ∈ [1] entre B07007B ∈ [1]"
+var = "B07013"
+num = [1]
+den = [1, 2]
+given = { var = "B07007B", codes = [1] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_PRATICOU_SE_BULLYING_SIM]
+label = "Praticaram bullying, entre quem sofreu bullying 2 ou mais vezes"
+period = "MISTO"
+question = "B07009 ∈ [1] entre B07007B ∈ [3, 4]"
+var = "B07009"
+num = [1]
+den = [1, 2]
+given = { var = "B07007B", codes = [3, 4] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_PRATICOU_SE_BULLYING_NAO]
+label = "Praticaram bullying, entre quem não sofreu nenhuma vez"
+period = "MISTO"
+question = "B07009 ∈ [1] entre B07007B ∈ [1]"
+var = "B07009"
+num = [1]
+den = [1, 2]
+given = { var = "B07007B", codes = [1] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_TRAJETO_SE_TIROS_SIM]
+label = "Faltaram por insegurança no caminho de casa para a escola, entre alunos de escolas cujo diretor soube de tiroteios perto (sempre ou algumas vezes)"
+period = "MISTO"
+question = "B09001 ∈ [2, 3, 4, 5, 6] entre E01P80 ∈ [3, 4]"
+var = "B09001"
+num = [2, 3, 4, 5, 6]
+den = [1, 2, 3, 4, 5, 6]
+given = { var = "E01P80", codes = [3, 4] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."
+
+[LIGA_TRAJETO_SE_TIROS_NAO]
+label = "Faltaram por insegurança no caminho de casa para a escola, entre alunos de escolas sem tiroteios relatados (nunca ou raramente)"
+period = "MISTO"
+question = "B09001 ∈ [2, 3, 4, 5, 6] entre E01P80 ∈ [1, 2]"
+var = "B09001"
+num = [2, 3, 4, 5, 6]
+den = [1, 2, 3, 4, 5, 6]
+given = { var = "E01P80", codes = [1, 2] }
+editions = ["PENSE_2024"]
+definition_note = "Associação, não causa: compara duas respostas do mesmo questionário."

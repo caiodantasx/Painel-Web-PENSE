@@ -250,13 +250,22 @@ function renderHomeBullying() {
 }
 
 // ------------------------------------------------------------------ bloco 4: bullying e faltas
+// Ligações: a mesma resposta comparada entre dois grupos (microdados de 2024). Associação, não causa.
+let hLink = 0;
 function renderHomeAbsence() {
   const panel = $("h-absence"), box = clear($("h-absence-body"));
-  const ab = G.blocks.absence;
-  if (!ab || !M) { panel.hidden = true; return; }
-  const w = hMicro(ab.with, hstate.place, 2024)[0], wo = hMicro(ab.without, hstate.place, 2024)[0];
+  const links = (G.links || []).filter((lk) => M && M.kIndex.has(lk.with) && M.kIndex.has(lk.without));
+  if (!links.length) { panel.hidden = true; return; }
   panel.hidden = false;
-  if (!w || !wo) { box.append(el("p", { class: "empty", text: "Sem dados suficientes para este lugar e grupo." })); return; }
+  if (hLink >= links.length) hLink = 0;
+  const lk = links[hLink];
+  $("h-absence-title").textContent = lk.question;
+  const pick = el("div", { class: "seg-group h-link-pick", role: "radiogroup", "aria-label": "Escolha a ligação" });
+  links.forEach((x, i) => pick.append(el("button", { type: "button", class: "seg", role: "radio", "aria-checked": String(i === hLink),
+    onclick: () => { hLink = i; renderHomeAbsence(); } }, x.question)));
+  box.append(pick);
+  const w = hMicro(lk.with, hstate.place, 2024)[0], wo = hMicro(lk.without, hstate.place, 2024)[0];
+  if (!w || !wo || w.e === null || wo.e === null) { box.append(el("p", { class: "empty", text: "Sem dados suficientes para este lugar e grupo." })); return; }
   const max = niceMax(Math.max(w.hi, wo.hi));
   const bar = (label, p, cls) => el("li", null,
     el("div", { class: "h-bar-head" }, el("span", { class: "h-bar-label", text: label }), el("span", { class: "h-bar-val" }, el("b", { text: in100(p.e) }), " em cada 100")),
@@ -264,14 +273,16 @@ function renderHomeAbsence() {
       el("span", { class: "h-ci", style: `left:${(p.lo / max * 100).toFixed(2)}%;width:${((p.hi - p.lo) / max * 100).toFixed(2)}%` })),
     el("div", { class: "h-bar-sub", text: between(p) }));
   const differ = w.lo > wo.hi || w.hi < wo.lo;
+  const ratio = wo.e > 0 ? w.e / wo.e : null;
   box.append(
-    el("p", { class: "h-sentence" }, `Entre quem sofreu bullying (duas ou mais vezes no mês), `, el("b", { text: `${in100(w.e)} em cada 100` }),
-      ` faltaram à escola por não se sentirem seguros lá. Entre quem não sofreu, `, el("b", { text: `${in100(wo.e)} em cada 100` }), "."),
-    el("ul", { class: "h-bars" }, bar("Sofreram bullying", w, "sel"), bar("Não sofreram bullying", wo, "")),
+    el("p", { class: "h-sentence" }, `${lk.with_label}: `, el("b", { text: `${in100(w.e)} em cada 100` }), ` ${lk.outcome}. ${lk.without_label}: `,
+      el("b", { text: `${in100(wo.e)} em cada 100` }), "."),
+    differ && ratio && ratio >= 1.3 ? el("p", { class: "h-ratio" }, "Cerca de ", el("b", { text: `${nf1.format(ratio)} vezes` }), " mais no primeiro grupo.") : null,
+    el("ul", { class: "h-bars" }, bar(lk.with_label, w, "sel"), bar(lk.without_label, wo, "")),
     el("p", { class: "h-warn" }, el("b", { text: "Atenção: " }),
-      differ ? "a diferença entre os dois grupos é maior que a margem de erro, mas isso mostra que as duas coisas andam juntas, não que o bullying causou as faltas. "
-             : "a diferença cabe na margem de erro. Mesmo quando há diferença, ela mostra que as duas coisas andam juntas, não que uma causou a outra. ",
-      "A pesquisa não pergunta o motivo da falta; pergunta só se o aluno faltou por não se sentir seguro na escola."),
+      differ ? "a diferença é maior que a margem de erro, mas isso mostra que as duas coisas andam juntas, não que uma causou a outra. "
+             : "a diferença cabe na margem de erro: não dá para dizer que os grupos são diferentes. ",
+      lk.note || ""),
     el("p", { class: "h-note", text: "Calculado pelo projeto com os microdados da PeNSE 2024 (IBGE); não há tabela publicada com este cruzamento." }));
 }
 
