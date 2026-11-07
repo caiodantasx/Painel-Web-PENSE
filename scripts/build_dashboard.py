@@ -21,12 +21,26 @@ SRC = ROOT / "dashboard"
 OUT = ROOT / "dist" / "dashboard"
 
 
+CSS_TAG = re.compile(r'<link rel="stylesheet" href="(assets/css/[^"]+)">\n?')
+JS_TAG = re.compile(r'<script src="(assets/js/[^"]+)"></script>\n?')
+
+
+def _inline(html: str, pattern: re.Pattern, wrap) -> str:
+    """Troca a sequência de <link>/<script> locais por um único bloco, na ordem em que aparecem no index.html."""
+    paths = pattern.findall(html)
+    if not paths:
+        return html
+    code = "\n".join((SRC / p).read_text(encoding="utf-8") for p in paths)
+    first = pattern.search(html)
+    html = html[:first.start()] + "\0INLINE\0" + pattern.sub("", html[first.start():])
+    return html.replace("\0INLINE\0", wrap(code) + "\n")
+
+
 def build(fragment: bool = False) -> Path:
     html = (SRC / "index.html").read_text(encoding="utf-8")
-    css = (SRC / "assets" / "app.css").read_text(encoding="utf-8")
-    js = (SRC / "assets" / "app.js").read_text(encoding="utf-8")
-    html = html.replace('<link rel="stylesheet" href="assets/app.css">', f"<style>\n{css}\n</style>")
-    html = html.replace('<script src="assets/app.js"></script>', f"<script>\n{js}\n</script>")
+    html = _inline(html, CSS_TAG, lambda css: f"<style>\n{css}</style>")
+    # os módulos compartilham o escopo global quando servidos separados; juntos, ficam isolados numa função
+    html = _inline(html, JS_TAG, lambda js: f"<script>\n(function () {{\n{js}}})();\n</script>")
     if fragment:
         # Em hospedeiros com sandbox, links de download não funcionam: remove o link direto.
         html = re.sub(r"<!-- download-base -->.*?<!-- /download-base -->", "", html, flags=re.S)

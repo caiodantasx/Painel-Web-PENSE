@@ -1,0 +1,29 @@
+# Roda os testes a cada envio e em cada pull request.
+# Os testes de recálculo pelos microdados são pulados (os microdados não ficam no repositório).
+name: Testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Dependências
+        run: |
+          pip install -r requirements.txt playwright
+          python -m playwright install --with-deps chromium
+      - name: Testes
+        run: python -m pytest
+      - name: Página única do painel
+        run: python scripts/build_dashboard.py

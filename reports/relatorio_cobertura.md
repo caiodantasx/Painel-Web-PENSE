@@ -5,8 +5,37 @@
 | Arquivo | Contêiner | Formato | Status | SHA-256 (12) | Duplicado de |
 |---|---|---|---|---|---|
 | Amostra_1_Tema_06_Seguranca_da_Escola.xls |  | xls | OK | e55e058ecf7f |  |
+| Amostra_2_Tema_07_Situacoes_em_Casa_e_na_Escola_2015.xls |  | xls | OK | 2b5d1264ba8a |  |
 | Amostra_2_Tema_11_Seguranca_2015.xls |  | xls | OK | cf9540c96eb9 |  |
+| Tabelas 17.1.xlsx |  | xlsx | OK | ce3dfbef0086 |  |
 | Serie_9ano_2009_2019_Tema_10_Seguranca_e_Violencias.xls |  | xls | OK | b30bc2feeaef |  |
+| tab08avs.zip |  | zip | OK | 358a0c0c14e0 |  |
+| tab801.xls | tab08avs.zip | xls | OK | 4991c8e4683f |  |
+| tab802.xls | tab08avs.zip | xls | OK | 44b25f5f6c31 |  |
+| tab803.xls | tab08avs.zip | xls | OK | 0a638f61cb71 |  |
+| tab804.xls | tab08avs.zip | xls | OK | d614c274ee13 |  |
+| tab805.xls | tab08avs.zip | xls | OK | 59ed8769490a |  |
+| tab806.xls | tab08avs.zip | xls | OK | ee03ae23f404 |  |
+| tab807.xls | tab08avs.zip | xls | OK | 3ad67c00f1a8 |  |
+| tab808.xls | tab08avs.zip | xls | OK | 644d25aec868 |  |
+| tab809.xls | tab08avs.zip | xls | OK | 5a5a284bd60e |  |
+| Tema_02_Situacoes_em_Casa_e_na_Escola_2019_20260615.xls |  | xls | OK | c0eee5c0d1d9 |  |
+| Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip |  | zip | OK | aee9bd464992 |  |
+| Tabelas 2.1.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | d7a651900529 |  |
+| Tabelas 2.10.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 644db63c5f63 |  |
+| Tabelas 2.11.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 85a37d399986 |  |
+| Tabelas 2.12.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 6b282ddcb7dc |  |
+| Tabelas 2.13.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | e01e427505ef |  |
+| Tabelas 2.14.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | ca7b0bcd7b7e |  |
+| Tabelas 2.15.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 9e3c140ac80b |  |
+| Tabelas 2.2.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 591747d0f58e |  |
+| Tabelas 2.3.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 95a26cc64456 |  |
+| Tabelas 2.4.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 23ca149313a5 |  |
+| Tabelas 2.5.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 0f34eab36248 |  |
+| Tabelas 2.6.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 4065053d6ce1 |  |
+| Tabelas 2.7.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | bfed25f7e4a6 |  |
+| Tabelas 2.8.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | c67ebda1dc24 |  |
+| Tabelas 2.9.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | xlsx | OK | 23f30b2ebbd1 |  |
 | Tema_09_Seguranca_2019_20260615.xls |  | xls | OK | 4035639e2b1a |  |
 | Tema_09_Seguranca_XLSX_20260525.zip |  | zip | OK | 66a31a59f190 |  |
 | Tabelas 9.1.xlsx | Tema_09_Seguranca_XLSX_20260525.zip | xlsx | OK | 5d98a3a87fe6 |  |
@@ -34,29 +63,35 @@
 | Tabelas 9.9.xlsx | Tema_09_Seguranca_XLSX_20260525.zip | xlsx | OK | 41e8aec05308 |  |
 | Tema_17_Seguranca_da_Escola_2019_20260615.xls |  | xls | OK | 3a667d142e28 |  |
 | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip |  | zip | OK | c6de1f8f07d0 |  |
-| Tabelas 17.1.xlsx | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip | xlsx | OK | ce3dfbef0086 |  |
+| Tabelas 17.1.xlsx | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip | xlsx | DUPLICADO | ce3dfbef0086 | avulsos/Tabelas 17.1.xlsx |
 | Tabelas 17.2.xlsx | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip | xlsx | OK | 7e6283dfff88 |  |
 | Tabelas 17.3.xlsx | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip | xlsx | OK | 9a4dd4669be0 |  |
 | Tema_17_Seguranca_da_Escola_XLSX_20260525.zip |  | zip | DUPLICADO | c6de1f8f07d0 | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip |
-| Tabelas 17.1.xlsx |  | xlsx | DUPLICADO | ce3dfbef0086 | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip!Tabelas 17.1.xlsx |
-| tab08avs.zip |  | zip | OK | 358a0c0c14e0 |  |
-| tab801.xls | tab08avs.zip | xls | OK | 4991c8e4683f |  |
-| tab802.xls | tab08avs.zip | xls | OK | 44b25f5f6c31 |  |
-| tab803.xls | tab08avs.zip | xls | OK | 0a638f61cb71 |  |
-| tab804.xls | tab08avs.zip | xls | OK | d614c274ee13 |  |
-| tab805.xls | tab08avs.zip | xls | OK | 59ed8769490a |  |
-| tab806.xls | tab08avs.zip | xls | OK | ee03ae23f404 |  |
-| tab807.xls | tab08avs.zip | xls | OK | 3ad67c00f1a8 |  |
-| tab808.xls | tab08avs.zip | xls | OK | 644d25aec868 |  |
-| tab809.xls | tab08avs.zip | xls | OK | 5a5a284bd60e |  |
 
 ## Abas por arquivo
 
 | Arquivo | ZIP | Abas | Família | Ano | Observações | Status das abas |
 |---|---|---|---|---|---|---|
 | Amostra_1_Tema_06_Seguranca_da_Escola.xls |  | 4 | PENSE_2015_A1 | 2015 | 732 | {'EXTRAIDA': 4} |
+| Amostra_2_Tema_07_Situacoes_em_Casa_e_na_Escola_2015.xls |  | 9 | PENSE_2015_A2 | 2015 | 1206 | {'EXTRAIDA': 9} |
 | Amostra_2_Tema_11_Seguranca_2015.xls |  | 15 | PENSE_2015_A2 | 2015 | 1476 | {'EXTRAIDA': 15} |
 | Serie_9ano_2009_2019_Tema_10_Seguranca_e_Violencias.xls |  | 12 | PENSE_MULTIANO |  | 5740 | {'EXTRAIDA': 12} |
+| Tema_02_Situacoes_em_Casa_e_na_Escola_2019_20260615.xls |  | 30 | PENSE_2019_IC, — | 2019 | 7142 | {'EXTRAIDA': 29, 'NAO_MAPEADA': 1} |
+| Tabelas 2.1.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
+| Tabelas 2.10.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
+| Tabelas 2.11.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
+| Tabelas 2.12.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
+| Tabelas 2.13.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 2060 | {'EXTRAIDA': 6} |
+| Tabelas 2.14.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 2370 | {'EXTRAIDA': 6} |
+| Tabelas 2.15.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
+| Tabelas 2.2.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
+| Tabelas 2.3.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
+| Tabelas 2.4.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 2370 | {'EXTRAIDA': 6} |
+| Tabelas 2.5.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 2370 | {'EXTRAIDA': 6} |
+| Tabelas 2.6.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 2060 | {'EXTRAIDA': 6} |
+| Tabelas 2.7.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 2370 | {'EXTRAIDA': 6} |
+| Tabelas 2.8.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 2370 | {'EXTRAIDA': 6} |
+| Tabelas 2.9.xlsx | Tema_02_Situacoes_em_Casa_e_na_Escola_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
 | Tema_09_Seguranca_2019_20260615.xls |  | 69 | PENSE_2019_IC | 2019 | 10033 | {'EXTRAIDA': 69} |
 | Tabelas 9.1.xlsx | Tema_09_Seguranca_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
 | Tabelas 9.10.xlsx | Tema_09_Seguranca_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
@@ -82,9 +117,9 @@
 | Tabelas 9.8.xlsx | Tema_09_Seguranca_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
 | Tabelas 9.9.xlsx | Tema_09_Seguranca_XLSX_20260525.zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 790 | {'EXTRAIDA': 6} |
 | Tema_17_Seguranca_da_Escola_2019_20260615.xls |  | 9 | PENSE_2019_IC | 2019 | 1264 | {'EXTRAIDA': 9} |
-| Tabelas 17.1.xlsx | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 1092 | {'EXTRAIDA': 6} |
 | Tabelas 17.2.xlsx | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 546 | {'EXTRAIDA': 6} |
 | Tabelas 17.3.xlsx | Tema_17_Seguranca_da_Escola_XLSX_20260525 (1).zip | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 1274 | {'EXTRAIDA': 6} |
+| avulsos/Tabelas 17.1.xlsx |  | 6 | PENSE_2024_CV, PENSE_2024_IC | 2024 | 1092 | {'EXTRAIDA': 6} |
 | tab801.xls | tab08avs.zip | 1 | PENSE_2009_CAPITAIS | 2009 | 112 | {'EXTRAIDA': 1} |
 | tab802.xls | tab08avs.zip | 5 | PENSE_2009_CAPITAIS | 2009 | 420 | {'EXTRAIDA': 5} |
 | tab803.xls | tab08avs.zip | 1 | PENSE_2009_CAPITAIS | 2009 | 140 | {'EXTRAIDA': 1} |
@@ -125,9 +160,28 @@
 | PENSE_2015_A2 | 2.11.7 | Percentual de escolares com idade de 13 a 17 anos que andaram em veículo motorizado cujo c | 1 | country, region | 90 | 90 |
 | PENSE_2015_A2 | 2.11.8 | Percentual de escolares com idade de 13 a 17 anos que foram agredidos fisicamente por algu | 1 | country, region | 90 | 90 |
 | PENSE_2015_A2 | 2.11.9 | Percentual de escolares com idade de 13 a 17 anos que estiveram envolvidos em briga na qua | 1 | country, region | 90 | 90 |
+| PENSE_2015_A2 | 2.7.1 | Percentual de escolares com idade de 13 a 17 anos que faltaram às aulas ou à escola sem pe | 1 | country, region | 90 | 90 |
+| PENSE_2015_A2 | 2.7.2 | Percentual de escolares com idade de 13 a 17 anos cujos pais ou responsáveis sabiam o que  | 1 | country, region | 90 | 90 |
+| PENSE_2015_A2 | 2.7.3 | Percentual de escolares com idade de 13 a 17 anos cujos pais ou responsáveis verificaram s | 1 | country, region | 90 | 90 |
+| PENSE_2015_A2 | 2.7.4 | Percentual de escolares com idade de 13 a 17 anos cujos pais ou responsáveis entenderam se | 1 | country, region | 90 | 90 |
+| PENSE_2015_A2 | 2.7.5 | Percentual de escolares com idade de 13 a 17 anos cujos pais ou responsáveis mexeram em su | 1 | country, region | 90 | 90 |
+| PENSE_2015_A2 | 2.7.6 | Percentual de escolares com idade de 13 a 17 anos cujos colegas de escola os trataram bem  | 3 | country, region | 270 | 269 |
+| PENSE_2015_A2 | 2.7.7 | Percentual de escolares com idade de 13 a 17 anos que se sentiram humilhados por provocaçõ | 3 | country, region | 270 | 270 |
+| PENSE_2015_A2 | 2.7.8 | Percentual de escolares com idade de 13 a 17 anos que se sentiram humilhados por provocaçõ | 7 | country, region | 126 | 126 |
+| PENSE_2015_A2 | 2.7.9 | Percentual de escolares com idade de 13 a 17 anos que esculacharam, zombaram, mangaram, in | 1 | country, region | 90 | 90 |
 | PENSE_2019 | 17.1 | Percentual de escolares de 13 a 17 anos em escolas cujo diretor(a) ou responsável presenci | 6 | aggregate, capital, country, region, uf | 474 | 438 |
 | PENSE_2019 | 17.2 | Percentual de escolares de 13 a 17 anos em escolas que tiveram de suspender ou interromper | 3 | aggregate, capital, country, region, uf | 237 | 219 |
 | PENSE_2019 | 17.3 | Percentual de escolares de 13 a 17 anos em escolas cujo diretor(a) ou responsável presenci | 7 | aggregate, capital, country, region, uf | 553 | 511 |
+| PENSE_2019 | 2.1 | Percentual de escolares de 13 a 17 anos que faltaram às aulas ou à escola sem permissão do | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2019 | 2.10 | Percentual de escolares de 13 a 17 anos que esculacharam, zombaram, mangaram, intimidaram  | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2019 | 2.2 | Percentual de escolares de 13 a 17 anos cujos pais ou responsáveis sabiam o que eles fazia | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2019 | 2.3 | Percentual de escolares de 13 a 17 anos cujos pais ou responsáveis entenderam seus problem | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2019 | 2.4 | Percentual de escolares de 13 a 17 anos cujos colegas de escola os trataram bem e/ou foram | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
+| PENSE_2019 | 2.5 | Percentual de escolares de 13 a 17 anos que se sentiram humilhados por provocações de cole | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
+| PENSE_2019 | 2.6 | Percentual de escolares de 13 a 17 anos que se sentiram humilhados por provocações de cole | 7 | aggregate, capital, country, region, uf | 427 | 231 |
+| PENSE_2019 | 2.7 | Percentual de escolares de 13 a 17 anos, por frequência com que algum de seus colegas deix | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
+| PENSE_2019 | 2.8 | Percentual de escolares de 13 a 17 anos, por frequência com que foram agredidos fisicament | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
+| PENSE_2019 | 2.9 | Percentual de escolares de 13 a 17 anos, que se sentiram ameaçados, ofendidos ou humilhado | 1 | aggregate, capital, country, region, uf | 395 | 365 |
 | PENSE_2019 | 9.1 | Percentual de escolares de 13 a 17 anos que nunca ou raramente usaram o cinto de segurança | 1 | aggregate, capital, country, region, uf | 395 | 365 |
 | PENSE_2019 | 9.10 | Percentual de escolares de 13 a 17 anos que estiveram envolvidos em briga na qual alguma p | 1 | aggregate, capital, country, region, uf | 395 | 365 |
 | PENSE_2019 | 9.11 | Percentual de escolares de 13 a 17 anos que estiveram envolvidos em briga na qual alguma p | 1 | aggregate, capital, country, region, uf | 395 | 365 |
@@ -154,6 +208,21 @@
 | PENSE_2024 | 17.1 | Percentual de escolares de 13 a 17 anos em escolas cujo diretor(a) ou responsável presenci | 6 | aggregate, capital, country, region, uf | 546 | 510 |
 | PENSE_2024 | 17.2 | Percentual de escolares de 13 a 17 anos em escolas cujo diretor(a) ou responsável tiveram  | 3 | aggregate, capital, country, region, uf | 273 | 251 |
 | PENSE_2024 | 17.3 | Percentual de escolares de 13 a 17 anos em escolas cujo diretor(a) ou responsável presenci | 7 | aggregate, capital, country, region, uf | 637 | 595 |
+| PENSE_2024 | 2.1 | Percentual de escolares de 13 a 17 anos que faltaram às aulas ou à escola sem permissão do | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2024 | 2.10 | Percentual de escolares de 13 a 17 anos que esculacharam, zombaram, mangaram, intimidaram  | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2024 | 2.11 | Percentual de escolares com idade de 13 a 17 anos por cujos pais ou responsáveis verificar | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2024 | 2.12 | Percentual de escolares com idade de 13 a 17 anos por cujos pais ou responsáveis mexeram e | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2024 | 2.13 | Percentual de escolares de 13 a 17 anos que humilharam outros colegas da escola nos 30 dia | 11 | aggregate, capital, country, region, uf | 1030 | 976 |
+| PENSE_2024 | 2.14 | Distribuição percentual de escolares de 13 a 17 anos por frequência com que agrediram fisi | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
+| PENSE_2024 | 2.15 | Percentual de escolares de 13 a 17 anos que ameaçaram, ofenderam ou humilharam outras pess | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2024 | 2.2 | Percentual de escolares de 13 a 17 anos cujos pais ou responsáveis sabiam o que eles fazia | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2024 | 2.3 | Percentual de escolares de 13 a 17 anos cujos pais ou responsáveis entenderam seus problem | 1 | aggregate, capital, country, region, uf | 395 | 365 |
+| PENSE_2024 | 2.4 | Distribuição percentual de escolares de 13 a 17 anos cujos colegas de escola os trataram b | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
+| PENSE_2024 | 2.5 | Distribuição percentual de escolares de 13 a 17 anos que se sentiram humilhados por provoc | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
+| PENSE_2024 | 2.6 | Percentual de escolares de 13 a 17 anos que se sentiram humilhados por provocações de cole | 10 | aggregate, capital, country, region, uf | 1030 | 970 |
+| PENSE_2024 | 2.7 | Distribuição percentual de escolares de 13 a 17 anos por frequência com que algum de seus  | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
+| PENSE_2024 | 2.8 | Distribuição percentual de escolares de 13 a 17 anos por frequência com que foram agredido | 3 | aggregate, capital, country, region, uf | 1185 | 1095 |
+| PENSE_2024 | 2.9 | Percentual de escolares de 13 a 17 anos que se sentiram ameaçados, ofendidos ou humilhados | 1 | aggregate, capital, country, region, uf | 395 | 365 |
 | PENSE_2024 | 9.1 | Percentual de escolares de 13 a 17 anos que nunca ou raramente usaram o cinto de segurança | 1 | aggregate, capital, country, region, uf | 395 | 365 |
 | PENSE_2024 | 9.10 | Percentual de escolares de 13 a 17 anos que estiveram envolvidos em briga na qual alguma p | 1 | aggregate, capital, country, region, uf | 395 | 365 |
 | PENSE_2024 | 9.11 | Percentual de escolares de 13 a 17 anos que estiveram envolvidos em briga na qual alguma p | 1 | aggregate, capital, country, region, uf | 395 | 365 |

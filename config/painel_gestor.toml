@@ -1,0 +1,254 @@
+# Tela inicial para gestores escolares (consulta de nov/2026, 5 gestores do RN e da PB).
+#
+# Liga cada frase simples da tela inicial a uma medida PUBLICADA pelo IBGE (tabelas de 2024,
+# `measure`) e, quando existe, ao indicador recalculado pelos microdados (`micro`), que dá a
+# série histórica e o número estimado de estudantes (soma dos pesos amostrais).
+# Nenhum número fica aqui: só a ligação. Os valores vêm do pacote gerado pela pipeline.
+#
+# `phrase` completa a frase "X em cada 100 estudantes … <phrase>". Linguagem simples, sem jargão.
+
+ibge_url = "https://www.ibge.gov.br/estatisticas/sociais/saude/9134-pesquisa-nacional-de-saude-do-escolar.html?=&t=resultados"
+edition = "PENSE_2024"
+# total estimado de escolares de 13 a 17 anos de cada lugar e grupo (soma dos pesos amostrais), usado no
+# "cerca de N estudantes" de itens sem indicador próprio nos microdados. Todas as tabelas usadas aqui têm
+# como base "escolares de 13 a 17 anos"; o denominador de BULLYING_SOFREU é esse total (sem os abandonos).
+population_micro = "BULLYING_SOFREU"
+
+[groups]
+# rótulo na tela → (sexo, rede) nas tabelas
+"Todos" = ["Total", "Total"]
+"Meninas" = ["Mulher", "Total"]
+"Meninos" = ["Homem", "Total"]
+"Escola pública" = ["Total", "Pública"]
+"Escola privada" = ["Total", "Privada"]
+
+# ---- "Sobre o quê?" (4 temas). `main` é o número da frase principal (bloco 1).
+[[topics]]
+id = "bullying"
+label = "Bullying"
+main = "bullying_sofreu"
+
+[[topics]]
+id = "brigas"
+label = "Brigas e agressões"
+main = "briga_luta"
+
+[[topics]]
+id = "faltas"
+label = "Faltas por insegurança"
+main = "faltou_escola"
+
+[[topics]]
+id = "entorno"
+label = "Violência no entorno"
+main = "entorno_assaltos"
+
+# ---- indicadores usados na tela inicial
+[items.bullying_sofreu]
+short = "Sofreram bullying"
+phrase = "sofreram bullying: foram humilhados por colegas da escola duas ou mais vezes no último mês"
+measure = "PENSE_2024__2.5__duas_ou_mais_vezes__pct"
+micro = "BULLYING_SOFREU"
+table = "2.5"
+
+[items.bullying_sofreu_1mais]
+short = "Foram humilhados por colegas pelo menos uma vez"
+phrase = "foram humilhados por provocações de colegas da escola pelo menos uma vez no último mês"
+measure = "PENSE_2024__2.5__nenhuma_vez__pct"
+complement = true
+table = "2.5"
+
+[items.excluido]
+short = "Colegas deixaram de falar com eles"
+phrase = "tiveram colegas que deixaram de falar com eles pelo menos uma vez no último mês"
+measure = "PENSE_2024__2.7__nenhuma_vez__pct"
+complement = true
+table = "2.7"
+
+[items.agredido_colegas]
+short = "Foram agredidos fisicamente por colegas"
+phrase = "foram agredidos fisicamente por colegas da escola pelo menos uma vez no último mês"
+measure = "PENSE_2024__2.8__nenhuma_vez__pct"
+complement = true
+table = "2.8"
+
+[items.agrediu_colegas]
+short = "Agrediram colegas fisicamente"
+phrase = "agrediram fisicamente algum colega da escola pelo menos uma vez no último mês"
+measure = "PENSE_2024__2.14__nenhuma_vez__pct"
+complement = true
+table = "2.14"
+
+[items.briga_arma_fogo]
+short = "Entraram em briga com arma de fogo"
+phrase = "entraram em briga em que alguém usou arma de fogo no último mês"
+measure = "PENSE_2024__9.10__geral__pct"
+micro = "BRIGA_ARMA_FOGO"
+table = "9.10"
+
+[items.briga_arma_branca]
+short = "Entraram em briga com faca ou outra arma branca"
+phrase = "entraram em briga em que alguém usou faca, canivete ou outra arma branca no último mês"
+measure = "PENSE_2024__9.11__geral__pct"
+micro = "BRIGA_ARMA_BRANCA"
+table = "9.11"
+
+[items.bullying_praticou]
+short = "Praticaram bullying"
+phrase = "praticaram bullying: humilharam algum colega da escola no último mês"
+measure = "PENSE_2024__2.10__geral__pct"
+micro = "BULLYING_PRATICOU"
+table = "2.10"
+
+[items.cyber_sofreu]
+short = "Sofreram cyberbullying"
+phrase = "foram ameaçados, ofendidos ou humilhados pela internet ou celular no último mês"
+measure = "PENSE_2024__2.9__geral__pct"
+micro = "CYBER_SOFREU"
+table = "2.9"
+
+[items.cyber_praticou]
+short = "Praticaram cyberbullying"
+phrase = "ameaçaram, ofenderam ou humilharam alguém pela internet ou celular no último mês"
+measure = "PENSE_2024__2.15__geral__pct"
+micro = "CYBER_PRATICOU"
+table = "2.15"
+
+[items.briga_luta]
+short = "Entraram em briga com luta física"
+phrase = "entraram em briga com luta física no último mês"
+measure = "PENSE_2024__9.9__geral__pct"
+micro = "BRIGA_LUTA_FISICA"
+table = "9.9"
+
+[items.agredido_pais]
+short = "Foram agredidos por pai, mãe ou responsável"
+phrase = "foram agredidos fisicamente pelo pai, pela mãe ou por responsável no último ano"
+measure = "PENSE_2024__9.16__geral__pct"
+micro = "AGREDIDO_PAIS"
+table = "9.16"
+
+[items.agredido_outros]
+short = "Foram agredidos por outra pessoa"
+phrase = "foram agredidos fisicamente por outra pessoa (não pai, mãe ou responsável) no último ano"
+measure = "PENSE_2024__9.17__geral__pct"
+micro = "AGREDIDO_OUTROS"
+table = "9.17"
+
+[items.toque]
+short = "Sofreram toque ou exposição do corpo sem consentimento"
+phrase = "já tiveram o corpo tocado ou exposto contra a vontade (alguma vez na vida)"
+measure = "PENSE_2024__9.19__geral__pct"
+micro = "TOQUE_SEM_CONSENTIMENTO"
+table = "9.19"
+
+[items.forcado]
+short = "Foram ameaçados ou forçados a ato sexual"
+phrase = "já foram ameaçados ou forçados a ter relação ou ato sexual (alguma vez na vida)"
+measure = "PENSE_2024__9.21__geral__pct"
+micro = "RELACAO_SEXUAL_FORCADA"
+table = "9.21"
+
+[items.faltou_escola]
+short = "Faltaram por não se sentirem seguros na escola"
+phrase = "faltaram à escola por não se sentirem seguros na escola no último mês"
+measure = "PENSE_2024__9.8__geral__pct"
+micro = "ESCOLA_INSEGURA"
+table = "9.8"
+
+[items.faltou_trajeto]
+short = "Faltaram por insegurança no caminho"
+phrase = "faltaram à escola por não se sentirem seguros no caminho de casa para a escola no último mês"
+measure = "PENSE_2024__9.7__geral__pct"
+micro = "TRAJETO_INSEGURO"
+table = "9.7"
+
+[items.entorno_assaltos]
+short = "Assaltos ou roubos perto da escola"
+phrase = "estudam em escolas cujo diretor soube de assaltos ou roubos perto da escola no último ano"
+measure = "PENSE_2024__17.1__assaltos_e_roubos_a_pessoas_residencias_e_comerc__pct"
+micro = "ESCOLA_LOCAL_ASSALTOS"
+table = "17.1"
+school = true
+
+[items.entorno_tiros]
+short = "Tiros ou tiroteios perto da escola"
+phrase = "estudam em escolas cujo diretor soube de tiros ou tiroteios perto da escola no último ano"
+measure = "PENSE_2024__17.1__tiros_ou_tiroteios__pct"
+micro = "ESCOLA_LOCAL_TIROS"
+table = "17.1"
+school = true
+
+[items.entorno_drogas]
+short = "Venda de drogas perto da escola"
+phrase = "estudam em escolas cujo diretor soube de venda de drogas perto da escola no último ano"
+measure = "PENSE_2024__17.1__venda_de_drogas__pct"
+micro = "ESCOLA_LOCAL_DROGAS"
+table = "17.1"
+school = true
+
+[items.entorno_agressao]
+short = "Agressão ou espancamento perto da escola"
+phrase = "estudam em escolas cujo diretor soube de agressão física ou espancamento perto da escola no último ano"
+measure = "PENSE_2024__17.1__agressao_fisica_ou_espancamento__pct"
+micro = "ESCOLA_LOCAL_AGRESSAO"
+table = "17.1"
+school = true
+
+[items.entorno_assassinato]
+short = "Assassinato perto da escola"
+phrase = "estudam em escolas cujo diretor soube de assassinato perto da escola no último ano"
+measure = "PENSE_2024__17.1__assassinato__pct"
+micro = "ESCOLA_LOCAL_ASSASSINATO"
+table = "17.1"
+school = true
+
+[items.aulas_suspensas]
+short = "Escola suspendeu aulas por violência"
+phrase = "estudam em escolas que suspenderam aulas por causa de violência no último ano"
+measure = "PENSE_2024__17.2__geral__pct"
+micro = "ESCOLA_SUSPENDEU_AULAS"
+table = "17.2"
+school = true
+
+# ---- bloco 2: tipos de violência que o próprio estudante sofreu (ordenados pelo valor no lugar)
+[blocks]
+types = ["bullying_sofreu", "cyber_sofreu", "agredido_pais", "agredido_outros", "briga_luta", "toque", "forcado"]
+bullying = ["bullying_sofreu", "bullying_praticou", "cyber_sofreu", "cyber_praticou"]
+# ao escolher um tema, o bloco 2 mostra a lista do tema (o bullying usa a lista geral de tipos)
+topic_lists = { bullying = ["bullying_sofreu", "bullying_sofreu_1mais", "excluido", "agredido_colegas", "cyber_sofreu"], brigas = "types", faltas = ["faltou_escola", "faltou_trajeto"], entorno = ["entorno_assaltos", "entorno_drogas", "entorno_tiros", "entorno_agressao", "entorno_assassinato", "aulas_suspensas"] }
+# bloco 4 (microdados): faltas por insegurança na escola entre quem sofreu e quem não sofreu bullying
+absence = { with = "FALTOU_INSEGURANCA_SOFREU_BULLYING", without = "FALTOU_INSEGURANCA_NAO_SOFREU_BULLYING" }
+# total de vítimas de algum tipo de violência (microdados, indicador composto do projeto)
+any_violence = "ALGUMA_VIOLENCIA"
+
+# ---- aba "Estimativas": quantos estudantes (cerca de N) em cada situação, no lugar e grupo escolhidos
+[[estimates]]
+title = "Sofreram bullying"
+items = ["bullying_sofreu_1mais", "bullying_sofreu", "excluido", "agredido_colegas", "cyber_sofreu"]
+
+[[estimates]]
+title = "Praticaram bullying"
+items = ["bullying_praticou", "agrediu_colegas", "cyber_praticou"]
+
+[[estimates]]
+title = "Foram agredidos ou sofreram violência"
+items = ["agredido_pais", "agredido_outros", "toque", "forcado"]
+
+[[estimates]]
+title = "Brigas"
+items = ["briga_luta", "briga_arma_branca", "briga_arma_fogo"]
+
+[[estimates]]
+title = "Faltaram à escola por insegurança"
+items = ["faltou_escola", "faltou_trajeto"]
+
+# motivos do bullying (tabelas por motivo; cada categoria é uma medida publicada). A base NÃO é o total de
+# escolares: as categorias somam mais de 100% de quem foi humilhado (2.6) ou de quem humilhou (2.13), por
+# isso o número é lido "entre quem sofreu/praticou" e a contagem usa o item `base` (estimativa aproximada).
+[motives.sofreu]
+indicator = "PENSE_2024__2.6"
+base = "bullying_sofreu_1mais"
+[motives.praticou]
+indicator = "PENSE_2024__2.13"
+base = "bullying_praticou"

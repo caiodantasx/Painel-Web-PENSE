@@ -24,7 +24,8 @@ from pense.microdata.series import (CHANGE_NS, CHANGE_PENDING, CHANGE_SIGNIFICAN
 
 ROOT = Path(__file__).resolve().parents[1]
 CUR = ROOT / "data" / "curated"
-JS = (ROOT / "dashboard" / "assets" / "app.js").read_text(encoding="utf-8")
+JS_FILES = sorted((ROOT / "dashboard" / "assets" / "js").rglob("*.js"))
+JS = "\n".join(p.read_text(encoding="utf-8") for p in JS_FILES)
 HTML = (ROOT / "dashboard" / "index.html").read_text(encoding="utf-8")
 NEW = "Diferença significativa a 5%"
 
@@ -92,7 +93,7 @@ def test_dashboard_labels_map_every_state():
     assert f'status === "{CHANGE_SIGNIFICANT}"' in JS, "seta colorida só para o selo novo"
 
 
-@pytest.mark.parametrize("path", ["dashboard/assets/app.js", "dashboard/index.html", "src/pense/microdata/series.py",
+@pytest.mark.parametrize("path", [*(p.relative_to(ROOT).as_posix() for p in JS_FILES), "dashboard/index.html", "src/pense/microdata/series.py",
                                   "src/pense/microdata/integrate.py", "scripts/report_microdata.py",
                                   "docs/06_guia_serie_historica.md", "docs/07_manual_dashboard.md",
                                   "docs/10_pendencias.md", "README.md"])
@@ -178,7 +179,11 @@ def test_dashboard_shows_badge_only_with_decision(tmp_path):
     if not bpath.exists() or not (CUR / "microdata_estimates.csv").exists():
         pytest.skip("rode scripts/run_all.py")
     shutil.copytree(ROOT / "config", tmp_path / "config")
-    (tmp_path / "data").symlink_to(ROOT / "data", target_is_directory=True)
+    try:
+        (tmp_path / "data").symlink_to(ROOT / "data", target_is_directory=True)
+    except OSError:   # Windows sem privilégio de link simbólico: junção de diretório não exige
+        import _winapi
+        _winapi.CreateJunction(str(ROOT / "data"), str(tmp_path / "data"))
     with (tmp_path / "config" / "microdata" / "comparability_decisions.csv").open("w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh, lineterminator="\n")
         w.writerow(["indicator_key", "final_status", "justification", "evidence_reference", "reviewer", "decision_date"])
@@ -188,11 +193,14 @@ def test_dashboard_shows_badge_only_with_decision(tmp_path):
     assert micro["diffs"]["ESCOLA_INSEGURA|BR|Total|Total|Total|2024"][5] == CHANGE_PENDING
     bundle = json.loads(bpath.read_text(encoding="utf-8"))
     bundle["micro"]["diffs"], bundle["micro"]["indicators"] = micro["diffs"], micro["indicators"]
-    body = json.dumps(bundle)
+    # cópia do painel com o pacote alterado em disco (interceptar ~10 MB pela rede travava às vezes)
+    site = tmp_path / "site"
+    shutil.copytree(ROOT / "dashboard", site, ignore=shutil.ignore_patterns("pense_bundle.json"))
+    (site / "data" / "pense_bundle.json").write_text(json.dumps(bundle), encoding="utf-8")
 
-    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT / "dashboard"))
+    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(site))
     handler.log_message = lambda *a, **k: None
-    httpd = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    httpd = type("Srv", (http.server.ThreadingHTTPServer,), {"request_queue_size": 128})(("127.0.0.1", 0), handler)   # fila padrão (5) recusava conexões no Windows
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     try:
         with pw.sync_playwright() as p:
@@ -204,10 +212,16 @@ def test_dashboard_shows_badge_only_with_decision(tmp_path):
             errors = []
             page.on("pageerror", lambda e: errors.append(str(e)))
             page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
-            page.route("**/data/pense_bundle.json", lambda r: r.fulfill(status=200, content_type="application/json", body=body))
             page.goto(f"http://127.0.0.1:{httpd.server_address[1]}", wait_until="networkidle")
+            try:   # só clica depois de o painel carregar
+                page.wait_for_selector("body:not(.is-loading)", timeout=60000)
+            except Exception:
+                raise AssertionError(f"painel não carregou: {page.inner_text('#boot-msg')} · erros: {errors}")
             page.click("#tab-history")
-            page.wait_for_selector("#table-micro-overview tbody tr")
+            try:
+                page.wait_for_selector("#table-micro-overview tbody tr", timeout=8000)
+            except Exception:
+                raise AssertionError(f"erros no navegador: {errors}")
             head = page.text_content("#table-micro-overview thead")   # texto do DOM (o CSS põe em maiúsculas)
             assert "Diferença significativa?" in head and "confirmada" not in head.lower()
             chips = lambda: page.eval_on_selector_all("#micro-detail .chip, #page-history .change .chip",  # noqa: E731

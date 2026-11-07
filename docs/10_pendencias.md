@@ -8,7 +8,7 @@
 | P2 | Tabela 8.1 (2009): a que indicador se referem as colunas por dependência administrativa | 56 observações `REVIEW_REQUIRED` (`VAL022`/`HDR006`) | Conferir a publicação PeNSE 2009; registrar a interpretação no adaptador |
 | P3 | Denominador das distribuições condicionais (17.2 "por número de vezes") | `denominator_status = REGRA_DERIVADA_REVISAR` (312 observações aprovadas) | Confirmar na nota técnica que o denominador é o grupo da coluna "Total" |
 | P4 | Informante "escolar" inferido pela ausência de menção à escola no título | `informant_method` | Confirmar no questionário do aluno |
-| P5 | Limiares de CV (30% "baixa precisão"; 15% "boa" × "razoável" no painel) | `settings.toml`, `app.js` | **Não resolvido.** Nenhum documento recebido define o limiar (o manual de 2019 só dimensiona a amostra para CV de 4% em P = 50%). Conferir as notas técnicas da PeNSE 2024; sem fonte, declarar como critério de projeto |
+| P5 | Limiares de CV (30% "baixa precisão"; 15% "boa" × "razoável" no painel) | `settings.toml`, `dashboard/assets/js/format.js` | **Não resolvido.** Nenhum documento recebido define o limiar (o manual de 2019 só dimensiona a amostra para CV de 4% em P = 50%). Conferir as notas técnicas da PeNSE 2024; sem fonte, declarar como critério de projeto |
 | P6 | Significado do símbolo "-" na tabela de 2015 Amostra 1 (zero absoluto × não aplicável) | 120 células `NOT_AVAILABLE` (**não resolvido**) | Conferir as convenções da publicação 2015 antes de qualquer conversão |
 | P7 | Códigos IBGE dos municípios das capitais | `territories.csv` (`code_source`) | Conferir com a DTB do IBGE |
 | P8 | Comparabilidade 2009/2015 A1 × 2024 entre **tabelas publicadas** | 16 pares `NOT_COMPARABLE` (população) | Mantido: universos diferentes. A comparação ao longo do tempo é feita pelos microdados (13 a 17 anos: 2015 A2, 2019, 2024; 9º ano: 2015 A1, 2019, 2024) |
@@ -39,7 +39,7 @@
   suficiente para tabelas do IBGE).
 * Dashboard: o layout aprovado anteriormente não estava no pacote recebido; o painel foi
   construído no estilo Power BI descrito no projeto. Se houver um layout aprovado, os
-  componentes podem ser transplantados — toda a lógica de dados está em `app.js`, separada
+  componentes podem ser transplantados — toda a lógica de dados está em `dashboard/assets/js/` (um módulo por assunto), separada
   do CSS.
 
 ## Automático × revisão humana

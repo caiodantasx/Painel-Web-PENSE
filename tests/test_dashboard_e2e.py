@@ -21,7 +21,7 @@ def server():
         pytest.skip("rode a pipeline antes (dashboard/data/pense_bundle.json ausente)")
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT / "dashboard"))
     handler.log_message = lambda *a, **k: None
-    httpd = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    httpd = type("Srv", (http.server.ThreadingHTTPServer,), {"request_queue_size": 128})(("127.0.0.1", 0), handler)   # fila padrão (5) recusava conexões no Windows
     t = threading.Thread(target=httpd.serve_forever, daemon=True)
     t.start()
     yield f"http://127.0.0.1:{httpd.server_address[1]}"
@@ -39,19 +39,21 @@ def browser():
         b.close()
 
 
-def _open(browser, url, **ctx):
+def _open(browser, url, start="overview", **ctx):
+    """Abre o painel. Desde nov/2026 a página inicial é o "Painel" simples (#home); os testes das
+    páginas de detalhe abrem direto em #overview, que continua com os mesmos filtros e gráficos."""
     page = browser.new_page(**ctx)
     errors = []
     page.on("pageerror", lambda e: errors.append(str(e)))
     page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
-    page.goto(url, wait_until="networkidle")
-    page.wait_for_selector("#chart-categories svg")
+    page.goto(f"{url}#{start}", wait_until="networkidle")
+    page.wait_for_selector("#h-answer .h-big" if start == "home" else "#chart-categories svg", timeout=90000)
     return page, errors
 
 
 def test_all_pages_render_without_script_errors(server, browser):
     page, errors = _open(browser, server)
-    for tab in ["territory", "history", "quality", "about", "overview"]:
+    for tab in ["territory", "history", "quality", "about", "overview", "home"]:
         page.click(f"#tab-{tab}")
         page.wait_for_timeout(150)
         assert page.is_visible(f"#page-{tab}")
@@ -87,7 +89,7 @@ def test_keyboard_navigation_and_labels(server, browser):
 
 def test_mobile_360_has_no_horizontal_scroll(server, browser):
     page, errors = _open(browser, server, viewport={"width": 360, "height": 780})
-    for tab in ["overview", "territory", "quality"]:
+    for tab in ["home", "overview", "territory", "quality"]:
         page.click(f"#tab-{tab}")
         page.wait_for_timeout(150)
         sw, iw = page.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
@@ -194,25 +196,126 @@ def test_no_confirmed_change_without_researcher_decision(server, browser):
 
 
 def test_every_number_says_what_it_is_a_percentage_of(server, browser):
-    """Mapa, número principal e definição dizem 'X% dos escolares…', a base e quem respondeu."""
+    """Mapa, número principal e definição dizem 'X% dos escolares…', a base e quem respondeu.
+    Usa o 17.1 (respondido pelo diretor), que era o indicador padrão antes de a lista ser agrupada por tema."""
     page, errors = _open(browser, server)
+    page.select_option("#f-indicator", "PENSE_2024__17.1")
+    page.wait_for_timeout(300)
     assert "dos escolares" in page.inner_text("#map-reading")
     head = page.inner_text("#tile-headline")
     assert "em cada 100 escolares" in head and "Os 100% são" in head and "Quem respondeu" in head
     assert "ocorrências" in head and "boletim de ocorrência" in head, "diz explicitamente o que o número NÃO é"
+    # avaliação heurística (problema 5, H8): a ficha "Como ler este número" aparece uma vez só, no número
+    # principal; a definição mantém quem respondeu e ganhou o veredito único de comparabilidade
+    assert page.locator("#page-overview .number-card").count() == 1, "ficha 'Como ler' só no número principal"
     d = page.inner_text("#definition")
-    assert "como ler" in d.lower() and "Os 100% são" in d and "Quem respondeu" in d
+    assert "Quem respondeu" in d and "Base:" in d and "Dá para comparar com outros anos?" in d
     assert "valores em % dos escolares" in page.inner_text("#tile-extremes"), "lista de destaques diz a unidade"
     assert errors == []
 
 
-def test_edition_switch_lists_single_year_editions_only(server, browser):
+def test_year_is_chosen_in_one_place_only(server, browser):
+    """Avaliação heurística (problema 4, H4): o ano se escolhe só no filtro "Ano da pesquisa";
+    a faixa de edições foi retirada. O filtro lista só as edições de um ano, com rótulos únicos."""
     bundle = json.loads((ROOT / "dashboard" / "data" / "pense_bundle.json").read_text(encoding="utf-8"))
     single = {m["edition_id"] for m in bundle["measures"] if not m["multi_year"]}
     page, errors = _open(browser, server)
-    assert page.locator("#edition-switch .es-btn").count() == len(single)
+    assert page.locator("#edition-switch").count() == 0
     labels = page.eval_on_selector_all("#f-edition option", "os => os.map(o => o.textContent)")
     assert len(labels) == len(set(labels)) == len(single), "rótulos de edição únicos, sem a série multianual"
-    page.locator("#edition-switch .es-btn").nth(1).click()
-    page.wait_for_timeout(200)
-    assert page.locator("#edition-switch .es-btn.on").count() == 1 and errors == []
+    assert errors == []
+
+
+def test_indicator_list_is_grouped_by_theme(server, browser):
+    """Avaliação heurística (problema 3, H6): "O que é medido" agrupado pelos temas do painel."""
+    page, errors = _open(browser, server)
+    groups = page.eval_on_selector_all("#f-indicator optgroup", "gs => gs.map(g => g.label)")
+    assert groups[0] == "Bullying" and "Brigas e agressões" in groups and "Faltas por insegurança" in groups
+    assert errors == []
+
+
+def test_copy_notice_appears_next_to_button(server, browser):
+    """Avaliação heurística (problema 6, H9): o aviso da cópia aparece junto do botão."""
+    page, errors = _open(browser, server)
+    page.click("#btn-copy")
+    page.wait_for_timeout(300)
+    assert page.inner_text("#copy-status").strip() != ""
+    b, n = (page.eval_on_selector(s, "e => e.getBoundingClientRect().toJSON()") for s in ("#btn-copy", "#copy-status"))
+    assert abs(n["top"] - b["top"]) < 60 and abs(n["left"] - b["right"]) < 200, "aviso ao lado do botão"
+    assert errors == []
+
+
+# ---------------------------------------------------------------- página inicial "Painel" (nov/2026)
+def _bundle():
+    return json.loads((ROOT / "dashboard" / "data" / "pense_bundle.json").read_text(encoding="utf-8"))
+
+
+def test_home_is_default_and_answers_in_plain_language(server, browser):
+    """Pedido dos gestores: abrir já respondendo, em "X em cada 100", sem procurar no site."""
+    bundle = _bundle()
+    if "gestor" not in bundle:
+        pytest.skip("configuração da tela inicial ausente do pacote")
+    page = browser.new_page(viewport={"width": 1440, "height": 900})
+    errors = []
+    page.on("pageerror", lambda e: errors.append(str(e)))
+    page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
+    page.goto(server, wait_until="networkidle")
+    page.wait_for_selector("#h-answer .h-big")
+    assert page.is_visible("#page-home") and not page.is_visible("#f-indicator"), "abre no Painel, sem os 7 filtros"
+    text = page.inner_text("#h-answer")
+    assert "em cada 100" in text and "entre" in text
+    # o número grande é o percentual publicado (Brasil, todos os alunos) arredondado
+    it = bundle["gestor"]["items"][bundle["gestor"]["topics"][0]["main"]]
+    o = bundle["obs"]
+    br = bundle["territories"].index(next(t for t in bundle["territories"] if t["code"] == "BR"))
+    vals = [o["e"][i] for i in range(len(o["m"])) if o["m"][i] == it["m"] and o["t"][i] == br
+            and bundle["dims"]["sex"][o["s"][i]] == "Total" and bundle["dims"]["admin_dependency"][o["d"][i]] == "Total"]
+    assert int(page.inner_text("#h-answer .h-big b")) in {round(v) for v in vals if v is not None}
+    for sel in ("#h-bully-body .h-card", "#h-types-body li", "#h-map svg path", "#h-trend-body .h-verdict"):
+        assert page.locator(sel).count() > 0, sel
+    assert page.locator("#h-answer a[href*='ibge.gov.br']").count() == 1, "botão Ver no IBGE"
+    assert errors == []
+
+
+def test_home_map_click_changes_place_and_choices_work(server, browser):
+    if "gestor" not in _bundle():
+        pytest.skip("configuração da tela inicial ausente do pacote")
+    page, errors = _open(browser, server, start="home")
+    page.click("#h-map svg path[tabindex='0']")
+    page.wait_for_timeout(120)
+    assert page.eval_on_selector("#h-place", "s => s.value") != "BR"
+    assert "Brasil" in page.inner_text("#h-answer"), "fora do Brasil, a frase compara com o Brasil"
+    page.click("#h-topic .seg:nth-child(2)")
+    page.click("#h-group .seg:nth-child(2)")
+    page.wait_for_timeout(120)
+    assert "meninas" in page.inner_text("#h-answer").lower()
+    assert errors == []
+
+
+def test_home_has_no_horizontal_scroll_on_phone_and_desktop(server, browser):
+    if "gestor" not in _bundle():
+        pytest.skip("configuração da tela inicial ausente do pacote")
+    for w, h in ((375, 812), (1440, 900)):
+        page, errors = _open(browser, server, start="home", viewport={"width": w, "height": h})
+        sw, iw = page.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
+        assert sw <= iw, f"rolagem horizontal a {w}px: {sw} > {iw}"
+        assert errors == []
+
+
+def test_estimates_tab_shows_how_many_students(server, browser):
+    """Aba "Estimativas": quantos estudantes sofreram/praticaram bullying e foram agredidos, com faixa."""
+    if "gestor" not in _bundle():
+        pytest.skip("configuração da tela inicial ausente do pacote")
+    page, errors = _open(browser, server, start="home")
+    page.click("#tab-estimates")
+    page.wait_for_selector("#e-body .e-row")
+    text = page.inner_text("#e-body")
+    for s in ("Sofreram bullying", "Praticaram bullying", "agredidos", "estudantes", "entre"):
+        assert s in text, s
+    assert "soma passa de 100" in text, "motivos (2.6 e 2.13) lidos entre quem sofreu/praticou, não entre todos"
+    page.select_option("#e-place", "24")
+    page.wait_for_timeout(150)
+    assert "Rio Grande do Norte" in page.inner_text("#e-title")
+    sw, iw = page.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
+    assert sw <= iw
+    assert errors == []

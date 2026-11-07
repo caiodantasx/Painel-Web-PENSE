@@ -101,6 +101,17 @@ Gerada por `scripts/build_evidence_matrix.py` a partir de `data/curated/microdat
 | NONO_BRIGA_ARMA_BRANCA | 2015 (2015_A1) | Aluno | VALIDADO: 133/140 recortes reproduzem; máx Δ 0.138 p.p. | 133/140 | DIRETA | sim | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | -0.053 |
 | NONO_BRIGA_ARMA_BRANCA | 2019 (2019) | Aluno | VALIDADO: 135/140 recortes reproduzem; máx Δ 0.231 p.p. | 135/140 | DIRETA | sim | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | 0.0 |
 | NONO_BRIGA_ARMA_BRANCA | 2024 (2024) | Aluno | NÃO VALIDADO (sem tabela) | — | INDIRETA | não (excluída por decisão registrada; ver limitations) | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | 0.0 |
+| BULLYING_SOFREU | 2019 (2019) | Aluno | VALIDADO_COM_RESSALVA: 256/317 recortes reproduzem; máx Δ 0.423 p.p. | 256/317 | DIRETA | sim | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | 0.0 |
+| BULLYING_SOFREU | 2024 (2024) | Aluno | VALIDADO: 314/317 recortes reproduzem; máx Δ 0.098 p.p. | 314/317 | DIRETA | sim | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | 0.0 |
+| BULLYING_PRATICOU | 2015 (2015_A2) | Aluno | VALIDADO: 42/42 recortes reproduzem; máx Δ 0.000 p.p. | 42/42 | DIRETA | sim | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | -0.0884 |
+| BULLYING_PRATICOU | 2019 (2019) | Aluno | VALIDADO_COM_RESSALVA: 263/317 recortes reproduzem; máx Δ 0.215 p.p. | 263/317 | DIRETA | sim | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | 0.0 |
+| BULLYING_PRATICOU | 2024 (2024) | Aluno | VALIDADO: 313/317 recortes reproduzem; máx Δ 0.082 p.p. | 313/317 | DIRETA | sim | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | 0.0 |
+| CYBER_SOFREU | 2019 (2019) | Aluno | VALIDADO_COM_RESSALVA: 253/317 recortes reproduzem; máx Δ 0.334 p.p. | 253/317 | DIRETA | sim | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | 0.0 |
+| CYBER_SOFREU | 2024 (2024) | Aluno | VALIDADO: 308/317 recortes reproduzem; máx Δ 0.072 p.p. | 308/317 | DIRETA | sim | COMPARABLE_WITH_CAVEATS | DECISAO_REGISTRADA | 0.0 |
+| CYBER_PRATICOU | 2024 (2024) | Aluno | VALIDADO: 308/317 recortes reproduzem; máx Δ 0.122 p.p. | 308/317 | DIRETA | não | NOT_COMPARABLE | PROPOSTA_AUTOMATICA | 0.0 |
+| FALTOU_INSEGURANCA_SOFREU_BULLYING | 2024 (2024) | Aluno | NÃO VALIDADO (sem tabela) | — | AUSENTE | não | NOT_COMPARABLE | PROPOSTA_AUTOMATICA | 0.0 |
+| FALTOU_INSEGURANCA_NAO_SOFREU_BULLYING | 2024 (2024) | Aluno | NÃO VALIDADO (sem tabela) | — | AUSENTE | não | NOT_COMPARABLE | PROPOSTA_AUTOMATICA | 0.0 |
+| ALGUMA_VIOLENCIA | 2024 (2024) | Aluno | NÃO VALIDADO (sem tabela) | — | AUSENTE | não | NOT_COMPARABLE | PROPOSTA_AUTOMATICA | 0.0 |
 
 ## Dúvidas NÃO resolvidas (sem evidência documental suficiente)
 

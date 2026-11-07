@@ -188,7 +188,11 @@ def real(tmp_path_factory):
     def root(name: str, exclusion: dict | None) -> Path:
         tmp = tmp_path_factory.mktemp(name)
         shutil.copytree(ROOT / "config", tmp / "config")
-        (tmp / "data").symlink_to(ROOT / "data", target_is_directory=True)
+        try:
+            (tmp / "data").symlink_to(ROOT / "data", target_is_directory=True)
+        except OSError:   # Windows sem privilégio de link simbólico: junção de diretório não exige
+            import _winapi
+            _winapi.CreateJunction(str(ROOT / "data"), str(tmp / "data"))
         micro = tmp / "config" / "microdata"
         (micro / "comparability_decisions.csv").write_text(
             "indicator_key,final_status,justification,evidence_reference,reviewer,decision_date\n", encoding="utf-8")
@@ -245,12 +249,14 @@ def test_real_2015_values_preserved_and_flagged(real):
     assert "fora da série principal por decisão registrada" in comp["caveats"]
 
 
-def test_real_other_35_indicators_identical(real):
+def test_real_other_indicators_identical(real):
+    """A exclusão de TRAJETO_INSEGURO × 2015 não muda nenhum outro indicador (36 até out/2026; 43 com
+    os 7 de bullying, cruzamento bullying × faltas e "algum tipo de violência" de nov/2026)."""
     base, new = real
     cb = {c["indicator_key"]: c for c in base["comparability"]}
     cn = {c["indicator_key"]: c for c in new["comparability"]}
     others = [k for k in cb if k != "TRAJETO_INSEGURO"]
-    assert len(others) == 35
+    assert len(others) == len(cb) - 1 >= 35
     assert all(cb[k] == cn[k] for k in others)
     rest = lambda r: [p for p in r["series"] if p["indicator_key"] != "TRAJETO_INSEGURO"]  # noqa: E731
     assert rest(base) == rest(new)

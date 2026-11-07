@@ -6,7 +6,7 @@
 * estados internos, intervalo e rótulo exibido são coerentes no pacote do painel;
 * todo arquivo citado nas decisões e exclusões registradas existe no projeto.
 
-As funções de formatação são executadas de verdade (Node.js), copiadas do próprio app.js entre os
+As funções de formatação são executadas de verdade (Node.js), copiadas do próprio painel (dashboard/assets/js/format.js) entre os
 marcadores ``fmt:start`` e ``fmt:end``. Node é opcional: sem ele, esses testes são pulados.
 """
 from __future__ import annotations
@@ -21,14 +21,14 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-JS = (ROOT / "dashboard" / "assets" / "app.js").read_text(encoding="utf-8")
+JS = "\n".join(p.read_text(encoding="utf-8") for p in sorted((ROOT / "dashboard" / "assets" / "js").rglob("*.js")))
 BUNDLE = ROOT / "dashboard" / "data" / "pense_bundle.json"
 SIG_STATES = {"SIGNIFICATIVA_5PCT_COM_DECISAO", "SIGNIFICATIVA_SEM_DECISAO", "SIGNIFICATIVA_APROXIMADA"}
 
 
 def _fmt_source() -> str:
     m = re.search(r"// fmt:start.*?\n(.*?)// fmt:end", JS, re.S)
-    assert m, "marcadores fmt:start/fmt:end ausentes em app.js"
+    assert m, "marcadores fmt:start/fmt:end ausentes em format.js"
     return m.group(1)
 
 
@@ -37,7 +37,7 @@ def _node(cases: list[list]) -> list[str]:
     if not node:
         pytest.skip("Node.js indisponível (opcional)")
     prog = _fmt_source() + f"\nconsole.log(JSON.stringify({json.dumps(cases)}.map(([lo, hi, s]) => ciDiffText(lo, hi, s))));"
-    out = subprocess.run([node, "-e", prog], capture_output=True, text=True, check=True)
+    out = subprocess.run([node, "-e", prog], capture_output=True, text=True, encoding="utf-8", check=True)
     return json.loads(out.stdout)
 
 
@@ -153,7 +153,11 @@ def test_dashboard_shows_sign_preserving_interval(tmp_path):
     if not BUNDLE.exists() or not (ROOT / "data" / "curated" / "microdata_estimates.csv").exists():
         pytest.skip("rode scripts/run_all.py")
     shutil.copytree(ROOT / "config", tmp_path / "config")
-    (tmp_path / "data").symlink_to(ROOT / "data", target_is_directory=True)
+    try:
+        (tmp_path / "data").symlink_to(ROOT / "data", target_is_directory=True)
+    except OSError:   # Windows sem privilégio de link simbólico: junção de diretório não exige
+        import _winapi
+        _winapi.CreateJunction(str(ROOT / "data"), str(tmp_path / "data"))
     (tmp_path / "config" / "microdata" / "comparability_decisions.csv").write_text(
         "indicator_key,final_status,justification,evidence_reference,reviewer,decision_date\n"
         "TRAJETO_INSEGURO,COMPARABLE_WITH_CAVEATS,teste,teste,REVISOR_DE_TESTE,2026-10-27\n", encoding="utf-8")
@@ -162,7 +166,7 @@ def test_dashboard_shows_sign_preserving_interval(tmp_path):
     bundle["micro"]["diffs"], bundle["micro"]["indicators"] = micro["diffs"], micro["indicators"]
     body = json.dumps(bundle)
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT / "dashboard"))
-    httpd = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    httpd = type("Srv", (http.server.ThreadingHTTPServer,), {"request_queue_size": 128})(("127.0.0.1", 0), handler)   # fila padrão (5) recusava conexões no Windows
     httpd.RequestHandlerClass.log_message = lambda *a, **k: None
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     try:
@@ -177,6 +181,7 @@ def test_dashboard_shows_sign_preserving_interval(tmp_path):
             page.route("**/fonts.googleapis.com/**", lambda r: r.abort())
             page.route("**/data/pense_bundle.json", lambda r: r.fulfill(status=200, content_type="application/json", body=body))
             page.goto(f"http://127.0.0.1:{httpd.server_address[1]}", wait_until="networkidle")
+            page.wait_for_selector("body:not(.is-loading)", timeout=60000)   # só clica depois de o painel carregar
             page.click("#tab-history")
             page.wait_for_selector("#table-micro-overview tbody tr")
             page.select_option("#f-micro-indicator", "TRAJETO_INSEGURO")
